@@ -37,26 +37,13 @@ Developed [jointly by OpenRSI and the SGLang-Omni team](https://index.openrsi.fo
 
 ## ✨ Highlights
 
-<table>
-  <tr>
-    <td align="center" width="20%"><h2>10</h2>omni models<br><sub>SGLang-Omni</sub></td>
-    <td align="center" width="20%"><h2>10</h2>tasks<br><sub>pinned &amp; reproducible</sub></td>
-    <td align="center" width="20%"><h2>6.29×</h2>best agent reward<br><sub>Fish S2-Pro, Claude Code</sub></td>
-    <td align="center" width="20%"><h2>14</h2>PRs merged<br><sub>into SGLang-Omni</sub></td>
-    <td align="center" width="20%"><h2>1 GPU</h2>per task<br><sub>H100-class</sub></td>
-  </tr>
-</table>
-
-- **Real serving stacks, not toy kernels.** Agents work on the full SGLang-Omni
-  runtime: multi-stage pipelines, schedulers, vocoders, streaming paths.
-- **Speed under guards.** Model weights, sampling semantics and evaluation assets are
-  fixed. Every candidate must pass WER, latency, coverage and integrity checks.
-- **No trade-offs between modes.** Dual-mode tasks require *both* streaming and
-  non-streaming throughput to improve; a gain in one cannot hide a regression in the other.
-- **Long-horizon research.** Agents get up to 24 hours per task and iterate against
-  the evaluator, with each accepted result becoming the next baseline.
-- **Results that ship.** The same loop produced optimizations that were reviewed
-  and merged upstream ([see below](#-from-benchmark-to-upstream)).
+- **Production tasks, validated through real PRs.** Every task targets a bottleneck
+  in SGLang-Omni's production serving stack. The OpenRSI and SGLang-Omni teams
+  repeatedly refine its objective, evaluator and constraints, using real
+  optimization PRs to check that the task captures meaningful engineering work.
+- **One GPU per task.** The full optimization and evaluation loop runs on a
+  single compatible GPU, making individual tasks straightforward to run and
+  reproduce.
 
 ## ⚙️ How it works
 

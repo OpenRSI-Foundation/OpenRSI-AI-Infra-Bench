@@ -2,106 +2,159 @@
   <img src="assets/banner.svg" width="100%" alt="OpenRSI AI Infra — a benchmark for agents that optimize AI serving systems">
 </p>
 
-<h3 align="center">A benchmark for coding agents that improve real AI infrastructure.</h3>
+<h3 align="center">Can coding agents make real AI infrastructure faster?</h3>
 
 <p align="center">
-  <a href="#tasks">Tasks</a> ·
-  <a href="#baselines">Baselines</a> ·
-  <a href="#quick-start">Quick Start</a> ·
-  <a href="#evaluation">Evaluation</a>
+  <a href="https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/">Blog</a> ·
+  <a href="https://index.openrsi.foundation">OpenRSI Index</a> ·
+  <a href="#-tasks">Tasks</a> ·
+  <a href="#-baselines">Baselines</a> ·
+  <a href="#-quick-start">Quick Start</a> ·
+  <a href="#-evaluation">Evaluation</a> ·
+  <a href="https://github.com/OpenRSI-Foundation/OpenRSI-Index/tree/main/RSI-Harness">RSI-Harness</a> ·
+  <a href="https://github.com/sgl-project/sglang-omni">SGLang-Omni</a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Models-10-5b59db" alt="10 models">
-  <img src="https://img.shields.io/badge/Task_packages-12-30928a" alt="12 task packages">
-  <img src="https://img.shields.io/badge/Agents-Codex_%7C_Claude_Code-435063" alt="Codex and Claude Code">
-  <img src="https://img.shields.io/badge/License-Apache_2.0-667181" alt="Apache 2.0">
+  <a href="https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/"><img alt="Blog" src="https://img.shields.io/badge/Blog-OpenRSI_×_SGLang--Omni-5b59db"></a>
+  <a href="#-tasks"><img alt="10 models · 12 tasks" src="https://img.shields.io/badge/Tasks-10_models_·_12_packages-30928a"></a>
+  <a href="#-baselines"><img alt="Codex and Claude Code" src="https://img.shields.io/badge/Agents-Codex_|_Claude_Code-435063"></a>
+  <a href="#-from-benchmark-to-upstream"><img alt="14 upstream PRs merged" src="https://img.shields.io/badge/Upstream-14_PRs_merged-2f8f4e"></a>
+  <a href="LICENSE"><img alt="Apache 2.0" src="https://img.shields.io/badge/License-Apache_2.0-667181"></a>
 </p>
 
-**OpenRSI AI Infra** evaluates whether coding agents can make AI serving systems
-faster while preserving their quality and latency requirements. Agents profile
-the runtime, propose changes, run experiments and submit code for evaluation.
-Model weights stay fixed; improvements must pass the task's evaluator.
+**OpenRSI AI Infra** is a benchmark for coding agents that optimize **real AI
+serving systems**. Each task hands an agent a production serving stack, a fixed
+model and a GPU. The agent profiles the runtime, forms hypotheses, runs
+experiments and submits code. An independent evaluator then decides whether the
+system got **faster without losing quality or latency**.
 
-The initial collection focuses on **SGLang-Omni speech serving**: 10 models across
-text-to-speech (TTS) and automatic speech recognition (ASR), packaged as 12
-reproducible tasks with pinned source, assets, dependencies and evaluation rules.
+The first collection targets **[SGLang-Omni](https://github.com/sgl-project/sglang-omni)
+speech serving**: 10 text-to-speech (TTS) and speech-recognition (ASR) models,
+packaged as 12 reproducible tasks with pinned source, assets, dependencies and
+evaluation rules. It is part of the [OpenRSI Index](https://index.openrsi.foundation),
+an open effort to measure recursive self-improvement (RSI) in real-world settings,
+starting with agents that improve the infrastructure AI runs on.
 
-> **At a glance:** real serving workloads · streaming and non-streaming objectives ·
-> single-GPU evaluation · Codex and Claude Code baselines.
+## 📰 News
 
-<!-- TODO: Add the project website, paper and public results dashboard when available. -->
+- **2026.11** — 🚀 **OpenRSI AI Infra released**: 12 SGLang-Omni task packages with
+  Codex and Claude Code baselines.
+- **2026.11** — 📝 Blog: **[OpenRSI × SGLang-Omni: Scaling RSI for AI Infra](https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/)**.
+  Agent-found optimizations raised throughput by **+7.6% to +326.5%** on H100 across
+  eight omni models; **14 PRs** were reviewed and merged by SGLang-Omni maintainers.
 
-## Tasks
+## ✨ Highlights
 
-**Eight dual-mode tasks** evaluate streaming and non-streaming together.
-**Four Ming3 tasks** evaluate the two modes separately, for 0.5B and Tiny.
+<table>
+  <tr>
+    <td align="center" width="20%"><h2>10</h2>speech models<br><sub>TTS + ASR</sub></td>
+    <td align="center" width="20%"><h2>12</h2>task packages<br><sub>pinned &amp; reproducible</sub></td>
+    <td align="center" width="20%"><h2>6.29×</h2>best agent reward<br><sub>Fish S2-Pro, Claude Code</sub></td>
+    <td align="center" width="20%"><h2>14</h2>PRs merged<br><sub>into SGLang-Omni</sub></td>
+    <td align="center" width="20%"><h2>1 GPU</h2>per task<br><sub>H100-class</sub></td>
+  </tr>
+</table>
 
-| Model | Track | Evaluation modes | Default agent budget | Package |
-| :--- | :--- | :--- | :--- | :--- |
-| **CosyVoice3** | TTS | Dual mode | 24 h | [Task](tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/) |
-| **MOSS-TTS v1.5** | TTS | Dual mode | 24 h | [Task](tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/) |
-| **Fish S2-Pro** | TTS | Dual mode | 24 h | [Task](tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/) |
-| **Qwen3-TTS Base 0.6B** | TTS | Dual mode | 24 h | [Task](tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/) |
-| **Qwen3-TTS Base 1.7B** | TTS | Dual mode | 24 h | [Task](tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/) |
-| **Ming3-TTS 0.5B** | TTS | Separate NS / S | 24 h / 8 h | [Non-streaming](tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/) · [Streaming](tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/) |
-| **Ming3-TTS Tiny** | TTS | Separate NS / S | 24 h / 8 h | [Non-streaming](tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/) · [Streaming](tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/) |
-| **Qwen3-ASR 1.7B** | ASR | Dual mode | 24 h | [Task](tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/) |
-| **Whisper large-v3** | ASR | Dual mode | 24 h | [Task](tasks/whisper-large-v3/whisper-asr-streaming-throughput/) |
-| **MOSS-Transcribe-Diarize** | ASR | Dual mode | 24 h | [Task](tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/) |
+- **Real serving stacks, not toy kernels.** Agents work on the full SGLang-Omni
+  runtime: multi-stage pipelines, schedulers, vocoders, streaming paths.
+- **Speed under guards.** Model weights, sampling semantics and evaluation assets are
+  fixed. Every candidate must pass WER, latency, coverage and integrity checks.
+- **No trade-offs between modes.** Dual-mode tasks require *both* streaming and
+  non-streaming throughput to improve; a gain in one cannot hide a regression in the other.
+- **Long-horizon research.** Agents get up to 24 hours per task and iterate against
+  the evaluator, with each accepted result becoming the next baseline.
+- **Results that ship.** The same loop produced optimizations that were reviewed
+  and merged upstream ([see below](#-from-benchmark-to-upstream)).
 
-For TTS, streaming means incremental audio delivery. For ASR, it means text
-delivered over SSE after the audio upload; it is not live microphone streaming.
-The Ming3 streaming packages use a different source baseline and compatibility
-port from their non-streaming counterparts.
+## ⚙️ How it works
 
-Each task includes:
+```mermaid
+flowchart LR
+    T["📦 Task<br/>pinned SGLang-Omni source<br/>+ fixed model &amp; assets"] --> A
+    A["🤖 Coding agent<br/>profile · hypothesize<br/>edit · experiment"] -- submission --> E
+    E{"⚖️ Evaluator<br/>throughput vs. Bₖ<br/>quality · latency · integrity"}
+    E -- "rejected" --> A
+    E -- "accepted → new baseline Bₖ₊₁" --> A
+    E --> R["📈 Reward<br/>vs. initial baseline B₀"]
+```
 
-| File or directory | What it provides |
-| :--- | :--- |
-| `instruction.md` | The objective, allowed changes and constraints |
-| `task.toml` | Resources, time limits and runtime configuration |
-| `environment/` | Container build, pinned runtime and model asset specifications |
-| `tests/` | Evaluator, fixed assets, quality checks and scoring rules |
-| `solution/solve.sh` | Restoration of the starting implementation |
-| `publication.json` | Original source revision and file hashes |
+RSI-Harness runs the outer loop: the agent works inside a container, submits
+candidates, and receives only evaluator verdicts. Calibration state (the initial
+baseline $B_0$ and A/A noise checks) stays outside the agent's workspace.
 
-## Baselines
+Each task package contains:
 
-We report the **Main experiments** for two coding agents running under RSI-Harness:
+```text
+tasks/<model>/<task-name>/
+├── instruction.md      # objective, allowed changes and constraints
+├── task.toml           # resources, time limits, runtime configuration
+├── environment/        # container build, pinned runtime, model asset specs
+├── tests/              # evaluator, fixed assets, quality checks, scoring rules
+├── solution/solve.sh   # restores the starting implementation
+└── publication.json    # original source revision and file hashes
+```
+
+## 📦 Tasks
+
+**Eight dual-mode tasks** score streaming and non-streaming together.
+**Four Ming3 tasks** score each mode separately, for the 0.5B and Tiny models.
+
+| Model | Track | Evaluation modes | Agent budget | Package |
+| :--- | :---: | :--- | :---: | :--- |
+| **CosyVoice3** | 🗣️ TTS | Dual mode | 24 h | [Task](tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/) |
+| **MOSS-TTS v1.5** | 🗣️ TTS | Dual mode | 24 h | [Task](tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/) |
+| **Fish S2-Pro** | 🗣️ TTS | Dual mode | 24 h | [Task](tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/) |
+| **Qwen3-TTS Base 0.6B** | 🗣️ TTS | Dual mode | 24 h | [Task](tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/) |
+| **Qwen3-TTS Base 1.7B** | 🗣️ TTS | Dual mode | 24 h | [Task](tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/) |
+| **Ming3-TTS 0.5B** | 🗣️ TTS | Separate NS / S | 24 h / 8 h | [Non-streaming](tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/) · [Streaming](tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/) |
+| **Ming3-TTS Tiny** | 🗣️ TTS | Separate NS / S | 24 h / 8 h | [Non-streaming](tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/) · [Streaming](tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/) |
+| **Qwen3-ASR 1.7B** | 👂 ASR | Dual mode | 24 h | [Task](tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/) |
+| **Whisper large-v3** | 👂 ASR | Dual mode | 24 h | [Task](tasks/whisper-large-v3/whisper-asr-streaming-throughput/) |
+| **MOSS-Transcribe-Diarize** | 👂 ASR | Dual mode | 24 h | [Task](tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/) |
+
+> [!NOTE]
+> For TTS, *streaming* means incremental audio delivery. For ASR, it means text
+> delivered over SSE after the audio upload, not live microphone streaming. The
+> Ming3 streaming packages use a different source baseline and compatibility port
+> from their non-streaming counterparts.
+
+## 🏆 Baselines
+
+Two coding agents, run under RSI-Harness:
 
 | Agent | Model | Reasoning effort |
-| :--- | :--- | :--- |
+| :--- | :--- | :---: |
 | **Codex** | `gpt-6-astra` | `xhigh` |
 | **Claude Code** | `claude-opus-5-5` | `max` |
 
-The table shows the **best recorded reward per task and agent** among archived
-research runs in the Main repositories. Each selected score was checked against
-its best submission's completed evaluator report. Higher is better; 1.0× is the
-normalized starting performance. These are historical results, not new evaluations
-of this repository snapshot.
+Below is the **best recorded reward per task and agent** among archived Main
+research runs. Each score was checked against the completed evaluator report of
+its best submission. **Higher is better; 1.0× is the starting performance.**
+These are historical results, not new evaluations of this repository snapshot.
 
-| Task | Scored modes | Codex | Claude Code | Archived runs¹ |
+| Task | Scored modes | Codex | Claude Code | Runs¹ |
 | :--- | :--- | ---: | ---: | :---: |
-| CosyVoice3 | Dual | 1.172× | 1.297× | 1 / 1 |
-| MOSS-TTS v1.5 | Dual | 1.440× | 2.195× | 2 / 2 |
-| Fish S2-Pro | Dual | 1.803× | 6.288× | 2 / 1 |
-| Qwen3-TTS Base 0.6B | Dual | 1.141× | 1.252× | 1 / 2 |
-| Qwen3-TTS Base 1.7B | Dual | 1.096× | 1.283× | 2 / 1 |
-| Ming3-TTS 0.5B | Non-streaming | Not archived‡ | 4.298×† | — / 2 |
-| Ming3-TTS Tiny | Non-streaming | 1.899×† | 3.634× | 2 / 1 |
-| Qwen3-ASR 1.7B | Dual | 1.139× | 1.317×† | 2 / 1 |
-| Whisper large-v3 | Dual | 1.126× | 1.979×† | 1 / 1 |
-| MOSS-Transcribe-Diarize | Dual | 1.134× | 1.490× | 1 / 1 |
+| CosyVoice3 | Dual | 1.172× | **1.297×** | 1 / 1 |
+| MOSS-TTS v1.5 | Dual | 1.440× | **2.195×** | 2 / 2 |
+| Fish S2-Pro | Dual | 1.803× | **6.288×** | 2 / 1 |
+| Qwen3-TTS Base 0.6B | Dual | 1.141× | **1.252×** | 1 / 2 |
+| Qwen3-TTS Base 1.7B | Dual | 1.096× | **1.283×** | 2 / 1 |
+| Ming3-TTS 0.5B | Non-streaming | n/a‡ | **4.298×**† | — / 2 |
+| Ming3-TTS Tiny | Non-streaming | 1.899×† | **3.634×** | 2 / 1 |
+| Qwen3-ASR 1.7B | Dual | 1.139× | **1.317×**† | 2 / 1 |
+| Whisper large-v3 | Dual | 1.126× | **1.979×**† | 1 / 1 |
+| MOSS-Transcribe-Diarize | Dual | 1.134× | **1.490×** | 1 / 1 |
 
-¹ Run counts are **Codex / Claude Code**, including interrupted and unscored
-research runs. Preparation runs, model-scaling experiments and other agent
-frameworks are excluded. The table is a best-observed summary, not a mean over seeds.
-
-† The overall run ended as `failed` or `cancelled`, but retained the shown score
-from an earlier completed submission. ‡ The Main tracking sheet marks the
-Ming3-0.5B Codex run as done; its numerical result was not found in the inspected
-archive, so no score is assigned.
+<sub>
+¹ Run counts are <b>Codex / Claude Code</b>, including interrupted and unscored
+research runs. Preparation runs, model-scaling experiments and other agent frameworks
+are excluded. The table is a best-observed summary, not a mean over seeds.<br>
+† The overall run ended as <code>failed</code> or <code>cancelled</code>, but kept the
+shown score from an earlier completed submission.<br>
+‡ The Main tracking sheet marks the Ming3-0.5B Codex run as done, but its numerical
+result was not found in the inspected archive, so no score is assigned.
+</sub>
 
 <details>
 <summary><strong>Hardware, budgets and version notes</strong></summary>
@@ -123,13 +176,39 @@ archive, so no score is assigned.
 
 </details>
 
-**Results:** [Run records and methodology](results/README.md) ·
-[Machine-readable snapshot](results/main.json) ·
-Public dashboard: **coming soon**.
+📊 [Run records and methodology](results/README.md) ·
+🗂️ [Machine-readable snapshot](results/main.json) ·
+📋 [All qualifying runs](results/runs.csv) ·
+Public dashboard: *coming soon*
 
 <!-- TODO: Replace the dashboard placeholder with the public Main-results URL. -->
 
-## Quick start
+## 🔁 From benchmark to upstream
+
+The same harnessed loop was used to land real optimizations in SGLang-Omni.
+Agents did the performance work; people defined the problems and reviewed the PRs.
+Throughput gains on **H100** (non-streaming / streaming), measured on
+`sglang-omni` main before the first and after the last OpenRSI PR:
+
+| Model | Merged PRs | Non-streaming | Streaming |
+| :--- | :--- | ---: | ---: |
+| CosyVoice3 | [#2524](https://github.com/sgl-project/sglang-omni/pull/2524) [#2555](https://github.com/sgl-project/sglang-omni/pull/2555) | +44.4% | +46.2% |
+| MOSS-TTS | [#2525](https://github.com/sgl-project/sglang-omni/pull/2525) [#2859](https://github.com/sgl-project/sglang-omni/pull/2859) | +48.5% | +76.3% |
+| Fish S2-Pro | [#2778](https://github.com/sgl-project/sglang-omni/pull/2778) | +9.6% | +0.3% |
+| Qwen3-TTS | [#2779](https://github.com/sgl-project/sglang-omni/pull/2779) | +25.2% | +4.7% |
+| Qwen3-ASR | [#2880](https://github.com/sgl-project/sglang-omni/pull/2880) [#2881](https://github.com/sgl-project/sglang-omni/pull/2881) [#2882](https://github.com/sgl-project/sglang-omni/pull/2882) | +14.2% | +5.0% |
+| Whisper large-v3 | [#2901](https://github.com/sgl-project/sglang-omni/pull/2901) | +7.6% | +12.2% |
+| MOSS-Transcribe-Diarize | [#3071](https://github.com/sgl-project/sglang-omni/pull/3071) | +18.8% | +30.0% |
+| Ming3-TTS 0.5B | [#3136](https://github.com/sgl-project/sglang-omni/pull/3136) [#3189](https://github.com/sgl-project/sglang-omni/pull/3189) [#3190](https://github.com/sgl-project/sglang-omni/pull/3190) | **+326.5%** | **+93.9%** |
+
+<sub>These upstream numbers come from a separate measurement protocol than the benchmark
+rewards above, and some ranges include non-OpenRSI changes. See the
+<a href="https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/">blog post</a>
+for H200 results, per-PR caveats and the five recurring optimization patterns
+(idle-thread spinning, per-hop data conversion, unused work, small GPU launches, and
+unpipelined prefill/decode).</sub>
+
+## 🚀 Quick start
 
 ### 1. Get the tasks
 
@@ -137,21 +216,23 @@ Public dashboard: **coming soon**.
 git clone https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra.git
 cd OpenRSI-AI-Infra
 
-# Verify task contents and syntax without a GPU.
+# Verify task contents and syntax (no GPU needed)
 uv run --python 3.12 python -B scripts/verify.py
 ```
 
 ### 2. Prepare the environment
 
-Use **Linux, Docker, NVIDIA Container Toolkit and Python 3.12**, with one compatible
-GPU, 16 reserved physical CPU cores and 128 GiB RAM. Install
-[RSI-Harness](https://github.com/OpenRSI-Foundation/OpenRSI-Index/tree/main/RSI-Harness),
+**Requirements:** Linux, Docker, NVIDIA Container Toolkit and Python 3.12, plus one
+compatible GPU, 16 reserved physical CPU cores and 128 GiB RAM.
+
+Install [RSI-Harness](https://github.com/OpenRSI-Foundation/OpenRSI-Index/tree/main/RSI-Harness),
 then build and validate the selected task's environment.
 
-Before research, measure a fresh **B0 calibration** and run the required held-out
-**A/A check** on the same hardware, runtime and allocation. Keep the operator-owned
-baseline state outside the agent workspace. The task README defines the exact
-preparation procedure; historical scores are not calibration inputs.
+> [!IMPORTANT]
+> Before research, measure a fresh **B0 calibration** and run the required held-out
+> **A/A check** on the same hardware, runtime and allocation. Keep the operator-owned
+> baseline state outside the agent workspace. The task README defines the exact
+> procedure; historical scores are not calibration inputs.
 
 ### 3. Run a coding agent
 
@@ -166,72 +247,75 @@ sudo -E "$(command -v rsi-harness)" run "$TASK_DIR" \
   --agent codex --model gpt-6-astra --reasoning-effort xhigh \
   --agent-auth local --gpus 0
 
-# Claude Code — launch as a separate experiment with independent baseline state
+# Claude Code: launch as a separate experiment with independent baseline state
 sudo -E "$(command -v rsi-harness)" run "$TASK_DIR" \
   --agent claude-code --model claude-opus-5-5 --reasoning-effort max \
   --agent-auth local --gpus 0
 ```
 
-`--agent-auth local` reuses an existing login. API-key authentication is also
-supported by the Harness. Replace GPU `0` with your reserved GPU selector.
+`--agent-auth local` reuses an existing login; API-key authentication is also
+supported. Replace GPU `0` with your reserved GPU selector.
 
-> **ASR uses a different entrypoint.** Qwen3-ASR, Whisper and MOSS-Transcribe-Diarize
-> require their task-local `tools/launch.py` host state adapter and a matching
-> Harness revision. Follow the [full running guide](docs/running.md#4-asr-use-the-host-state-adapter)
-> for preparation and launch commands.
+> [!NOTE]
+> **ASR tasks use a different entrypoint.** Qwen3-ASR, Whisper and
+> MOSS-Transcribe-Diarize require their task-local `tools/launch.py` host-state
+> adapter and a matching Harness revision. See the
+> [running guide](docs/running.md#4-asr-use-the-host-state-adapter).
 
 ### 4. Inspect the results
 
 ```bash
-rsi-harness visualize
-# Open http://127.0.0.1:8000
+rsi-harness visualize   # then open http://127.0.0.1:8000
 ```
 
-Inspect `final_result.json` for run status and best reward, then check the selected
-round's `submissions/agent-N/report.json` for evaluator status. Preserve task and
-runner commits, hardware, calibration identity, budgets and per-mode metrics.
+Check `final_result.json` for run status and best reward, then the selected round's
+`submissions/agent-N/report.json` for evaluator status. Record task and runner
+commits, hardware, calibration identity, budgets and per-mode metrics.
 
-→ **[Full setup, calibration and execution guide](docs/running.md)**
+📖 **[Full setup, calibration and execution guide →](docs/running.md)**
 
-## Evaluation
+## ⚖️ Evaluation
 
-The optimization target is serving throughput subject to the task's quality,
-latency, resource and integrity checks. A faster implementation can still be
-ineligible if it fails a guard.
+The target is **serving throughput**, subject to the task's quality, latency,
+resource and integrity checks. A faster implementation is still ineligible if it
+fails any guard.
 
-For dual-mode tasks, let $R_s$ and $R_n$ be streaming and non-streaming throughput
-ratios against the initial baseline $B_0$:
+For dual-mode tasks, let $R_s$ and $R_n$ be the streaming and non-streaming
+throughput ratios against the initial baseline $B_0$:
 
 $$
 \mathrm{reward} = R_s^{2/3} \, R_n^{1/3}.
 $$
 
-**Both modes must improve** over the last accepted baseline $B_k$ before a
-candidate is eligible. A higher combined score cannot offset a regression in one
-mode. Ming3's separate tasks score the selected mode's throughput ratio against
-$B_0$. The task evaluator defines the exact aggregation and acceptance rules.
+**Both modes must improve** over the last accepted baseline $B_k$ before a candidate
+is eligible, so a higher combined score cannot offset a regression in one mode.
+Ming3's separate tasks score the selected mode's throughput ratio against $B_0$.
+The task evaluator defines the exact aggregation and acceptance rules.
 
-| Track | Workload and evaluation |
+| | Workload and checks |
 | :--- | :--- |
-| TTS | 1,088 English requests per repetition; concurrency 16; three repetitions per evaluated mode; independent ASR-based quality checks |
-| ASR | English and Chinese workloads; non-streaming and post-upload SSE; three repetitions per language and mode |
-| Guards | Task-specific WER/error ceilings, latency and other performance tolerances, complete coverage, source integrity and cleanup |
+| **TTS** | 1,088 English requests per repetition; concurrency 16; three repetitions per mode; independent ASR-based quality checks |
+| **ASR** | English and Chinese workloads; non-streaming and post-upload SSE; three repetitions per language and mode |
+| **Guards** | Task-specific WER/error ceilings, latency and performance tolerances, complete coverage, source integrity and cleanup |
 
 Model weights, sampling semantics and fixed evaluation assets are protected.
-WER checks transcription accuracy; they do not establish perceptual audio quality.
+WER checks transcription accuracy; it does not establish perceptual audio quality.
 
-## Project links
+## 🔗 Resources
 
 | Resource | Link |
 | :--- | :--- |
-| Project website | Coming soon |
-| Paper / technical report | Coming soon |
-| Public Main-results dashboard | Coming soon |
-| Task collection | [Browse tasks](tasks/) |
+| Blog post | [OpenRSI × SGLang-Omni: Scaling RSI for AI Infra](https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/) |
+| OpenRSI Index | [index.openrsi.foundation](https://index.openrsi.foundation) · [GitHub](https://github.com/OpenRSI-Foundation/OpenRSI-Index) |
 | Runner | [RSI-Harness](https://github.com/OpenRSI-Foundation/OpenRSI-Index/tree/main/RSI-Harness) |
 | Serving framework | [SGLang-Omni](https://github.com/sgl-project/sglang-omni) |
+| Task collection | [Browse tasks](tasks/) |
+| Contribute a task | [Call for contributors](https://github.com/OpenRSI-Foundation/OpenRSI-Index#-call-for-contributors) |
+| Paper / technical report | Coming soon |
 
-## Provenance and license
+<!-- TODO: Add the paper and public results dashboard when available. -->
+
+## 📜 Provenance and license
 
 The initial task collection comes from
 [OpenRSI-Index / SGNOMI](https://github.com/OpenRSI-Foundation/OpenRSI-Index/tree/21e552f396fa1c3f4d418ada4b4ac7e73dde5b2f/rsi-tasks/SGNOMI).
@@ -240,7 +324,28 @@ are retained. Main baseline results were collected separately from the run
 repositories identified by the project tracking sheet; their task versions are
 recorded with the results.
 
-The repository carries the upstream [Apache-2.0 license](LICENSE). Bundled source,
+This repository carries the upstream [Apache-2.0 license](LICENSE). Bundled source,
 model weights and datasets retain their own licenses and attribution requirements.
 
-Built by **OpenRSI Foundation**, with the **SGLang-Omni** community.
+## 📖 Citation
+
+If you use OpenRSI AI Infra, please cite:
+
+```bibtex
+@misc{li2026openrsisglangomni,
+  title  = {{OpenRSI $\times$ SGLang-Omni: Scaling RSI for AI Infra}},
+  author = {Li, Zhuofeng and Tian, Aaron and Feng, Yichen and Chai, Wenhao and
+            Han, Xinyang and Li, Cara and Liang, Shujia and Li, Yuetai and
+            Zhao, Chenyang},
+  year   = {2026},
+  month  = nov,
+  url    = {https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/}
+}
+```
+
+---
+
+<p align="center">
+  Built by the <a href="https://github.com/OpenRSI-Foundation"><b>OpenRSI Foundation</b></a>
+  with the <a href="https://github.com/sgl-project/sglang-omni"><b>SGLang-Omni</b></a> community.
+</p>

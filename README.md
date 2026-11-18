@@ -21,14 +21,12 @@ Built [jointly with the SGLang-Omni team](https://index.openrsi.foundation/blog/
 
 <a id="highlights"></a>
 
-<table>
-  <tr>
-    <td align="center" width="25%"><h3>8</h3><strong>Tasks</strong><br><sub>TTS &amp; ASR</sub></td>
-    <td align="center" width="25%"><h3>16</h3><strong>Public runs</strong><br><sub>Two agents per task</sub></td>
-    <td align="center" width="25%"><h3>24 h</h3><strong>Comparison window</strong><br><sub>Same cutoff for both agents</sub></td>
-    <td align="center" width="25%"><h3>1 GPU</h3><strong>Per run</strong><br><sub>H100 80GB HBM3</sub></td>
-  </tr>
-</table>
+## ✨ Highlights
+
+- **Built with maintainers.** Production serving tasks jointly designed and reviewed by OpenRSI and SGLang-Omni, with pinned source code, assets, and dependencies.
+- **Verified under constraints.** An independent evaluator checks throughput against a fixed initial baseline and enforces quality, latency, streaming, and integrity requirements. [Evaluation protocol →](docs/evaluation.md)
+- **Improvements that ship.** Agent-discovered optimizations for models in this suite contributed to **11 PRs** reviewed and merged by SGLang-Omni maintainers. [Upstream results →](docs/upstream-results.md)
+- **Every round inspectable.** Explore agent actions and evaluator feedback across **16 public single-agent trajectories**, or run a task yourself on one GPU. [Browse runs →](results/archive.md)
 
 <a id="leaderboard"></a>
 

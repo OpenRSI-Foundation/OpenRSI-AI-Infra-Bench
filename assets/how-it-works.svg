@@ -132,14 +132,14 @@
   <text x="970.0" y="303" text-anchor="middle" class="mono w6 tx" font-size="13">reward = R<tspan dy="3" font-size="9.5">s</tspan><tspan dy="-8" font-size="9.2">2/3</tspan><tspan dy="5"> · R</tspan><tspan dy="3" font-size="9.5">n</tspan><tspan dy="-8" font-size="9.2">1/3</tspan></text>
   <text x="970.0" y="323" text-anchor="middle" class="mono w5 txr" font-size="10.2">Dual-mode: R<tspan dy="2.5" font-size="8.5">s</tspan><tspan dy="-2.5"> &gt; 1.0 &amp; R</tspan><tspan dy="2.5" font-size="8.5">n</tspan><tspan dy="-2.5"> &gt; 1.0</tspan></text>
   <rect x="864" y="344" width="212" height="42" rx="7" fill="#f0eee6" stroke="#dcd9cf" stroke-width="1"/>
-  <text x="970.0" y="362" text-anchor="middle" class="sans w6 tx" font-size="11.5">21 Public Trajectories</text>
-  <text x="970.0" y="378" text-anchor="middle" class="mono tx2" font-size="10.5">14 Upstream PRs · Up to 6.29×</text>
+  <text x="970.0" y="362" text-anchor="middle" class="sans w6 tx" font-size="11.5">16 Public Trajectories</text>
+  <text x="970.0" y="378" text-anchor="middle" class="mono tx2" font-size="10.5">11 Upstream PRs · Up to 6.29×</text>
   <rect x="28" y="414" width="1064" height="34" rx="8" fill="#f0eee6" stroke="#dedbd0" stroke-width="1"/>
   <text x="46" y="435" class="cap txr">OPEN PIPELINE</text>
   <text x="246" y="435" text-anchor="middle" class="sans w5 tx2" font-size="12">Harbor 1.4 Tasks (12)</text>
   <text x="466" y="435" text-anchor="middle" class="sans w5 tx2" font-size="12">RSI-Harness Search</text>
-  <text x="714" y="435" text-anchor="middle" class="sans w5 tx2" font-size="12">HF Logs &amp; Web Viewer (21)</text>
-  <text x="974" y="435" text-anchor="middle" class="sans w6 txr" font-size="12">SGLang-Omni PRs (14)</text>
+  <text x="714" y="435" text-anchor="middle" class="sans w5 tx2" font-size="12">HF Logs &amp; Web Viewer (16)</text>
+  <text x="974" y="435" text-anchor="middle" class="sans w6 txr" font-size="12">SGLang-Omni PRs (11)</text>
   <line x1="334" y1="431" x2="382" y2="431" stroke="#73726c" stroke-width="1.3" marker-end="url(#arr-ink)"/>
   <line x1="550" y1="431" x2="612" y2="431" stroke="#73726c" stroke-width="1.3" marker-end="url(#arr-ink)"/>
   <line x1="816" y1="431" x2="884" y2="431" stroke="#73726c" stroke-width="1.3" marker-end="url(#arr-ink)"/>

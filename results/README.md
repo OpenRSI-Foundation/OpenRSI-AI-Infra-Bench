@@ -2,13 +2,13 @@
 
 [Back to the benchmark](../README.md)
 
-**16 runs across 8 tasks**, with Codex and Claude Code evaluated over the same first **24 hours**. [Structured JSON](main.json) · [CSV](runs.csv) · [Cutoff audit](24h-audit.json) · [All 21 original trajectories](archive.md)
+**16 runs across 8 tasks**, with Codex and Claude Code evaluated over the same first **24 hours**. [Structured JSON](main.json) · [CSV](runs.csv) · [Cutoff audit](24h-audit.json) · [Full trajectories for these 16 runs](archive.md)
 
 ## Selection and cutoff
 
 - Start the clock at the Unix timestamp in each trajectory's `started_at` file. Include completed, finite scores whose `evolve_state.json` record satisfies `0 <= at - started_at <= 86400`; take the maximum without rounding.
 - Apply this cutoff to both agents, including runs configured for 48 h or whose final evaluation overran a 24 h timeout. Later results never replace the selected score.
-- Require coverage of the full 24-hour window and a corresponding result for both agents on the task. Shorter and incomplete trajectories remain in the archive; they are not extrapolated to 24 h.
+- Require coverage of the full 24-hour window and a corresponding result for both agents on the task. Shorter and incomplete trajectories do not qualify; they are not extrapolated to 24 h.
 - Match task instructions, base image, environment, GPU SKU and reported evaluation-protocol hash within each pair. Each run keeps its own three-repetition initial B₀ calibration; numerical baselines can differ.
 
 ## Paired results
@@ -33,19 +33,9 @@ Scores link to the exact selected report. The RSI Logs Viewer and raw archive st
 | fish-s2-pro-dual-mode / codex | 1.803× | 1.739× | agent-9 | 23.00 h |
 | qwen3-asr-1.7b-dual-mode / claude-code | 1.317× | 1.278× | agent-11 | 18.36 h |
 
-## Runs without a full 24-hour window
-
-| Task / agent | Available duration | Reason |
-| :--- | ---: | :--- |
-| ming3-tts-0.5b-nonstream / claude-code | 12.21 h | Published trajectory does not cover the full 24-hour window. |
-| ming3-tts-0.5b-streaming / codex | 8.02 h | Published trajectory does not cover the full 24-hour window. |
-| ming3-tts-tiny-nonstream / claude-code | 12.05 h | Published trajectory does not cover the full 24-hour window. |
-| ming3-tts-tiny-nonstream / codex | 23.68 h total (resumed) | Resumed trajectory totals 23.68 h (8.77 h + 14.91 h); still short of 24 h. |
-| ming3-tts-tiny-streaming / codex | 8.02 h | Published trajectory does not cover the full 24-hour window. |
-
 ## Evidence and limits
 
-The audit uses the immutable [Hugging Face snapshot `f5deed0f9c9f`](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni). It retains original timeouts, durations, maxima, all submission timestamps, selected-report hashes and comparison checks. [Original JSON](archive.json) and [original CSV](archive-runs.csv) preserve the full-run records.
+The audit uses the immutable [Hugging Face snapshot `f5deed0f9c9f`](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni). For the 16 runs in this suite, it retains original timeouts, durations, maxima, all submission timestamps, selected-report hashes and comparison checks. [Original JSON](archive.json) and [original CSV](archive-runs.csv) preserve the full-run records.
 
 For the three ASR pairs, the run-plan source/test-directory digests differ even though task instructions, base image, environment and the reported evaluation-protocol hashes match. The audit records this distinction; matching protocol hashes do not establish byte-identical test directories. GPU UUIDs are redacted in the public archive, so hardware alignment is checked at the GPU-model level.
 

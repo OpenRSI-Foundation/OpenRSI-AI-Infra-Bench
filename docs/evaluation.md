@@ -10,10 +10,10 @@ $$
 \mathrm{reward} = R_s^{2/3} \, R_n^{1/3}
 $$
 
-**Both modes must strictly improve** over B₀ (`> 1.0`) for modified candidates, preventing a gain in one mode from masking a regression in the other. Ming3's four single-mode tasks score the target mode's throughput ratio against B₀.
+**Both modes must strictly improve** over B₀ (`> 1.0`) for modified candidates, preventing a gain in one mode from masking a regression in the other.
 
 | Gate Layer | Workload and checks |
 | :--- | :--- |
-| **TTS (9 tasks)** | 1,088 English SeedTTS requests per repetition; concurrency 16; 3 repetitions per mode; independent `Qwen3-ASR-1.7B` WER verification (≤ 2.0%), 3% latency/RTF/TTFA P95 budgets, and ≥ 95% multi-chunk streaming (`c50` ≥ 95%) |
+| **TTS (5 tasks)** | 1,088 English SeedTTS requests per repetition; concurrency 16; 3 repetitions per mode; independent `Qwen3-ASR-1.7B` WER verification (≤ 2.0%), 3% latency/RTF/TTFA P95 budgets, and ≥ 95% multi-chunk streaming (`c50` ≥ 95%) |
 | **ASR (3 tasks)** | 1,088 English + 2,020 Mandarin SeedTTS requests per repetition; non-streaming HTTP and post-upload SSE; 3 repetitions per language and mode; strict WER/CER ceilings, `single_delta_fraction` ≤ 5%, and ≥ 80% speaker-turn tags on MOSS-TD |
 | **System guards** | Automatic NUMA-local 16-physical-core pinning, host contention gate (`peak_foreign_cores <= 2.0`), frozen weights & sampling semantics, AST & call-site liveness checks, and `0 MiB` GPU process cleanup |

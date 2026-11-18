@@ -2,7 +2,7 @@
   "snapshot_date": "2026-11-18",
   "logs_viewer": "https://index.openrsi.foundation/logs/",
   "logs_dataset": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni",
-  "selection": "Unguided single-agent Main runs (codex / gpt-6-astra / xhigh and claude-code / claude-opus-5-5 / max) across all 12 SGLang-Omni benchmark tasks; 21 sanitized trajectories total.",
+  "selection": "Original full-run records for the 16 unguided single-agent Main runs (codex / gpt-6-astra / xhigh and claude-code / claude-opus-5-5 / max) across the 8 tasks in this benchmark. The 24-hour leaderboard is in main.json.",
   "records": [
     {
       "task_slug": "cosyvoice3-dual-mode",
@@ -231,136 +231,6 @@
           "viewer_url": "https://index.openrsi.foundation/logs/#run=bb3980b8f4ef5741",
           "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/qwen3-tts-1.7b-dual-mode/codex-gpt-6-astra",
           "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/main/sglang-omni/qwen3-tts-1.7b-dual-mode/codex-gpt-6-astra/submissions/agent-10/report.json"
-        }
-      }
-    },
-    {
-      "task_slug": "ming3-tts-0.5b-nonstream",
-      "task": "Ming3-TTS 0.5B (non-streaming)",
-      "modality": "TTS",
-      "mode": "Non-streaming",
-      "sglang_omni_commit": "ca9e8789fcd8",
-      "reference_b0_gpu": "NVIDIA H100 NVL",
-      "agents": {
-        "claude-code": {
-          "task_slug": "ming3-tts-0.5b-nonstream",
-          "agent": "claude-code",
-          "model": "claude-opus-5-5",
-          "reasoning_effort": "max",
-          "status": "cancelled",
-          "best_score": 4.297543913010418,
-          "best_round": "agent-10",
-          "total_rounds": 12,
-          "timeout_seconds": 86400.0,
-          "runtime_seconds": 43961.53701242246,
-          "gpu_names": [
-            "NVIDIA H100 NVL"
-          ],
-          "viewer_url": "https://index.openrsi.foundation/logs/#run=e7daa9d0dcc71af4",
-          "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/ming3-tts-0.5b-nonstream/claude-code-claude-opus-5-5",
-          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/main/sglang-omni/ming3-tts-0.5b-nonstream/claude-code-claude-opus-5-5/submissions/agent-10/report.json"
-        }
-      }
-    },
-    {
-      "task_slug": "ming3-tts-0.5b-streaming",
-      "task": "Ming3-TTS 0.5B (streaming)",
-      "modality": "TTS",
-      "mode": "Streaming",
-      "sglang_omni_commit": "0c663861d7d4",
-      "reference_b0_gpu": "NVIDIA H200",
-      "agents": {
-        "codex": {
-          "task_slug": "ming3-tts-0.5b-streaming",
-          "agent": "codex",
-          "model": "gpt-6-astra",
-          "reasoning_effort": "xhigh",
-          "status": "completed",
-          "best_score": 2.0382161357017403,
-          "best_round": "agent-17",
-          "total_rounds": 18,
-          "timeout_seconds": 28800.0,
-          "runtime_seconds": 28861.34567032568,
-          "gpu_names": [
-            "NVIDIA H200"
-          ],
-          "viewer_url": "https://index.openrsi.foundation/logs/#run=a9073807b4975864",
-          "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/ming3-tts-0.5b-streaming/codex-gpt-6-astra",
-          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/main/sglang-omni/ming3-tts-0.5b-streaming/codex-gpt-6-astra/submissions/agent-17/report.json"
-        }
-      }
-    },
-    {
-      "task_slug": "ming3-tts-tiny-nonstream",
-      "task": "Ming3-TTS Tiny (non-streaming)",
-      "modality": "TTS",
-      "mode": "Non-streaming",
-      "sglang_omni_commit": "ca9e8789fcd8",
-      "reference_b0_gpu": "NVIDIA H100 NVL",
-      "agents": {
-        "claude-code": {
-          "task_slug": "ming3-tts-tiny-nonstream",
-          "agent": "claude-code",
-          "model": "claude-opus-5-5",
-          "reasoning_effort": "max",
-          "status": "completed",
-          "best_score": 3.6341600901916564,
-          "best_round": "agent-11",
-          "total_rounds": 11,
-          "timeout_seconds": 43200.0,
-          "runtime_seconds": 43386.33294367604,
-          "gpu_names": [
-            "NVIDIA H100 NVL"
-          ],
-          "viewer_url": "https://index.openrsi.foundation/logs/#run=283899e5e2403399",
-          "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/ming3-tts-tiny-nonstream/claude-code-claude-opus-5-5",
-          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/main/sglang-omni/ming3-tts-tiny-nonstream/claude-code-claude-opus-5-5/submissions/agent-11/report.json"
-        },
-        "codex": {
-          "task_slug": "ming3-tts-tiny-nonstream",
-          "agent": "codex",
-          "model": "gpt-6-astra",
-          "reasoning_effort": "xhigh",
-          "status": "failed",
-          "best_score": 1.8994120728796784,
-          "best_round": "agent-12",
-          "total_rounds": 32,
-          "timeout_seconds": 86400.0,
-          "runtime_seconds": 53674.357802791055,
-          "gpu_names": [
-            "NVIDIA H100 NVL"
-          ],
-          "viewer_url": "https://index.openrsi.foundation/logs/#run=5da5fe181e667430",
-          "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/ming3-tts-tiny-nonstream/codex-gpt-6-astra",
-          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/main/sglang-omni/ming3-tts-tiny-nonstream/codex-gpt-6-astra/submissions/agent-12/report.json"
-        }
-      }
-    },
-    {
-      "task_slug": "ming3-tts-tiny-streaming",
-      "task": "Ming3-TTS Tiny (streaming)",
-      "modality": "TTS",
-      "mode": "Streaming",
-      "sglang_omni_commit": "0c663861d7d4",
-      "reference_b0_gpu": "NVIDIA H200",
-      "agents": {
-        "codex": {
-          "task_slug": "ming3-tts-tiny-streaming",
-          "agent": "codex",
-          "model": "gpt-6-astra",
-          "reasoning_effort": "xhigh",
-          "status": "completed",
-          "best_score": 1.7221455457967378,
-          "best_round": "agent-10",
-          "total_rounds": 10,
-          "timeout_seconds": 28800.0,
-          "runtime_seconds": 28876.597628215328,
-          "gpu_names": [
-            "NVIDIA H200"
-          ],
-          "viewer_url": "https://index.openrsi.foundation/logs/#run=4dc68c591bbcb7cf",
-          "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/ming3-tts-tiny-streaming/codex-gpt-6-astra",
-          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/main/sglang-omni/ming3-tts-tiny-streaming/codex-gpt-6-astra/submissions/agent-10/report.json"
         }
       }
     },

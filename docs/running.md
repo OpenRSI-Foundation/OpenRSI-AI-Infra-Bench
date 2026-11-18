@@ -6,11 +6,11 @@ Every directory under [`tasks/`](../tasks/) is a standalone Harbor 1.4 package (
 
 ## 1. Host Requirements & Integrity Check
 
-- **OS & Runtime:** Linux, Docker Engine 26+, NVIDIA drivers + NVIDIA Container Toolkit, Git, `uv`, and Python 3.12+.
+- **OS & Runtime:** Linux, Docker Engine 26+, NVIDIA drivers + NVIDIA Container Toolkit, Git, `uv`, and Python 3.12 or 3.13.
 - **Compute per run:** 1 exclusive GPU (80 GB+ VRAM recommended: H100 / H200), 16 idle physical (non-SMT) CPU cores on the GPU's NUMA node, 128 GiB host RAM, and ~200 GiB free SSD storage.
 - **Network:** Model weights and SeedTTS evaluation splits are downloaded and SHA-256-verified during `docker build`; Work and Judge phases execute offline (`allow_internet = false`).
 
-Verify all 12 task manifests and file hashes locally (CPU-only):
+Verify all 8 task manifests and file hashes locally (CPU-only):
 
 ```bash
 git clone https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench.git
@@ -23,7 +23,7 @@ python3 -B scripts/verify.py
 The [Quick start](../README.md#quick-start) uses `uvx` for a one-off run. To make `rsi-harness` available for the commands below, install it from [`OpenRSI-Index`](https://github.com/OpenRSI-Foundation/OpenRSI-Index):
 
 ```bash
-git clone --filter=blob:none --sparse \
+git clone --depth 1 --filter=blob:none --sparse \
   https://github.com/OpenRSI-Foundation/OpenRSI-Index.git vendor/OpenRSI-Index
 git -C vendor/OpenRSI-Index sparse-checkout set RSI-Harness
 uv tool install --python 3.12 ./vendor/OpenRSI-Index/RSI-Harness
@@ -47,7 +47,7 @@ When `RSI_TTS_CPU_LANES` (TTS) or `RSI_ASR_CPU_LANES` (ASR) is unset, the Judge 
 
 ## 4. Optional: Recalibrating Reference $B_0$ for Custom GPU SKUs
 
-Each task ships pre-calibrated reference $B_0$ metrics in `tests/baseline.json` (measured on H100 80GB HBM3, H100 NVL, or H200; see each task's `README.md`).
+Each task ships pre-calibrated reference $B_0$ metrics in `tests/baseline.json` (measured on H100 80GB HBM3; see each task's `README.md`).
 
 - `--agent oracle` succeeds (`reward = 1.0`) out of the box on any compatible GPU because SHA-256-verified unmodified source bypasses cross-SKU throughput-ratio drift while still enforcing quality, streaming, and contention checks.
 - When running an **optimization agent** on a different GPU SKU (for example PCIe H100 NVL vs. SXM5 H100, or A100/B200), measure a fresh 3-repetition $B_0$ on that exact GPU before starting the agent so candidate throughput ratios are compared against your hardware's true baseline:
@@ -67,7 +67,7 @@ export RSI_BASELINE_JSON="$(sed -n 's/^RSI_BASELINE_JSON=//p' calibration.log)"
 
 ## 5. Run a Coding Agent (TTS or ASR)
 
-Launch any coding agent supported by `rsi-harness` using the exact same command pattern across all 12 tasks:
+Launch any coding agent supported by `rsi-harness` using the exact same command pattern across all 8 tasks:
 
 ```bash
 TASK_DIR="$PWD/tasks/cosyvoice3-dual-mode"
@@ -93,7 +93,7 @@ rsi-harness run "$TASK_DIR" \
 rsi-harness visualize   # open http://127.0.0.1:8000
 ```
 
-Browse the 21 published baseline trajectories in the [RSI Logs Viewer](https://index.openrsi.foundation/logs/), or download one task's raw files with the [Hugging Face CLI](https://huggingface.co/docs/huggingface_hub/guides/cli):
+Browse the 16 benchmark trajectories in the [RSI Logs Viewer](https://index.openrsi.foundation/logs/), or download one task's raw files with the [Hugging Face CLI](https://huggingface.co/docs/huggingface_hub/guides/cli):
 
 ```bash
 hf download OpenRSI-Foundation/OpenRSI-Index-Logs --repo-type dataset \

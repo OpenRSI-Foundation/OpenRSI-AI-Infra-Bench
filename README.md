@@ -90,7 +90,7 @@ OpenRSI-AI-Infra-Bench targets omni model serving optimization in **SGLang-Omni*
 
 **Requires:** A Linux host with an NVIDIA GPU (80 GB+ VRAM recommended), Docker Engine 26+ with daemon access, NVIDIA drivers + Container Toolkit, Git, and [uv](https://docs.astral.sh/uv/getting-started/installation/).
 
-Open your coding agent (e.g., Codex or Claude Code) on the host and paste the prompt below. It will check the environment, set up RSI-Harness, run the benchmark, and summarize the results.
+This quick start uses `cosyvoice3-dual-mode` as an example of running a benchmark with a coding agent such as Codex or Claude Code. Open your agent on the GPU host and paste the prompt below. It will check the environment, set up RSI-Harness, optimize the implementation, and summarize the benchmark results.
 
 ```text
 Run the cosyvoice3-dual-mode benchmark on GPU 0 from:
@@ -143,13 +143,13 @@ Replace `cosyvoice3-dual-mode` with any [task slug](#tasks) to run a different b
   </tr>
 </table>
 
-We thank the [SGLang-Omni](https://github.com/sgl-project/sglang-omni) maintainers and contributors for task design, code review, and independent reproductions. To contribute a benchmark, see the [OpenRSI call for contributors](https://github.com/OpenRSI-Foundation/OpenRSI-Index#-call-for-contributors). Join the community on [Discord](https://discord.gg/3EG8Qhmfsa) or follow [OpenRSI on X](https://x.com/OpenRSI/status/2119869682929066288).
+We thank the [SGLang-Omni](https://github.com/sgl-project/sglang-omni) maintainers and contributors for task design, code review, and independent reproductions.
 
 <a id="contributing"></a>
 
 ## ✨ Contributing
 
-[Open an issue](https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench/issues/new) to report a bug or suggest a benchmark. [Submit a pull request](https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench/compare) to contribute a task, fix, or documentation update. For collaborations, email [zhuofengli12345@gmail.com](mailto:zhuofengli12345@gmail.com).
+To contribute a benchmark, see the [OpenRSI call for contributors](https://github.com/OpenRSI-Foundation/OpenRSI-Index#-call-for-contributors) and open a pull request. If your agent develops a useful optimization, PRs to [SGLang Omni](https://github.com/sgl-project/sglang-omni) are also welcome.
 
 <a id="citation"></a>
 

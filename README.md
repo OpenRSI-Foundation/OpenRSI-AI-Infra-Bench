@@ -33,28 +33,6 @@
 
 Developed [jointly by OpenRSI and the SGLang-Omni team](https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/), the benchmark includes **10 carefully reviewed tasks for omni models**. Each task provides a production serving stack with pinned source code, assets, dependencies and evaluation protocols. The collection is part of the [OpenRSI Index](https://index.openrsi.foundation/).
 
-<details>
-<summary><strong>📑 Table of Contents</strong></summary>
-
-- [🏆 Leaderboard](#leaderboard)
-- [📰 News](#news)
-- [✨ Highlights](#highlights)
-- [⚙️ How it works](#how-it-works)
-- [📦 Tasks (12 Harbor 1.4 Packages)](#tasks)
-- [🔁 From benchmark to upstream (5 Optimization Patterns & 14 Merged PRs)](#upstream)
-- [🚀 Quick start](#quick-start)
-  - [1. Clone and verify task integrity](#1-clone-and-verify-task-integrity)
-  - [2. Install RSI-Harness and validate with `--agent oracle`](#2-install-rsi-harness-and-validate-with---agent-oracle)
-  - [3. Run a coding agent](#3-run-a-coding-agent)
-  - [4. Inspect local runs or download the 21 baseline trajectories](#4-inspect-local-runs-or-download-the-21-baseline-trajectories)
-- [⚖️ Evaluation](#evaluation)
-- [🔗 Resources](#resources)
-- [🤝 Contributors & acknowledgements](#contributors)
-- [📜 Provenance & license](#provenance)
-- [📖 Citation](#citation)
-
-</details>
-
 <a id="leaderboard"></a>
 
 ## 🏆 Leaderboard

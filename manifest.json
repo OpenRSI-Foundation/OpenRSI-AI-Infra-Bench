@@ -1,0 +1,2717 @@
+{
+  "source_repository": "OpenRSI-Foundation/OpenRSI-Index",
+  "source_commit": "21e552f396fa1c3f4d418ada4b4ac7e73dde5b2f",
+  "source_directory": "rsi-tasks/SGNOMI",
+  "files": {
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/.rsi/provenance.json": {
+      "sha256": "b8ec16f47b2e2325b5d5e9e49ed13763bdba6ae26ed2e7d1c40c266d812c581f",
+      "mode": "100644",
+      "source_git_blob": "bbcd24e87c93ded121d20b1eea15f826f0eb5229"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/.rsi/research-guidance.json": {
+      "sha256": "99ad7dede7d994025bf7be6e3d0a78de70e692be234b1451ee90c0b6647e5174",
+      "mode": "100644",
+      "source_git_blob": "563de4c8797577342f1567313ac2219bcb71862d"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/.rsi/version-upgrade.json": {
+      "sha256": "1aa1e4bd48ef30e7ea037b5c0860bcd068094980d354baba21889bd36258fbd4",
+      "mode": "100644",
+      "source_git_blob": "c4221df35b84ea01b19b2cc60eda1d263f4a4b4f"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/README.md": {
+      "sha256": "ce32ba6eace49c71b47ec7d0ccb1d6375ff87cec1f3d81e36a46e31cda186b15",
+      "mode": "100644",
+      "source_git_blob": "58325420ac83be4fe7e7beb4201cbaf826db6b39"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/environment/Dockerfile": {
+      "sha256": "8a0eaf819d0fb19a9582ecd49981daf7504ee5506811350032b4739e9318503a",
+      "mode": "100644",
+      "source_git_blob": "1d57304cfcc8fe21538310fa6cfc62ddecb3ff30"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/environment/assets.json": {
+      "sha256": "fb37d10725c3f50a6dd8ec9a9c466c061e975310e9b299ce4b8ba1a6fc1e0f92",
+      "mode": "100644",
+      "source_git_blob": "2bc56ce093d096b39d3aa1fd27284a0b191826a6"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/environment/docker-compose.yaml": {
+      "sha256": "5220096c03c448049ef1c3869261287ba87f6ef9ce5f1f4d9699f1872090ea6d",
+      "mode": "100644",
+      "source_git_blob": "ff6a9363fd2ab84f994533dab8ea3497b2a3f55c"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/environment/prepare.py": {
+      "sha256": "5d1194e08f24889eca443c6cdc9f8a700d654856a1de3aed6953bddcc16e3a1f",
+      "mode": "100644",
+      "source_git_blob": "ee7160215f09e323723750dc1a5171149fcadc19"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/environment/python-artifacts.json": {
+      "sha256": "d72dd9268f4b201305a8cb3c537ef3d5677e6c36d291695745b96b199e2e24dc",
+      "mode": "100644",
+      "source_git_blob": "fa86f45c79781fa4d5536fe9cb25178742082c1e"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/environment/requirements.lock": {
+      "sha256": "a6f236fa6b623bd899c6b1ea66288fa4eb2d994179b4aa57f098ac67176c3efe",
+      "mode": "100644",
+      "source_git_blob": "39cd2aa8a408cea3c79624d62bff2dfe88b2afff"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/environment/source-deps.json": {
+      "sha256": "d9007cb32e34187ea7993ece569ae967dea442d763823cc958564db1e8e23df7",
+      "mode": "100644",
+      "source_git_blob": "679282267d84c6d890750865882cd9199c5ffa4b"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/environment/source-manifest.json": {
+      "sha256": "7ee5fefc8dfa253cac0b5711f61e583449f6591402396ea998df5f28738b04ad",
+      "mode": "100644",
+      "source_git_blob": "4df3443812a957316791dde661f6c4ea0c22e8e7"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/environment/source.tar.gz": {
+      "sha256": "fc25e47e8eda9b2f69c44dbf1266c8f26b806e5e2b5759ea31db7498d5025d93",
+      "mode": "100644",
+      "source_git_blob": "c67f8b7fcb67a83647cae7f8b3b2e40abafe7022"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/generation/check_static.py": {
+      "sha256": "e7a2d5a9b2f0961836469f67504536222c6e5f7e7ef68a529170b1e9f5236630",
+      "mode": "100644",
+      "source_git_blob": "f445363a487ab9b581be4a04d0b5b637feb80bae"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/generation/resolve_metadata.py": {
+      "sha256": "13bee2453aa90ba8f1e7a05f869f3e48b06d52706a12e57ed139579821f9f5af",
+      "mode": "100644",
+      "source_git_blob": "3fa98afd6102dff38e0e9e405b398f3ea2aac412"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/generation/test_dual_mode.py": {
+      "sha256": "81d22ccb66643023ae9e92635f3ecbb86679f88667bd7189adec5e08e32efab9",
+      "mode": "100644",
+      "source_git_blob": "c81c959cf8c0df09a9518c40f151922957b92bdf"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/generation/test_model_lane.py": {
+      "sha256": "a88601e75195e426a1d21a9282a0937fe8a50c893844e7bc327ec564743390b1",
+      "mode": "100644",
+      "source_git_blob": "a0efa93097f0c4c36cb2ebf01dd41b6cb5e48f80"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/generation/test_protocol.py": {
+      "sha256": "314690995f141ae926de3bc1e50d8354d43728c383253c47d7b18f56dd100f54",
+      "mode": "100644",
+      "source_git_blob": "b01e6e17761b17ad54dedfd0ec40e1cd6e338c11"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/generation/test_streaming.py": {
+      "sha256": "b8d5edac3ba2d33da59598117452c464dbb1ac0f2bfe2676c24a550733d9a61f",
+      "mode": "100644",
+      "source_git_blob": "200dd0a2f8a1826ab6c7104afad977366869a7c3"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/instruction.md": {
+      "sha256": "194d5167631143511feb82f48fa479b520b997b449a065955dc87705b6000c70",
+      "mode": "100644",
+      "source_git_blob": "9dead7645bc63b6aa7b62928bd39b3c9e4c1be75"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/publication.json": {
+      "sha256": "a384c9ee600f854204b5e6ca92e8fd9f72be7bdeceb65936621573c28b78c63a",
+      "mode": "100644",
+      "source_git_blob": "4e2d04b04d589808e62e9771d1231a75650219ab"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/research-guidance/cosyvoice-optimization-report.md": {
+      "sha256": "4c714123bf2a0e6364e1e6141be3985ca5813f849566abb8d73a1b84d0e6cd5a",
+      "mode": "100644",
+      "source_git_blob": "1b0c8cd0eedbd7e6ab2671b988f0d7b19b8ba2f8"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/solution/solve.sh": {
+      "sha256": "8e6c5184d10b648325d5f4a7a85e68bd0d7703efc233041d2cb90d347c8ea0d5",
+      "mode": "100755",
+      "source_git_blob": "18fe09100d77cb9b9db482e4eca87b5167e1b24e"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/task.toml": {
+      "sha256": "1cf1c42249b0db09a8d5d84a54eb41fcf50e4385eb01c5766b35d17bbe4148fe",
+      "mode": "100644",
+      "source_git_blob": "bb12535175cf3f9b4b5f49f59b5415c2d616e8ee"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/tests/assets.json": {
+      "sha256": "fb37d10725c3f50a6dd8ec9a9c466c061e975310e9b299ce4b8ba1a6fc1e0f92",
+      "mode": "100644",
+      "source_git_blob": "2bc56ce093d096b39d3aa1fd27284a0b191826a6"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/tests/bootstrap/sitecustomize.py": {
+      "sha256": "da554ee18fbd17b69715cec4a046b9b539ceccc2cb74d2271335bdf8258a81f9",
+      "mode": "100644",
+      "source_git_blob": "e510f2ef83072f02a04452b1a704aaefc8561bef"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/tests/calibrate.py": {
+      "sha256": "f15da60795aa5e9e2ea2a61dedc4579b5d9fa619b320b288611d03b53486a805",
+      "mode": "100644",
+      "source_git_blob": "c505a534e84b3b16cf40948d94c33757f2564378"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/tests/calibration.schema.json": {
+      "sha256": "fce2c67a3605b945c532d9edf59f88daf3c9c68697dc7ddcd32e491ff60d81f4",
+      "mode": "100644",
+      "source_git_blob": "e5c8aef4f2e9cf68ff68d1c87f701ce046d9d96d"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/tests/common.py": {
+      "sha256": "bdbfec1e27170ee8f8bc25a1dce41ef5ea6bd2337192ae311bf03df76efb1105",
+      "mode": "100644",
+      "source_git_blob": "d66f9826390d5933a50543c945dcff455808927b"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/tests/device_probe.py": {
+      "sha256": "f0c1b9ce74d93ae415c5365b975cfcfa239822e0b0a745d20396bd584c5a8556",
+      "mode": "100644",
+      "source_git_blob": "4639aef48d4ffabc3204e344d54a3bd987abbc14"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/tests/engine.py": {
+      "sha256": "f7200a3d8023e87ed9280ba0fad2598fb1f53815b28a34d5ae312a7cbfc2ffe0",
+      "mode": "100644",
+      "source_git_blob": "b74077df1af4f4f60e469a6c21706d9c8c90de0a"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/tests/evaluate.py": {
+      "sha256": "526e4c797e8d17e7995b4b6f0c595966ed9972fb94939cd9fff0468a5abced2b",
+      "mode": "100644",
+      "source_git_blob": "6333eb2e6fae5073835651ff2e540952e9610170"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/tests/lane.py": {
+      "sha256": "7a4ebcb0506af81f118bcbbeae7c0ed1d0358b2bc0b67106d830feeea56f317f",
+      "mode": "100644",
+      "source_git_blob": "f7e6b93caf7ce45234006b07e0d8fec7f8fb9a0c"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/tests/noise.py": {
+      "sha256": "d4f45ae6853435f4dc65178498ef2814409b9b36de5118e543d3c084d8a1d53c",
+      "mode": "100644",
+      "source_git_blob": "d11607e145335fe725cf76dfa457e137a0a6f4ca"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/tests/pool_calibrations.py": {
+      "sha256": "ddd8ec400d6e80d3c2c49ae4493fac8e298a69a3ecd87f8f9ea1de16dc0a895b",
+      "mode": "100644",
+      "source_git_blob": "28f49359dacf0da95fc14cac248d6e37f71e097a"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/tests/preflight.py": {
+      "sha256": "b173a403c8f31031719ce65a947d795db098e46a4c861aee0dc3605f9ed3da2e",
+      "mode": "100644",
+      "source_git_blob": "e0648bdf1a9ed98c8c77c14c95a2c1f5bced5826"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/tests/protocol.json": {
+      "sha256": "7311ff55aa6e516bf6210cf6f10ecc3f7885e0953841152037b932fa640881f6",
+      "mode": "100644",
+      "source_git_blob": "338356f001643d5ba46e3a245ce059f911f1290c"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/tests/python-artifacts.json": {
+      "sha256": "d72dd9268f4b201305a8cb3c537ef3d5677e6c36d291695745b96b199e2e24dc",
+      "mode": "100644",
+      "source_git_blob": "fa86f45c79781fa4d5536fe9cb25178742082c1e"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/tests/requirements.lock": {
+      "sha256": "a6f236fa6b623bd899c6b1ea66288fa4eb2d994179b4aa57f098ac67176c3efe",
+      "mode": "100644",
+      "source_git_blob": "39cd2aa8a408cea3c79624d62bff2dfe88b2afff"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/tests/source-deps.json": {
+      "sha256": "d9007cb32e34187ea7993ece569ae967dea442d763823cc958564db1e8e23df7",
+      "mode": "100644",
+      "source_git_blob": "679282267d84c6d890750865882cd9199c5ffa4b"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/tests/source-manifest.json": {
+      "sha256": "7ee5fefc8dfa253cac0b5711f61e583449f6591402396ea998df5f28738b04ad",
+      "mode": "100644",
+      "source_git_blob": "4df3443812a957316791dde661f6c4ea0c22e8e7"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/tests/source.tar.gz": {
+      "sha256": "fc25e47e8eda9b2f69c44dbf1266c8f26b806e5e2b5759ea31db7498d5025d93",
+      "mode": "100644",
+      "source_git_blob": "c67f8b7fcb67a83647cae7f8b3b2e40abafe7022"
+    },
+    "tasks/cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/tests/test.sh": {
+      "sha256": "658c76b5b8237ad6b455efdcf90e4d3f2d2402811b5a6019007d9241b98cf38f",
+      "mode": "100755",
+      "source_git_blob": "d54233abb62480b9d1886fa7625f186bd9aa8b35"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/.rsi/provenance.json": {
+      "sha256": "ed9daa07eb5f31b1e03346a3d7e1a62d14db9dfffa867848a4f8b6797e1080ee",
+      "mode": "100644",
+      "source_git_blob": "da219bb6d47075917c3082944f391e6c69e29d08"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/README.md": {
+      "sha256": "27161a4418a6a45db6e2b41c416b235b45f51649ebb84db4183d993bd38aed74",
+      "mode": "100644",
+      "source_git_blob": "69d64d1930df43c5ae547f8af30dd56cc1713e46"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/environment/Dockerfile": {
+      "sha256": "6ef7943eea8efcdb8fac055c0ac51231773c6a2c48e05911f0682b0f6f90cb6a",
+      "mode": "100644",
+      "source_git_blob": "29ba38bbf4354908d1becf7545f52f1c5b9df5b2"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/environment/assets.json": {
+      "sha256": "b67e6d3029f632c7659358c28943746c403d7b4a7aa24a18307eb7bc2f543c01",
+      "mode": "100644",
+      "source_git_blob": "15643ec92b97940b2f90c40957dd3afb43e5b72d"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/environment/docker-compose.yaml": {
+      "sha256": "5220096c03c448049ef1c3869261287ba87f6ef9ce5f1f4d9699f1872090ea6d",
+      "mode": "100644",
+      "source_git_blob": "ff6a9363fd2ab84f994533dab8ea3497b2a3f55c"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/environment/fish-codec-artifacts.json": {
+      "sha256": "0db334635722987e9b7e4f8e8abf4aa5a7b82775dbc2201d951577756681be03",
+      "mode": "100644",
+      "source_git_blob": "1b32420807670c511ee8ff133aa767938343cd8c"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/environment/fish-codec-requirements.lock": {
+      "sha256": "97fcc3a11a3f38e79c516f731024d5d5819d7ca56f689dbca0a8bd47952fe015",
+      "mode": "100644",
+      "source_git_blob": "082a006e568a651575548881c20b3588aa7d70d2"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/environment/prepare.py": {
+      "sha256": "f452160418d5a739cf043421d1e8fd91bfd84a1e0ff9f123e508e35642fbcadf",
+      "mode": "100644",
+      "source_git_blob": "edb162cf521334d75d6fc8df08c603a79b1c02fb"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/environment/python-artifacts.json": {
+      "sha256": "a9e91b5e3bf5053133b26ed61ba99837f6330e536a20302eaaa9be0e426e3cb9",
+      "mode": "100644",
+      "source_git_blob": "18de11c9525489f06d5da79e070fa8aacc96f721"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/environment/requirements.lock": {
+      "sha256": "e3f91c1f5cd6b4d1fee1ef649976a6e0b17ced749505df65a0a3ec83a3ee8673",
+      "mode": "100644",
+      "source_git_blob": "dd54527780b862b65bd507f2a53fe03982893371"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/environment/source-deps.json": {
+      "sha256": "d9007cb32e34187ea7993ece569ae967dea442d763823cc958564db1e8e23df7",
+      "mode": "100644",
+      "source_git_blob": "679282267d84c6d890750865882cd9199c5ffa4b"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/environment/source-manifest.json": {
+      "sha256": "9dbfaad6cd8d8306de660a3ad146eaeb1357c572dde6e668ad27b3f426a69375",
+      "mode": "100644",
+      "source_git_blob": "250f5434cceb24dd428da3d424a3185af6fd2a21"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/environment/source.tar.gz": {
+      "sha256": "c5a1d842729a0d431b3b139e0d1ccbc40d161c8e77aad3234d82a8c742454357",
+      "mode": "100644",
+      "source_git_blob": "f8042b32dad59ad8f5787de86cb13e16af4f5c76"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/generation/check_static.py": {
+      "sha256": "8bbbafa7dab3a041b45f26e7dcf7150005523dd602b99dd9ec0c7327a7a6f3b5",
+      "mode": "100644",
+      "source_git_blob": "53e9331937fd934da6d936aa25959dfb05103e9b"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/generation/resolve_metadata.py": {
+      "sha256": "83d7e5e2f4d1033d0f5c20f2b7c54a399a5ba0bd3e4f6ed4eb78cd0fe77fb20b",
+      "mode": "100644",
+      "source_git_blob": "d97b2a29c3152aa00880f5fd2d9f594e4e734421"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/generation/test_dual_mode.py": {
+      "sha256": "81d22ccb66643023ae9e92635f3ecbb86679f88667bd7189adec5e08e32efab9",
+      "mode": "100644",
+      "source_git_blob": "c81c959cf8c0df09a9518c40f151922957b92bdf"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/generation/test_model_lane.py": {
+      "sha256": "92e6c72c48e89372977ec0fcdd0ff636d933e83036de140285c3d3cb8bd902b4",
+      "mode": "100644",
+      "source_git_blob": "831e39dd0667ba0a95182871a11eb2629402c88a"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/generation/test_protocol.py": {
+      "sha256": "314690995f141ae926de3bc1e50d8354d43728c383253c47d7b18f56dd100f54",
+      "mode": "100644",
+      "source_git_blob": "b01e6e17761b17ad54dedfd0ec40e1cd6e338c11"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/generation/test_streaming.py": {
+      "sha256": "98db2f467095427f473bbd00efc4c4d3c73c7501ccfbd816809debe889855bf6",
+      "mode": "100644",
+      "source_git_blob": "0753636bc758df25b907f25ede43f3d15cb8ef4d"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/instruction.md": {
+      "sha256": "07d87d3b3df511cbe49ac6acb3bbd891ef0aba0051b80787a73fc057f88f3de9",
+      "mode": "100644",
+      "source_git_blob": "502b732f5d00f63da6dcc437910ff140ab4f3bde"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/publication.json": {
+      "sha256": "a734c8aa8b8ad7a3c0d04ccc97167655986d7fc06c36b24117654e4dad3f3226",
+      "mode": "100644",
+      "source_git_blob": "f9b5594b6e5c5f5e02c6e8e0483dc2068c1ab3ce"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/solution/solve.sh": {
+      "sha256": "8e6c5184d10b648325d5f4a7a85e68bd0d7703efc233041d2cb90d347c8ea0d5",
+      "mode": "100755",
+      "source_git_blob": "18fe09100d77cb9b9db482e4eca87b5167e1b24e"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/task.toml": {
+      "sha256": "8999a122407de61862cec798ae0462576b08987480694e7d1f10b079a12342cf",
+      "mode": "100644",
+      "source_git_blob": "f8dcf106955e3f7f824a8e26d1f9a1e25040300f"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/tests/assets.json": {
+      "sha256": "b67e6d3029f632c7659358c28943746c403d7b4a7aa24a18307eb7bc2f543c01",
+      "mode": "100644",
+      "source_git_blob": "15643ec92b97940b2f90c40957dd3afb43e5b72d"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/tests/bootstrap/sitecustomize.py": {
+      "sha256": "da554ee18fbd17b69715cec4a046b9b539ceccc2cb74d2271335bdf8258a81f9",
+      "mode": "100644",
+      "source_git_blob": "e510f2ef83072f02a04452b1a704aaefc8561bef"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/tests/calibrate.py": {
+      "sha256": "f15da60795aa5e9e2ea2a61dedc4579b5d9fa619b320b288611d03b53486a805",
+      "mode": "100644",
+      "source_git_blob": "c505a534e84b3b16cf40948d94c33757f2564378"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/tests/calibration.schema.json": {
+      "sha256": "6ba2ab947d94da41e7c0cb14b89f4e73a81db9823811214342acc26cf26ed8e7",
+      "mode": "100644",
+      "source_git_blob": "edf0796ac019ffdd35a5aa334f5d95aacbc78557"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/tests/common.py": {
+      "sha256": "10c9d5e3903c7f196af781b68b4c0bba37c7439bd69c0286a5361cf358269493",
+      "mode": "100644",
+      "source_git_blob": "65c1f279886ad21ec01f402d65525c601653f18f"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/tests/device_probe.py": {
+      "sha256": "f0c1b9ce74d93ae415c5365b975cfcfa239822e0b0a745d20396bd584c5a8556",
+      "mode": "100644",
+      "source_git_blob": "4639aef48d4ffabc3204e344d54a3bd987abbc14"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/tests/engine.py": {
+      "sha256": "f7200a3d8023e87ed9280ba0fad2598fb1f53815b28a34d5ae312a7cbfc2ffe0",
+      "mode": "100644",
+      "source_git_blob": "b74077df1af4f4f60e469a6c21706d9c8c90de0a"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/tests/evaluate.py": {
+      "sha256": "526e4c797e8d17e7995b4b6f0c595966ed9972fb94939cd9fff0468a5abced2b",
+      "mode": "100644",
+      "source_git_blob": "6333eb2e6fae5073835651ff2e540952e9610170"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/tests/lane.py": {
+      "sha256": "7a4ebcb0506af81f118bcbbeae7c0ed1d0358b2bc0b67106d830feeea56f317f",
+      "mode": "100644",
+      "source_git_blob": "f7e6b93caf7ce45234006b07e0d8fec7f8fb9a0c"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/tests/noise.py": {
+      "sha256": "433edf93493276356e8ef32de2371d00f9bc39d19bddde6c9bac167bf9b0e38f",
+      "mode": "100644",
+      "source_git_blob": "869bb04fcd1788990b750ecf4fc2d281578aa259"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/tests/pool_calibrations.py": {
+      "sha256": "ddd8ec400d6e80d3c2c49ae4493fac8e298a69a3ecd87f8f9ea1de16dc0a895b",
+      "mode": "100644",
+      "source_git_blob": "28f49359dacf0da95fc14cac248d6e37f71e097a"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/tests/preflight.py": {
+      "sha256": "b173a403c8f31031719ce65a947d795db098e46a4c861aee0dc3605f9ed3da2e",
+      "mode": "100644",
+      "source_git_blob": "e0648bdf1a9ed98c8c77c14c95a2c1f5bced5826"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/tests/protocol.json": {
+      "sha256": "de225aa7b5a70f3ec8867debdb296612b83b17161dbe7531bea9838af2a17b9e",
+      "mode": "100644",
+      "source_git_blob": "036fc80b0026b37884797175cc1297a2bdc51c88"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/tests/python-artifacts.json": {
+      "sha256": "a9e91b5e3bf5053133b26ed61ba99837f6330e536a20302eaaa9be0e426e3cb9",
+      "mode": "100644",
+      "source_git_blob": "18de11c9525489f06d5da79e070fa8aacc96f721"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/tests/requirements.lock": {
+      "sha256": "e3f91c1f5cd6b4d1fee1ef649976a6e0b17ced749505df65a0a3ec83a3ee8673",
+      "mode": "100644",
+      "source_git_blob": "dd54527780b862b65bd507f2a53fe03982893371"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/tests/source-deps.json": {
+      "sha256": "d9007cb32e34187ea7993ece569ae967dea442d763823cc958564db1e8e23df7",
+      "mode": "100644",
+      "source_git_blob": "679282267d84c6d890750865882cd9199c5ffa4b"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/tests/source-manifest.json": {
+      "sha256": "9dbfaad6cd8d8306de660a3ad146eaeb1357c572dde6e668ad27b3f426a69375",
+      "mode": "100644",
+      "source_git_blob": "250f5434cceb24dd428da3d424a3185af6fd2a21"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/tests/source.tar.gz": {
+      "sha256": "c5a1d842729a0d431b3b139e0d1ccbc40d161c8e77aad3234d82a8c742454357",
+      "mode": "100644",
+      "source_git_blob": "f8042b32dad59ad8f5787de86cb13e16af4f5c76"
+    },
+    "tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/tests/test.sh": {
+      "sha256": "658c76b5b8237ad6b455efdcf90e4d3f2d2402811b5a6019007d9241b98cf38f",
+      "mode": "100755",
+      "source_git_blob": "d54233abb62480b9d1886fa7625f186bd9aa8b35"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/.rsi/provenance.json": {
+      "sha256": "5c4940cbadc18122299023f889b8bf064ec9adde3cf9dc21840260c4be98e981",
+      "mode": "100644",
+      "source_git_blob": "6d60abb5e82ba6ac1fb6e928292ae1536b77dfd7"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/README.md": {
+      "sha256": "06eeceabf4cd3c28d987d552604e0f1af6834779bf188aed86ec6dd9f2187314",
+      "mode": "100644",
+      "source_git_blob": "8d58f00bc8197fa15b7714277d7251ea6338d74e"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/environment/Dockerfile": {
+      "sha256": "8a0eaf819d0fb19a9582ecd49981daf7504ee5506811350032b4739e9318503a",
+      "mode": "100644",
+      "source_git_blob": "1d57304cfcc8fe21538310fa6cfc62ddecb3ff30"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/environment/assets.json": {
+      "sha256": "fcb0527c0b7c88c2e931ebb69302834b0abcd5502bdc412714db47bf489f6b80",
+      "mode": "100644",
+      "source_git_blob": "a1b6a5e2a84502549fdea28122146838a0bb4558"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/environment/docker-compose.yaml": {
+      "sha256": "5220096c03c448049ef1c3869261287ba87f6ef9ce5f1f4d9699f1872090ea6d",
+      "mode": "100644",
+      "source_git_blob": "ff6a9363fd2ab84f994533dab8ea3497b2a3f55c"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/environment/prepare.py": {
+      "sha256": "4cba8262942b895292f453259d5d9ace5529d9f005814036db78f128d9504587",
+      "mode": "100644",
+      "source_git_blob": "03778cc0de3199b19b25087d2f067c58fbc02c69"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/environment/python-artifacts.json": {
+      "sha256": "6fec69df475e017bc0b5203b5850d21d733e5b7b19dddd08710d028319096fe4",
+      "mode": "100644",
+      "source_git_blob": "cefd21192337d908dd78eb9b9f0d8d691c04776d"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/environment/requirements.lock": {
+      "sha256": "feb005f4869f9f2a8470684d8d488b46c508810f0444701a618046e7fd503d0c",
+      "mode": "100644",
+      "source_git_blob": "6f4cd2b6d0081994c074c94db20450fde97fd3d5"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/environment/source-deps.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "mode": "100644",
+      "source_git_blob": "fe51488c7066f6687ef680d6bfaa4f7768ef205c"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/environment/source-manifest.json": {
+      "sha256": "a29b425c090f3b8c8dcbf498b875b1243cc27a93756f43221e180883d389fef2",
+      "mode": "100644",
+      "source_git_blob": "87d01e69335b807541b89382af6cc320f10b7d32"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/environment/source.tar.gz": {
+      "sha256": "942df043a03bdd30cbff09625abe9ebb5d4d163e18e4fc0f4449087f8e429831",
+      "mode": "100644",
+      "source_git_blob": "1407b5fc1f23b01c59d0ef449cb14c7cc5acaa43"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/generation/check_static.py": {
+      "sha256": "b3933cdbd4a9e7362c2b2ab64c85d464c44f3a0ab65861301e7636facc1dfac4",
+      "mode": "100644",
+      "source_git_blob": "75c5f266c0f039300cf28f9dbbb01642f75ef166"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/generation/resolve_metadata.py": {
+      "sha256": "40b7fe46bf047612960d0ccb0a9851bf4a8cbe06ae06130af6e7964dee7515a9",
+      "mode": "100644",
+      "source_git_blob": "ba390764b63436e06c534b399d8fde26c99d9895"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/generation/test_model_lane.py": {
+      "sha256": "69d3e9089ab96dc8665a1e4e80d2d4c8b63228eb31db0c210abccf8f10303d3c",
+      "mode": "100644",
+      "source_git_blob": "eae4ad8e4872bc631d3548894a66c4b139737248"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/generation/test_nonstream.py": {
+      "sha256": "660bba15b781142bdf958634b7ca7406b21442bd3f5eb63662b9f761b68f9ab2",
+      "mode": "100644",
+      "source_git_blob": "e1d6ed6bccd77a9281a6cc5401962b035b45ec2f"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/generation/test_protocol.py": {
+      "sha256": "fc722e8a9610da308e3fcdb2b9bb84ba5318317d3b260ac74db095e9c436ccbe",
+      "mode": "100644",
+      "source_git_blob": "3b864794e50471a7c79959b47609e33fcde022c7"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/instruction.md": {
+      "sha256": "6814058e7409301f9e3824f7b5cd6858fdaf993cff529e7bde1a0d7374d068c5",
+      "mode": "100644",
+      "source_git_blob": "a961acc5ed68bf8384099c91502241e37a3590c1"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/publication.json": {
+      "sha256": "129745b85464513963b851ed3ee8fffe0389802b5dd29934f5a234a2446c00a0",
+      "mode": "100644",
+      "source_git_blob": "d34b586e0a3a5f9144d829e2b2650a18f3d156bd"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/solution/solve.sh": {
+      "sha256": "8e6c5184d10b648325d5f4a7a85e68bd0d7703efc233041d2cb90d347c8ea0d5",
+      "mode": "100755",
+      "source_git_blob": "18fe09100d77cb9b9db482e4eca87b5167e1b24e"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/task.toml": {
+      "sha256": "ab40561f447f7cf1e1d847e0af967f2df2bc06a516fe28234f3c57dd33653a53",
+      "mode": "100644",
+      "source_git_blob": "fb8da32cace8e5e7cbe783ee8214390278128645"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/tests/assets.json": {
+      "sha256": "fcb0527c0b7c88c2e931ebb69302834b0abcd5502bdc412714db47bf489f6b80",
+      "mode": "100644",
+      "source_git_blob": "a1b6a5e2a84502549fdea28122146838a0bb4558"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/tests/bootstrap/sitecustomize.py": {
+      "sha256": "da554ee18fbd17b69715cec4a046b9b539ceccc2cb74d2271335bdf8258a81f9",
+      "mode": "100644",
+      "source_git_blob": "e510f2ef83072f02a04452b1a704aaefc8561bef"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/tests/calibrate.py": {
+      "sha256": "f15da60795aa5e9e2ea2a61dedc4579b5d9fa619b320b288611d03b53486a805",
+      "mode": "100644",
+      "source_git_blob": "c505a534e84b3b16cf40948d94c33757f2564378"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/tests/calibration.schema.json": {
+      "sha256": "3b5905aaa1d517ce6f461fadc71d5c7cd7cd8e905fc725b69e928aa0006375f3",
+      "mode": "100644",
+      "source_git_blob": "b58b2d4adb542af95782376575a7f8fd8706bb2c"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/tests/common.py": {
+      "sha256": "8f281028a8a28948d3374c5f428ecfecf31a6ee0c2066cdac5918146e8f95e5b",
+      "mode": "100644",
+      "source_git_blob": "f78babe1a3e883a75b013b2a2974975dac9d5990"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/tests/device_probe.py": {
+      "sha256": "f0c1b9ce74d93ae415c5365b975cfcfa239822e0b0a745d20396bd584c5a8556",
+      "mode": "100644",
+      "source_git_blob": "4639aef48d4ffabc3204e344d54a3bd987abbc14"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/tests/engine.py": {
+      "sha256": "2ee1ee811f29673ce34ac248a0b8f797521bd906de082bebceb3ba9e3f23d0bd",
+      "mode": "100644",
+      "source_git_blob": "0d94eb8aa7340224087ad7ff121770a01d70a238"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/tests/evaluate.py": {
+      "sha256": "526e4c797e8d17e7995b4b6f0c595966ed9972fb94939cd9fff0468a5abced2b",
+      "mode": "100644",
+      "source_git_blob": "6333eb2e6fae5073835651ff2e540952e9610170"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/tests/lane.py": {
+      "sha256": "9373db2e3bfc67420d207d8df817c52eb1607479ef3c7d501723ad5158f78280",
+      "mode": "100644",
+      "source_git_blob": "8295c64d88da5f85401906d46372c33734de9ffe"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/tests/noise.py": {
+      "sha256": "8ae40451191555f8827d0e2cc124ca44dccb2386c5a3d02088a2c2243c405be8",
+      "mode": "100644",
+      "source_git_blob": "43497a4959cb8babded544508c949c5e9a2c2ac2"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/tests/pool_calibrations.py": {
+      "sha256": "ddd8ec400d6e80d3c2c49ae4493fac8e298a69a3ecd87f8f9ea1de16dc0a895b",
+      "mode": "100644",
+      "source_git_blob": "28f49359dacf0da95fc14cac248d6e37f71e097a"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/tests/preflight.py": {
+      "sha256": "b173a403c8f31031719ce65a947d795db098e46a4c861aee0dc3605f9ed3da2e",
+      "mode": "100644",
+      "source_git_blob": "e0648bdf1a9ed98c8c77c14c95a2c1f5bced5826"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/tests/protocol.json": {
+      "sha256": "4122a3149de0d7adae3e71298f5d56c4e4c03d42e24303233e1cc9798678fcd7",
+      "mode": "100644",
+      "source_git_blob": "11c96314c114641a3630dea2f3c1126c4792a535"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/tests/python-artifacts.json": {
+      "sha256": "6fec69df475e017bc0b5203b5850d21d733e5b7b19dddd08710d028319096fe4",
+      "mode": "100644",
+      "source_git_blob": "cefd21192337d908dd78eb9b9f0d8d691c04776d"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/tests/requirements.lock": {
+      "sha256": "feb005f4869f9f2a8470684d8d488b46c508810f0444701a618046e7fd503d0c",
+      "mode": "100644",
+      "source_git_blob": "6f4cd2b6d0081994c074c94db20450fde97fd3d5"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/tests/source-deps.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "mode": "100644",
+      "source_git_blob": "fe51488c7066f6687ef680d6bfaa4f7768ef205c"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/tests/source-manifest.json": {
+      "sha256": "a29b425c090f3b8c8dcbf498b875b1243cc27a93756f43221e180883d389fef2",
+      "mode": "100644",
+      "source_git_blob": "87d01e69335b807541b89382af6cc320f10b7d32"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/tests/source.tar.gz": {
+      "sha256": "942df043a03bdd30cbff09625abe9ebb5d4d163e18e4fc0f4449087f8e429831",
+      "mode": "100644",
+      "source_git_blob": "1407b5fc1f23b01c59d0ef449cb14c7cc5acaa43"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/tests/test.sh": {
+      "sha256": "658c76b5b8237ad6b455efdcf90e4d3f2d2402811b5a6019007d9241b98cf38f",
+      "mode": "100755",
+      "source_git_blob": "d54233abb62480b9d1886fa7625f186bd9aa8b35"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/.rsi/provenance.json": {
+      "sha256": "b73c401c1c28c50d319099a9e55096eb36b990c4601eb6b93ccb2af403faa3f7",
+      "mode": "100644",
+      "source_git_blob": "9f5d5a6301814445c919223e87d260d71b0cc829"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/README.md": {
+      "sha256": "9c6062c7a1e547b79f47464cc61cf364fa3db7592ba705e657247ce89315508d",
+      "mode": "100644",
+      "source_git_blob": "fe7f9a18f9625f2ed6062bf7f8ebf8dcb8e39c8f"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/environment/Dockerfile": {
+      "sha256": "730771f83f7f5b83ed3546e00f7765d7268409de53f2fbe87cc8d873c68a882a",
+      "mode": "100644",
+      "source_git_blob": "73bdf1cd07673c30812dc5cdf0827c861a11898b"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/environment/apply_source_compat.py": {
+      "sha256": "d190f5fcd3b10fb33e371f7caa49344dde55c5d96b7920427f6e24733654968b",
+      "mode": "100644",
+      "source_git_blob": "be05582648bd860964a488830c3389ca24cc8c10"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/environment/assets.json": {
+      "sha256": "fcb0527c0b7c88c2e931ebb69302834b0abcd5502bdc412714db47bf489f6b80",
+      "mode": "100644",
+      "source_git_blob": "a1b6a5e2a84502549fdea28122146838a0bb4558"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/environment/core_compat.py": {
+      "sha256": "fd1041072b238a52021c60a91b0adccf87135677dc0dd838a6020e9f21319f30",
+      "mode": "100644",
+      "source_git_blob": "abeec91af07df56a278e3b56fc3628a89b3e910e"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/environment/docker-compose.yaml": {
+      "sha256": "5220096c03c448049ef1c3869261287ba87f6ef9ce5f1f4d9699f1872090ea6d",
+      "mode": "100644",
+      "source_git_blob": "ff6a9363fd2ab84f994533dab8ea3497b2a3f55c"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/environment/prepare.py": {
+      "sha256": "42a30de493e9ff0ee7ff6e8dd8edcc5146d1d5680f0a250e310d30923069ee84",
+      "mode": "100644",
+      "source_git_blob": "cc53b6f898f3d8f8eeccecb559995383cfa3b7c9"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/environment/python-artifacts.json": {
+      "sha256": "ab053907e646faf4f4e8c400811e8cb3426b474a1ce9073b9738b7c8b70d6bd3",
+      "mode": "100644",
+      "source_git_blob": "b1cb96a8a9859ef258452e5c958b0cc2aa1029a0"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/environment/requirements.lock": {
+      "sha256": "6d98c426920516bfa2f5073d0954637d1ab7f3d887817ea0f7b5ab34ec590e3d",
+      "mode": "100644",
+      "source_git_blob": "e16dc927c145c9e15b627f102844a3accce307e9"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/environment/source-compatibility.json": {
+      "sha256": "d1359c19803a2847d28d14452a2aa739a237cbaf91f8d276edefb242cf39a8b0",
+      "mode": "100644",
+      "source_git_blob": "9a23b1c346033c6bf04aeb5554d8f7e083047c7c"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/environment/source-deps.json": {
+      "sha256": "029eb3c4f423e59c5850802269ed4f760b4eb68ba145be47f6328376b45e7cd1",
+      "mode": "100644",
+      "source_git_blob": "638f80567654f48ac29c07ed96afe925c17e2b42"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/environment/source-manifest.json": {
+      "sha256": "cfad011a2a28a5881a8c7ddb905b556f414171b2bacb0b7238b495ce56b34dca",
+      "mode": "100644",
+      "source_git_blob": "b252eb1f9ec4371f4539470d6976b71799e74713"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/environment/source.tar.gz": {
+      "sha256": "b4ddf612674dbe0f0d4edfa7d486702a8cafca841e5f8da59f31a15acc0cc930",
+      "mode": "100644",
+      "source_git_blob": "e2510e50ec274105cb83fd9702ef5639a70de084"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/environment/upstream-compatibility.patch": {
+      "sha256": "cc82134f5d65913ce3ca1388155d8feff214566229101c9192724cd70a511fa0",
+      "mode": "100644",
+      "source_git_blob": "507a3cfafd11676f59350a177269a3508db9713d"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/generation/check_static.py": {
+      "sha256": "5e362551f8423605cdf313972529b32313482f173b02ab12703cde001feb6c14",
+      "mode": "100644",
+      "source_git_blob": "2f8dbab9d11eaa70ec136a8fa719653c03dff08f"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/generation/resolve_metadata.py": {
+      "sha256": "40b7fe46bf047612960d0ccb0a9851bf4a8cbe06ae06130af6e7964dee7515a9",
+      "mode": "100644",
+      "source_git_blob": "ba390764b63436e06c534b399d8fde26c99d9895"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/generation/test_asr_attention_compat.py": {
+      "sha256": "ac3b449d031892e12049f108973382fc08b0fdbb743b546d5ef5666663446329",
+      "mode": "100644",
+      "source_git_blob": "a97106cb612c631769bf2ff1c006d2dc238ecd5a"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/generation/test_cache_slot_compat.py": {
+      "sha256": "15e92efdcbb3341ee22c64d5231bf68ac307cac95702495f06c7000c4123f8e0",
+      "mode": "100644",
+      "source_git_blob": "37e64a1663e1e519188baacb2f9e03fdf4e75880"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/generation/test_model_lane.py": {
+      "sha256": "ca967dbfc0b26c9872eb850c8f64cb7fe8368cd7a927ee765274a8417b324163",
+      "mode": "100644",
+      "source_git_blob": "8012f0d191065723be9751f47565911b54c88ade"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/generation/test_model_runner_compat.py": {
+      "sha256": "6ac4e26e39ce493e5d2d88d2b56b5ce214f30e44e9d7ada6fc85f91ad68e2224",
+      "mode": "100644",
+      "source_git_blob": "5dbe471d70ce37ccb9d34eb8bc6ffb05764dacf4"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/generation/test_protocol.py": {
+      "sha256": "fc722e8a9610da308e3fcdb2b9bb84ba5318317d3b260ac74db095e9c436ccbe",
+      "mode": "100644",
+      "source_git_blob": "3b864794e50471a7c79959b47609e33fcde022c7"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/generation/test_scheduler_descriptor_compat.py": {
+      "sha256": "9b433a0c307efa9d6a0c1540f0544490eef9a496c7f0322d0d5b79c1b996fae6",
+      "mode": "100644",
+      "source_git_blob": "c23badd26c74d461b6c2ebb444eefe6808484015"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/generation/test_stream_contract.py": {
+      "sha256": "8cc4860528d439bb97f74085cebe93e762f7815bf0ff90193128c9914a7217b2",
+      "mode": "100644",
+      "source_git_blob": "67e7b876d66ac1ae859147dff5b47198eae1e0c0"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/generation/test_stream_only.py": {
+      "sha256": "3f3d9279832b5d9b2f31e6e3497a868b6a8248891c60e03d3c3188c406554bf7",
+      "mode": "100644",
+      "source_git_blob": "118bd2ea37b5e86c18a1a8878d140a7aef1a00a4"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/generation/validate_core_compat_gpu.py": {
+      "sha256": "c8b7440a2ec3749ef740df3cabcb1a05754fbcd424d414128aaf61c95dceb644",
+      "mode": "100644",
+      "source_git_blob": "07a624e2b243f1fb8a002fc23cd396573b7593ef"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/generation/validate_core_components.py": {
+      "sha256": "d8abdbce49769204536b504b502d519f415417f79619d5dfe5619596f283ca3b",
+      "mode": "100644",
+      "source_git_blob": "d5a33bd31f2e45d13ce181b55c187adde6a0cf6b"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/instruction.md": {
+      "sha256": "d12e66c1aec6b8f888904fca20def2627a354f1032923e7f2b3cfd0f7403360e",
+      "mode": "100644",
+      "source_git_blob": "79c95d931c0f66c0b94c250163e7036219f28a00"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/publication.json": {
+      "sha256": "1e1aae7077db42f49a04a8e4d7b8d5f16dd814580b9648ebd989f276ac3e9c1e",
+      "mode": "100644",
+      "source_git_blob": "3aa8d68b3ce9a67a256e8598f1bd2ba41b3b92e3"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/solution/solve.sh": {
+      "sha256": "8e6c5184d10b648325d5f4a7a85e68bd0d7703efc233041d2cb90d347c8ea0d5",
+      "mode": "100755",
+      "source_git_blob": "18fe09100d77cb9b9db482e4eca87b5167e1b24e"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/task.toml": {
+      "sha256": "e0d130b2fd7db6c7923dd03fffc563a34503a77cbb9765e88817f637c001ad29",
+      "mode": "100644",
+      "source_git_blob": "5563a6ba9ca499c63b97442ecb26e7952a53899c"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/tests/assets.json": {
+      "sha256": "fcb0527c0b7c88c2e931ebb69302834b0abcd5502bdc412714db47bf489f6b80",
+      "mode": "100644",
+      "source_git_blob": "a1b6a5e2a84502549fdea28122146838a0bb4558"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/tests/bootstrap/sitecustomize.py": {
+      "sha256": "da554ee18fbd17b69715cec4a046b9b539ceccc2cb74d2271335bdf8258a81f9",
+      "mode": "100644",
+      "source_git_blob": "e510f2ef83072f02a04452b1a704aaefc8561bef"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/tests/calibrate.py": {
+      "sha256": "f15da60795aa5e9e2ea2a61dedc4579b5d9fa619b320b288611d03b53486a805",
+      "mode": "100644",
+      "source_git_blob": "c505a534e84b3b16cf40948d94c33757f2564378"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/tests/calibration.schema.json": {
+      "sha256": "d191349b093142c11ef55e769e6894cecd269d79549eb39cd31782413302fef5",
+      "mode": "100644",
+      "source_git_blob": "f1fc0b8eb76501a0a1021a9d4a6809897af4f494"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/tests/common.py": {
+      "sha256": "e1c9ca5fa0df7134872c12bad6b43e538c73d6565700e0bb413bf17e402a773d",
+      "mode": "100644",
+      "source_git_blob": "411b3f5824a2f64a6d4f83cf7d5d0f5f19f3a7df"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/tests/device_probe.py": {
+      "sha256": "f0c1b9ce74d93ae415c5365b975cfcfa239822e0b0a745d20396bd584c5a8556",
+      "mode": "100644",
+      "source_git_blob": "4639aef48d4ffabc3204e344d54a3bd987abbc14"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/tests/engine.py": {
+      "sha256": "4b144b53eb2df6e43cc166e6c55d2c01311615c479e6d8d26f84b17d146124f8",
+      "mode": "100644",
+      "source_git_blob": "63c0d0d79a1a4eb14653e7097cee8f517d245a97"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/tests/evaluate.py": {
+      "sha256": "526e4c797e8d17e7995b4b6f0c595966ed9972fb94939cd9fff0468a5abced2b",
+      "mode": "100644",
+      "source_git_blob": "6333eb2e6fae5073835651ff2e540952e9610170"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/tests/lane.py": {
+      "sha256": "e1488db64710bb97689a2b4e1bff3b05d7116b38741883ca8c84571707297367",
+      "mode": "100644",
+      "source_git_blob": "7f75f8b95940640a02af4921c84790e47e70f42e"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/tests/noise.py": {
+      "sha256": "0fc01a02f7727b58ba5d29a8e7b60a24887b2d867df6f3af9e86121378e846ce",
+      "mode": "100644",
+      "source_git_blob": "f245cc5c877a926789caca87db6092a06b47517f"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/tests/pool_calibrations.py": {
+      "sha256": "ddd8ec400d6e80d3c2c49ae4493fac8e298a69a3ecd87f8f9ea1de16dc0a895b",
+      "mode": "100644",
+      "source_git_blob": "28f49359dacf0da95fc14cac248d6e37f71e097a"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/tests/preflight.py": {
+      "sha256": "b173a403c8f31031719ce65a947d795db098e46a4c861aee0dc3605f9ed3da2e",
+      "mode": "100644",
+      "source_git_blob": "e0648bdf1a9ed98c8c77c14c95a2c1f5bced5826"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/tests/protocol.json": {
+      "sha256": "87ae59182779a2e4bb92fd7a5a7f04fc87be42650882d6430538ebc354a30e25",
+      "mode": "100644",
+      "source_git_blob": "c6c16903838e96b03cd753187b0b92322d5d4320"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/tests/python-artifacts.json": {
+      "sha256": "ab053907e646faf4f4e8c400811e8cb3426b474a1ce9073b9738b7c8b70d6bd3",
+      "mode": "100644",
+      "source_git_blob": "b1cb96a8a9859ef258452e5c958b0cc2aa1029a0"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/tests/requirements.lock": {
+      "sha256": "6d98c426920516bfa2f5073d0954637d1ab7f3d887817ea0f7b5ab34ec590e3d",
+      "mode": "100644",
+      "source_git_blob": "e16dc927c145c9e15b627f102844a3accce307e9"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/tests/source-compatibility.json": {
+      "sha256": "d1359c19803a2847d28d14452a2aa739a237cbaf91f8d276edefb242cf39a8b0",
+      "mode": "100644",
+      "source_git_blob": "9a23b1c346033c6bf04aeb5554d8f7e083047c7c"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/tests/source-deps.json": {
+      "sha256": "029eb3c4f423e59c5850802269ed4f760b4eb68ba145be47f6328376b45e7cd1",
+      "mode": "100644",
+      "source_git_blob": "638f80567654f48ac29c07ed96afe925c17e2b42"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/tests/source-manifest.json": {
+      "sha256": "cfad011a2a28a5881a8c7ddb905b556f414171b2bacb0b7238b495ce56b34dca",
+      "mode": "100644",
+      "source_git_blob": "b252eb1f9ec4371f4539470d6976b71799e74713"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/tests/source.tar.gz": {
+      "sha256": "b4ddf612674dbe0f0d4edfa7d486702a8cafca841e5f8da59f31a15acc0cc930",
+      "mode": "100644",
+      "source_git_blob": "e2510e50ec274105cb83fd9702ef5639a70de084"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/tests/test.sh": {
+      "sha256": "658c76b5b8237ad6b455efdcf90e4d3f2d2402811b5a6019007d9241b98cf38f",
+      "mode": "100755",
+      "source_git_blob": "d54233abb62480b9d1886fa7625f186bd9aa8b35"
+    },
+    "tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/tests/upstream-compatibility.patch": {
+      "sha256": "cc82134f5d65913ce3ca1388155d8feff214566229101c9192724cd70a511fa0",
+      "mode": "100644",
+      "source_git_blob": "507a3cfafd11676f59350a177269a3508db9713d"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/.rsi/provenance.json": {
+      "sha256": "b478a2756da7ad6a6834b2fb2f54bb295743eb90ed5fa8e0ec74bc1b2ba6e581",
+      "mode": "100644",
+      "source_git_blob": "3e3d760afbdf129401656cc4d097a472338e8eb7"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/README.md": {
+      "sha256": "348e3fef0087080b963e879ce73c2a2aa3b474db230a745e1deec1adc48aa7fb",
+      "mode": "100644",
+      "source_git_blob": "3ce24696a9640bbc907185434bc913b8fc4b1bb4"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/environment/Dockerfile": {
+      "sha256": "da7865052964a6e5619e523e9f52d0a82d87f0c1c366b3f4fbc627159b395793",
+      "mode": "100644",
+      "source_git_blob": "d7029d89f60b319b2ed2e4387d5d01e1544ff20d"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/environment/assets.json": {
+      "sha256": "e1b21f1d2775b4a7ae9d2f4cff8628420d7e17f280b8652a0d402352fbcbd0f1",
+      "mode": "100644",
+      "source_git_blob": "b0ec795e8a1c4a0a6208c0f7316453bbcc6b24a2"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/environment/docker-compose.yaml": {
+      "sha256": "5220096c03c448049ef1c3869261287ba87f6ef9ce5f1f4d9699f1872090ea6d",
+      "mode": "100644",
+      "source_git_blob": "ff6a9363fd2ab84f994533dab8ea3497b2a3f55c"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/environment/prepare.py": {
+      "sha256": "a43a54e42c89294796670a3e4846d2318a630e828f1c63768a66a222ab954fc4",
+      "mode": "100644",
+      "source_git_blob": "3170115774362b451d363a9a896d3a1c56e146d4"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/environment/python-artifacts.json": {
+      "sha256": "6fec69df475e017bc0b5203b5850d21d733e5b7b19dddd08710d028319096fe4",
+      "mode": "100644",
+      "source_git_blob": "cefd21192337d908dd78eb9b9f0d8d691c04776d"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/environment/requirements.lock": {
+      "sha256": "feb005f4869f9f2a8470684d8d488b46c508810f0444701a618046e7fd503d0c",
+      "mode": "100644",
+      "source_git_blob": "6f4cd2b6d0081994c074c94db20450fde97fd3d5"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/environment/source-deps.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "mode": "100644",
+      "source_git_blob": "fe51488c7066f6687ef680d6bfaa4f7768ef205c"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/environment/source-manifest.json": {
+      "sha256": "a29b425c090f3b8c8dcbf498b875b1243cc27a93756f43221e180883d389fef2",
+      "mode": "100644",
+      "source_git_blob": "87d01e69335b807541b89382af6cc320f10b7d32"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/environment/source.tar.gz": {
+      "sha256": "942df043a03bdd30cbff09625abe9ebb5d4d163e18e4fc0f4449087f8e429831",
+      "mode": "100644",
+      "source_git_blob": "1407b5fc1f23b01c59d0ef449cb14c7cc5acaa43"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/generation/check_static.py": {
+      "sha256": "0733a1a191385cdee62cc727278c96438af363a655f40b445df25ccb98070dc1",
+      "mode": "100644",
+      "source_git_blob": "6905eef70850083d4e22065ecf9918c10021d667"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/generation/resolve_metadata.py": {
+      "sha256": "40b7fe46bf047612960d0ccb0a9851bf4a8cbe06ae06130af6e7964dee7515a9",
+      "mode": "100644",
+      "source_git_blob": "ba390764b63436e06c534b399d8fde26c99d9895"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/generation/test_model_lane.py": {
+      "sha256": "69d3e9089ab96dc8665a1e4e80d2d4c8b63228eb31db0c210abccf8f10303d3c",
+      "mode": "100644",
+      "source_git_blob": "eae4ad8e4872bc631d3548894a66c4b139737248"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/generation/test_nonstream.py": {
+      "sha256": "660bba15b781142bdf958634b7ca7406b21442bd3f5eb63662b9f761b68f9ab2",
+      "mode": "100644",
+      "source_git_blob": "e1d6ed6bccd77a9281a6cc5401962b035b45ec2f"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/generation/test_protocol.py": {
+      "sha256": "fc722e8a9610da308e3fcdb2b9bb84ba5318317d3b260ac74db095e9c436ccbe",
+      "mode": "100644",
+      "source_git_blob": "3b864794e50471a7c79959b47609e33fcde022c7"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/instruction.md": {
+      "sha256": "56bcfe73b25b41ebecd0c29346749899cc032df9bbfe14d901208647fb96b2ef",
+      "mode": "100644",
+      "source_git_blob": "517260f0dffe1399fc653a4d9d43d23433a43951"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/publication.json": {
+      "sha256": "493b096f5b1f4f9f347a660cdf696907b8a3a45fcc15d975d3f57f6a8f25ceec",
+      "mode": "100644",
+      "source_git_blob": "35039df2958e612f0f98a1dacbb1f5529aac58b7"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/solution/solve.sh": {
+      "sha256": "8e6c5184d10b648325d5f4a7a85e68bd0d7703efc233041d2cb90d347c8ea0d5",
+      "mode": "100755",
+      "source_git_blob": "18fe09100d77cb9b9db482e4eca87b5167e1b24e"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/task.toml": {
+      "sha256": "029291d3ae4f5ea018aaeb0a771369d6a33b79a6b25ed5e3d398222a9c149d11",
+      "mode": "100644",
+      "source_git_blob": "fa8d8292e58ddd03b6f8faf320eb9022b05d6933"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/tests/assets.json": {
+      "sha256": "e1b21f1d2775b4a7ae9d2f4cff8628420d7e17f280b8652a0d402352fbcbd0f1",
+      "mode": "100644",
+      "source_git_blob": "b0ec795e8a1c4a0a6208c0f7316453bbcc6b24a2"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/tests/bootstrap/sitecustomize.py": {
+      "sha256": "da554ee18fbd17b69715cec4a046b9b539ceccc2cb74d2271335bdf8258a81f9",
+      "mode": "100644",
+      "source_git_blob": "e510f2ef83072f02a04452b1a704aaefc8561bef"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/tests/calibrate.py": {
+      "sha256": "f15da60795aa5e9e2ea2a61dedc4579b5d9fa619b320b288611d03b53486a805",
+      "mode": "100644",
+      "source_git_blob": "c505a534e84b3b16cf40948d94c33757f2564378"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/tests/calibration.schema.json": {
+      "sha256": "f3bdc9b595fa3c1f35f79c2e1279b900b8bb5590a6c88a838b8f9b7aa0cccf03",
+      "mode": "100644",
+      "source_git_blob": "904982b778c4cfb5f046779ad2f39e98cd2a8ade"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/tests/common.py": {
+      "sha256": "8f281028a8a28948d3374c5f428ecfecf31a6ee0c2066cdac5918146e8f95e5b",
+      "mode": "100644",
+      "source_git_blob": "f78babe1a3e883a75b013b2a2974975dac9d5990"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/tests/device_probe.py": {
+      "sha256": "f0c1b9ce74d93ae415c5365b975cfcfa239822e0b0a745d20396bd584c5a8556",
+      "mode": "100644",
+      "source_git_blob": "4639aef48d4ffabc3204e344d54a3bd987abbc14"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/tests/engine.py": {
+      "sha256": "13da50626a9e9f473f70e17f1bfe3b6c36a31c94c9bd544ed146304dc88e02a8",
+      "mode": "100644",
+      "source_git_blob": "21862eb10da92c4d6809e2007d06367d78f44c73"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/tests/evaluate.py": {
+      "sha256": "526e4c797e8d17e7995b4b6f0c595966ed9972fb94939cd9fff0468a5abced2b",
+      "mode": "100644",
+      "source_git_blob": "6333eb2e6fae5073835651ff2e540952e9610170"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/tests/lane.py": {
+      "sha256": "9373db2e3bfc67420d207d8df817c52eb1607479ef3c7d501723ad5158f78280",
+      "mode": "100644",
+      "source_git_blob": "8295c64d88da5f85401906d46372c33734de9ffe"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/tests/noise.py": {
+      "sha256": "4af02c9bdab32145a3ee9986f43e6a6eee51363be6dbda20f3c9baf91265455a",
+      "mode": "100644",
+      "source_git_blob": "1c3cb73e4f8305189493cb083408980e500da474"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/tests/pool_calibrations.py": {
+      "sha256": "ddd8ec400d6e80d3c2c49ae4493fac8e298a69a3ecd87f8f9ea1de16dc0a895b",
+      "mode": "100644",
+      "source_git_blob": "28f49359dacf0da95fc14cac248d6e37f71e097a"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/tests/preflight.py": {
+      "sha256": "b173a403c8f31031719ce65a947d795db098e46a4c861aee0dc3605f9ed3da2e",
+      "mode": "100644",
+      "source_git_blob": "e0648bdf1a9ed98c8c77c14c95a2c1f5bced5826"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/tests/protocol.json": {
+      "sha256": "903d1e1f85b1f323f254dc605aa734e81c5b549470425cc3077d6ff41d9b9013",
+      "mode": "100644",
+      "source_git_blob": "28bb2052ba176cd0f19bd77f58f93af0c56d92db"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/tests/python-artifacts.json": {
+      "sha256": "6fec69df475e017bc0b5203b5850d21d733e5b7b19dddd08710d028319096fe4",
+      "mode": "100644",
+      "source_git_blob": "cefd21192337d908dd78eb9b9f0d8d691c04776d"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/tests/requirements.lock": {
+      "sha256": "feb005f4869f9f2a8470684d8d488b46c508810f0444701a618046e7fd503d0c",
+      "mode": "100644",
+      "source_git_blob": "6f4cd2b6d0081994c074c94db20450fde97fd3d5"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/tests/source-deps.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "mode": "100644",
+      "source_git_blob": "fe51488c7066f6687ef680d6bfaa4f7768ef205c"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/tests/source-manifest.json": {
+      "sha256": "a29b425c090f3b8c8dcbf498b875b1243cc27a93756f43221e180883d389fef2",
+      "mode": "100644",
+      "source_git_blob": "87d01e69335b807541b89382af6cc320f10b7d32"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/tests/source.tar.gz": {
+      "sha256": "942df043a03bdd30cbff09625abe9ebb5d4d163e18e4fc0f4449087f8e429831",
+      "mode": "100644",
+      "source_git_blob": "1407b5fc1f23b01c59d0ef449cb14c7cc5acaa43"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/tests/test.sh": {
+      "sha256": "658c76b5b8237ad6b455efdcf90e4d3f2d2402811b5a6019007d9241b98cf38f",
+      "mode": "100755",
+      "source_git_blob": "d54233abb62480b9d1886fa7625f186bd9aa8b35"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/.rsi/provenance.json": {
+      "sha256": "c6d9a774830b79b12d7e6ce703e5a857248831b0c74fe176a78a06f3e011742e",
+      "mode": "100644",
+      "source_git_blob": "ccfe677e7d7e8d1eedab407f792cf6b9dbbbf00c"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/README.md": {
+      "sha256": "0a6f583ff0bc720fb75d08347e02240a9101db7d4ff88b46d363a7af7d7a64f2",
+      "mode": "100644",
+      "source_git_blob": "9a5838091216b69c03789d765f562041ac18b160"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/environment/Dockerfile": {
+      "sha256": "730771f83f7f5b83ed3546e00f7765d7268409de53f2fbe87cc8d873c68a882a",
+      "mode": "100644",
+      "source_git_blob": "73bdf1cd07673c30812dc5cdf0827c861a11898b"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/environment/apply_source_compat.py": {
+      "sha256": "d190f5fcd3b10fb33e371f7caa49344dde55c5d96b7920427f6e24733654968b",
+      "mode": "100644",
+      "source_git_blob": "be05582648bd860964a488830c3389ca24cc8c10"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/environment/assets.json": {
+      "sha256": "e1b21f1d2775b4a7ae9d2f4cff8628420d7e17f280b8652a0d402352fbcbd0f1",
+      "mode": "100644",
+      "source_git_blob": "b0ec795e8a1c4a0a6208c0f7316453bbcc6b24a2"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/environment/core_compat.py": {
+      "sha256": "fd1041072b238a52021c60a91b0adccf87135677dc0dd838a6020e9f21319f30",
+      "mode": "100644",
+      "source_git_blob": "abeec91af07df56a278e3b56fc3628a89b3e910e"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/environment/docker-compose.yaml": {
+      "sha256": "5220096c03c448049ef1c3869261287ba87f6ef9ce5f1f4d9699f1872090ea6d",
+      "mode": "100644",
+      "source_git_blob": "ff6a9363fd2ab84f994533dab8ea3497b2a3f55c"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/environment/prepare.py": {
+      "sha256": "42a30de493e9ff0ee7ff6e8dd8edcc5146d1d5680f0a250e310d30923069ee84",
+      "mode": "100644",
+      "source_git_blob": "cc53b6f898f3d8f8eeccecb559995383cfa3b7c9"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/environment/python-artifacts.json": {
+      "sha256": "ab053907e646faf4f4e8c400811e8cb3426b474a1ce9073b9738b7c8b70d6bd3",
+      "mode": "100644",
+      "source_git_blob": "b1cb96a8a9859ef258452e5c958b0cc2aa1029a0"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/environment/requirements.lock": {
+      "sha256": "6d98c426920516bfa2f5073d0954637d1ab7f3d887817ea0f7b5ab34ec590e3d",
+      "mode": "100644",
+      "source_git_blob": "e16dc927c145c9e15b627f102844a3accce307e9"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/environment/source-compatibility.json": {
+      "sha256": "d1359c19803a2847d28d14452a2aa739a237cbaf91f8d276edefb242cf39a8b0",
+      "mode": "100644",
+      "source_git_blob": "9a23b1c346033c6bf04aeb5554d8f7e083047c7c"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/environment/source-deps.json": {
+      "sha256": "029eb3c4f423e59c5850802269ed4f760b4eb68ba145be47f6328376b45e7cd1",
+      "mode": "100644",
+      "source_git_blob": "638f80567654f48ac29c07ed96afe925c17e2b42"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/environment/source-manifest.json": {
+      "sha256": "cfad011a2a28a5881a8c7ddb905b556f414171b2bacb0b7238b495ce56b34dca",
+      "mode": "100644",
+      "source_git_blob": "b252eb1f9ec4371f4539470d6976b71799e74713"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/environment/source.tar.gz": {
+      "sha256": "b4ddf612674dbe0f0d4edfa7d486702a8cafca841e5f8da59f31a15acc0cc930",
+      "mode": "100644",
+      "source_git_blob": "e2510e50ec274105cb83fd9702ef5639a70de084"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/environment/upstream-compatibility.patch": {
+      "sha256": "cc82134f5d65913ce3ca1388155d8feff214566229101c9192724cd70a511fa0",
+      "mode": "100644",
+      "source_git_blob": "507a3cfafd11676f59350a177269a3508db9713d"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/generation/check_static.py": {
+      "sha256": "08a54176c7d95479b86aa33e9749ca3efc2218907ebd5175266e5134582ab56a",
+      "mode": "100644",
+      "source_git_blob": "7bd4a8a7a7a136eec247db3f4719b89e6fd62d2c"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/generation/resolve_metadata.py": {
+      "sha256": "40b7fe46bf047612960d0ccb0a9851bf4a8cbe06ae06130af6e7964dee7515a9",
+      "mode": "100644",
+      "source_git_blob": "ba390764b63436e06c534b399d8fde26c99d9895"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/generation/test_asr_attention_compat.py": {
+      "sha256": "ac3b449d031892e12049f108973382fc08b0fdbb743b546d5ef5666663446329",
+      "mode": "100644",
+      "source_git_blob": "a97106cb612c631769bf2ff1c006d2dc238ecd5a"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/generation/test_cache_slot_compat.py": {
+      "sha256": "15e92efdcbb3341ee22c64d5231bf68ac307cac95702495f06c7000c4123f8e0",
+      "mode": "100644",
+      "source_git_blob": "37e64a1663e1e519188baacb2f9e03fdf4e75880"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/generation/test_model_lane.py": {
+      "sha256": "ca967dbfc0b26c9872eb850c8f64cb7fe8368cd7a927ee765274a8417b324163",
+      "mode": "100644",
+      "source_git_blob": "8012f0d191065723be9751f47565911b54c88ade"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/generation/test_model_runner_compat.py": {
+      "sha256": "6ac4e26e39ce493e5d2d88d2b56b5ce214f30e44e9d7ada6fc85f91ad68e2224",
+      "mode": "100644",
+      "source_git_blob": "5dbe471d70ce37ccb9d34eb8bc6ffb05764dacf4"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/generation/test_protocol.py": {
+      "sha256": "fc722e8a9610da308e3fcdb2b9bb84ba5318317d3b260ac74db095e9c436ccbe",
+      "mode": "100644",
+      "source_git_blob": "3b864794e50471a7c79959b47609e33fcde022c7"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/generation/test_scheduler_descriptor_compat.py": {
+      "sha256": "9b433a0c307efa9d6a0c1540f0544490eef9a496c7f0322d0d5b79c1b996fae6",
+      "mode": "100644",
+      "source_git_blob": "c23badd26c74d461b6c2ebb444eefe6808484015"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/generation/test_stream_contract.py": {
+      "sha256": "8cc4860528d439bb97f74085cebe93e762f7815bf0ff90193128c9914a7217b2",
+      "mode": "100644",
+      "source_git_blob": "67e7b876d66ac1ae859147dff5b47198eae1e0c0"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/generation/test_stream_only.py": {
+      "sha256": "3f3d9279832b5d9b2f31e6e3497a868b6a8248891c60e03d3c3188c406554bf7",
+      "mode": "100644",
+      "source_git_blob": "118bd2ea37b5e86c18a1a8878d140a7aef1a00a4"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/generation/validate_core_compat_gpu.py": {
+      "sha256": "c8b7440a2ec3749ef740df3cabcb1a05754fbcd424d414128aaf61c95dceb644",
+      "mode": "100644",
+      "source_git_blob": "07a624e2b243f1fb8a002fc23cd396573b7593ef"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/generation/validate_core_components.py": {
+      "sha256": "d8abdbce49769204536b504b502d519f415417f79619d5dfe5619596f283ca3b",
+      "mode": "100644",
+      "source_git_blob": "d5a33bd31f2e45d13ce181b55c187adde6a0cf6b"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/instruction.md": {
+      "sha256": "cac87ef02489e989f7a1b35fe2b8eb1f346de71ba24a57dfddacb03083d71160",
+      "mode": "100644",
+      "source_git_blob": "07cf82d3b39fd29ddf3d4b65cae80741559b6e7c"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/publication.json": {
+      "sha256": "eb142b64669dfc356b7dee133d1ab57c5724ed1eb29ed3d0e9da98e4e12466ec",
+      "mode": "100644",
+      "source_git_blob": "2413858a0aeeded0e79d3167b3738891eff8e60f"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/solution/solve.sh": {
+      "sha256": "8e6c5184d10b648325d5f4a7a85e68bd0d7703efc233041d2cb90d347c8ea0d5",
+      "mode": "100755",
+      "source_git_blob": "18fe09100d77cb9b9db482e4eca87b5167e1b24e"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/task.toml": {
+      "sha256": "481d309f5e87e12b0c18377440268d9a5c3d073560aefd404c8f9e74d80806b0",
+      "mode": "100644",
+      "source_git_blob": "e24dfe341c63af997c3153716782f901249ca574"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/tests/assets.json": {
+      "sha256": "e1b21f1d2775b4a7ae9d2f4cff8628420d7e17f280b8652a0d402352fbcbd0f1",
+      "mode": "100644",
+      "source_git_blob": "b0ec795e8a1c4a0a6208c0f7316453bbcc6b24a2"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/tests/bootstrap/sitecustomize.py": {
+      "sha256": "da554ee18fbd17b69715cec4a046b9b539ceccc2cb74d2271335bdf8258a81f9",
+      "mode": "100644",
+      "source_git_blob": "e510f2ef83072f02a04452b1a704aaefc8561bef"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/tests/calibrate.py": {
+      "sha256": "f15da60795aa5e9e2ea2a61dedc4579b5d9fa619b320b288611d03b53486a805",
+      "mode": "100644",
+      "source_git_blob": "c505a534e84b3b16cf40948d94c33757f2564378"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/tests/calibration.schema.json": {
+      "sha256": "f5b9ce903006f3dcfe8bbb9c5ceec8770dfc0238763a295a65b33cddb1a2a1c1",
+      "mode": "100644",
+      "source_git_blob": "1c03a67d3ad0998c6d1065888fda2466fb86bbc8"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/tests/common.py": {
+      "sha256": "e1c9ca5fa0df7134872c12bad6b43e538c73d6565700e0bb413bf17e402a773d",
+      "mode": "100644",
+      "source_git_blob": "411b3f5824a2f64a6d4f83cf7d5d0f5f19f3a7df"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/tests/device_probe.py": {
+      "sha256": "f0c1b9ce74d93ae415c5365b975cfcfa239822e0b0a745d20396bd584c5a8556",
+      "mode": "100644",
+      "source_git_blob": "4639aef48d4ffabc3204e344d54a3bd987abbc14"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/tests/engine.py": {
+      "sha256": "2f379ca26f3cb75be21486382e6ec6e963771e7055c951d96bc159a02597c7ed",
+      "mode": "100644",
+      "source_git_blob": "833fa332133c5e3a4a5660665b7559e2dde238e9"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/tests/evaluate.py": {
+      "sha256": "526e4c797e8d17e7995b4b6f0c595966ed9972fb94939cd9fff0468a5abced2b",
+      "mode": "100644",
+      "source_git_blob": "6333eb2e6fae5073835651ff2e540952e9610170"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/tests/lane.py": {
+      "sha256": "e1488db64710bb97689a2b4e1bff3b05d7116b38741883ca8c84571707297367",
+      "mode": "100644",
+      "source_git_blob": "7f75f8b95940640a02af4921c84790e47e70f42e"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/tests/noise.py": {
+      "sha256": "c67e4c96e4370ba0197fa15315a909bd375e8730d23d0775bd6acce68bff16d9",
+      "mode": "100644",
+      "source_git_blob": "2085e2160bf372fe2925dc81c586a30b65f00470"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/tests/pool_calibrations.py": {
+      "sha256": "ddd8ec400d6e80d3c2c49ae4493fac8e298a69a3ecd87f8f9ea1de16dc0a895b",
+      "mode": "100644",
+      "source_git_blob": "28f49359dacf0da95fc14cac248d6e37f71e097a"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/tests/preflight.py": {
+      "sha256": "b173a403c8f31031719ce65a947d795db098e46a4c861aee0dc3605f9ed3da2e",
+      "mode": "100644",
+      "source_git_blob": "e0648bdf1a9ed98c8c77c14c95a2c1f5bced5826"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/tests/protocol.json": {
+      "sha256": "155235adc770a7c1b6061455f9d6d9db22145a76c1d42fb33d8069de9f73b3d0",
+      "mode": "100644",
+      "source_git_blob": "92cb739490b90b88dc063c21c48371631f64add0"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/tests/python-artifacts.json": {
+      "sha256": "ab053907e646faf4f4e8c400811e8cb3426b474a1ce9073b9738b7c8b70d6bd3",
+      "mode": "100644",
+      "source_git_blob": "b1cb96a8a9859ef258452e5c958b0cc2aa1029a0"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/tests/requirements.lock": {
+      "sha256": "6d98c426920516bfa2f5073d0954637d1ab7f3d887817ea0f7b5ab34ec590e3d",
+      "mode": "100644",
+      "source_git_blob": "e16dc927c145c9e15b627f102844a3accce307e9"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/tests/source-compatibility.json": {
+      "sha256": "d1359c19803a2847d28d14452a2aa739a237cbaf91f8d276edefb242cf39a8b0",
+      "mode": "100644",
+      "source_git_blob": "9a23b1c346033c6bf04aeb5554d8f7e083047c7c"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/tests/source-deps.json": {
+      "sha256": "029eb3c4f423e59c5850802269ed4f760b4eb68ba145be47f6328376b45e7cd1",
+      "mode": "100644",
+      "source_git_blob": "638f80567654f48ac29c07ed96afe925c17e2b42"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/tests/source-manifest.json": {
+      "sha256": "cfad011a2a28a5881a8c7ddb905b556f414171b2bacb0b7238b495ce56b34dca",
+      "mode": "100644",
+      "source_git_blob": "b252eb1f9ec4371f4539470d6976b71799e74713"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/tests/source.tar.gz": {
+      "sha256": "b4ddf612674dbe0f0d4edfa7d486702a8cafca841e5f8da59f31a15acc0cc930",
+      "mode": "100644",
+      "source_git_blob": "e2510e50ec274105cb83fd9702ef5639a70de084"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/tests/test.sh": {
+      "sha256": "658c76b5b8237ad6b455efdcf90e4d3f2d2402811b5a6019007d9241b98cf38f",
+      "mode": "100755",
+      "source_git_blob": "d54233abb62480b9d1886fa7625f186bd9aa8b35"
+    },
+    "tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/tests/upstream-compatibility.patch": {
+      "sha256": "cc82134f5d65913ce3ca1388155d8feff214566229101c9192724cd70a511fa0",
+      "mode": "100644",
+      "source_git_blob": "507a3cfafd11676f59350a177269a3508db9713d"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/.rsi/provenance.json": {
+      "sha256": "b77c1a2792b601ef79ab91a5a191f8175a0a5f4c26f1f875d5e278ee9caadd43",
+      "mode": "100644",
+      "source_git_blob": "9b6abdfe87d22b1d8827d8f65e9e4b77f660aee3"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/MODEL_ADAPTATION.md": {
+      "sha256": "a7cbb85c1017ebcc8f0ec7901fea1a63667af40524548fec2c76945cf0b21dda",
+      "mode": "100644",
+      "source_git_blob": "35934d3b18fabeb08277cb6f67ad41d6b17301ef"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/README.md": {
+      "sha256": "86f241b45bec74db0215f9c25d36d540062e5bd316412af79b2e6d0e01708573",
+      "mode": "100644",
+      "source_git_blob": "0263901975cf5c73c99aed109db4de4c5ef592f4"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/environment/Dockerfile": {
+      "sha256": "a06637aa22686d991e15ccdba73a10fd4e5d26d6d9c4915ed51a5f6bc6f72409",
+      "mode": "100644",
+      "source_git_blob": "3b8c8a860b3a7df94461922a9e34cd0130cc82d9"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/environment/adapt_baseline.py": {
+      "sha256": "5191ec455d2cdf74db5c151a7c61356b5200d4b08994dbfae450f0032b0d31a1",
+      "mode": "100644",
+      "source_git_blob": "ff10b7aedf2f158e575ee7b27f7e7146e2711701"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/environment/candidate.yaml": {
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "mode": "100644",
+      "source_git_blob": "0967ef424bce6791893e9a57bb952f80fd536e93"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/environment/constraints.txt": {
+      "sha256": "4c10dd62cf804149cdd51adeae380fa201575066ad243ef328a2f6065aa4707c",
+      "mode": "100644",
+      "source_git_blob": "cc65289e38079f38f8d83b6e79797e10daa47188"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/environment/docker-compose.yaml": {
+      "sha256": "5220096c03c448049ef1c3869261287ba87f6ef9ce5f1f4d9699f1872090ea6d",
+      "mode": "100644",
+      "source_git_blob": "ff6a9363fd2ab84f994533dab8ea3497b2a3f55c"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/environment/exact_text_streaming.py": {
+      "sha256": "ad77bc432ef4d0b9500e9bdd2d4f4b918664acacafc7f7bac661ff9530a05a07",
+      "mode": "100644",
+      "source_git_blob": "b330ab09e2be44a29a34e8f12d977b2c0497dedf"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/environment/initialize.py": {
+      "sha256": "39d90ada128dc9d3f1b1beb6cdfd00cb99558d16c23d282fb07214b4a48246fb",
+      "mode": "100644",
+      "source_git_blob": "06b6f7a15df56241795ed5f83b6b30b00b8e82fd"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/environment/model-manifest.json": {
+      "sha256": "1f547931ca9285d53c1cef8aaa93ca9994abc2c2e62e6765d0a4cb565e104d62",
+      "mode": "100644",
+      "source_git_blob": "2666034761bee576f66ff96dcde5990ef9283103"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/environment/overrides.txt": {
+      "sha256": "4ba0475b8e493ae9929771c99fc60c01f204c402f72098c843e00d2f4a0c459c",
+      "mode": "100644",
+      "source_git_blob": "483f479fafafa04e169d67b8b17a42ca50dd0c34"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/environment/requirements.in": {
+      "sha256": "7c229812a7e94c427d82c4b73bec9cce6a23c20e6c3f897ebb481fc75bba55fd",
+      "mode": "100644",
+      "source_git_blob": "c61ec0412b8a99e9fa92e63d4a72cb4ffb32c1ad"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/environment/requirements.lock": {
+      "sha256": "0440a4ff322ddf346534714bf8e2ebda5b8d4693671de2d3e97951b2ccde8c31",
+      "mode": "100644",
+      "source_git_blob": "e5dac634c0b58909349f2b98ff6a57f5797100e3"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/environment/restore.py": {
+      "sha256": "ce459203047a5c9d95a082b02cfa8b360c03ef5d44124edaca7a6a565fba19e0",
+      "mode": "100644",
+      "source_git_blob": "44a228aa371b0391f208d924ee82f167a8750be4"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/environment/source-manifest.json": {
+      "sha256": "7b725d86a5e6c1800ac1030b2fefc72b816295fb3294b962160a5820b784515c",
+      "mode": "100644",
+      "source_git_blob": "7d0ea7b47cdbb84fed73b130265090952710b1f4"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/environment/source-requirements.lock": {
+      "sha256": "7b8afa5173b3ab3619b146b9c26ceacc6dc0c2b7cbb8aadfd49cc7f83deffe7f",
+      "mode": "100644",
+      "source_git_blob": "e4d4b3b4899b61a3382630c4113b98a6af1f66a3"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/environment/source.tar.gz": {
+      "sha256": "da4c7acd9b895494fe5c9aa7a7884c3c181af6f69b438fa68acf7ad4920b1298",
+      "mode": "100644",
+      "source_git_blob": "a9a57fd3eccc1dba245cd7b60c6e6f16658589e1"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/environment/stream_builder.template": {
+      "sha256": "84522bbc827add058a222931939a6f06642f4bb26b527383db155832637216d9",
+      "mode": "100644",
+      "source_git_blob": "aee2009366789f5e795f5a35a7043915adb7c391"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/environment/wheel-requirements.in": {
+      "sha256": "c28f3206c262c81bcb3f6390403c9275ef6f378031fed384471e1abb2f6d4d43",
+      "mode": "100644",
+      "source_git_blob": "543ef3eea4616120db870fdb153ebeee6508c791"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/instruction.md": {
+      "sha256": "aa2e8e54a9090716d32efd6b06ca4894952fd8b8e00e63bcacda3756ae9240b8",
+      "mode": "100644",
+      "source_git_blob": "bd98146f4464736aa8d91fc7341b3d8a713e3caf"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/publication.json": {
+      "sha256": "2ff32583dd439e5ae02f6e41fd24c65b6896d92b752989ede905126aa05777c7",
+      "mode": "100644",
+      "source_git_blob": "74160b47d5210028e0c161610d751ba6f9b7958b"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/solution/solve.sh": {
+      "sha256": "21b1669309e0e3f16013615f964ff13f506430c179469540fc13eaaaa8db1902",
+      "mode": "100755",
+      "source_git_blob": "82ccfd1787fd0669b2bcbacc72ad48c55dd0d5e8"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/task.toml": {
+      "sha256": "fb7e959777c548975aee6a7e786f47b4ccd66ce9dc15deb86fc3854a8359b755",
+      "mode": "100644",
+      "source_git_blob": "ef2cb9050656800564a42926a30ba722b5a34049"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/tests/build-inventory.json": {
+      "sha256": "ec372611261eb475fef9dd9b3f8e770c73ebc8ade471d6700884f1663c68f689",
+      "mode": "100644",
+      "source_git_blob": "e07e43d174036e8157fd518f0b6d462c89876752"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/tests/comparison-state.json": {
+      "sha256": "ec372611261eb475fef9dd9b3f8e770c73ebc8ade471d6700884f1663c68f689",
+      "mode": "100644",
+      "source_git_blob": "e07e43d174036e8157fd518f0b6d462c89876752"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/tests/contract.py": {
+      "sha256": "b7ecadad9afd84bc95c7dfbdbe74a6773ea1776f48487db7a89a4adc80a44fcd",
+      "mode": "100644",
+      "source_git_blob": "15c7fb69b0dc3e637701f5f18b1e1cb6dfa91a4f"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/tests/data-manifest.json": {
+      "sha256": "aa708d10b3231516c76fee5132729155639bf6ff955408eb247152b261730382",
+      "mode": "100644",
+      "source_git_blob": "75e10d1cb7661c2677c0d8446ec4072178629a8d"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/tests/data/en-000.parquet": {
+      "sha256": "6f393437d3c8c99e35a7fc75af533918e2e35d1cfcae8d25bcd79c51bffec537",
+      "mode": "100644",
+      "source_git_blob": "a3229c477f1eefeb629248b0827ee67e0b80ccba"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/tests/data/en-001.parquet": {
+      "sha256": "786b7158232e5e04387809ba985881e1d237a8ec2f42137a2ddcc0d813f9d7ae",
+      "mode": "100644",
+      "source_git_blob": "2bef887465abdbe7e1c97e3bd2e08d71063b2a05"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/tests/data/en-002.parquet": {
+      "sha256": "9175e597794b2b79a5c3bba05750c63ec7cbf6ad336bf28fa9329436e21718e7",
+      "mode": "100644",
+      "source_git_blob": "0b063d51757cbf12852cab778d9b6ba469c64f42"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/tests/data/en-003.parquet": {
+      "sha256": "ef17d4caf4809493f7d471fd503e0f5a6f360c55e771e0b05a637026491db3b5",
+      "mode": "100644",
+      "source_git_blob": "831b2f18134d9229a49821795e47c7730e4fde7f"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/tests/data/en-004.parquet": {
+      "sha256": "570a6bea6853b6b786d9be6c65732d56f6d1b1c1cae25e4c4e8c06309b2958eb",
+      "mode": "100644",
+      "source_git_blob": "49fd30b558991b1898e2ba0c2e556c31ce1751d9"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/tests/data/zh-000.parquet": {
+      "sha256": "f08d608f08499895489a220d4621006824cd65e5fb417c11b30c8dc1532c038f",
+      "mode": "100644",
+      "source_git_blob": "876004855dbcacf5b147454a77ab9a4dc88208cc"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/tests/data/zh-001.parquet": {
+      "sha256": "cc28168af623d5ecd74592cb265a04042a2e409b84876b7f992de2daf28cc1d4",
+      "mode": "100644",
+      "source_git_blob": "3fc33d77903df24385ccdc63e43db7e7d830cb60"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/tests/data/zh-002.parquet": {
+      "sha256": "d269f5b3eabe2def04c26aa28bd4258162dfe66aa895a58d77e938c713602de0",
+      "mode": "100644",
+      "source_git_blob": "e495cae5d1ab2ef2e6d888f5a58b4f891c9b2932"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/tests/data/zh-003.parquet": {
+      "sha256": "83216937f6ae09711df336ef20bf290224dc7ee48a51cd21bb81d526cf769306",
+      "mode": "100644",
+      "source_git_blob": "6e698c43a6e42aaf963a0907fed6607ce4ac2f7b"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/tests/data/zh-004.parquet": {
+      "sha256": "66a2fc8024012eaca7ffc77cf133cfc9671c0b1cd6808c88b533fbd4d1883503",
+      "mode": "100644",
+      "source_git_blob": "e08a50fb6fbc347e0b3323f3d06ed5335972c891"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/tests/data/zh-005.parquet": {
+      "sha256": "3b19c903ec54d432a330e0dab50f6c27af543f8ab0aa9585151061529fdb3291",
+      "mode": "100644",
+      "source_git_blob": "57ab5a07ddd0e046ba7d085f3985380fefa2a7c5"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/tests/data/zh-006.parquet": {
+      "sha256": "b98d230d107ebac83eb955392c09b2d5dac1d44384ad83ba6917ca1db9bbc352",
+      "mode": "100644",
+      "source_git_blob": "04fbf233fa142fe86592c3c0e2958af0899224ae"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/tests/data/zh-007.parquet": {
+      "sha256": "cc4742ae4c040bceb9f7999c511ecfcfd48a1cd260c14b186a90a7d677ba6914",
+      "mode": "100644",
+      "source_git_blob": "61c1064bdd1b0f995d6a2aad4c4a19e5cca1a523"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/tests/evaluate.py": {
+      "sha256": "5d7a12452a34aeb6e98509a0f6d6ac26908b672e8ddaf99a55da7a438bdefc23",
+      "mode": "100644",
+      "source_git_blob": "fafa0332c73842dc970dace12dd4db585b3e2472"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/tests/gates.py": {
+      "sha256": "b95ee22efe37f18d0c3d9b0456b417b2346b37a3b74d34e563aefa4df2f478ee",
+      "mode": "100644",
+      "source_git_blob": "204b115ee9b3d7b6a32490bde821ce7115dd9ba1"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/tests/immutable-manifest.json": {
+      "sha256": "7b91843fd10b3702106394e870dcb23a71560f2767c55eca3cc9f28eefc9d7c9",
+      "mode": "100644",
+      "source_git_blob": "d74f245394cf0014791cbcdc84ff98ec3bd0e4f4"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/tests/moss_text.py": {
+      "sha256": "851ece54e053b23308eff4719a7f0d4154a8624713946336970f8cdd8a9de761",
+      "mode": "100644",
+      "source_git_blob": "59fd304beeae522374b3cc45f428f7ce1d11aadd"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/tests/policy.json": {
+      "sha256": "c723688d92d3d3634d39613fba9b6bedaa9edfb724dc5a20568bc0a109d57b11",
+      "mode": "100644",
+      "source_git_blob": "3263039efb943e6a4048d99a927d422a441e0a04"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/tests/test.sh": {
+      "sha256": "60ab634b12fa2a89478f98d8d5e19a29621714e21e9799e77e8a1f380819b998",
+      "mode": "100755",
+      "source_git_blob": "0df6308af49b522e7f704d8a0cf132f2452e97bf"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/tools/check_dependencies.py": {
+      "sha256": "a873f2fad149336c3f177334a2ccb4183c88daff4e0ba6a90811cab52dab42a0",
+      "mode": "100644",
+      "source_git_blob": "368f4a86d6071154532eab5513cff4bc42765862"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/tools/check_package.py": {
+      "sha256": "b658dc6162ce00c72a1a0ed1d23e1d5c4e436812ee5210f64120b658043ac826",
+      "mode": "100644",
+      "source_git_blob": "e0c04468f51f8b5464ff4b80184765c001d5773e"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/tools/dependency-evidence.json": {
+      "sha256": "6e9c7eca13e9c38bfefe09159c6989b682166bea331f32887ea84efd70455bdc",
+      "mode": "100644",
+      "source_git_blob": "d5fb929143bf6bc9d2f6b776cd685f9610118f03"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/tools/harness-manifest.json": {
+      "sha256": "694839cc7e4e49bb8239586ead733edcb0aed3b14d306f28466f96b01d938b36",
+      "mode": "100644",
+      "source_git_blob": "57ad9f28527c1705cf18ab7f3c4c2585591c9333"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/tools/launch.py": {
+      "sha256": "1ddc374c79158764700f2ea057364e4197786b99ad591b952c602c7c12ffa269",
+      "mode": "100644",
+      "source_git_blob": "2d91cc09beef07f2c7b43bb00d244a2ae0cf807c"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/tools/package-manifest.json": {
+      "sha256": "1d323ebf23ca36ab460b6354b95063f8e2bcaaa041172802ec8361d215e90c7f",
+      "mode": "100644",
+      "source_git_blob": "c8480cd76576179734af5611ff2d8fd02edd8578"
+    },
+    "tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/tools/test_adaptation.py": {
+      "sha256": "1eedc2575d77d77157faa60a0a27e3b5c641fb06b4a1e1d8db2bfbae3eed91e4",
+      "mode": "100644",
+      "source_git_blob": "bc5b48eb416d24f1ee239186957a9c0c030c3239"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/.rsi/provenance.json": {
+      "sha256": "2f4db72e957ef5e789d8ae5d598dbe3a91388e91b8256abcae90b821feb91728",
+      "mode": "100644",
+      "source_git_blob": "32b356beed3aa797f82e6e1d23ba3369997de589"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/README.md": {
+      "sha256": "37c02c84c92231d57388dcc2e06e68753187c39171589bf39d7d57941369318f",
+      "mode": "100644",
+      "source_git_blob": "6fa9f3f55f042c35ac7274da586f5b4e553c2351"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/environment/Dockerfile": {
+      "sha256": "8a0eaf819d0fb19a9582ecd49981daf7504ee5506811350032b4739e9318503a",
+      "mode": "100644",
+      "source_git_blob": "1d57304cfcc8fe21538310fa6cfc62ddecb3ff30"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/environment/assets.json": {
+      "sha256": "94dbd842fac350e23ee03f21decdc7c5282a0501f39ff6ba4b0721f636c2a049",
+      "mode": "100644",
+      "source_git_blob": "f08dba5472643c5a3827bd035f47590e8a6da8eb"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/environment/docker-compose.yaml": {
+      "sha256": "5220096c03c448049ef1c3869261287ba87f6ef9ce5f1f4d9699f1872090ea6d",
+      "mode": "100644",
+      "source_git_blob": "ff6a9363fd2ab84f994533dab8ea3497b2a3f55c"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/environment/prepare.py": {
+      "sha256": "13e7fce4357c39e27296703cfdae42722c305548de80a253e1ab72333d92076e",
+      "mode": "100644",
+      "source_git_blob": "5d1ba52a0d29f087e0cb75468dae8e7ca1c9b2fb"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/environment/python-artifacts.json": {
+      "sha256": "1db6303d1fa0937250ce9b8e8e4d23c21d726e3669a204e83a19c561619a3322",
+      "mode": "100644",
+      "source_git_blob": "26e912e3b824d9d66c1f0dab1c3369cc9461aa64"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/environment/requirements.lock": {
+      "sha256": "4f40aad12c32cf431bbb98c90b70a3e615495dc33654f21561f56e918270cb20",
+      "mode": "100644",
+      "source_git_blob": "5cb2928a9c20c2b989f0680752fd1c3554722574"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/environment/source-deps.json": {
+      "sha256": "d9007cb32e34187ea7993ece569ae967dea442d763823cc958564db1e8e23df7",
+      "mode": "100644",
+      "source_git_blob": "679282267d84c6d890750865882cd9199c5ffa4b"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/environment/source-manifest.json": {
+      "sha256": "ffdc9a9823ca43ffdaa7eff919faf3397b055b930c4b0cfdb35c277ebba18638",
+      "mode": "100644",
+      "source_git_blob": "9bd9f934429b8596355db6cbee498bdd008b29eb"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/environment/source.tar.gz": {
+      "sha256": "7529cd5ad43fa26c14c930d09bc5472a88d7ba136791ca113ecd94077031444c",
+      "mode": "100644",
+      "source_git_blob": "edd5f26bb351cf12dd59cfdc838218d8f69731a2"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/generation/check_static.py": {
+      "sha256": "9ca44b68b7127968a37f187a4eb7f53fb8c5f233ac6a89a9e5821cd126b72780",
+      "mode": "100644",
+      "source_git_blob": "1691d8630bc5a4d650e98b8af98fd8c075057ff5"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/generation/resolve_metadata.py": {
+      "sha256": "d160f2582fcd33b68fc5a3f2b7b9d360ab995031b937a0344e3a6644b087ca6b",
+      "mode": "100644",
+      "source_git_blob": "7fb64c30ba564cf113b77baabbdebcf7644ade33"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/generation/test_dual_mode.py": {
+      "sha256": "81d22ccb66643023ae9e92635f3ecbb86679f88667bd7189adec5e08e32efab9",
+      "mode": "100644",
+      "source_git_blob": "c81c959cf8c0df09a9518c40f151922957b92bdf"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/generation/test_model_lane.py": {
+      "sha256": "666b0685396ab05f4c4f0d3ca6c73332775716f9726cb47ed4fa468bb3a589b3",
+      "mode": "100644",
+      "source_git_blob": "62107114f5b235ce7f7193c23bc7d628ea331d8c"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/generation/test_protocol.py": {
+      "sha256": "e487aad59a6afacf39113a6e95960b3ca81809f6dd83159c7f9ffd976605fd6e",
+      "mode": "100644",
+      "source_git_blob": "20e312ab1c8c995d38592c216191f3fc3dce6660"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/generation/test_streaming.py": {
+      "sha256": "d068afc71b6b9613e0ce3ae794ac9de4290572dc0cd1ede46d23e2750a5edc87",
+      "mode": "100644",
+      "source_git_blob": "a9551ef8aea663d217289375b2f23481bc2af386"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/instruction.md": {
+      "sha256": "5ed2ae32584622670346a169c398c7891c38404ff687ac607d4eb94b0aa90801",
+      "mode": "100644",
+      "source_git_blob": "c566cc9c041a8877acb75e399c5956d6cbb6bf58"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/publication.json": {
+      "sha256": "abfaa5bc4f1e56faab8b3538b8436083117b6c5fa598ee3c0ba2c138600a9159",
+      "mode": "100644",
+      "source_git_blob": "820b950326d5cfdf19ed5546b55e80a9fb050977"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/solution/solve.sh": {
+      "sha256": "8e6c5184d10b648325d5f4a7a85e68bd0d7703efc233041d2cb90d347c8ea0d5",
+      "mode": "100755",
+      "source_git_blob": "18fe09100d77cb9b9db482e4eca87b5167e1b24e"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/task.toml": {
+      "sha256": "3518dcae6fb374b73b2ed6c452118f640927c6342d418d658a357406208c906d",
+      "mode": "100644",
+      "source_git_blob": "8a276b00f0a3a1bc50b8bfa146f4c51d824c1f70"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/tests/assets.json": {
+      "sha256": "94dbd842fac350e23ee03f21decdc7c5282a0501f39ff6ba4b0721f636c2a049",
+      "mode": "100644",
+      "source_git_blob": "f08dba5472643c5a3827bd035f47590e8a6da8eb"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/tests/bootstrap/sitecustomize.py": {
+      "sha256": "da554ee18fbd17b69715cec4a046b9b539ceccc2cb74d2271335bdf8258a81f9",
+      "mode": "100644",
+      "source_git_blob": "e510f2ef83072f02a04452b1a704aaefc8561bef"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/tests/calibrate.py": {
+      "sha256": "f15da60795aa5e9e2ea2a61dedc4579b5d9fa619b320b288611d03b53486a805",
+      "mode": "100644",
+      "source_git_blob": "c505a534e84b3b16cf40948d94c33757f2564378"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/tests/calibration.schema.json": {
+      "sha256": "c1e305d1a452d1b9c073e17f56c579019e99cefbfa4497b6e00e061c24ab6de8",
+      "mode": "100644",
+      "source_git_blob": "5f44be5d9eb657bb65ed9f15699ec4e9104814ca"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/tests/common.py": {
+      "sha256": "c98c826b0c9aa488e05a8e7ba711afc6d7e83f3a59578e5a07cf2043a4b8d8d0",
+      "mode": "100644",
+      "source_git_blob": "ee942151983cb2c563394f26ce20abe9d806e933"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/tests/device_probe.py": {
+      "sha256": "f0c1b9ce74d93ae415c5365b975cfcfa239822e0b0a745d20396bd584c5a8556",
+      "mode": "100644",
+      "source_git_blob": "4639aef48d4ffabc3204e344d54a3bd987abbc14"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/tests/engine.py": {
+      "sha256": "f7200a3d8023e87ed9280ba0fad2598fb1f53815b28a34d5ae312a7cbfc2ffe0",
+      "mode": "100644",
+      "source_git_blob": "b74077df1af4f4f60e469a6c21706d9c8c90de0a"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/tests/evaluate.py": {
+      "sha256": "526e4c797e8d17e7995b4b6f0c595966ed9972fb94939cd9fff0468a5abced2b",
+      "mode": "100644",
+      "source_git_blob": "6333eb2e6fae5073835651ff2e540952e9610170"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/tests/lane.py": {
+      "sha256": "7a4ebcb0506af81f118bcbbeae7c0ed1d0358b2bc0b67106d830feeea56f317f",
+      "mode": "100644",
+      "source_git_blob": "f7e6b93caf7ce45234006b07e0d8fec7f8fb9a0c"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/tests/noise.py": {
+      "sha256": "ceec7c46beeeb779af06779039ef46743f148f7df140f8c58ebc79ec5e180bdd",
+      "mode": "100644",
+      "source_git_blob": "3e9b09883e7814d9baf37254a9afd6481cc1f488"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/tests/pool_calibrations.py": {
+      "sha256": "ddd8ec400d6e80d3c2c49ae4493fac8e298a69a3ecd87f8f9ea1de16dc0a895b",
+      "mode": "100644",
+      "source_git_blob": "28f49359dacf0da95fc14cac248d6e37f71e097a"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/tests/preflight.py": {
+      "sha256": "b173a403c8f31031719ce65a947d795db098e46a4c861aee0dc3605f9ed3da2e",
+      "mode": "100644",
+      "source_git_blob": "e0648bdf1a9ed98c8c77c14c95a2c1f5bced5826"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/tests/protocol.json": {
+      "sha256": "8fb4d76953596fa6d25c20b460c4c9a46c7792f2dbcddf9ddb823c70fe5958ae",
+      "mode": "100644",
+      "source_git_blob": "3c0c9d84ba966e7b9332f5cc6d10f28f1fd2ad30"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/tests/python-artifacts.json": {
+      "sha256": "1db6303d1fa0937250ce9b8e8e4d23c21d726e3669a204e83a19c561619a3322",
+      "mode": "100644",
+      "source_git_blob": "26e912e3b824d9d66c1f0dab1c3369cc9461aa64"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/tests/requirements.lock": {
+      "sha256": "4f40aad12c32cf431bbb98c90b70a3e615495dc33654f21561f56e918270cb20",
+      "mode": "100644",
+      "source_git_blob": "5cb2928a9c20c2b989f0680752fd1c3554722574"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/tests/source-deps.json": {
+      "sha256": "d9007cb32e34187ea7993ece569ae967dea442d763823cc958564db1e8e23df7",
+      "mode": "100644",
+      "source_git_blob": "679282267d84c6d890750865882cd9199c5ffa4b"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/tests/source-manifest.json": {
+      "sha256": "ffdc9a9823ca43ffdaa7eff919faf3397b055b930c4b0cfdb35c277ebba18638",
+      "mode": "100644",
+      "source_git_blob": "9bd9f934429b8596355db6cbee498bdd008b29eb"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/tests/source.tar.gz": {
+      "sha256": "7529cd5ad43fa26c14c930d09bc5472a88d7ba136791ca113ecd94077031444c",
+      "mode": "100644",
+      "source_git_blob": "edd5f26bb351cf12dd59cfdc838218d8f69731a2"
+    },
+    "tasks/moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/tests/test.sh": {
+      "sha256": "658c76b5b8237ad6b455efdcf90e4d3f2d2402811b5a6019007d9241b98cf38f",
+      "mode": "100755",
+      "source_git_blob": "d54233abb62480b9d1886fa7625f186bd9aa8b35"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/.rsi/provenance.json": {
+      "sha256": "3b9dd7dfa3efb6c4adba69f66a38839d494bd166bf97814071ae1fa485612556",
+      "mode": "100644",
+      "source_git_blob": "9249567decf40a8637f6b8f7218c8c24efe1ab99"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/README.md": {
+      "sha256": "01234ef81b63515bdda02c37029668411b8dcb9ef6d5cf23b78b6177b79368f8",
+      "mode": "100644",
+      "source_git_blob": "3f3e42c7a9207e434ced3e3a9e73f8bfacf817e5"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/environment/Dockerfile": {
+      "sha256": "a1f5edde3046f360cd45210a1d2421e7b7126c96671a9d3e430e91904a5728de",
+      "mode": "100644",
+      "source_git_blob": "d2574d3e8b6baa90120312da0e523663c3abd436"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/environment/candidate.yaml": {
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "mode": "100644",
+      "source_git_blob": "0967ef424bce6791893e9a57bb952f80fd536e93"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/environment/constraints.txt": {
+      "sha256": "4c10dd62cf804149cdd51adeae380fa201575066ad243ef328a2f6065aa4707c",
+      "mode": "100644",
+      "source_git_blob": "cc65289e38079f38f8d83b6e79797e10daa47188"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/environment/docker-compose.yaml": {
+      "sha256": "5220096c03c448049ef1c3869261287ba87f6ef9ce5f1f4d9699f1872090ea6d",
+      "mode": "100644",
+      "source_git_blob": "ff6a9363fd2ab84f994533dab8ea3497b2a3f55c"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/environment/initialize.py": {
+      "sha256": "2a698956934254d3209ef995690892d162fb709b7d8939918952d88bd37cf96e",
+      "mode": "100644",
+      "source_git_blob": "4ffbd244b1ecb0d870dd49482e26eae3b3fc749c"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/environment/model-manifest.json": {
+      "sha256": "7a48ba24599e0099bdf726e438a6376921e535ce1ee30d35b96ec4ff4e515430",
+      "mode": "100644",
+      "source_git_blob": "639e7c4d88363c47a1e72a748085bd102452ac56"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/environment/overrides.txt": {
+      "sha256": "4ba0475b8e493ae9929771c99fc60c01f204c402f72098c843e00d2f4a0c459c",
+      "mode": "100644",
+      "source_git_blob": "483f479fafafa04e169d67b8b17a42ca50dd0c34"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/environment/requirements.in": {
+      "sha256": "7c229812a7e94c427d82c4b73bec9cce6a23c20e6c3f897ebb481fc75bba55fd",
+      "mode": "100644",
+      "source_git_blob": "c61ec0412b8a99e9fa92e63d4a72cb4ffb32c1ad"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/environment/requirements.lock": {
+      "sha256": "0440a4ff322ddf346534714bf8e2ebda5b8d4693671de2d3e97951b2ccde8c31",
+      "mode": "100644",
+      "source_git_blob": "e5dac634c0b58909349f2b98ff6a57f5797100e3"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/environment/restore.py": {
+      "sha256": "ac9dbe3674a1b7ff55b4c6434999cf42d553ef02f585b7fa1a111099c7e51076",
+      "mode": "100644",
+      "source_git_blob": "97b94a50d0d3caf945213a4896f4f6ddb560e8cc"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/environment/source-manifest.json": {
+      "sha256": "fb01b677dc05986094f81a278bff6f666bc302def18f37fdfda9f8395fd69f73",
+      "mode": "100644",
+      "source_git_blob": "8b7e3554ec5376e776a7e2bd526a7b5e8e5e7340"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/environment/source-requirements.lock": {
+      "sha256": "7b8afa5173b3ab3619b146b9c26ceacc6dc0c2b7cbb8aadfd49cc7f83deffe7f",
+      "mode": "100644",
+      "source_git_blob": "e4d4b3b4899b61a3382630c4113b98a6af1f66a3"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/environment/source.tar.gz": {
+      "sha256": "f51598ab8b0425e4474645f66000865c66f48000d3f7bc909c51192f8d78a60e",
+      "mode": "100644",
+      "source_git_blob": "6b9c7b68093c4bb018c988d8e3f2dc849f897c4a"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/environment/wheel-requirements.in": {
+      "sha256": "c28f3206c262c81bcb3f6390403c9275ef6f378031fed384471e1abb2f6d4d43",
+      "mode": "100644",
+      "source_git_blob": "543ef3eea4616120db870fdb153ebeee6508c791"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/instruction.md": {
+      "sha256": "9922e818235411fce11b178e2bcdeec95237b3475149cdebfeb6f021146c9fa6",
+      "mode": "100644",
+      "source_git_blob": "c4c74987d29a48dbce6be6fd9158dcb4671b570e"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/publication.json": {
+      "sha256": "ded61573baaa5d8a91c773a5619f3cd25c930effd0ddd5928f8eeb3e9974a1d4",
+      "mode": "100644",
+      "source_git_blob": "57d0abbb56e2c44d062d68060be0e13b86da54fd"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/solution/solve.sh": {
+      "sha256": "21b1669309e0e3f16013615f964ff13f506430c179469540fc13eaaaa8db1902",
+      "mode": "100755",
+      "source_git_blob": "82ccfd1787fd0669b2bcbacc72ad48c55dd0d5e8"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/task.toml": {
+      "sha256": "18fcdbc93b7f22dcd017f649842dd9975eb39e46d857f85a2a55e4ef55000fc1",
+      "mode": "100644",
+      "source_git_blob": "91e27d7d3a1daec2e41f2e50682a09b6a912bff2"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/tests/build-inventory.json": {
+      "sha256": "ec372611261eb475fef9dd9b3f8e770c73ebc8ade471d6700884f1663c68f689",
+      "mode": "100644",
+      "source_git_blob": "e07e43d174036e8157fd518f0b6d462c89876752"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/tests/comparison-state.json": {
+      "sha256": "ec372611261eb475fef9dd9b3f8e770c73ebc8ade471d6700884f1663c68f689",
+      "mode": "100644",
+      "source_git_blob": "e07e43d174036e8157fd518f0b6d462c89876752"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/tests/contract.py": {
+      "sha256": "2da3b733d33d4fd94e4839d000e6838f811fb1011ebaee6a90302070dac2c347",
+      "mode": "100644",
+      "source_git_blob": "a6199b60b95b04207a770c924e7af80c0deb6ebe"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/tests/data-manifest.json": {
+      "sha256": "aa708d10b3231516c76fee5132729155639bf6ff955408eb247152b261730382",
+      "mode": "100644",
+      "source_git_blob": "75e10d1cb7661c2677c0d8446ec4072178629a8d"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/tests/data/en-000.parquet": {
+      "sha256": "6f393437d3c8c99e35a7fc75af533918e2e35d1cfcae8d25bcd79c51bffec537",
+      "mode": "100644",
+      "source_git_blob": "a3229c477f1eefeb629248b0827ee67e0b80ccba"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/tests/data/en-001.parquet": {
+      "sha256": "786b7158232e5e04387809ba985881e1d237a8ec2f42137a2ddcc0d813f9d7ae",
+      "mode": "100644",
+      "source_git_blob": "2bef887465abdbe7e1c97e3bd2e08d71063b2a05"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/tests/data/en-002.parquet": {
+      "sha256": "9175e597794b2b79a5c3bba05750c63ec7cbf6ad336bf28fa9329436e21718e7",
+      "mode": "100644",
+      "source_git_blob": "0b063d51757cbf12852cab778d9b6ba469c64f42"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/tests/data/en-003.parquet": {
+      "sha256": "ef17d4caf4809493f7d471fd503e0f5a6f360c55e771e0b05a637026491db3b5",
+      "mode": "100644",
+      "source_git_blob": "831b2f18134d9229a49821795e47c7730e4fde7f"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/tests/data/en-004.parquet": {
+      "sha256": "570a6bea6853b6b786d9be6c65732d56f6d1b1c1cae25e4c4e8c06309b2958eb",
+      "mode": "100644",
+      "source_git_blob": "49fd30b558991b1898e2ba0c2e556c31ce1751d9"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/tests/data/zh-000.parquet": {
+      "sha256": "f08d608f08499895489a220d4621006824cd65e5fb417c11b30c8dc1532c038f",
+      "mode": "100644",
+      "source_git_blob": "876004855dbcacf5b147454a77ab9a4dc88208cc"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/tests/data/zh-001.parquet": {
+      "sha256": "cc28168af623d5ecd74592cb265a04042a2e409b84876b7f992de2daf28cc1d4",
+      "mode": "100644",
+      "source_git_blob": "3fc33d77903df24385ccdc63e43db7e7d830cb60"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/tests/data/zh-002.parquet": {
+      "sha256": "d269f5b3eabe2def04c26aa28bd4258162dfe66aa895a58d77e938c713602de0",
+      "mode": "100644",
+      "source_git_blob": "e495cae5d1ab2ef2e6d888f5a58b4f891c9b2932"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/tests/data/zh-003.parquet": {
+      "sha256": "83216937f6ae09711df336ef20bf290224dc7ee48a51cd21bb81d526cf769306",
+      "mode": "100644",
+      "source_git_blob": "6e698c43a6e42aaf963a0907fed6607ce4ac2f7b"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/tests/data/zh-004.parquet": {
+      "sha256": "66a2fc8024012eaca7ffc77cf133cfc9671c0b1cd6808c88b533fbd4d1883503",
+      "mode": "100644",
+      "source_git_blob": "e08a50fb6fbc347e0b3323f3d06ed5335972c891"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/tests/data/zh-005.parquet": {
+      "sha256": "3b19c903ec54d432a330e0dab50f6c27af543f8ab0aa9585151061529fdb3291",
+      "mode": "100644",
+      "source_git_blob": "57ab5a07ddd0e046ba7d085f3985380fefa2a7c5"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/tests/data/zh-006.parquet": {
+      "sha256": "b98d230d107ebac83eb955392c09b2d5dac1d44384ad83ba6917ca1db9bbc352",
+      "mode": "100644",
+      "source_git_blob": "04fbf233fa142fe86592c3c0e2958af0899224ae"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/tests/data/zh-007.parquet": {
+      "sha256": "cc4742ae4c040bceb9f7999c511ecfcfd48a1cd260c14b186a90a7d677ba6914",
+      "mode": "100644",
+      "source_git_blob": "61c1064bdd1b0f995d6a2aad4c4a19e5cca1a523"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/tests/evaluate.py": {
+      "sha256": "f07426e5fa55a3e113353de50663ee234647c60e1cbb7ac662f8cf5a4f696c18",
+      "mode": "100644",
+      "source_git_blob": "ac78d37f533a4a64ae44f170628c2bdeafe748d5"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/tests/gates.py": {
+      "sha256": "990bdf9076a76645f6c2b4379e2940bc2b99b1279f67eb3482d6eeb0de847cc6",
+      "mode": "100644",
+      "source_git_blob": "b99116f7ccd5d70b3390892d9ce0643a573ede41"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/tests/immutable-manifest.json": {
+      "sha256": "6eb9ccb5787412cd14991dd2899800c69549f23720302117c4bffb714392b271",
+      "mode": "100644",
+      "source_git_blob": "15bc4d39a30f4f27a2a90cee24dc9232844e124b"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/tests/policy.json": {
+      "sha256": "53bee8a5b54877a47db26cf900c0959f97a637ae2834145ef52e01d59ffd5603",
+      "mode": "100644",
+      "source_git_blob": "7c16e0fc8add8840ebba6624eb3dc71d52381bb6"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/tests/test.sh": {
+      "sha256": "60ab634b12fa2a89478f98d8d5e19a29621714e21e9799e77e8a1f380819b998",
+      "mode": "100755",
+      "source_git_blob": "0df6308af49b522e7f704d8a0cf132f2452e97bf"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/tools/check_dependencies.py": {
+      "sha256": "a873f2fad149336c3f177334a2ccb4183c88daff4e0ba6a90811cab52dab42a0",
+      "mode": "100644",
+      "source_git_blob": "368f4a86d6071154532eab5513cff4bc42765862"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/tools/check_package.py": {
+      "sha256": "fb3b3c92c8fe3c4dbc53c7e0717906dc60b00437ccd34df139d4c30aa016a4dc",
+      "mode": "100644",
+      "source_git_blob": "dbf946d269db65af190e87b7dfff2f53f0492d80"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/tools/dependency-evidence.json": {
+      "sha256": "6e9c7eca13e9c38bfefe09159c6989b682166bea331f32887ea84efd70455bdc",
+      "mode": "100644",
+      "source_git_blob": "d5fb929143bf6bc9d2f6b776cd685f9610118f03"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/tools/harness-manifest.json": {
+      "sha256": "694839cc7e4e49bb8239586ead733edcb0aed3b14d306f28466f96b01d938b36",
+      "mode": "100644",
+      "source_git_blob": "57ad9f28527c1705cf18ab7f3c4c2585591c9333"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/tools/launch.py": {
+      "sha256": "2307a00bd085c3cb697485886cb8e1dc4040cc39cd9cf6a61f2013e3a09563bd",
+      "mode": "100644",
+      "source_git_blob": "557840bfb90b2e06c05f2aced3abf4680a40c085"
+    },
+    "tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/tools/package-manifest.json": {
+      "sha256": "4a19363ce1e68822816b7d246c50df21838dcdeca46cda38b5620f2e808f7c1c",
+      "mode": "100644",
+      "source_git_blob": "a6c53b9478635795322b24bcaf6c0523aabd2a0c"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/.rsi/provenance.json": {
+      "sha256": "fd72d2143611a86955260d46c056d4a3d22a80e436b0c94fc4f6e01378a4ad19",
+      "mode": "100644",
+      "source_git_blob": "4599cc662d3469812bb04e893ea9511b4e724b83"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/README.md": {
+      "sha256": "44b07ca39179e4ecd2d04d7244edea670fe13f23f3f43a771837a34bdf4f07cb",
+      "mode": "100644",
+      "source_git_blob": "c978167bf3a31f12f2460180eb15b4811b6c2d82"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/environment/Dockerfile": {
+      "sha256": "8a0eaf819d0fb19a9582ecd49981daf7504ee5506811350032b4739e9318503a",
+      "mode": "100644",
+      "source_git_blob": "1d57304cfcc8fe21538310fa6cfc62ddecb3ff30"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/environment/assets.json": {
+      "sha256": "de1b360437cfb9856474f98763eb830cf28e6117c03da33063eca2f4ea2a9db4",
+      "mode": "100644",
+      "source_git_blob": "25f3e0ca706d29def25efb75adbb94d45f1f3c39"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/environment/docker-compose.yaml": {
+      "sha256": "5220096c03c448049ef1c3869261287ba87f6ef9ce5f1f4d9699f1872090ea6d",
+      "mode": "100644",
+      "source_git_blob": "ff6a9363fd2ab84f994533dab8ea3497b2a3f55c"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/environment/prepare.py": {
+      "sha256": "f452160418d5a739cf043421d1e8fd91bfd84a1e0ff9f123e508e35642fbcadf",
+      "mode": "100644",
+      "source_git_blob": "edb162cf521334d75d6fc8df08c603a79b1c02fb"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/environment/python-artifacts.json": {
+      "sha256": "a9e91b5e3bf5053133b26ed61ba99837f6330e536a20302eaaa9be0e426e3cb9",
+      "mode": "100644",
+      "source_git_blob": "18de11c9525489f06d5da79e070fa8aacc96f721"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/environment/requirements.lock": {
+      "sha256": "e3f91c1f5cd6b4d1fee1ef649976a6e0b17ced749505df65a0a3ec83a3ee8673",
+      "mode": "100644",
+      "source_git_blob": "dd54527780b862b65bd507f2a53fe03982893371"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/environment/source-deps.json": {
+      "sha256": "d9007cb32e34187ea7993ece569ae967dea442d763823cc958564db1e8e23df7",
+      "mode": "100644",
+      "source_git_blob": "679282267d84c6d890750865882cd9199c5ffa4b"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/environment/source-manifest.json": {
+      "sha256": "9dbfaad6cd8d8306de660a3ad146eaeb1357c572dde6e668ad27b3f426a69375",
+      "mode": "100644",
+      "source_git_blob": "250f5434cceb24dd428da3d424a3185af6fd2a21"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/environment/source.tar.gz": {
+      "sha256": "c5a1d842729a0d431b3b139e0d1ccbc40d161c8e77aad3234d82a8c742454357",
+      "mode": "100644",
+      "source_git_blob": "f8042b32dad59ad8f5787de86cb13e16af4f5c76"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/generation/check_static.py": {
+      "sha256": "4115b99eeb5a9668abc1a5af3ff7f2895d700a1ba1d7b96d0fd35f0aafbe6311",
+      "mode": "100644",
+      "source_git_blob": "4b6f515db274b9dfcc9caeb7ea7e2bb87c79a629"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/generation/resolve_metadata.py": {
+      "sha256": "83d7e5e2f4d1033d0f5c20f2b7c54a399a5ba0bd3e4f6ed4eb78cd0fe77fb20b",
+      "mode": "100644",
+      "source_git_blob": "d97b2a29c3152aa00880f5fd2d9f594e4e734421"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/generation/test_dual_mode.py": {
+      "sha256": "81d22ccb66643023ae9e92635f3ecbb86679f88667bd7189adec5e08e32efab9",
+      "mode": "100644",
+      "source_git_blob": "c81c959cf8c0df09a9518c40f151922957b92bdf"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/generation/test_model_lane.py": {
+      "sha256": "e9dbe0985a49ffa1f7b679e132c2e0ae635af2477ebb0464744455350bc861f6",
+      "mode": "100644",
+      "source_git_blob": "96699eb094f6bf1b51e0844f12aa609093da08c9"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/generation/test_protocol.py": {
+      "sha256": "314690995f141ae926de3bc1e50d8354d43728c383253c47d7b18f56dd100f54",
+      "mode": "100644",
+      "source_git_blob": "b01e6e17761b17ad54dedfd0ec40e1cd6e338c11"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/generation/test_streaming.py": {
+      "sha256": "c30812232a5437afa9cc3877c5677132aab378ee16fb6e513cabcd01d8348cf6",
+      "mode": "100644",
+      "source_git_blob": "d9b98c2d0b6a0019e1270fb46de078d3cb7917e0"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/instruction.md": {
+      "sha256": "8ebbccc7fe9c1fca052983d1a0f451026fed65d5c17e38e17ed070adcb7b66ec",
+      "mode": "100644",
+      "source_git_blob": "b96dc8a97c2b84737a0758fbc8df6ccffd3b5b74"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/publication.json": {
+      "sha256": "3da9c4a95b4847a88f063d2e7f83c6b4db85612be42c4e478fe909d65a5f4cc6",
+      "mode": "100644",
+      "source_git_blob": "9608e6968cf03a960ffb2d6572b24a94beb9d222"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/solution/solve.sh": {
+      "sha256": "8e6c5184d10b648325d5f4a7a85e68bd0d7703efc233041d2cb90d347c8ea0d5",
+      "mode": "100755",
+      "source_git_blob": "18fe09100d77cb9b9db482e4eca87b5167e1b24e"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/task.toml": {
+      "sha256": "a22527c5584f900f65b34b72d57d7cfe14a0ef947d8c4f6a7e75ce0321e785f2",
+      "mode": "100644",
+      "source_git_blob": "79e76608e341aca5f734fa11002b6fd5823f7ab1"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/tests/assets.json": {
+      "sha256": "de1b360437cfb9856474f98763eb830cf28e6117c03da33063eca2f4ea2a9db4",
+      "mode": "100644",
+      "source_git_blob": "25f3e0ca706d29def25efb75adbb94d45f1f3c39"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/tests/bootstrap/sitecustomize.py": {
+      "sha256": "da554ee18fbd17b69715cec4a046b9b539ceccc2cb74d2271335bdf8258a81f9",
+      "mode": "100644",
+      "source_git_blob": "e510f2ef83072f02a04452b1a704aaefc8561bef"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/tests/calibrate.py": {
+      "sha256": "f15da60795aa5e9e2ea2a61dedc4579b5d9fa619b320b288611d03b53486a805",
+      "mode": "100644",
+      "source_git_blob": "c505a534e84b3b16cf40948d94c33757f2564378"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/tests/calibration.schema.json": {
+      "sha256": "2b29163e31660d0b6a7aaab1acd0120a672b01d00589c299bd52d0ee2a560e17",
+      "mode": "100644",
+      "source_git_blob": "bd6fcee5a22385dd0bb825f6b8b69e059ad5c53b"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/tests/common.py": {
+      "sha256": "4f304125e232530b3a57bde49f188d971201f424564f8075f76f0886e1604d9c",
+      "mode": "100644",
+      "source_git_blob": "539194d082751390d589e3a4de3cff846e1bd218"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/tests/device_probe.py": {
+      "sha256": "f0c1b9ce74d93ae415c5365b975cfcfa239822e0b0a745d20396bd584c5a8556",
+      "mode": "100644",
+      "source_git_blob": "4639aef48d4ffabc3204e344d54a3bd987abbc14"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/tests/engine.py": {
+      "sha256": "f7200a3d8023e87ed9280ba0fad2598fb1f53815b28a34d5ae312a7cbfc2ffe0",
+      "mode": "100644",
+      "source_git_blob": "b74077df1af4f4f60e469a6c21706d9c8c90de0a"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/tests/evaluate.py": {
+      "sha256": "526e4c797e8d17e7995b4b6f0c595966ed9972fb94939cd9fff0468a5abced2b",
+      "mode": "100644",
+      "source_git_blob": "6333eb2e6fae5073835651ff2e540952e9610170"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/tests/lane.py": {
+      "sha256": "7a4ebcb0506af81f118bcbbeae7c0ed1d0358b2bc0b67106d830feeea56f317f",
+      "mode": "100644",
+      "source_git_blob": "f7e6b93caf7ce45234006b07e0d8fec7f8fb9a0c"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/tests/noise.py": {
+      "sha256": "b1ac062e253b7d1987f0fb8c060dc3f0aec24a71913e60a45b6680ef8f1b7066",
+      "mode": "100644",
+      "source_git_blob": "96184635f83646e7a79dbdb3abae2cb08630e11f"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/tests/pool_calibrations.py": {
+      "sha256": "ddd8ec400d6e80d3c2c49ae4493fac8e298a69a3ecd87f8f9ea1de16dc0a895b",
+      "mode": "100644",
+      "source_git_blob": "28f49359dacf0da95fc14cac248d6e37f71e097a"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/tests/preflight.py": {
+      "sha256": "b173a403c8f31031719ce65a947d795db098e46a4c861aee0dc3605f9ed3da2e",
+      "mode": "100644",
+      "source_git_blob": "e0648bdf1a9ed98c8c77c14c95a2c1f5bced5826"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/tests/protocol.json": {
+      "sha256": "3d9694efcf6442edf74450a263071a2bfc9506e6d004de831605fdc7d9efcbae",
+      "mode": "100644",
+      "source_git_blob": "591fd3fdb8c1195908628bada6d6b0249d7f0cfd"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/tests/python-artifacts.json": {
+      "sha256": "a9e91b5e3bf5053133b26ed61ba99837f6330e536a20302eaaa9be0e426e3cb9",
+      "mode": "100644",
+      "source_git_blob": "18de11c9525489f06d5da79e070fa8aacc96f721"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/tests/requirements.lock": {
+      "sha256": "e3f91c1f5cd6b4d1fee1ef649976a6e0b17ced749505df65a0a3ec83a3ee8673",
+      "mode": "100644",
+      "source_git_blob": "dd54527780b862b65bd507f2a53fe03982893371"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/tests/source-deps.json": {
+      "sha256": "d9007cb32e34187ea7993ece569ae967dea442d763823cc958564db1e8e23df7",
+      "mode": "100644",
+      "source_git_blob": "679282267d84c6d890750865882cd9199c5ffa4b"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/tests/source-manifest.json": {
+      "sha256": "9dbfaad6cd8d8306de660a3ad146eaeb1357c572dde6e668ad27b3f426a69375",
+      "mode": "100644",
+      "source_git_blob": "250f5434cceb24dd428da3d424a3185af6fd2a21"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/tests/source.tar.gz": {
+      "sha256": "c5a1d842729a0d431b3b139e0d1ccbc40d161c8e77aad3234d82a8c742454357",
+      "mode": "100644",
+      "source_git_blob": "f8042b32dad59ad8f5787de86cb13e16af4f5c76"
+    },
+    "tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/tests/test.sh": {
+      "sha256": "658c76b5b8237ad6b455efdcf90e4d3f2d2402811b5a6019007d9241b98cf38f",
+      "mode": "100755",
+      "source_git_blob": "d54233abb62480b9d1886fa7625f186bd9aa8b35"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/.rsi/provenance.json": {
+      "sha256": "1a983d4ef8cf52d7442d5a586d4c2bc117a0570659a27b53b0a73513a8ddf367",
+      "mode": "100644",
+      "source_git_blob": "458610f6dfbf093e63066c9fc0b836cca5032768"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/README.md": {
+      "sha256": "d67be53179bd6933d408fd223ed7fea67f0c62175e67b768f50455704fec751d",
+      "mode": "100644",
+      "source_git_blob": "b3959e37674884037e06993d5fb5ffc9dfdae3ad"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/environment/Dockerfile": {
+      "sha256": "8a0eaf819d0fb19a9582ecd49981daf7504ee5506811350032b4739e9318503a",
+      "mode": "100644",
+      "source_git_blob": "1d57304cfcc8fe21538310fa6cfc62ddecb3ff30"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/environment/assets.json": {
+      "sha256": "9737ae7223999acdcc0b5567e098cabcf4f1457d398552f9fb958dd5173d0327",
+      "mode": "100644",
+      "source_git_blob": "3aa6fd67271a4f0683bcabe69feb97c7c938395d"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/environment/docker-compose.yaml": {
+      "sha256": "5220096c03c448049ef1c3869261287ba87f6ef9ce5f1f4d9699f1872090ea6d",
+      "mode": "100644",
+      "source_git_blob": "ff6a9363fd2ab84f994533dab8ea3497b2a3f55c"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/environment/prepare.py": {
+      "sha256": "f452160418d5a739cf043421d1e8fd91bfd84a1e0ff9f123e508e35642fbcadf",
+      "mode": "100644",
+      "source_git_blob": "edb162cf521334d75d6fc8df08c603a79b1c02fb"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/environment/python-artifacts.json": {
+      "sha256": "a9e91b5e3bf5053133b26ed61ba99837f6330e536a20302eaaa9be0e426e3cb9",
+      "mode": "100644",
+      "source_git_blob": "18de11c9525489f06d5da79e070fa8aacc96f721"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/environment/requirements.lock": {
+      "sha256": "e3f91c1f5cd6b4d1fee1ef649976a6e0b17ced749505df65a0a3ec83a3ee8673",
+      "mode": "100644",
+      "source_git_blob": "dd54527780b862b65bd507f2a53fe03982893371"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/environment/source-deps.json": {
+      "sha256": "d9007cb32e34187ea7993ece569ae967dea442d763823cc958564db1e8e23df7",
+      "mode": "100644",
+      "source_git_blob": "679282267d84c6d890750865882cd9199c5ffa4b"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/environment/source-manifest.json": {
+      "sha256": "9dbfaad6cd8d8306de660a3ad146eaeb1357c572dde6e668ad27b3f426a69375",
+      "mode": "100644",
+      "source_git_blob": "250f5434cceb24dd428da3d424a3185af6fd2a21"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/environment/source.tar.gz": {
+      "sha256": "c5a1d842729a0d431b3b139e0d1ccbc40d161c8e77aad3234d82a8c742454357",
+      "mode": "100644",
+      "source_git_blob": "f8042b32dad59ad8f5787de86cb13e16af4f5c76"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/generation/check_static.py": {
+      "sha256": "3ad7ae2735d39fa43627dfe64a7a09ef794a217c62d1470bb914f1e5cc1fd215",
+      "mode": "100644",
+      "source_git_blob": "f0222c1834122455c15fa1f5e48963c5a417b03a"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/generation/resolve_metadata.py": {
+      "sha256": "83d7e5e2f4d1033d0f5c20f2b7c54a399a5ba0bd3e4f6ed4eb78cd0fe77fb20b",
+      "mode": "100644",
+      "source_git_blob": "d97b2a29c3152aa00880f5fd2d9f594e4e734421"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/generation/test_dual_mode.py": {
+      "sha256": "81d22ccb66643023ae9e92635f3ecbb86679f88667bd7189adec5e08e32efab9",
+      "mode": "100644",
+      "source_git_blob": "c81c959cf8c0df09a9518c40f151922957b92bdf"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/generation/test_model_lane.py": {
+      "sha256": "1a34ddff64beb76f10fb069bbf015f4bd9fcbcf7510a168e3db7dabd74caf616",
+      "mode": "100644",
+      "source_git_blob": "31fbd07a1f5410d64b4509da97366e2abfdae23a"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/generation/test_protocol.py": {
+      "sha256": "314690995f141ae926de3bc1e50d8354d43728c383253c47d7b18f56dd100f54",
+      "mode": "100644",
+      "source_git_blob": "b01e6e17761b17ad54dedfd0ec40e1cd6e338c11"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/generation/test_streaming.py": {
+      "sha256": "97fbf7405718697a729b179cb79af86000078b5aeb7a8007236c75ba0487cd95",
+      "mode": "100644",
+      "source_git_blob": "7a86b3aca84e63d0e9f947f82723f42f24741c0e"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/instruction.md": {
+      "sha256": "fbdf082bcac3d3418fa67ae6997e17e0a3ff81107a77251165e085c7831bb98d",
+      "mode": "100644",
+      "source_git_blob": "4e3406c2f44940a3861cadb911f6c31b4d0dd7a6"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/publication.json": {
+      "sha256": "2f9aa42fa21ff594d7969118b8b24aeb425d17fcd52edc3409bcf9095c507569",
+      "mode": "100644",
+      "source_git_blob": "22261e02efd1f204e2167c0794fb638271d0409d"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/solution/solve.sh": {
+      "sha256": "8e6c5184d10b648325d5f4a7a85e68bd0d7703efc233041d2cb90d347c8ea0d5",
+      "mode": "100755",
+      "source_git_blob": "18fe09100d77cb9b9db482e4eca87b5167e1b24e"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/task.toml": {
+      "sha256": "e199ba121bf7ca9003aca281cadbd871e2c36a92f58c0db4de7f5c96566b320a",
+      "mode": "100644",
+      "source_git_blob": "4cbe1e3857d116361bcbaa7b014228edf867640b"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/tests/assets.json": {
+      "sha256": "9737ae7223999acdcc0b5567e098cabcf4f1457d398552f9fb958dd5173d0327",
+      "mode": "100644",
+      "source_git_blob": "3aa6fd67271a4f0683bcabe69feb97c7c938395d"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/tests/bootstrap/sitecustomize.py": {
+      "sha256": "da554ee18fbd17b69715cec4a046b9b539ceccc2cb74d2271335bdf8258a81f9",
+      "mode": "100644",
+      "source_git_blob": "e510f2ef83072f02a04452b1a704aaefc8561bef"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/tests/calibrate.py": {
+      "sha256": "f15da60795aa5e9e2ea2a61dedc4579b5d9fa619b320b288611d03b53486a805",
+      "mode": "100644",
+      "source_git_blob": "c505a534e84b3b16cf40948d94c33757f2564378"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/tests/calibration.schema.json": {
+      "sha256": "5b959b83ad89c1cb6849260c2d16c7f232724c7cb66a14a2086c0287d03fc6e1",
+      "mode": "100644",
+      "source_git_blob": "a2be04be4621cdb4561f43ae8e3f33882c199d8c"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/tests/common.py": {
+      "sha256": "4f304125e232530b3a57bde49f188d971201f424564f8075f76f0886e1604d9c",
+      "mode": "100644",
+      "source_git_blob": "539194d082751390d589e3a4de3cff846e1bd218"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/tests/device_probe.py": {
+      "sha256": "f0c1b9ce74d93ae415c5365b975cfcfa239822e0b0a745d20396bd584c5a8556",
+      "mode": "100644",
+      "source_git_blob": "4639aef48d4ffabc3204e344d54a3bd987abbc14"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/tests/engine.py": {
+      "sha256": "f7200a3d8023e87ed9280ba0fad2598fb1f53815b28a34d5ae312a7cbfc2ffe0",
+      "mode": "100644",
+      "source_git_blob": "b74077df1af4f4f60e469a6c21706d9c8c90de0a"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/tests/evaluate.py": {
+      "sha256": "526e4c797e8d17e7995b4b6f0c595966ed9972fb94939cd9fff0468a5abced2b",
+      "mode": "100644",
+      "source_git_blob": "6333eb2e6fae5073835651ff2e540952e9610170"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/tests/lane.py": {
+      "sha256": "7a4ebcb0506af81f118bcbbeae7c0ed1d0358b2bc0b67106d830feeea56f317f",
+      "mode": "100644",
+      "source_git_blob": "f7e6b93caf7ce45234006b07e0d8fec7f8fb9a0c"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/tests/noise.py": {
+      "sha256": "5ac43d2da35d643c39888f8d49ad441dbccfea2e0b67226fed301910497a7ae6",
+      "mode": "100644",
+      "source_git_blob": "47b565c07813b3eda38cde5220337b01c91ef0c7"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/tests/pool_calibrations.py": {
+      "sha256": "ddd8ec400d6e80d3c2c49ae4493fac8e298a69a3ecd87f8f9ea1de16dc0a895b",
+      "mode": "100644",
+      "source_git_blob": "28f49359dacf0da95fc14cac248d6e37f71e097a"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/tests/preflight.py": {
+      "sha256": "b173a403c8f31031719ce65a947d795db098e46a4c861aee0dc3605f9ed3da2e",
+      "mode": "100644",
+      "source_git_blob": "e0648bdf1a9ed98c8c77c14c95a2c1f5bced5826"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/tests/protocol.json": {
+      "sha256": "3031ff16c7123bc2c14c9d11ce6c219d52b577ec9d53b61d5aae08ca7379a70a",
+      "mode": "100644",
+      "source_git_blob": "176614eceae3b21292caf9a1fda205fbb10fbe8c"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/tests/python-artifacts.json": {
+      "sha256": "a9e91b5e3bf5053133b26ed61ba99837f6330e536a20302eaaa9be0e426e3cb9",
+      "mode": "100644",
+      "source_git_blob": "18de11c9525489f06d5da79e070fa8aacc96f721"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/tests/requirements.lock": {
+      "sha256": "e3f91c1f5cd6b4d1fee1ef649976a6e0b17ced749505df65a0a3ec83a3ee8673",
+      "mode": "100644",
+      "source_git_blob": "dd54527780b862b65bd507f2a53fe03982893371"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/tests/source-deps.json": {
+      "sha256": "d9007cb32e34187ea7993ece569ae967dea442d763823cc958564db1e8e23df7",
+      "mode": "100644",
+      "source_git_blob": "679282267d84c6d890750865882cd9199c5ffa4b"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/tests/source-manifest.json": {
+      "sha256": "9dbfaad6cd8d8306de660a3ad146eaeb1357c572dde6e668ad27b3f426a69375",
+      "mode": "100644",
+      "source_git_blob": "250f5434cceb24dd428da3d424a3185af6fd2a21"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/tests/source.tar.gz": {
+      "sha256": "c5a1d842729a0d431b3b139e0d1ccbc40d161c8e77aad3234d82a8c742454357",
+      "mode": "100644",
+      "source_git_blob": "f8042b32dad59ad8f5787de86cb13e16af4f5c76"
+    },
+    "tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/tests/test.sh": {
+      "sha256": "658c76b5b8237ad6b455efdcf90e4d3f2d2402811b5a6019007d9241b98cf38f",
+      "mode": "100755",
+      "source_git_blob": "d54233abb62480b9d1886fa7625f186bd9aa8b35"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/.rsi/provenance.json": {
+      "sha256": "184c55d275e5ba8bd5f4dfef93b8e45c66cf7f84199a176c19014571950ea408",
+      "mode": "100644",
+      "source_git_blob": "f072c8bb4ec0eb3be97249b531c6d10048f5b543"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/MODEL_ADAPTATION.md": {
+      "sha256": "59be433f945a25abdd3bdc33bb605be258ef55e2934c2031eceee3130b1d6fdf",
+      "mode": "100644",
+      "source_git_blob": "47cc17530b7db5b02e3014808907aba1613fd752"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/README.md": {
+      "sha256": "cb1b810f11b75b2e0d423b49eb69e1691acf984561ed7c542d4768f940b9713d",
+      "mode": "100644",
+      "source_git_blob": "adc517597a5bf61d2af53c9276c65c9a602746fc"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/environment/Dockerfile": {
+      "sha256": "a06637aa22686d991e15ccdba73a10fd4e5d26d6d9c4915ed51a5f6bc6f72409",
+      "mode": "100644",
+      "source_git_blob": "3b8c8a860b3a7df94461922a9e34cd0130cc82d9"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/environment/adapt_baseline.py": {
+      "sha256": "50578d8afbfa8aab7bfd622047a4899fac2f56e53da83c0dc3bc182e35e2de17",
+      "mode": "100644",
+      "source_git_blob": "240c7f8323e26092d60ebbe6d04a49707b7b66f4"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/environment/candidate.yaml": {
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "mode": "100644",
+      "source_git_blob": "0967ef424bce6791893e9a57bb952f80fd536e93"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/environment/constraints.txt": {
+      "sha256": "4c10dd62cf804149cdd51adeae380fa201575066ad243ef328a2f6065aa4707c",
+      "mode": "100644",
+      "source_git_blob": "cc65289e38079f38f8d83b6e79797e10daa47188"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/environment/docker-compose.yaml": {
+      "sha256": "5220096c03c448049ef1c3869261287ba87f6ef9ce5f1f4d9699f1872090ea6d",
+      "mode": "100644",
+      "source_git_blob": "ff6a9363fd2ab84f994533dab8ea3497b2a3f55c"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/environment/exact_text_streaming.py": {
+      "sha256": "ad77bc432ef4d0b9500e9bdd2d4f4b918664acacafc7f7bac661ff9530a05a07",
+      "mode": "100644",
+      "source_git_blob": "b330ab09e2be44a29a34e8f12d977b2c0497dedf"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/environment/initialize.py": {
+      "sha256": "8b2c9e48ec579d003950cb40d10ca3f074a1a78545e0ba6182bc3ba620edb978",
+      "mode": "100644",
+      "source_git_blob": "9386d36b41e911177fcae750b060914087e809b8"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/environment/model-manifest.json": {
+      "sha256": "5ec22d4574eef7205d9bffd288a2ff17c47a557bf27c4a6d687d5157fcf04030",
+      "mode": "100644",
+      "source_git_blob": "f65c380dc664271f282f65832ae735c72b5566b0"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/environment/overrides.txt": {
+      "sha256": "4ba0475b8e493ae9929771c99fc60c01f204c402f72098c843e00d2f4a0c459c",
+      "mode": "100644",
+      "source_git_blob": "483f479fafafa04e169d67b8b17a42ca50dd0c34"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/environment/requirements.in": {
+      "sha256": "7c229812a7e94c427d82c4b73bec9cce6a23c20e6c3f897ebb481fc75bba55fd",
+      "mode": "100644",
+      "source_git_blob": "c61ec0412b8a99e9fa92e63d4a72cb4ffb32c1ad"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/environment/requirements.lock": {
+      "sha256": "0440a4ff322ddf346534714bf8e2ebda5b8d4693671de2d3e97951b2ccde8c31",
+      "mode": "100644",
+      "source_git_blob": "e5dac634c0b58909349f2b98ff6a57f5797100e3"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/environment/restore.py": {
+      "sha256": "4c4a69a26286c20a7510f1cca33cc278c3fbc93c43aabeb3506a9ea00d51f1e4",
+      "mode": "100644",
+      "source_git_blob": "e3726ea3f1497dad009b7150288dac2bf2f20fb6"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/environment/source-manifest.json": {
+      "sha256": "fb01b677dc05986094f81a278bff6f666bc302def18f37fdfda9f8395fd69f73",
+      "mode": "100644",
+      "source_git_blob": "8b7e3554ec5376e776a7e2bd526a7b5e8e5e7340"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/environment/source-requirements.lock": {
+      "sha256": "7b8afa5173b3ab3619b146b9c26ceacc6dc0c2b7cbb8aadfd49cc7f83deffe7f",
+      "mode": "100644",
+      "source_git_blob": "e4d4b3b4899b61a3382630c4113b98a6af1f66a3"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/environment/source.tar.gz": {
+      "sha256": "f51598ab8b0425e4474645f66000865c66f48000d3f7bc909c51192f8d78a60e",
+      "mode": "100644",
+      "source_git_blob": "6b9c7b68093c4bb018c988d8e3f2dc849f897c4a"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/environment/stream_builder.template": {
+      "sha256": "84522bbc827add058a222931939a6f06642f4bb26b527383db155832637216d9",
+      "mode": "100644",
+      "source_git_blob": "aee2009366789f5e795f5a35a7043915adb7c391"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/environment/wheel-requirements.in": {
+      "sha256": "c28f3206c262c81bcb3f6390403c9275ef6f378031fed384471e1abb2f6d4d43",
+      "mode": "100644",
+      "source_git_blob": "543ef3eea4616120db870fdb153ebeee6508c791"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/instruction.md": {
+      "sha256": "7b2acd65e2189148c4209019033a957cdbe76e7f6960fd68b7dead1dd18656a6",
+      "mode": "100644",
+      "source_git_blob": "a828e9778af9fb5b7506a0f2eec3c984cd482459"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/publication.json": {
+      "sha256": "958642b61aff17110dc3589e754444e144fd5cde0eb23ce7280875794cbc47da",
+      "mode": "100644",
+      "source_git_blob": "1c217a154c9e50dd11e3f5bcede03ee11f0bbfa2"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/solution/solve.sh": {
+      "sha256": "21b1669309e0e3f16013615f964ff13f506430c179469540fc13eaaaa8db1902",
+      "mode": "100755",
+      "source_git_blob": "82ccfd1787fd0669b2bcbacc72ad48c55dd0d5e8"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/task.toml": {
+      "sha256": "b8bd8776ada6bc67cd8f651840de2c12e9d2bd8234cc70c2bba94131e4d57c2a",
+      "mode": "100644",
+      "source_git_blob": "10963b8a7d549ff8e2edf2561a541387151aaf59"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/tests/build-inventory.json": {
+      "sha256": "ec372611261eb475fef9dd9b3f8e770c73ebc8ade471d6700884f1663c68f689",
+      "mode": "100644",
+      "source_git_blob": "e07e43d174036e8157fd518f0b6d462c89876752"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/tests/comparison-state.json": {
+      "sha256": "ec372611261eb475fef9dd9b3f8e770c73ebc8ade471d6700884f1663c68f689",
+      "mode": "100644",
+      "source_git_blob": "e07e43d174036e8157fd518f0b6d462c89876752"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/tests/contract.py": {
+      "sha256": "b7ecadad9afd84bc95c7dfbdbe74a6773ea1776f48487db7a89a4adc80a44fcd",
+      "mode": "100644",
+      "source_git_blob": "15c7fb69b0dc3e637701f5f18b1e1cb6dfa91a4f"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/tests/data-manifest.json": {
+      "sha256": "aa708d10b3231516c76fee5132729155639bf6ff955408eb247152b261730382",
+      "mode": "100644",
+      "source_git_blob": "75e10d1cb7661c2677c0d8446ec4072178629a8d"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/tests/data/en-000.parquet": {
+      "sha256": "6f393437d3c8c99e35a7fc75af533918e2e35d1cfcae8d25bcd79c51bffec537",
+      "mode": "100644",
+      "source_git_blob": "a3229c477f1eefeb629248b0827ee67e0b80ccba"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/tests/data/en-001.parquet": {
+      "sha256": "786b7158232e5e04387809ba985881e1d237a8ec2f42137a2ddcc0d813f9d7ae",
+      "mode": "100644",
+      "source_git_blob": "2bef887465abdbe7e1c97e3bd2e08d71063b2a05"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/tests/data/en-002.parquet": {
+      "sha256": "9175e597794b2b79a5c3bba05750c63ec7cbf6ad336bf28fa9329436e21718e7",
+      "mode": "100644",
+      "source_git_blob": "0b063d51757cbf12852cab778d9b6ba469c64f42"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/tests/data/en-003.parquet": {
+      "sha256": "ef17d4caf4809493f7d471fd503e0f5a6f360c55e771e0b05a637026491db3b5",
+      "mode": "100644",
+      "source_git_blob": "831b2f18134d9229a49821795e47c7730e4fde7f"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/tests/data/en-004.parquet": {
+      "sha256": "570a6bea6853b6b786d9be6c65732d56f6d1b1c1cae25e4c4e8c06309b2958eb",
+      "mode": "100644",
+      "source_git_blob": "49fd30b558991b1898e2ba0c2e556c31ce1751d9"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/tests/data/zh-000.parquet": {
+      "sha256": "f08d608f08499895489a220d4621006824cd65e5fb417c11b30c8dc1532c038f",
+      "mode": "100644",
+      "source_git_blob": "876004855dbcacf5b147454a77ab9a4dc88208cc"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/tests/data/zh-001.parquet": {
+      "sha256": "cc28168af623d5ecd74592cb265a04042a2e409b84876b7f992de2daf28cc1d4",
+      "mode": "100644",
+      "source_git_blob": "3fc33d77903df24385ccdc63e43db7e7d830cb60"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/tests/data/zh-002.parquet": {
+      "sha256": "d269f5b3eabe2def04c26aa28bd4258162dfe66aa895a58d77e938c713602de0",
+      "mode": "100644",
+      "source_git_blob": "e495cae5d1ab2ef2e6d888f5a58b4f891c9b2932"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/tests/data/zh-003.parquet": {
+      "sha256": "83216937f6ae09711df336ef20bf290224dc7ee48a51cd21bb81d526cf769306",
+      "mode": "100644",
+      "source_git_blob": "6e698c43a6e42aaf963a0907fed6607ce4ac2f7b"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/tests/data/zh-004.parquet": {
+      "sha256": "66a2fc8024012eaca7ffc77cf133cfc9671c0b1cd6808c88b533fbd4d1883503",
+      "mode": "100644",
+      "source_git_blob": "e08a50fb6fbc347e0b3323f3d06ed5335972c891"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/tests/data/zh-005.parquet": {
+      "sha256": "3b19c903ec54d432a330e0dab50f6c27af543f8ab0aa9585151061529fdb3291",
+      "mode": "100644",
+      "source_git_blob": "57ab5a07ddd0e046ba7d085f3985380fefa2a7c5"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/tests/data/zh-006.parquet": {
+      "sha256": "b98d230d107ebac83eb955392c09b2d5dac1d44384ad83ba6917ca1db9bbc352",
+      "mode": "100644",
+      "source_git_blob": "04fbf233fa142fe86592c3c0e2958af0899224ae"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/tests/data/zh-007.parquet": {
+      "sha256": "cc4742ae4c040bceb9f7999c511ecfcfd48a1cd260c14b186a90a7d677ba6914",
+      "mode": "100644",
+      "source_git_blob": "61c1064bdd1b0f995d6a2aad4c4a19e5cca1a523"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/tests/evaluate.py": {
+      "sha256": "84df40a30ecca6a75b322b33d2049b077bd9ed2a4ad7737759a7ebde03c3a2b1",
+      "mode": "100644",
+      "source_git_blob": "1d418a912621875c9b82b6a62f01d063d9895a18"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/tests/gates.py": {
+      "sha256": "561f47932ceddf285766f81024e58171303a4b2bc6b2d241250a74e95f425055",
+      "mode": "100644",
+      "source_git_blob": "88eb67ff35217fa3207e819312a3569336c03fbf"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/tests/immutable-manifest.json": {
+      "sha256": "92a4d07bd769a4f3c4e740e5fcbe93551bb80166c45306040d6b1bd3a08268ec",
+      "mode": "100644",
+      "source_git_blob": "080e9a337a9eda0347966e85976497780fd5acee"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/tests/policy.json": {
+      "sha256": "b58e4231f12fe051ca21d00735783f7e927b17c38feb23359f5469bea326487e",
+      "mode": "100644",
+      "source_git_blob": "5a205cd5c94751ee27db79321817e01af5321450"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/tests/test.sh": {
+      "sha256": "60ab634b12fa2a89478f98d8d5e19a29621714e21e9799e77e8a1f380819b998",
+      "mode": "100755",
+      "source_git_blob": "0df6308af49b522e7f704d8a0cf132f2452e97bf"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/tools/check_dependencies.py": {
+      "sha256": "a873f2fad149336c3f177334a2ccb4183c88daff4e0ba6a90811cab52dab42a0",
+      "mode": "100644",
+      "source_git_blob": "368f4a86d6071154532eab5513cff4bc42765862"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/tools/check_package.py": {
+      "sha256": "25f811993bf646085d5566c3e6d8edba68e9e513abf14e56f1bd788e0008118e",
+      "mode": "100644",
+      "source_git_blob": "d733d6923e98b590c8d6d5cecc27f000e4040601"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/tools/dependency-evidence.json": {
+      "sha256": "6e9c7eca13e9c38bfefe09159c6989b682166bea331f32887ea84efd70455bdc",
+      "mode": "100644",
+      "source_git_blob": "d5fb929143bf6bc9d2f6b776cd685f9610118f03"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/tools/harness-manifest.json": {
+      "sha256": "694839cc7e4e49bb8239586ead733edcb0aed3b14d306f28466f96b01d938b36",
+      "mode": "100644",
+      "source_git_blob": "57ad9f28527c1705cf18ab7f3c4c2585591c9333"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/tools/launch.py": {
+      "sha256": "1ddc374c79158764700f2ea057364e4197786b99ad591b952c602c7c12ffa269",
+      "mode": "100644",
+      "source_git_blob": "2d91cc09beef07f2c7b43bb00d244a2ae0cf807c"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/tools/package-manifest.json": {
+      "sha256": "d91adb15b740094d51d012d119a9d1c0d20cede63f27807e2edc90c0a612d606",
+      "mode": "100644",
+      "source_git_blob": "89eb76a47c540a186b211ee4bf8a48ec404c03c7"
+    },
+    "tasks/whisper-large-v3/whisper-asr-streaming-throughput/tools/test_adaptation.py": {
+      "sha256": "0d3c9e8a837c0cc4261b7ea5a0daad2e5326e0b5f0cc0c7ca6200b38e3b0cb9f",
+      "mode": "100644",
+      "source_git_blob": "d057360304578e611b032c9ef9a9008dd1535eb9"
+    }
+  }
+}

@@ -1,0 +1,1234 @@
+{
+  "snapshot_date": "2026-11-17",
+  "tracking_sheet": "https://docs.google.com/spreadsheets/d/1YyWb8s7KPKotOAZsz6im494-AzFLVa501Pls4gXoeNY/edit?gid=0",
+  "selection": "Main sheet, Type == Main, limited to the 10 models in the SGNOMI task collection; exact agent/model/effort; install_stop_hook true; best archived final_result score cross-checked against a completed best-round report.",
+  "records": [
+    {
+      "task": "CosyVoice3",
+      "type": "Main",
+      "sheet_row": 3,
+      "b0_commit": "1523543056bf",
+      "mode": "Dual",
+      "agents": {
+        "codex": {
+          "repository": "OpenRSI-Foundation/sglang-omni-tts-cosyvoice3-dual-mode-d154",
+          "source_commit": "751ea50ba6dab31c2e86969a9c9e9762a09913ba",
+          "result_path": "logs/runs/16406033ed344692be80933114e6fe48/sglang-omni-cosyvoice3-dual-mode-runtime/final_result.json",
+          "run_id": "16406033ed344692be80933114e6fe48",
+          "agent": "codex",
+          "model": "gpt-6-astra",
+          "status": "completed",
+          "best_score": 1.1722764746921681,
+          "best_round": "agent-11",
+          "total_rounds": 17,
+          "timeout_seconds": 86400.0,
+          "runtime_seconds": 86423.18557482818,
+          "timed_out": true,
+          "reasoning_effort": "xhigh",
+          "gpu_names": [
+            "NVIDIA H100 80GB HBM3"
+          ],
+          "task_digest": null,
+          "task_version": null,
+          "archived_runs": [
+            {
+              "repository": "OpenRSI-Foundation/sglang-omni-tts-cosyvoice3-dual-mode-d154",
+              "source_commit": "751ea50ba6dab31c2e86969a9c9e9762a09913ba",
+              "result_path": "logs/runs/16406033ed344692be80933114e6fe48/sglang-omni-cosyvoice3-dual-mode-runtime/final_result.json",
+              "run_id": "16406033ed344692be80933114e6fe48",
+              "agent": "codex",
+              "model": "gpt-6-astra",
+              "status": "completed",
+              "best_score": 1.1722764746921681,
+              "best_round": "agent-11",
+              "total_rounds": 17,
+              "timeout_seconds": 86400.0,
+              "runtime_seconds": 86423.18557482818,
+              "timed_out": true,
+              "reasoning_effort": "xhigh",
+              "gpu_names": [
+                "NVIDIA H100 80GB HBM3"
+              ],
+              "task_digest": null,
+              "task_version": null
+            }
+          ],
+          "best_report_path": "logs/runs/16406033ed344692be80933114e6fe48/sglang-omni-cosyvoice3-dual-mode-runtime/submissions/agent-11/report.json",
+          "best_report": {
+            "status": "completed",
+            "score": 1.1722764746921681,
+            "exit_code": 0,
+            "timed_out": false
+          }
+        },
+        "claude-code": {
+          "repository": "OpenRSI-Foundation/sglang-omni-tts-cosyvoice3-dual-mode-d154",
+          "source_commit": "751ea50ba6dab31c2e86969a9c9e9762a09913ba",
+          "result_path": "logs/runs/3c4e057ac73f4e76b0fd8b3ba722523d/sglang-omni-cosyvoice3-dual-mode-runtime/final_result.json",
+          "run_id": "3c4e057ac73f4e76b0fd8b3ba722523d",
+          "agent": "claude-code",
+          "model": "claude-opus-5-5",
+          "status": "completed",
+          "best_score": 1.2969624628676724,
+          "best_round": "agent-3",
+          "total_rounds": 3,
+          "timeout_seconds": 86400.0,
+          "runtime_seconds": 86486.92135205911,
+          "timed_out": true,
+          "reasoning_effort": "max",
+          "gpu_names": [
+            "NVIDIA H100 80GB HBM3"
+          ],
+          "task_digest": null,
+          "task_version": null,
+          "archived_runs": [
+            {
+              "repository": "OpenRSI-Foundation/sglang-omni-tts-cosyvoice3-dual-mode-d154",
+              "source_commit": "751ea50ba6dab31c2e86969a9c9e9762a09913ba",
+              "result_path": "logs/runs/3c4e057ac73f4e76b0fd8b3ba722523d/sglang-omni-cosyvoice3-dual-mode-runtime/final_result.json",
+              "run_id": "3c4e057ac73f4e76b0fd8b3ba722523d",
+              "agent": "claude-code",
+              "model": "claude-opus-5-5",
+              "status": "completed",
+              "best_score": 1.2969624628676724,
+              "best_round": "agent-3",
+              "total_rounds": 3,
+              "timeout_seconds": 86400.0,
+              "runtime_seconds": 86486.92135205911,
+              "timed_out": true,
+              "reasoning_effort": "max",
+              "gpu_names": [
+                "NVIDIA H100 80GB HBM3"
+              ],
+              "task_digest": null,
+              "task_version": null
+            }
+          ],
+          "best_report_path": "logs/runs/3c4e057ac73f4e76b0fd8b3ba722523d/sglang-omni-cosyvoice3-dual-mode-runtime/submissions/agent-3/report.json",
+          "best_report": {
+            "status": "completed",
+            "score": 1.2969624628676724,
+            "exit_code": 0,
+            "timed_out": false
+          }
+        }
+      }
+    },
+    {
+      "task": "MOSS-TTS v1.5",
+      "type": "Main",
+      "sheet_row": 5,
+      "b0_commit": "cb75ab409669",
+      "mode": "Dual",
+      "agents": {
+        "codex": {
+          "repository": "OpenRSI-Foundation/sglang-omni-tts-moss-v1.5-dual-mode-d154",
+          "source_commit": "db4497dbd8d5017b68b8a58e518553adddec7c0b",
+          "result_path": "logs/runs/8a5ac8211d8149e7a445a6277b2f77dd/sglang-omni-moss-v1.5-dual-mode-runtime/final_result.json",
+          "run_id": "8a5ac8211d8149e7a445a6277b2f77dd",
+          "agent": "codex",
+          "model": "gpt-6-astra",
+          "status": "completed",
+          "best_score": 1.4399745211111628,
+          "best_round": "agent-12",
+          "total_rounds": 13,
+          "timeout_seconds": 86400.0,
+          "runtime_seconds": 86702.47370050196,
+          "timed_out": true,
+          "reasoning_effort": "xhigh",
+          "gpu_names": [
+            "NVIDIA H100 80GB HBM3"
+          ],
+          "task_digest": null,
+          "task_version": null,
+          "archived_runs": [
+            {
+              "repository": "OpenRSI-Foundation/sglang-omni-tts-moss-v1.5-dual-mode-d154",
+              "source_commit": "db4497dbd8d5017b68b8a58e518553adddec7c0b",
+              "result_path": "logs/runs/207875ce916d4a93aac850948b1453c6/sglang-omni-moss-v1.5-dual-mode-runtime/final_result.json",
+              "run_id": "207875ce916d4a93aac850948b1453c6",
+              "agent": "codex",
+              "model": "gpt-6-astra",
+              "status": "completed",
+              "best_score": 1.3385290570993953,
+              "best_round": "agent-8",
+              "total_rounds": 10,
+              "timeout_seconds": 86400.0,
+              "runtime_seconds": 86803.4084060681,
+              "timed_out": true,
+              "reasoning_effort": "xhigh",
+              "gpu_names": [
+                "NVIDIA H100 80GB HBM3"
+              ],
+              "task_digest": null,
+              "task_version": null
+            },
+            {
+              "repository": "OpenRSI-Foundation/sglang-omni-tts-moss-v1.5-dual-mode-d154",
+              "source_commit": "db4497dbd8d5017b68b8a58e518553adddec7c0b",
+              "result_path": "logs/runs/8a5ac8211d8149e7a445a6277b2f77dd/sglang-omni-moss-v1.5-dual-mode-runtime/final_result.json",
+              "run_id": "8a5ac8211d8149e7a445a6277b2f77dd",
+              "agent": "codex",
+              "model": "gpt-6-astra",
+              "status": "completed",
+              "best_score": 1.4399745211111628,
+              "best_round": "agent-12",
+              "total_rounds": 13,
+              "timeout_seconds": 86400.0,
+              "runtime_seconds": 86702.47370050196,
+              "timed_out": true,
+              "reasoning_effort": "xhigh",
+              "gpu_names": [
+                "NVIDIA H100 80GB HBM3"
+              ],
+              "task_digest": null,
+              "task_version": null
+            }
+          ],
+          "best_report_path": "logs/runs/8a5ac8211d8149e7a445a6277b2f77dd/sglang-omni-moss-v1.5-dual-mode-runtime/submissions/agent-12/report.json",
+          "best_report": {
+            "status": "completed",
+            "score": 1.4399745211111628,
+            "exit_code": 0,
+            "timed_out": false
+          }
+        },
+        "claude-code": {
+          "repository": "OpenRSI-Foundation/sglang-omni-tts-moss-v1.5-dual-mode-d154",
+          "source_commit": "db4497dbd8d5017b68b8a58e518553adddec7c0b",
+          "result_path": "logs/runs/e5802f8e0ca347a99a17391b17b822fe/sglang-omni-moss-v1.5-dual-mode-runtime/final_result.json",
+          "run_id": "e5802f8e0ca347a99a17391b17b822fe",
+          "agent": "claude-code",
+          "model": "claude-opus-5-5",
+          "status": "completed",
+          "best_score": 2.195483163102296,
+          "best_round": "agent-8",
+          "total_rounds": 8,
+          "timeout_seconds": 86400.0,
+          "runtime_seconds": 89951.34257211164,
+          "timed_out": true,
+          "reasoning_effort": "max",
+          "gpu_names": [
+            "NVIDIA H100 80GB HBM3"
+          ],
+          "task_digest": null,
+          "task_version": null,
+          "archived_runs": [
+            {
+              "repository": "OpenRSI-Foundation/sglang-omni-tts-moss-v1.5-dual-mode-d154",
+              "source_commit": "db4497dbd8d5017b68b8a58e518553adddec7c0b",
+              "result_path": "logs/runs/5a7edc888134473fb0bcecd88b25be66/sglang-omni-moss-v1.5-dual-mode-runtime/final_result.json",
+              "run_id": "5a7edc888134473fb0bcecd88b25be66",
+              "agent": "claude-code",
+              "model": "claude-opus-5-5",
+              "status": "completed",
+              "best_score": 1.9352910297636827,
+              "best_round": "agent-4",
+              "total_rounds": 4,
+              "timeout_seconds": 86400.0,
+              "runtime_seconds": 86527.99933216628,
+              "timed_out": true,
+              "reasoning_effort": "max",
+              "gpu_names": [
+                "NVIDIA H100 80GB HBM3"
+              ],
+              "task_digest": null,
+              "task_version": null
+            },
+            {
+              "repository": "OpenRSI-Foundation/sglang-omni-tts-moss-v1.5-dual-mode-d154",
+              "source_commit": "db4497dbd8d5017b68b8a58e518553adddec7c0b",
+              "result_path": "logs/runs/e5802f8e0ca347a99a17391b17b822fe/sglang-omni-moss-v1.5-dual-mode-runtime/final_result.json",
+              "run_id": "e5802f8e0ca347a99a17391b17b822fe",
+              "agent": "claude-code",
+              "model": "claude-opus-5-5",
+              "status": "completed",
+              "best_score": 2.195483163102296,
+              "best_round": "agent-8",
+              "total_rounds": 8,
+              "timeout_seconds": 86400.0,
+              "runtime_seconds": 89951.34257211164,
+              "timed_out": true,
+              "reasoning_effort": "max",
+              "gpu_names": [
+                "NVIDIA H100 80GB HBM3"
+              ],
+              "task_digest": null,
+              "task_version": null
+            }
+          ],
+          "best_report_path": "logs/runs/e5802f8e0ca347a99a17391b17b822fe/sglang-omni-moss-v1.5-dual-mode-runtime/submissions/agent-8/report.json",
+          "best_report": {
+            "status": "completed",
+            "score": 2.195483163102296,
+            "exit_code": 0,
+            "timed_out": false
+          }
+        }
+      }
+    },
+    {
+      "task": "Fish S2-Pro",
+      "type": "Main",
+      "sheet_row": 4,
+      "b0_commit": "1523543056bf",
+      "mode": "Dual",
+      "agents": {
+        "codex": {
+          "repository": "OpenRSI-Foundation/sglang-omni-tts-fish-s2-pro-dual-mode-d154",
+          "source_commit": "de49842b8e6b60a8f188658ce1836671f9361748",
+          "result_path": "logs/runs/351a44a2720a48ca83f17d7a5c2adfaa/sglang-omni-fish-s2-pro-dual-mode-runtime/final_result.json",
+          "run_id": "351a44a2720a48ca83f17d7a5c2adfaa",
+          "agent": "codex",
+          "model": "gpt-6-astra",
+          "status": "completed",
+          "best_score": 1.803292724724463,
+          "best_round": "agent-10",
+          "total_rounds": 10,
+          "timeout_seconds": 86400.0,
+          "runtime_seconds": 92536.52757242508,
+          "timed_out": true,
+          "reasoning_effort": "xhigh",
+          "gpu_names": [
+            "NVIDIA H100 80GB HBM3"
+          ],
+          "task_digest": null,
+          "task_version": null,
+          "archived_runs": [
+            {
+              "repository": "OpenRSI-Foundation/sglang-omni-tts-fish-s2-pro-dual-mode-d154",
+              "source_commit": "de49842b8e6b60a8f188658ce1836671f9361748",
+              "result_path": "logs/runs/351a44a2720a48ca83f17d7a5c2adfaa/sglang-omni-fish-s2-pro-dual-mode-runtime/final_result.json",
+              "run_id": "351a44a2720a48ca83f17d7a5c2adfaa",
+              "agent": "codex",
+              "model": "gpt-6-astra",
+              "status": "completed",
+              "best_score": 1.803292724724463,
+              "best_round": "agent-10",
+              "total_rounds": 10,
+              "timeout_seconds": 86400.0,
+              "runtime_seconds": 92536.52757242508,
+              "timed_out": true,
+              "reasoning_effort": "xhigh",
+              "gpu_names": [
+                "NVIDIA H100 80GB HBM3"
+              ],
+              "task_digest": null,
+              "task_version": null
+            },
+            {
+              "repository": "OpenRSI-Foundation/sglang-omni-tts-fish-s2-pro-dual-mode-d154",
+              "source_commit": "de49842b8e6b60a8f188658ce1836671f9361748",
+              "result_path": "logs/runs/afbf5369a9394eeba213213107493366/sglang-omni-fish-s2-pro-dual-mode-runtime/final_result.json",
+              "run_id": "afbf5369a9394eeba213213107493366",
+              "agent": "codex",
+              "model": "gpt-6-astra",
+              "status": "cancelled",
+              "best_score": 1.2120872331383459,
+              "best_round": "agent-2",
+              "total_rounds": 2,
+              "timeout_seconds": 86400.0,
+              "runtime_seconds": 27314.83437435003,
+              "timed_out": false,
+              "reasoning_effort": "xhigh",
+              "gpu_names": [
+                "NVIDIA H100 80GB HBM3"
+              ],
+              "task_digest": null,
+              "task_version": null
+            }
+          ],
+          "best_report_path": "logs/runs/351a44a2720a48ca83f17d7a5c2adfaa/sglang-omni-fish-s2-pro-dual-mode-runtime/submissions/agent-10/report.json",
+          "best_report": {
+            "status": "completed",
+            "score": 1.803292724724463,
+            "exit_code": 0,
+            "timed_out": false
+          }
+        },
+        "claude-code": {
+          "repository": "OpenRSI-Foundation/sglang-omni-tts-fish-s2-pro-dual-mode-d154",
+          "source_commit": "de49842b8e6b60a8f188658ce1836671f9361748",
+          "result_path": "logs/runs/8334a12303b54abc91f1fe9264879c38/sglang-omni-fish-s2-pro-dual-mode-runtime/final_result.json",
+          "run_id": "8334a12303b54abc91f1fe9264879c38",
+          "agent": "claude-code",
+          "model": "claude-opus-5-5",
+          "status": "completed",
+          "best_score": 6.288294732047224,
+          "best_round": "agent-5",
+          "total_rounds": 5,
+          "timeout_seconds": 86400.0,
+          "runtime_seconds": 86492.45189238014,
+          "timed_out": true,
+          "reasoning_effort": "max",
+          "gpu_names": [
+            "NVIDIA H100 80GB HBM3"
+          ],
+          "task_digest": null,
+          "task_version": null,
+          "archived_runs": [
+            {
+              "repository": "OpenRSI-Foundation/sglang-omni-tts-fish-s2-pro-dual-mode-d154",
+              "source_commit": "de49842b8e6b60a8f188658ce1836671f9361748",
+              "result_path": "logs/runs/8334a12303b54abc91f1fe9264879c38/sglang-omni-fish-s2-pro-dual-mode-runtime/final_result.json",
+              "run_id": "8334a12303b54abc91f1fe9264879c38",
+              "agent": "claude-code",
+              "model": "claude-opus-5-5",
+              "status": "completed",
+              "best_score": 6.288294732047224,
+              "best_round": "agent-5",
+              "total_rounds": 5,
+              "timeout_seconds": 86400.0,
+              "runtime_seconds": 86492.45189238014,
+              "timed_out": true,
+              "reasoning_effort": "max",
+              "gpu_names": [
+                "NVIDIA H100 80GB HBM3"
+              ],
+              "task_digest": null,
+              "task_version": null
+            }
+          ],
+          "best_report_path": "logs/runs/8334a12303b54abc91f1fe9264879c38/sglang-omni-fish-s2-pro-dual-mode-runtime/submissions/agent-5/report.json",
+          "best_report": {
+            "status": "completed",
+            "score": 6.288294732047224,
+            "exit_code": 0,
+            "timed_out": false
+          }
+        }
+      }
+    },
+    {
+      "task": "Qwen3-TTS Base 0.6B",
+      "type": "Main",
+      "sheet_row": 6,
+      "b0_commit": "1523543056bf",
+      "mode": "Dual",
+      "agents": {
+        "claude-code": {
+          "repository": "OpenRSI-Foundation/sglang-omni-tts-qwen3-tts-base-0.6b-dual-mode-d154",
+          "source_commit": "2724969057a52044386fece1050c4f4c86acd92e",
+          "result_path": "logs/runs/1bbc130c659c4e07a929578ec5d3e103/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/final_result.json",
+          "run_id": "1bbc130c659c4e07a929578ec5d3e103",
+          "agent": "claude-code",
+          "model": "claude-opus-5-5",
+          "status": "completed",
+          "best_score": 1.2519226274224278,
+          "best_round": "agent-5",
+          "total_rounds": 5,
+          "timeout_seconds": 86400.0,
+          "runtime_seconds": 86641.75420257589,
+          "timed_out": true,
+          "reasoning_effort": "max",
+          "gpu_names": [
+            "NVIDIA H100 80GB HBM3"
+          ],
+          "task_digest": null,
+          "task_version": null,
+          "archived_runs": [
+            {
+              "repository": "OpenRSI-Foundation/sglang-omni-tts-qwen3-tts-base-0.6b-dual-mode-d154",
+              "source_commit": "2724969057a52044386fece1050c4f4c86acd92e",
+              "result_path": "logs/runs/1bbc130c659c4e07a929578ec5d3e103/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/final_result.json",
+              "run_id": "1bbc130c659c4e07a929578ec5d3e103",
+              "agent": "claude-code",
+              "model": "claude-opus-5-5",
+              "status": "completed",
+              "best_score": 1.2519226274224278,
+              "best_round": "agent-5",
+              "total_rounds": 5,
+              "timeout_seconds": 86400.0,
+              "runtime_seconds": 86641.75420257589,
+              "timed_out": true,
+              "reasoning_effort": "max",
+              "gpu_names": [
+                "NVIDIA H100 80GB HBM3"
+              ],
+              "task_digest": null,
+              "task_version": null
+            },
+            {
+              "repository": "OpenRSI-Foundation/sglang-omni-tts-qwen3-tts-base-0.6b-dual-mode-d154",
+              "source_commit": "2724969057a52044386fece1050c4f4c86acd92e",
+              "result_path": "logs/runs/1d2cb35901c84c77b2410908ddd7445e/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/final_result.json",
+              "run_id": "1d2cb35901c84c77b2410908ddd7445e",
+              "agent": "claude-code",
+              "model": "claude-opus-5-5",
+              "status": "no_valid_submission",
+              "best_score": null,
+              "best_round": null,
+              "total_rounds": 2,
+              "timeout_seconds": 86400.0,
+              "runtime_seconds": 86829.69844353013,
+              "timed_out": true,
+              "reasoning_effort": "max",
+              "gpu_names": [
+                "NVIDIA H100 80GB HBM3"
+              ],
+              "task_digest": null,
+              "task_version": null
+            }
+          ],
+          "best_report_path": "logs/runs/1bbc130c659c4e07a929578ec5d3e103/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/submissions/agent-5/report.json",
+          "best_report": {
+            "status": "completed",
+            "score": 1.2519226274224278,
+            "exit_code": 0,
+            "timed_out": false
+          }
+        },
+        "codex": {
+          "repository": "OpenRSI-Foundation/sglang-omni-tts-qwen3-tts-base-0.6b-dual-mode-d154",
+          "source_commit": "2724969057a52044386fece1050c4f4c86acd92e",
+          "result_path": "logs/runs/22eb173460a248aa80ae5618cafae3d5/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/final_result.json",
+          "run_id": "22eb173460a248aa80ae5618cafae3d5",
+          "agent": "codex",
+          "model": "gpt-6-astra",
+          "status": "completed",
+          "best_score": 1.1406409218448244,
+          "best_round": "agent-3",
+          "total_rounds": 19,
+          "timeout_seconds": 86400.0,
+          "runtime_seconds": 86431.77026150003,
+          "timed_out": true,
+          "reasoning_effort": "xhigh",
+          "gpu_names": [
+            "NVIDIA H100 80GB HBM3"
+          ],
+          "task_digest": null,
+          "task_version": null,
+          "archived_runs": [
+            {
+              "repository": "OpenRSI-Foundation/sglang-omni-tts-qwen3-tts-base-0.6b-dual-mode-d154",
+              "source_commit": "2724969057a52044386fece1050c4f4c86acd92e",
+              "result_path": "logs/runs/22eb173460a248aa80ae5618cafae3d5/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/final_result.json",
+              "run_id": "22eb173460a248aa80ae5618cafae3d5",
+              "agent": "codex",
+              "model": "gpt-6-astra",
+              "status": "completed",
+              "best_score": 1.1406409218448244,
+              "best_round": "agent-3",
+              "total_rounds": 19,
+              "timeout_seconds": 86400.0,
+              "runtime_seconds": 86431.77026150003,
+              "timed_out": true,
+              "reasoning_effort": "xhigh",
+              "gpu_names": [
+                "NVIDIA H100 80GB HBM3"
+              ],
+              "task_digest": null,
+              "task_version": null
+            }
+          ],
+          "best_report_path": "logs/runs/22eb173460a248aa80ae5618cafae3d5/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/submissions/agent-3/report.json",
+          "best_report": {
+            "status": "completed",
+            "score": 1.1406409218448244,
+            "exit_code": 0,
+            "timed_out": false
+          }
+        }
+      }
+    },
+    {
+      "task": "Qwen3-TTS Base 1.7B",
+      "type": "Main",
+      "sheet_row": 7,
+      "b0_commit": "1523543056bf",
+      "mode": "Dual",
+      "agents": {
+        "codex": {
+          "repository": "OpenRSI-Foundation/sglang-omni-tts-qwen3-tts-base-1.7b-dual-mode-d154",
+          "source_commit": "91d67dd210335abc482795f8a5793d49d8ed7b42",
+          "result_path": "logs/runs/980104532c6b4d1fb5ec277ea4e2e750/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/final_result.json",
+          "run_id": "980104532c6b4d1fb5ec277ea4e2e750",
+          "agent": "codex",
+          "model": "gpt-6-astra",
+          "status": "completed",
+          "best_score": 1.0963805683029137,
+          "best_round": "agent-10",
+          "total_rounds": 13,
+          "timeout_seconds": 86400.0,
+          "runtime_seconds": 86921.09762681695,
+          "timed_out": true,
+          "reasoning_effort": "xhigh",
+          "gpu_names": [
+            "NVIDIA H100 80GB HBM3"
+          ],
+          "task_digest": null,
+          "task_version": null,
+          "archived_runs": [
+            {
+              "repository": "OpenRSI-Foundation/sglang-omni-tts-qwen3-tts-base-1.7b-dual-mode-d154",
+              "source_commit": "91d67dd210335abc482795f8a5793d49d8ed7b42",
+              "result_path": "logs/runs/980104532c6b4d1fb5ec277ea4e2e750/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/final_result.json",
+              "run_id": "980104532c6b4d1fb5ec277ea4e2e750",
+              "agent": "codex",
+              "model": "gpt-6-astra",
+              "status": "completed",
+              "best_score": 1.0963805683029137,
+              "best_round": "agent-10",
+              "total_rounds": 13,
+              "timeout_seconds": 86400.0,
+              "runtime_seconds": 86921.09762681695,
+              "timed_out": true,
+              "reasoning_effort": "xhigh",
+              "gpu_names": [
+                "NVIDIA H100 80GB HBM3"
+              ],
+              "task_digest": null,
+              "task_version": null
+            },
+            {
+              "repository": "OpenRSI-Foundation/sglang-omni-tts-qwen3-tts-base-1.7b-dual-mode-d154",
+              "source_commit": "91d67dd210335abc482795f8a5793d49d8ed7b42",
+              "result_path": "logs/runs/c438b70d8c0c4aae86723db402ca5a3f/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/final_result.json",
+              "run_id": "c438b70d8c0c4aae86723db402ca5a3f",
+              "agent": "codex",
+              "model": "gpt-6-astra",
+              "status": "cancelled",
+              "best_score": 1.0768327562875615,
+              "best_round": "agent-2",
+              "total_rounds": 5,
+              "timeout_seconds": 86400.0,
+              "runtime_seconds": 25412.394239098765,
+              "timed_out": false,
+              "reasoning_effort": "xhigh",
+              "gpu_names": [
+                "NVIDIA H100 80GB HBM3"
+              ],
+              "task_digest": null,
+              "task_version": null
+            }
+          ],
+          "best_report_path": "logs/runs/980104532c6b4d1fb5ec277ea4e2e750/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/submissions/agent-10/report.json",
+          "best_report": {
+            "status": "completed",
+            "score": 1.0963805683029137,
+            "exit_code": 0,
+            "timed_out": false
+          }
+        },
+        "claude-code": {
+          "repository": "OpenRSI-Foundation/sglang-omni-tts-qwen3-tts-base-1.7b-dual-mode-d154",
+          "source_commit": "91d67dd210335abc482795f8a5793d49d8ed7b42",
+          "result_path": "logs/runs/aa740f0c81a947eb8d4afdbc7814217d/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/final_result.json",
+          "run_id": "aa740f0c81a947eb8d4afdbc7814217d",
+          "agent": "claude-code",
+          "model": "claude-opus-5-5",
+          "status": "completed",
+          "best_score": 1.2827467402490482,
+          "best_round": "agent-3",
+          "total_rounds": 3,
+          "timeout_seconds": 86400.0,
+          "runtime_seconds": 86903.4601529371,
+          "timed_out": true,
+          "reasoning_effort": "max",
+          "gpu_names": [
+            "NVIDIA H100 80GB HBM3"
+          ],
+          "task_digest": null,
+          "task_version": null,
+          "archived_runs": [
+            {
+              "repository": "OpenRSI-Foundation/sglang-omni-tts-qwen3-tts-base-1.7b-dual-mode-d154",
+              "source_commit": "91d67dd210335abc482795f8a5793d49d8ed7b42",
+              "result_path": "logs/runs/aa740f0c81a947eb8d4afdbc7814217d/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/final_result.json",
+              "run_id": "aa740f0c81a947eb8d4afdbc7814217d",
+              "agent": "claude-code",
+              "model": "claude-opus-5-5",
+              "status": "completed",
+              "best_score": 1.2827467402490482,
+              "best_round": "agent-3",
+              "total_rounds": 3,
+              "timeout_seconds": 86400.0,
+              "runtime_seconds": 86903.4601529371,
+              "timed_out": true,
+              "reasoning_effort": "max",
+              "gpu_names": [
+                "NVIDIA H100 80GB HBM3"
+              ],
+              "task_digest": null,
+              "task_version": null
+            }
+          ],
+          "best_report_path": "logs/runs/aa740f0c81a947eb8d4afdbc7814217d/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/submissions/agent-3/report.json",
+          "best_report": {
+            "status": "completed",
+            "score": 1.2827467402490482,
+            "exit_code": 0,
+            "timed_out": false
+          }
+        }
+      }
+    },
+    {
+      "task": "Ming3-TTS 0.5B",
+      "type": "Main",
+      "sheet_row": 9,
+      "b0_commit": "ca9e8789fcd8",
+      "mode": "Non-streaming",
+      "agents": {
+        "claude-code": {
+          "repository": "OpenRSI-Foundation/sglang-omni-v0.1.9-ca9e8789fcd8-tts-ming3-0.5b-nonstream",
+          "source_commit": "4ab5b1bc0d7ddb825d3a363d3e9dc36a04c7fd8c",
+          "result_path": "logs/runs/e709654af4534e5baf28ecec1c805ea7/sglang-omni-ming3-0.5b-nonstream/final_result.json",
+          "run_id": "e709654af4534e5baf28ecec1c805ea7",
+          "agent": "claude-code",
+          "model": "claude-opus-5-5",
+          "status": "cancelled",
+          "best_score": 4.297543913010418,
+          "best_round": "agent-10",
+          "total_rounds": 12,
+          "timeout_seconds": 86400.0,
+          "runtime_seconds": 43961.53701242246,
+          "timed_out": false,
+          "reasoning_effort": "max",
+          "gpu_names": [
+            "NVIDIA H100 NVL"
+          ],
+          "task_digest": null,
+          "task_version": null,
+          "archived_runs": [
+            {
+              "repository": "OpenRSI-Foundation/sglang-omni-v0.1.9-ca9e8789fcd8-tts-ming3-0.5b-nonstream",
+              "source_commit": "4ab5b1bc0d7ddb825d3a363d3e9dc36a04c7fd8c",
+              "result_path": "logs/runs/c70d13ddbcda4697b13c186142e77a3c/sglang-omni-ming3-0.5b-nonstream/final_result.json",
+              "run_id": "c70d13ddbcda4697b13c186142e77a3c",
+              "agent": "claude-code",
+              "model": "claude-opus-5-5",
+              "status": "cancelled",
+              "best_score": null,
+              "best_round": null,
+              "total_rounds": 1,
+              "timeout_seconds": 86400.0,
+              "runtime_seconds": 12670.42625250481,
+              "timed_out": false,
+              "reasoning_effort": "max",
+              "gpu_names": [
+                "NVIDIA H100 NVL"
+              ],
+              "task_digest": null,
+              "task_version": null
+            },
+            {
+              "repository": "OpenRSI-Foundation/sglang-omni-v0.1.9-ca9e8789fcd8-tts-ming3-0.5b-nonstream",
+              "source_commit": "4ab5b1bc0d7ddb825d3a363d3e9dc36a04c7fd8c",
+              "result_path": "logs/runs/e709654af4534e5baf28ecec1c805ea7/sglang-omni-ming3-0.5b-nonstream/final_result.json",
+              "run_id": "e709654af4534e5baf28ecec1c805ea7",
+              "agent": "claude-code",
+              "model": "claude-opus-5-5",
+              "status": "cancelled",
+              "best_score": 4.297543913010418,
+              "best_round": "agent-10",
+              "total_rounds": 12,
+              "timeout_seconds": 86400.0,
+              "runtime_seconds": 43961.53701242246,
+              "timed_out": false,
+              "reasoning_effort": "max",
+              "gpu_names": [
+                "NVIDIA H100 NVL"
+              ],
+              "task_digest": null,
+              "task_version": null
+            }
+          ],
+          "best_report_path": "logs/runs/e709654af4534e5baf28ecec1c805ea7/sglang-omni-ming3-0.5b-nonstream/submissions/agent-10/report.json",
+          "best_report": {
+            "status": "completed",
+            "score": 4.297543913010418,
+            "exit_code": 0,
+            "timed_out": false
+          }
+        }
+      }
+    },
+    {
+      "task": "Ming3-TTS Tiny",
+      "type": "Main",
+      "sheet_row": 8,
+      "b0_commit": "ca9e8789fcd8",
+      "mode": "Non-streaming",
+      "agents": {
+        "claude-code": {
+          "repository": "OpenRSI-Foundation/sglang-omni-v0.1.9-ca9e8789fcd8-tts-ming3-tiny-nonstream",
+          "source_commit": "c2e016ae654c171e4a724e3956d957eb7f66b462",
+          "result_path": "logs/runs/8e2a8885937340eea85d3f1ebd1027ed/sglang-omni-ming3-tiny-nonstream/final_result.json",
+          "run_id": "8e2a8885937340eea85d3f1ebd1027ed",
+          "agent": "claude-code",
+          "model": "claude-opus-5-5",
+          "status": "completed",
+          "best_score": 3.6341600901916564,
+          "best_round": "agent-11",
+          "total_rounds": 11,
+          "timeout_seconds": 43200.0,
+          "runtime_seconds": 43386.33294367604,
+          "timed_out": true,
+          "reasoning_effort": "max",
+          "gpu_names": [
+            "NVIDIA H100 NVL"
+          ],
+          "task_digest": null,
+          "task_version": null,
+          "archived_runs": [
+            {
+              "repository": "OpenRSI-Foundation/sglang-omni-v0.1.9-ca9e8789fcd8-tts-ming3-tiny-nonstream",
+              "source_commit": "c2e016ae654c171e4a724e3956d957eb7f66b462",
+              "result_path": "logs/runs/8e2a8885937340eea85d3f1ebd1027ed/sglang-omni-ming3-tiny-nonstream/final_result.json",
+              "run_id": "8e2a8885937340eea85d3f1ebd1027ed",
+              "agent": "claude-code",
+              "model": "claude-opus-5-5",
+              "status": "completed",
+              "best_score": 3.6341600901916564,
+              "best_round": "agent-11",
+              "total_rounds": 11,
+              "timeout_seconds": 43200.0,
+              "runtime_seconds": 43386.33294367604,
+              "timed_out": true,
+              "reasoning_effort": "max",
+              "gpu_names": [
+                "NVIDIA H100 NVL"
+              ],
+              "task_digest": null,
+              "task_version": null
+            }
+          ],
+          "best_report_path": "logs/runs/8e2a8885937340eea85d3f1ebd1027ed/sglang-omni-ming3-tiny-nonstream/submissions/agent-11/report.json",
+          "best_report": {
+            "status": "completed",
+            "score": 3.6341600901916564,
+            "exit_code": 0,
+            "timed_out": false
+          }
+        },
+        "codex": {
+          "repository": "OpenRSI-Foundation/sglang-omni-v0.1.9-ca9e8789fcd8-tts-ming3-tiny-nonstream",
+          "source_commit": "c2e016ae654c171e4a724e3956d957eb7f66b462",
+          "result_path": "logs/runs/c21bff3e4b65493b874aea970488b673/sglang-omni-ming3-tiny-nonstream/final_result.json",
+          "run_id": "c21bff3e4b65493b874aea970488b673",
+          "agent": "codex",
+          "model": "gpt-6-astra",
+          "status": "failed",
+          "best_score": 1.8994120728796784,
+          "best_round": "agent-12",
+          "total_rounds": 32,
+          "timeout_seconds": 86400.0,
+          "runtime_seconds": 53674.357802791055,
+          "timed_out": false,
+          "reasoning_effort": "xhigh",
+          "gpu_names": [
+            "NVIDIA H200"
+          ],
+          "task_digest": null,
+          "task_version": null,
+          "archived_runs": [
+            {
+              "repository": "OpenRSI-Foundation/sglang-omni-v0.1.9-ca9e8789fcd8-tts-ming3-tiny-nonstream",
+              "source_commit": "c2e016ae654c171e4a724e3956d957eb7f66b462",
+              "result_path": "logs/runs/c21bff3e4b65493b874aea970488b673/sglang-omni-ming3-tiny-nonstream/final_result.json",
+              "run_id": "c21bff3e4b65493b874aea970488b673",
+              "agent": "codex",
+              "model": "gpt-6-astra",
+              "status": "failed",
+              "best_score": 1.8994120728796784,
+              "best_round": "agent-12",
+              "total_rounds": 32,
+              "timeout_seconds": 86400.0,
+              "runtime_seconds": 53674.357802791055,
+              "timed_out": false,
+              "reasoning_effort": "xhigh",
+              "gpu_names": [
+                "NVIDIA H200"
+              ],
+              "task_digest": null,
+              "task_version": null
+            },
+            {
+              "repository": "OpenRSI-Foundation/sglang-omni-v0.1.9-ca9e8789fcd8-tts-ming3-tiny-nonstream",
+              "source_commit": "c2e016ae654c171e4a724e3956d957eb7f66b462",
+              "result_path": "logs/runs/efc87eb8951d4565a82501913c2b96a9/sglang-omni-ming3-tiny-nonstream/final_result.json",
+              "run_id": "efc87eb8951d4565a82501913c2b96a9",
+              "agent": "codex",
+              "model": "gpt-6-astra",
+              "status": "completed",
+              "best_score": 1.3577623843064204,
+              "best_round": "agent-13",
+              "total_rounds": 13,
+              "timeout_seconds": 86400.0,
+              "runtime_seconds": 31555.89863075898,
+              "timed_out": false,
+              "reasoning_effort": "xhigh",
+              "gpu_names": [
+                "NVIDIA H200"
+              ],
+              "task_digest": null,
+              "task_version": null
+            }
+          ],
+          "best_report_path": "logs/runs/c21bff3e4b65493b874aea970488b673/sglang-omni-ming3-tiny-nonstream/submissions/agent-12/report.json",
+          "best_report": {
+            "status": "completed",
+            "score": 1.8994120728796784,
+            "exit_code": 0,
+            "timed_out": false
+          }
+        }
+      }
+    },
+    {
+      "task": "Qwen3-ASR 1.7B",
+      "type": "Main",
+      "sheet_row": 17,
+      "b0_commit": "eb7e97ed9438",
+      "mode": "Dual",
+      "agents": {
+        "codex": {
+          "repository": "OpenRSI-Foundation/sglang-omni-asr-qwen3-asr-1.7b-d257",
+          "source_commit": "54d94c3fa63fc7bf0e544ed3457e3aef78ef5f70",
+          "result_path": "logs/runs/cc81e32b311d469b91cc225f2467bcd9/qwen3-asr-streaming-throughput/final_result.json",
+          "run_id": "cc81e32b311d469b91cc225f2467bcd9",
+          "agent": "codex",
+          "model": "gpt-6-astra",
+          "status": "completed",
+          "best_score": 1.1394802247809317,
+          "best_round": "agent-21",
+          "total_rounds": 33,
+          "timeout_seconds": 86400.0,
+          "runtime_seconds": 86429.97521848301,
+          "timed_out": true,
+          "reasoning_effort": "xhigh",
+          "gpu_names": [
+            "NVIDIA H100 80GB HBM3"
+          ],
+          "task_digest": null,
+          "task_version": null,
+          "archived_runs": [
+            {
+              "repository": "OpenRSI-Foundation/sglang-omni-asr-qwen3-asr-1.7b-d257",
+              "source_commit": "54d94c3fa63fc7bf0e544ed3457e3aef78ef5f70",
+              "result_path": "logs/runs/97b0019587bd4f2397418552e982288c/qwen3-asr-streaming-throughput/final_result.json",
+              "run_id": "97b0019587bd4f2397418552e982288c",
+              "agent": "codex",
+              "model": "gpt-6-astra",
+              "status": "completed",
+              "best_score": 1.1167962104780884,
+              "best_round": "agent-47",
+              "total_rounds": 50,
+              "timeout_seconds": 86400.0,
+              "runtime_seconds": 88266.62312062597,
+              "timed_out": true,
+              "reasoning_effort": "xhigh",
+              "gpu_names": [
+                "NVIDIA H100 80GB HBM3"
+              ],
+              "task_digest": null,
+              "task_version": null
+            },
+            {
+              "repository": "OpenRSI-Foundation/sglang-omni-asr-qwen3-asr-1.7b-d257",
+              "source_commit": "54d94c3fa63fc7bf0e544ed3457e3aef78ef5f70",
+              "result_path": "logs/runs/cc81e32b311d469b91cc225f2467bcd9/qwen3-asr-streaming-throughput/final_result.json",
+              "run_id": "cc81e32b311d469b91cc225f2467bcd9",
+              "agent": "codex",
+              "model": "gpt-6-astra",
+              "status": "completed",
+              "best_score": 1.1394802247809317,
+              "best_round": "agent-21",
+              "total_rounds": 33,
+              "timeout_seconds": 86400.0,
+              "runtime_seconds": 86429.97521848301,
+              "timed_out": true,
+              "reasoning_effort": "xhigh",
+              "gpu_names": [
+                "NVIDIA H100 80GB HBM3"
+              ],
+              "task_digest": null,
+              "task_version": null
+            }
+          ],
+          "best_report_path": "logs/runs/cc81e32b311d469b91cc225f2467bcd9/qwen3-asr-streaming-throughput/submissions/agent-21/report.json",
+          "best_report": {
+            "status": "completed",
+            "score": 1.1394802247809317,
+            "exit_code": 0,
+            "timed_out": false
+          }
+        },
+        "claude-code": {
+          "repository": "OpenRSI-Foundation/sglang-omni-asr-qwen3-asr-1.7b-d257",
+          "source_commit": "54d94c3fa63fc7bf0e544ed3457e3aef78ef5f70",
+          "result_path": "logs/runs/e99bafd4607c468f91cb4e0e407378e9/qwen3-asr-streaming-throughput/final_result.json",
+          "run_id": "e99bafd4607c468f91cb4e0e407378e9",
+          "agent": "claude-code",
+          "model": "claude-opus-5-5",
+          "status": "cancelled",
+          "best_score": 1.316675811414593,
+          "best_round": "agent-13",
+          "total_rounds": 13,
+          "timeout_seconds": 172800.0,
+          "runtime_seconds": 87749.12621216592,
+          "timed_out": false,
+          "reasoning_effort": "max",
+          "gpu_names": [
+            "NVIDIA H100 80GB HBM3"
+          ],
+          "task_digest": null,
+          "task_version": null,
+          "archived_runs": [
+            {
+              "repository": "OpenRSI-Foundation/sglang-omni-asr-qwen3-asr-1.7b-d257",
+              "source_commit": "54d94c3fa63fc7bf0e544ed3457e3aef78ef5f70",
+              "result_path": "logs/runs/e99bafd4607c468f91cb4e0e407378e9/qwen3-asr-streaming-throughput/final_result.json",
+              "run_id": "e99bafd4607c468f91cb4e0e407378e9",
+              "agent": "claude-code",
+              "model": "claude-opus-5-5",
+              "status": "cancelled",
+              "best_score": 1.316675811414593,
+              "best_round": "agent-13",
+              "total_rounds": 13,
+              "timeout_seconds": 172800.0,
+              "runtime_seconds": 87749.12621216592,
+              "timed_out": false,
+              "reasoning_effort": "max",
+              "gpu_names": [
+                "NVIDIA H100 80GB HBM3"
+              ],
+              "task_digest": null,
+              "task_version": null
+            }
+          ],
+          "best_report_path": "logs/runs/e99bafd4607c468f91cb4e0e407378e9/qwen3-asr-streaming-throughput/submissions/agent-13/report.json",
+          "best_report": {
+            "status": "completed",
+            "score": 1.316675811414593,
+            "exit_code": 0,
+            "timed_out": false
+          }
+        }
+      }
+    },
+    {
+      "task": "Whisper large-v3",
+      "type": "Main",
+      "sheet_row": 19,
+      "b0_commit": "eb7e97ed9438",
+      "mode": "Dual",
+      "agents": {
+        "codex": {
+          "repository": "OpenRSI-Foundation/sglang-omni-asr-whisper-large-v3-d257",
+          "source_commit": "ffbd2a582867a178898a04a8505964e6993ea56f",
+          "result_path": "logs/runs/1e858cd4432e47efb41c56e8682df1c4/whisper-asr-streaming-throughput/final_result.json",
+          "run_id": "1e858cd4432e47efb41c56e8682df1c4",
+          "agent": "codex",
+          "model": "gpt-6-astra",
+          "status": "completed",
+          "best_score": 1.1256019736232843,
+          "best_round": "agent-8",
+          "total_rounds": 16,
+          "timeout_seconds": 86400.0,
+          "runtime_seconds": 92551.66095880326,
+          "timed_out": true,
+          "reasoning_effort": "xhigh",
+          "gpu_names": [
+            "NVIDIA H100 80GB HBM3"
+          ],
+          "task_digest": null,
+          "task_version": null,
+          "archived_runs": [
+            {
+              "repository": "OpenRSI-Foundation/sglang-omni-asr-whisper-large-v3-d257",
+              "source_commit": "ffbd2a582867a178898a04a8505964e6993ea56f",
+              "result_path": "logs/runs/1e858cd4432e47efb41c56e8682df1c4/whisper-asr-streaming-throughput/final_result.json",
+              "run_id": "1e858cd4432e47efb41c56e8682df1c4",
+              "agent": "codex",
+              "model": "gpt-6-astra",
+              "status": "completed",
+              "best_score": 1.1256019736232843,
+              "best_round": "agent-8",
+              "total_rounds": 16,
+              "timeout_seconds": 86400.0,
+              "runtime_seconds": 92551.66095880326,
+              "timed_out": true,
+              "reasoning_effort": "xhigh",
+              "gpu_names": [
+                "NVIDIA H100 80GB HBM3"
+              ],
+              "task_digest": null,
+              "task_version": null
+            }
+          ],
+          "best_report_path": "logs/runs/1e858cd4432e47efb41c56e8682df1c4/whisper-asr-streaming-throughput/submissions/agent-8/report.json",
+          "best_report": {
+            "status": "completed",
+            "score": 1.1256019736232843,
+            "exit_code": 0,
+            "timed_out": false
+          }
+        },
+        "claude-code": {
+          "repository": "OpenRSI-Foundation/sglang-omni-asr-whisper-large-v3-d257",
+          "source_commit": "ffbd2a582867a178898a04a8505964e6993ea56f",
+          "result_path": "logs/runs/3c4e45c119654de49b51af74fafb9b05/whisper-asr-streaming-throughput/final_result.json",
+          "run_id": "3c4e45c119654de49b51af74fafb9b05",
+          "agent": "claude-code",
+          "model": "claude-opus-5-5",
+          "status": "cancelled",
+          "best_score": 1.9789822170895919,
+          "best_round": "agent-12",
+          "total_rounds": 12,
+          "timeout_seconds": 172800.0,
+          "runtime_seconds": 86531.43732987391,
+          "timed_out": false,
+          "reasoning_effort": "max",
+          "gpu_names": [
+            "NVIDIA H100 80GB HBM3"
+          ],
+          "task_digest": null,
+          "task_version": null,
+          "archived_runs": [
+            {
+              "repository": "OpenRSI-Foundation/sglang-omni-asr-whisper-large-v3-d257",
+              "source_commit": "ffbd2a582867a178898a04a8505964e6993ea56f",
+              "result_path": "logs/runs/3c4e45c119654de49b51af74fafb9b05/whisper-asr-streaming-throughput/final_result.json",
+              "run_id": "3c4e45c119654de49b51af74fafb9b05",
+              "agent": "claude-code",
+              "model": "claude-opus-5-5",
+              "status": "cancelled",
+              "best_score": 1.9789822170895919,
+              "best_round": "agent-12",
+              "total_rounds": 12,
+              "timeout_seconds": 172800.0,
+              "runtime_seconds": 86531.43732987391,
+              "timed_out": false,
+              "reasoning_effort": "max",
+              "gpu_names": [
+                "NVIDIA H100 80GB HBM3"
+              ],
+              "task_digest": null,
+              "task_version": null
+            }
+          ],
+          "best_report_path": "logs/runs/3c4e45c119654de49b51af74fafb9b05/whisper-asr-streaming-throughput/submissions/agent-12/report.json",
+          "best_report": {
+            "status": "completed",
+            "score": 1.9789822170895919,
+            "exit_code": 0,
+            "timed_out": false
+          }
+        }
+      }
+    },
+    {
+      "task": "MOSS-Transcribe-Diarize",
+      "type": "Main",
+      "sheet_row": 18,
+      "b0_commit": "8220d220703c",
+      "mode": "Dual",
+      "agents": {
+        "claude-code": {
+          "repository": "OpenRSI-Foundation/sglang-omni-asr-moss-transcribe-diarize-d257",
+          "source_commit": "f58a9f3f20726a05ad2733b23c39772a77a8b91f",
+          "result_path": "logs/runs/0cf42bf3508a4e78bdfbbd97175a6d53/moss-transcribe-diarize-streaming-throughput/final_result.json",
+          "run_id": "0cf42bf3508a4e78bdfbbd97175a6d53",
+          "agent": "claude-code",
+          "model": "claude-opus-5-5",
+          "status": "completed",
+          "best_score": 1.4895412139290778,
+          "best_round": "agent-6",
+          "total_rounds": 11,
+          "timeout_seconds": 86400.0,
+          "runtime_seconds": 86513.64703547303,
+          "timed_out": true,
+          "reasoning_effort": "max",
+          "gpu_names": [
+            "NVIDIA H100 80GB HBM3"
+          ],
+          "task_digest": null,
+          "task_version": null,
+          "archived_runs": [
+            {
+              "repository": "OpenRSI-Foundation/sglang-omni-asr-moss-transcribe-diarize-d257",
+              "source_commit": "f58a9f3f20726a05ad2733b23c39772a77a8b91f",
+              "result_path": "logs/runs/0cf42bf3508a4e78bdfbbd97175a6d53/moss-transcribe-diarize-streaming-throughput/final_result.json",
+              "run_id": "0cf42bf3508a4e78bdfbbd97175a6d53",
+              "agent": "claude-code",
+              "model": "claude-opus-5-5",
+              "status": "completed",
+              "best_score": 1.4895412139290778,
+              "best_round": "agent-6",
+              "total_rounds": 11,
+              "timeout_seconds": 86400.0,
+              "runtime_seconds": 86513.64703547303,
+              "timed_out": true,
+              "reasoning_effort": "max",
+              "gpu_names": [
+                "NVIDIA H100 80GB HBM3"
+              ],
+              "task_digest": null,
+              "task_version": null
+            }
+          ],
+          "best_report_path": "logs/runs/0cf42bf3508a4e78bdfbbd97175a6d53/moss-transcribe-diarize-streaming-throughput/submissions/agent-6/report.json",
+          "best_report": {
+            "status": "completed",
+            "score": 1.4895412139290778,
+            "exit_code": 0,
+            "timed_out": false
+          }
+        },
+        "codex": {
+          "repository": "OpenRSI-Foundation/sglang-omni-asr-moss-transcribe-diarize-d257",
+          "source_commit": "f58a9f3f20726a05ad2733b23c39772a77a8b91f",
+          "result_path": "logs/runs/4dbe4843ec5242fb90c083b8f7d48350/moss-transcribe-diarize-streaming-throughput/final_result.json",
+          "run_id": "4dbe4843ec5242fb90c083b8f7d48350",
+          "agent": "codex",
+          "model": "gpt-6-astra",
+          "status": "completed",
+          "best_score": 1.133761118929018,
+          "best_round": "agent-19",
+          "total_rounds": 22,
+          "timeout_seconds": 86400.0,
+          "runtime_seconds": 88964.72265140107,
+          "timed_out": true,
+          "reasoning_effort": "xhigh",
+          "gpu_names": [
+            "NVIDIA H100 80GB HBM3"
+          ],
+          "task_digest": null,
+          "task_version": null,
+          "archived_runs": [
+            {
+              "repository": "OpenRSI-Foundation/sglang-omni-asr-moss-transcribe-diarize-d257",
+              "source_commit": "f58a9f3f20726a05ad2733b23c39772a77a8b91f",
+              "result_path": "logs/runs/4dbe4843ec5242fb90c083b8f7d48350/moss-transcribe-diarize-streaming-throughput/final_result.json",
+              "run_id": "4dbe4843ec5242fb90c083b8f7d48350",
+              "agent": "codex",
+              "model": "gpt-6-astra",
+              "status": "completed",
+              "best_score": 1.133761118929018,
+              "best_round": "agent-19",
+              "total_rounds": 22,
+              "timeout_seconds": 86400.0,
+              "runtime_seconds": 88964.72265140107,
+              "timed_out": true,
+              "reasoning_effort": "xhigh",
+              "gpu_names": [
+                "NVIDIA H100 80GB HBM3"
+              ],
+              "task_digest": null,
+              "task_version": null
+            }
+          ],
+          "best_report_path": "logs/runs/4dbe4843ec5242fb90c083b8f7d48350/moss-transcribe-diarize-streaming-throughput/submissions/agent-19/report.json",
+          "best_report": {
+            "status": "completed",
+            "score": 1.133761118929018,
+            "exit_code": 0,
+            "timed_out": false
+          }
+        }
+      }
+    }
+  ]
+}

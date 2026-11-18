@@ -23,9 +23,11 @@ Developed jointly by [OpenRSI and the SGLang-Omni team](https://index.openrsi.fo
 
 ## ✨ Highlights
 
-- **Built with SGLang-Omni maintainers.** OpenRSI and the maintainers designed the tasks around production serving workloads. Optimizations that agents found for these models contributed to **11 PRs** the maintainers merged upstream. [Upstream results →](docs/upstream-results.md)
-- **16 public agent trajectories.** Follow each run round by round to see what the agent changed, how the evaluator scored it, and what the agent tried next. [Browse runs →](results/archive.md)
-- **Hill-climbing RSI on a single GPU.** One 80 GB H100 per task is enough to test whether an agent can improve serving throughput by building on its best result from earlier rounds. [Running guide →](docs/running.md)
+- **Built with SGLang maintainers.** OpenRSI collaborated with SGLang-Omni maintainers to design tasks grounded in real-world production serving workloads. Agent-discovered optimizations have already resulted in [14 PRs merged upstream](https://github.com/sgl-project/sglang-omni/pulls?q=is%3Apr+state%3Aclosed+author%3AZhuofeng-Li).
+
+- **Lightweight, single-GPU RSI.** Each task runs on just 1 × GPU, making iterative RSI experiments accessible without requiring large GPU clusters. Agents progressively improve serving throughput by building on their best results from previous rounds.
+
+- **Fully open-source and reproducible.** We fully open-source the tasks, RSI harness, agent trajectories, and execution logs, enabling anyone to reproduce experiments, benchmark their agents on the leaderboard, and contribute new optimization strategies.
 
 <a id="leaderboard"></a>
 
@@ -46,8 +48,6 @@ Best verified score within the **first 24 hours** of each unguided single-agent 
 | **[Whisper large-v3](tasks/whisper-large-v3-dual-mode/)** | 👂 ASR | [1.126×](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/whisper-large-v3-dual-mode/codex-gpt-6-astra/submissions/agent-8/report.json) | [**1.979×**](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/whisper-large-v3-dual-mode/claude-code-claude-opus-5-5/submissions/agent-12/report.json) | [HF ↗](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/whisper-large-v3-dual-mode) |
 | **[MOSS-Transcribe-Diarize](tasks/moss-transcribe-diarize-dual-mode/)** | 👂 ASR | [1.134×](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/moss-transcribe-diarize-dual-mode/codex-gpt-6-astra/submissions/agent-19/report.json) | [**1.490×**](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/moss-transcribe-diarize-dual-mode/claude-code-claude-opus-5-5/submissions/agent-6/report.json) | [HF ↗](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/moss-transcribe-diarize-dual-mode) |
 
-Scores link to the exact evaluation reports selected by the 24-hour cutoff. Full trajectories may contain later results. [Results and comparison limits](results/README.md) · [JSON](results/main.json) · [CSV](results/runs.csv)
-
 <details>
 <summary><strong>Scoring and comparison protocol</strong></summary>
 
@@ -67,10 +67,6 @@ Both agents are evaluated over the same first 24 hours. Each run keeps its own i
 
 ## 📦 Tasks
 
-<p align="center">
-  <img src="assets/tasks.svg" width="100%" alt="Serving pipelines for eight SGLang-Omni tasks: five TTS and three ASR or diarization tasks, all in streaming and non-streaming modes">
-</p>
-
 **8 model checkpoints across 7 model families**, all evaluated in streaming and non-streaming modes. Each task link includes its workload, reference throughput, and GPU calibration instructions.
 
 | Task package | Model checkpoint | SGLang-Omni base commit |
@@ -85,6 +81,12 @@ Both agents are evaluated over the same first 24 hours. Each run keeps its own i
 | [`moss-transcribe-diarize-dual-mode`](tasks/moss-transcribe-diarize-dual-mode/) | [`MOSS-Transcribe-Diarize`](https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize) | [`8220d220`](https://github.com/sgl-project/sglang-omni/tree/8220d220703cf8d8f5c5d9a2cde00b5ed13717b8) |
 
 Each directory is a standalone Harbor 1.4 package, runnable with `rsi-harness run`. See the [task catalog](tasks/README.md) and [package layout](docs/how-it-works.md).
+
+
+<p align="center">
+  <img src="assets/tasks.svg" width="100%" alt="Serving pipelines for eight SGLang-Omni tasks: five TTS and three ASR or diarization tasks, all in streaming and non-streaming modes">
+</p>
+
 
 <a id="quick-start"></a>
 

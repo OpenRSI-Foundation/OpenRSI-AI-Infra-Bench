@@ -143,8 +143,6 @@ Replace `cosyvoice3-dual-mode` with any [task slug](#tasks) to run a different b
   </tr>
 </table>
 
-We thank the [SGLang-Omni](https://github.com/sgl-project/sglang-omni) maintainers and contributors for task design, code review, and independent reproductions.
-
 <a id="contributing"></a>
 
 ## ✨ Contributing

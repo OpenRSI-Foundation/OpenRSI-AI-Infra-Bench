@@ -51,15 +51,15 @@ Best verified score within the **first 24 hours** of each unguided single-agent 
 <details>
 <summary><strong>Scoring and comparison protocol</strong></summary>
 
-For each mode, divide the candidate's mean throughput by that run's initial B₀ throughput; each mean uses three repetitions. The combined score is:
+Each mode's ratio is candidate mean throughput / initial B₀ mean throughput, with three repetitions per mean. Combine streaming (Rₛ) and non-streaming (Rₙ) as:
 
-$$
-\mathrm{score} = R_s^{2/3} R_n^{1/3}
-$$
+```math
+\mathrm{score} = R_s^{2/3} \, R_n^{1/3}
+```
 
-Here, $R_s$ and $R_n$ are the streaming and non-streaming ratios. For ASR, each mode's ratio is the geometric mean of its English and Mandarin ratios. Modified candidates must improve both modes and pass every quality, latency, streaming, and integrity gate.
+ASR uses the geometric mean of English and Mandarin ratios within each mode. Modified candidates must improve both modes and pass all [quality, latency, streaming, and integrity gates](docs/evaluation.md).
 
-Both agents are evaluated over the same first 24 hours. Each run keeps its own initial B₀ calibration. The [cutoff audit](results/README.md#evidence-and-limits) records hardware, protocol, and source-snapshot comparisons; the [evaluation guide](docs/evaluation.md) describes the gates.
+Both agents are ranked by their best valid score within each run's first 24 hours, using that run's fixed B₀. See the [cutoff audit](results/README.md#evidence-and-limits) for hardware, protocol, and source-snapshot comparisons.
 
 </details>
 

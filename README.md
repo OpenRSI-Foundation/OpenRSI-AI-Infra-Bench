@@ -16,17 +16,6 @@
   <a href="https://discord.gg/3EG8Qhmfsa"><img src="https://img.shields.io/badge/Discord-6674D8?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"></a>
 </p>
 
-<p align="center">
-  <a href="#leaderboard"><b>🏆&nbsp;Leaderboard</b></a> &nbsp;·&nbsp;
-  <a href="#highlights"><b>✨&nbsp;Highlights</b></a> &nbsp;·&nbsp;
-  <a href="docs/how-it-works.md"><b>⚙️&nbsp;How&nbsp;It&nbsp;Works</b></a> &nbsp;·&nbsp;
-  <a href="#tasks"><b>📦&nbsp;12&nbsp;Tasks</b></a> &nbsp;·&nbsp;
-  <a href="docs/upstream-results.md"><b>🔁&nbsp;Upstream&nbsp;PRs</b></a> &nbsp;·&nbsp;
-  <a href="#quick-start"><b>🚀&nbsp;Quick&nbsp;Start</b></a> &nbsp;·&nbsp;
-  <a href="docs/evaluation.md"><b>⚖️&nbsp;Evaluation</b></a> &nbsp;·&nbsp;
-  <a href="#citation"><b>📖&nbsp;Citation</b></a>
-</p>
-
 ---
 
 **OpenRSI-AI-Infra-bench** benchmarks **recursive self-improvement (RSI) in real AI serving systems**. Agents iteratively optimize a serving stack with fixed model weights and GPU resources. An independent evaluator verifies speedups under **quality and latency constraints**; each accepted improvement becomes the next baseline.
@@ -224,17 +213,17 @@ hf download OpenRSI-Foundation/OpenRSI-Index-Logs --repo-type dataset \
     <td align="center" width="33%"><a href="https://github.com/zhaochenyang20"><strong>Chenyang Zhao</strong></a></td>
   </tr>
   <tr>
-    <td align="center" width="33%"><a href="https://yichenfeng.me/"><strong>Yichen Feng</strong></a><br><sub>Contributor</sub></td>
-    <td align="center" width="33%"><a href="https://wenhaochai.com/"><strong>Wenhao Chai</strong></a><br><sub>Contributor</sub></td>
-    <td align="center" width="33%"><a href="https://weikangda.github.io/kangda.github.io/"><strong>Kangda Wei</strong></a><br><sub>Contributor</sub></td>
+    <td align="center" width="33%"><a href="https://yichenfeng.me/"><strong>Yichen Feng</strong></a></td>
+    <td align="center" width="33%"><a href="https://wenhaochai.com/"><strong>Wenhao Chai</strong></a></td>
+    <td align="center" width="33%"><a href="https://weikangda.github.io/kangda.github.io/"><strong>Kangda Wei</strong></a></td>
   </tr>
   <tr>
-    <td align="center" width="33%"><a href="https://davidhanx.github.io/"><strong>Xinyang Han</strong></a><br><sub>Contributor</sub></td>
-    <td align="center" width="33%"><a href="https://caralinotes.com/"><strong>Cara Li</strong></a><br><sub>Contributor</sub></td>
-    <td align="center" width="33%"><a href="https://vincentcaptain.github.io/"><strong>Shujia Liang</strong></a><br><sub>Contributor</sub></td>
+    <td align="center" width="33%"><a href="https://davidhanx.github.io/"><strong>Xinyang Han</strong></a></td>
+    <td align="center" width="33%"><a href="https://caralinotes.com/"><strong>Cara Li</strong></a></td>
+    <td align="center" width="33%"><a href="https://vincentcaptain.github.io/"><strong>Shujia Liang</strong></a></td>
   </tr>
   <tr>
-    <td align="center" colspan="3"><a href="https://yuetl9.github.io/"><strong>Yuetai Li</strong></a><br><sub>Contributor</sub></td>
+    <td align="center" colspan="3"><a href="https://yuetl9.github.io/"><strong>Yuetai Li</strong></a></td>
   </tr>
 </table>
 

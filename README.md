@@ -10,7 +10,7 @@
   <a href="https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/"><img src="https://img.shields.io/badge/Blog-OpenRSI_×_SGLang--Omni-C04E1D?style=for-the-badge&logo=gitbook&logoColor=white&labelColor=141413" alt="Blog"></a>&nbsp;
   <a href="results/archive.md"><img src="https://img.shields.io/badge/RSI_Logs-16_Runs-C96442?style=for-the-badge&logo=googlesheets&logoColor=white&labelColor=141413" alt="16 benchmark runs"></a>&nbsp;
   <a href="docs/upstream-results.md"><img src="https://img.shields.io/badge/Upstream-11_PRs_Merged-9D2F24?style=for-the-badge&logo=github&logoColor=white&labelColor=141413" alt="11 PRs Merged"></a>&nbsp;
-  <a href="https://x.com/OpenRSI/status/2102831770458890626"><img src="https://img.shields.io/badge/X-@OpenRSI-3D3D3A?style=for-the-badge&logo=x&logoColor=white&labelColor=141413" alt="X / Twitter"></a>
+  <a href="https://x.com/OpenRSI/status/2119869682929066288"><img src="https://img.shields.io/badge/X-@OpenRSI-3D3D3A?style=for-the-badge&logo=x&logoColor=white&labelColor=141413" alt="X / Twitter"></a>
 </p>
 
 ---

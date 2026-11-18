@@ -14,15 +14,6 @@
   <a href="docs/upstream-results.md"><img src="https://img.shields.io/badge/Upstream-11_PRs_Merged-2F8F4E?style=for-the-badge&logo=github&logoColor=white" alt="11 PRs Merged"></a>
 </p>
 
-<p align="center">
-  <a href="#quick-start"><b>🚀&nbsp;Quick&nbsp;Start</b></a> &nbsp;·&nbsp;
-  <a href="#leaderboard"><b>🏆&nbsp;Leaderboard</b></a> &nbsp;·&nbsp;
-  <a href="#tasks"><b>📦&nbsp;Tasks</b></a> &nbsp;·&nbsp;
-  <a href="#how-it-works"><b>⚙️&nbsp;How&nbsp;It&nbsp;Works</b></a> &nbsp;·&nbsp;
-  <a href="#upstream"><b>🔁&nbsp;Upstream</b></a> &nbsp;·&nbsp;
-  <a href="#citation"><b>📖&nbsp;Citation</b></a>
-</p>
-
 ---
 
 **OpenRSI-AI-Infra-Bench** evaluates whether coding agents can improve real AI serving systems. Agents profile and modify [SGLang-Omni](https://github.com/sgl-project/sglang-omni) under fixed model weights and GPU resources. An isolated evaluator measures throughput against each run's **fixed initial baseline B₀**, subject to quality, latency, and streaming constraints.
@@ -159,17 +150,17 @@ The [upstream results](docs/upstream-results.md) link every PR and report throug
     <td align="center" width="33%"><a href="https://github.com/zhaochenyang20"><strong>Chenyang Zhao</strong></a></td>
   </tr>
   <tr>
-    <td align="center" width="33%"><a href="https://yichenfeng.me/"><strong>Yichen Feng</strong></a><br><sub>Contributor</sub></td>
-    <td align="center" width="33%"><a href="https://wenhaochai.com/"><strong>Wenhao Chai</strong></a><br><sub>Contributor</sub></td>
-    <td align="center" width="33%"><a href="https://weikangda.github.io/kangda.github.io/"><strong>Kangda Wei</strong></a><br><sub>Contributor</sub></td>
+    <td align="center" width="33%"><a href="https://yichenfeng.me/"><strong>Yichen Feng</strong></a></td>
+    <td align="center" width="33%"><a href="https://wenhaochai.com/"><strong>Wenhao Chai</strong></a></td>
+    <td align="center" width="33%"><a href="https://weikangda.github.io/kangda.github.io/"><strong>Kangda Wei</strong></a></td>
   </tr>
   <tr>
-    <td align="center" width="33%"><a href="https://davidhanx.github.io/"><strong>Xinyang Han</strong></a><br><sub>Contributor</sub></td>
-    <td align="center" width="33%"><a href="https://caralinotes.com/"><strong>Cara Li</strong></a><br><sub>Contributor</sub></td>
-    <td align="center" width="33%"><a href="https://vincentcaptain.github.io/"><strong>Shujia Liang</strong></a><br><sub>Contributor</sub></td>
+    <td align="center" width="33%"><a href="https://davidhanx.github.io/"><strong>Xinyang Han</strong></a></td>
+    <td align="center" width="33%"><a href="https://caralinotes.com/"><strong>Cara Li</strong></a></td>
+    <td align="center" width="33%"><a href="https://vincentcaptain.github.io/"><strong>Shujia Liang</strong></a></td>
   </tr>
   <tr>
-    <td align="center" colspan="3"><a href="https://yuetl9.github.io/"><strong>Yuetai Li</strong></a><br><sub>Contributor</sub></td>
+    <td align="center" colspan="3"><a href="https://yuetl9.github.io/"><strong>Yuetai Li</strong></a></td>
   </tr>
 </table>
 

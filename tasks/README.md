@@ -1,8 +1,8 @@
 # OpenRSI × SGLang-Omni Benchmark Suite
 
-**Task repository:** [OpenRSI-Foundation/OpenRSI-Index-SGLang-Omni](https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench) · **Parent index:** [OpenRSI-Index](https://github.com/OpenRSI-Foundation/OpenRSI-Index) (`rsi-tasks/sglang-omni/`) · **Trajectories:** [OpenRSI-Index-Logs](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni) · **Blog:** [OpenRSI × SGLang-Omni](https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/)
+**Task repository:** [OpenRSI-Foundation/OpenRSI-Index-SGLang-Omni](https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench) · **Parent index:** [OpenRSI-Index](https://github.com/OpenRSI-Foundation/OpenRSI-Index) (`rsi-tasks/sglang-omni/`) · **Logs Viewer:** [index.openrsi.foundation/logs](https://index.openrsi.foundation/logs/) · **HF Dataset:** [OpenRSI-Index-Logs](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni) · **Blog:** [OpenRSI × SGLang-Omni](https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/)
 
-This repository hosts **12 native Harbor 1.4 GPU inference optimization benchmarks** for [RSI-Harness](https://github.com/OpenRSI-Foundation/OpenRSI-Index/tree/main/RSI-Harness), built on [SGLang-Omni](https://github.com/sgl-project/sglang-omni) across **9 Text-to-Speech (TTS)** tasks and **3 Automatic Speech Recognition / Diarization (ASR)** tasks spanning 8 open-weight model checkpoints.
+This repository hosts **12 native Harbor 1.4 GPU inference optimization benchmarks** for [RSI-Harness](https://github.com/OpenRSI-Foundation/OpenRSI-Index/tree/main/RSI-Harness), built on [SGLang-Omni](https://github.com/sgl-project/sglang-omni) across **9 Text-to-Speech (TTS)** tasks and **3 Automatic Speech Recognition / Diarization (ASR)** tasks spanning **10 open-weight model checkpoints across 8 model families**.
 
 Every task runs out of the box with `rsi-harness run`:
 - **Self-contained Docker build**: Pinned CUDA/SGLang dependencies, deterministic source manifests, and SHA-256-verified Hugging Face weights and SeedTTS evaluation splits.

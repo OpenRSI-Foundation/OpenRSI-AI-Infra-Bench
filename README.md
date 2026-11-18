@@ -85,25 +85,25 @@ For example, **2.0× streaming** and **1.5× non-streaming** yield a **1.817× n
 
 <table>
   <tr>
-    <td align="center" width="20%"><h3>12</h3></td>
     <td align="center" width="20%"><h3>10</h3></td>
-    <td align="center" width="20%"><h3>21</h3></td>
+    <td align="center" width="20%"><h3>10</h3></td>
     <td align="center" width="20%"><h3>6.29×</h3></td>
     <td align="center" width="20%"><h3>14</h3></td>
+    <td align="center" width="20%"><h3>1 GPU</h3></td>
   </tr>
   <tr>
-    <td align="center">Harbor 1.4 tasks</td>
-    <td align="center">Model checkpoints<br/><sub>(8 families)</sub></td>
-    <td align="center">Public single-agent<br/>trajectories</td>
-    <td align="center">Peak verified<br/>speedup</td>
-    <td align="center">Upstream PRs<br/>merged</td>
+    <td align="center">Omni models</td>
+    <td align="center">Tasks</td>
+    <td align="center">Best reward</td>
+    <td align="center">Merged PRs</td>
+    <td align="center">Per task</td>
   </tr>
 </table>
 
-- **100% native `rsi-harness run` across TTS & ASR.** One uniform CLI entrypoint for every task—no external `launch.py` wrappers or stateful rolling-baseline adapters. `--agent oracle` validates any task end-to-end on 1 GPU (`reward = 1.0`).
-- **Isolated clean-image Judge & automatic NUMA pinning.** Every submission runs 3 fresh repetitions per mode in a clean Judge container, automatically binding **16 idle non-SMT physical CPU cores** on the GPU's NUMA node and enforcing `peak_foreign_cores <= 2.0`. Non-reference GPUs can recalibrate B₀ once via `/tests/calibrate.py` (`RSI_BASELINE_JSON`).
-- **Hardened streaming, quality & anti-cheat gates.** Verifies true incremental delivery (`>= 95%` multi-chunk audio & `c50 >= 95%` on TTS; `single_delta_fraction <= 5%` on ASR; `>= 80%` diarization speaker markers on MOSS-TD), `Qwen3-ASR-1.7B` / bilingual SeedTTS intelligibility ceilings, frozen weights/sampling configs, and AST + call-site liveness.
-- **Every iteration open & inspectable.** Full agent prompts, reasoning traces, code diffs, and round-by-round Judge reports for all 21 runs are open in [OpenRSI-Index-Logs](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni).
+- **Production tasks, validated by real PRs.** Jointly designed and reviewed by
+  OpenRSI and SGLang-Omni.
+- **Easy to run and inspect.** One GPU per task, with agent actions and evaluator
+  feedback visible round by round.
 
 <a id="how-it-works"></a>
 

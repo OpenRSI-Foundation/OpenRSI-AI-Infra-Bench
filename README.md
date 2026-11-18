@@ -121,14 +121,6 @@ To run another benchmark, replace `cosyvoice3-dual-mode` with any [task slug](#t
 
 </details>
 
-<a id="news"></a>
-
-## 📰 News
-
-- **2026-11:** Released runnable task packages and public agent trajectories. [Browse the results](results/README.md).
-- **2026-11:** Presented *Scaling RSI for AI Infra* at [SGLang Summit](https://www.sglang.io/summit). [Slides](https://docs.google.com/presentation/d/1ODcBjqT9sl0NRa7SdtV4rwULmMZI71xx/edit).
-- **2026-11:** Published [OpenRSI × SGLang-Omni: Scaling RSI for AI Infra](https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/).
-
 <a id="contributors"></a>
 
 ## 🤝 Core Contributors

@@ -92,23 +92,26 @@ After [installing RSI-Harness](docs/running.md#2-install-rsi-harness) and config
 
 ## 🚀 Quick start
 
-**Requires:** Linux, Docker Engine 26+ with daemon access, NVIDIA drivers + Container Toolkit, Git, and [uv](https://docs.astral.sh/uv/getting-started/installation/). Use one NVIDIA GPU (80 GB+ VRAM recommended); see [full hardware requirements](docs/running.md#1-host-requirements--integrity-check).
+**Requires:** A Linux host with an NVIDIA GPU (80 GB+ VRAM recommended), Docker Engine 26+ with daemon access, NVIDIA drivers + Container Toolkit, Git, and [uv](https://docs.astral.sh/uv/getting-started/installation/).
 
-Copy and run to set up RSI-Harness and validate CosyVoice3 on GPU 0. No model API key is needed:
+Open your coding agent (e.g., Codex or Claude Code) on the host and paste the prompt below. It will check the environment, set up RSI-Harness, run the benchmark, and summarize the results.
 
-```bash
-git clone --depth 1 https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench.git &&
-cd OpenRSI-AI-Infra-Bench &&
-git clone --depth 1 --filter=blob:none --sparse \
-  https://github.com/OpenRSI-Foundation/OpenRSI-Index.git vendor/OpenRSI-Index &&
-git -C vendor/OpenRSI-Index sparse-checkout set RSI-Harness &&
-uvx --python 3.12 --from ./vendor/OpenRSI-Index/RSI-Harness \
-  rsi-harness run tasks/cosyvoice3-dual-mode --agent oracle --gpus 0
+```text
+Run the cosyvoice3-dual-mode benchmark on GPU 0 from:
+https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench
+
+Clone the repository and follow docs/running.md to check the
+environment, install RSI-Harness, configure the available coding
+agent, and calibrate the baseline if needed. Start a coding-agent
+optimization run, troubleshoot any setup or execution failures,
+and inspect the results.
+
+When finished, report the task score, run ID, and artifact paths.
+If credentials are missing or you encounter a blocker you cannot
+resolve, tell me exactly what is needed.
 ```
 
-The first run installs the Harness, builds the task image, and downloads model weights. Expected result: **`reward = 1.0`**, with artifacts under `logs/runs/<run-id>/`.
-
-To run another benchmark, replace `cosyvoice3-dual-mode` with any [task slug](#tasks). See the [full guide](docs/running.md) for Codex / Claude Code runs, GPU calibration, and result inspection, or [browse the 16 benchmark runs](results/archive.md).
+Replace `cosyvoice3-dual-mode` with any [task slug](#tasks) to run a different benchmark. See the [full guide](docs/running.md) for configuration and hardware requirements.
 
 <a id="how-it-works"></a>
 

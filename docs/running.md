@@ -31,7 +31,7 @@ Checked hashes, executable modes, and Python/JSON/TOML/shell syntax. No GPU eval
 
 ## 2. Install RSI-Harness
 
-The [README Quick start](../README.md#quick-start) uses `uvx` for a zero-install one-liner. For repeated runs, install `rsi-harness` persistently from [`OpenRSI-Index`](https://github.com/OpenRSI-Foundation/OpenRSI-Index):
+The [README Quick start](../README.md#quick-start) provides a prompt for a coding agent to handle setup and execution. To install RSI-Harness manually, use [`OpenRSI-Index`](https://github.com/OpenRSI-Foundation/OpenRSI-Index):
 
 ```bash
 git clone --depth 1 --filter=blob:none --sparse \

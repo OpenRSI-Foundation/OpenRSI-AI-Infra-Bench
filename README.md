@@ -71,8 +71,6 @@ For example, **2.0× streaming** and **1.5× non-streaming** yield a **1.817× n
 
 </details>
 
-[Run records & methodology](results/README.md) · [JSON](results/main.json) · [CSV](results/runs.csv) · [Logs viewer](https://index.openrsi.foundation/logs/)
-
 <a id="news"></a>
 
 ## 📰 News

@@ -143,22 +143,18 @@ The [upstream results](docs/upstream-results.md) link every PR and report throug
 
 <table>
   <tr>
-    <td align="center" width="33%"><a href="https://zhuofeng-li.github.io/"><strong>Zhuofeng Li</strong></a></td>
-    <td align="center" width="33%"><a href="https://github.com/db-ol"><strong>Aaron Tian</strong></a></td>
-    <td align="center" width="33%"><a href="https://github.com/zhaochenyang20"><strong>Chenyang Zhao</strong></a></td>
+    <td align="center" width="20%"><a href="https://zhuofeng-li.github.io/"><strong>Zhuofeng Li</strong></a></td>
+    <td align="center" width="20%"><a href="https://github.com/db-ol"><strong>Aaron Tian</strong></a></td>
+    <td align="center" width="20%"><a href="https://github.com/zhaochenyang20"><strong>Chenyang Zhao</strong></a></td>
+    <td align="center" width="20%"><a href="https://yichenfeng.me/"><strong>Yichen Feng</strong></a></td>
+    <td align="center" width="20%"><a href="https://wenhaochai.com/"><strong>Wenhao Chai</strong></a></td>
   </tr>
   <tr>
-    <td align="center" width="33%"><a href="https://yichenfeng.me/"><strong>Yichen Feng</strong></a></td>
-    <td align="center" width="33%"><a href="https://wenhaochai.com/"><strong>Wenhao Chai</strong></a></td>
-    <td align="center" width="33%"><a href="https://weikangda.github.io/kangda.github.io/"><strong>Kangda Wei</strong></a></td>
-  </tr>
-  <tr>
-    <td align="center" width="33%"><a href="https://davidhanx.github.io/"><strong>Xinyang Han</strong></a></td>
-    <td align="center" width="33%"><a href="https://caralinotes.com/"><strong>Cara Li</strong></a></td>
-    <td align="center" width="33%"><a href="https://vincentcaptain.github.io/"><strong>Shujia Liang</strong></a></td>
-  </tr>
-  <tr>
-    <td align="center" colspan="3"><a href="https://yuetl9.github.io/"><strong>Yuetai Li</strong></a></td>
+    <td align="center" width="20%"><a href="https://weikangda.github.io/kangda.github.io/"><strong>Kangda Wei</strong></a></td>
+    <td align="center" width="20%"><a href="https://davidhanx.github.io/"><strong>Xinyang Han</strong></a></td>
+    <td align="center" width="20%"><a href="https://caralinotes.com/"><strong>Cara Li</strong></a></td>
+    <td align="center" width="20%"><a href="https://vincentcaptain.github.io/"><strong>Shujia Liang</strong></a></td>
+    <td align="center" width="20%"><a href="https://yuetl9.github.io/"><strong>Yuetai Li</strong></a></td>
   </tr>
 </table>
 

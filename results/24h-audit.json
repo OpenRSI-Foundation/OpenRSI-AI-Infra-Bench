@@ -1,0 +1,3281 @@
+{
+  "source_revision": "f5deed0f9c9f75ef0f8a5e9514712f8601aea360",
+  "reporting_window_seconds": 86400,
+  "clock": "evolve_state.json submissions[].at minus the Unix timestamp in started_at; inclusive cutoff, no rounding before selection",
+  "coverage": "final_result.json runtime_seconds >= 86400; resumed segments shorter than a full 24h combined window remain excluded",
+  "pairs": [
+    {
+      "same_instruction": true,
+      "same_base_image": true,
+      "same_environment": true,
+      "same_protocol": true,
+      "same_gpu_sku": true,
+      "task_slug": "cosyvoice3-dual-mode",
+      "source_snapshot_digest_equal": true,
+      "tests_snapshot_digest_equal": true,
+      "baseline_note": "Each run retains its independently calibrated initial B0; calibration values are not replaced or averaged."
+    },
+    {
+      "same_instruction": true,
+      "same_base_image": true,
+      "same_environment": true,
+      "same_protocol": true,
+      "same_gpu_sku": true,
+      "task_slug": "moss-tts-v1.5-dual-mode",
+      "source_snapshot_digest_equal": true,
+      "tests_snapshot_digest_equal": true,
+      "baseline_note": "Each run retains its independently calibrated initial B0; calibration values are not replaced or averaged."
+    },
+    {
+      "same_instruction": true,
+      "same_base_image": true,
+      "same_environment": true,
+      "same_protocol": true,
+      "same_gpu_sku": true,
+      "task_slug": "fish-s2-pro-dual-mode",
+      "source_snapshot_digest_equal": true,
+      "tests_snapshot_digest_equal": true,
+      "baseline_note": "Each run retains its independently calibrated initial B0; calibration values are not replaced or averaged."
+    },
+    {
+      "same_instruction": true,
+      "same_base_image": true,
+      "same_environment": true,
+      "same_protocol": true,
+      "same_gpu_sku": true,
+      "task_slug": "qwen3-tts-0.6b-dual-mode",
+      "source_snapshot_digest_equal": true,
+      "tests_snapshot_digest_equal": true,
+      "baseline_note": "Each run retains its independently calibrated initial B0; calibration values are not replaced or averaged."
+    },
+    {
+      "same_instruction": true,
+      "same_base_image": true,
+      "same_environment": true,
+      "same_protocol": true,
+      "same_gpu_sku": true,
+      "task_slug": "qwen3-tts-1.7b-dual-mode",
+      "source_snapshot_digest_equal": true,
+      "tests_snapshot_digest_equal": true,
+      "baseline_note": "Each run retains its independently calibrated initial B0; calibration values are not replaced or averaged."
+    },
+    {
+      "same_instruction": true,
+      "same_base_image": true,
+      "same_environment": true,
+      "same_protocol": true,
+      "same_gpu_sku": true,
+      "task_slug": "qwen3-asr-1.7b-dual-mode",
+      "source_snapshot_digest_equal": false,
+      "tests_snapshot_digest_equal": false,
+      "baseline_note": "Each run retains its independently calibrated initial B0; calibration values are not replaced or averaged."
+    },
+    {
+      "same_instruction": true,
+      "same_base_image": true,
+      "same_environment": true,
+      "same_protocol": true,
+      "same_gpu_sku": true,
+      "task_slug": "whisper-large-v3-dual-mode",
+      "source_snapshot_digest_equal": false,
+      "tests_snapshot_digest_equal": false,
+      "baseline_note": "Each run retains its independently calibrated initial B0; calibration values are not replaced or averaged."
+    },
+    {
+      "same_instruction": true,
+      "same_base_image": true,
+      "same_environment": true,
+      "same_protocol": true,
+      "same_gpu_sku": true,
+      "task_slug": "moss-transcribe-diarize-dual-mode",
+      "source_snapshot_digest_equal": false,
+      "tests_snapshot_digest_equal": false,
+      "baseline_note": "Each run retains its independently calibrated initial B0; calibration values are not replaced or averaged."
+    }
+  ],
+  "runs": [
+    {
+      "task_slug": "cosyvoice3-dual-mode",
+      "agent": "claude-code",
+      "started_at_unix": 1792460224.995732,
+      "original_timeout_seconds": 86400.0,
+      "original_runtime_seconds": 86486.92135205911,
+      "original_status": "completed",
+      "original_best_score": 1.2969624628676724,
+      "original_best_round": "agent-3",
+      "source_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/cosyvoice3-dual-mode/claude-code-claude-opus-5-5",
+      "metadata_sha256": {
+        "started_at": "ef276c08b2d2a8fe1480206e78c69aa7cb6ec81d10bc576e15a17822ef0b0ce7",
+        "final_result.json": "6e9b291f56c019133a927e2bbe17e94210aaa707925c6043b0d182a7ed772713",
+        "evolve_state.json": "298cc898fb69b1d04da9cbba07f9ed46c664da2b8bb24aea63a1785e7a696aa1",
+        "run-plan.json": "e893667709ec841200ad8be14fd5e2f059c3cbfb872c5a20da54b339742018df"
+      },
+      "submissions": [
+        {
+          "at": 1792476463.840748,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-1",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792508486.658225,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.1129855861310047
+          },
+          "round": "agent-2",
+          "score": 1.1129855861310047,
+          "status": "completed"
+        },
+        {
+          "at": 1792536678.082478,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.2969624628676724
+          },
+          "round": "agent-3",
+          "score": 1.2969624628676724,
+          "status": "completed"
+        }
+      ],
+      "included": true,
+      "selected_round": "agent-3",
+      "selected_score": 1.2969624628676724,
+      "selected_recorded_elapsed_seconds": 76453.0867459774,
+      "verification_elapsed_seconds": 76443.28984546661,
+      "report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/cosyvoice3-dual-mode/claude-code-claude-opus-5-5/submissions/agent-3/report.json",
+      "report_sha256": "365a3593fc399a0796a8d6da2e5f20e3f2bbe4d2c4ba625c79d89784d4885ef9",
+      "test_output_sha256": "9398b65fbe9daf9b5e57b727857ee8669e6c88eb441603a54d70fefa134a1f27",
+      "protocol_sha256": "920117e3a76cf1ff28e0f9fac833fb07edd173add471030dda2623a57d0a27f2",
+      "initial_baseline_qps": {
+        "cosy": 9.041666666666666,
+        "cosy_stream": 7.495333333333334
+      }
+    },
+    {
+      "task_slug": "cosyvoice3-dual-mode",
+      "agent": "codex",
+      "started_at_unix": 1792798045.331014,
+      "original_timeout_seconds": 86400.0,
+      "original_runtime_seconds": 86423.18557482818,
+      "original_status": "completed",
+      "original_best_score": 1.1722764746921681,
+      "original_best_round": "agent-11",
+      "source_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/cosyvoice3-dual-mode/codex-gpt-6-astra",
+      "metadata_sha256": {
+        "started_at": "d9bff9ef8ad613fd90edd261970c1282f6d8035a523013ba74c05e5dc5f14028",
+        "final_result.json": "7bbaa05a1df6896dda58febbe0c46d0779a18789a93d6a233b65e8e33fd01fa1",
+        "evolve_state.json": "4a42796798787486b70dc98b9f7cd5ec0086856ce6dfc23a67f521bea12c6097",
+        "run-plan.json": "2342c2320ca6b0ea1a08c10f01e7ad529630e8cdc96fd9e01b44d62ad2de0cab"
+      },
+      "submissions": [
+        {
+          "at": 1792803266.722034,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-1",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792808646.833196,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.084835998430682
+          },
+          "round": "agent-2",
+          "score": 1.084835998430682,
+          "status": "completed"
+        },
+        {
+          "at": 1792814095.558879,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-3",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792819377.400687,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-4",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792824487.035886,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-5",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792825264.513762,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-6",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792830362.972355,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.1386098505554176
+          },
+          "round": "agent-7",
+          "score": 1.1386098505554176,
+          "status": "completed"
+        },
+        {
+          "at": 1792835652.649879,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-8",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792840828.997711,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-9",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792845912.297801,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-10",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792850968.243785,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.1722764746921681
+          },
+          "round": "agent-11",
+          "score": 1.1722764746921681,
+          "status": "completed"
+        },
+        {
+          "at": 1792856174.532627,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-12",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792861403.920539,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-13",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792866526.516314,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-14",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792871598.572196,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-15",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792876699.142594,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-16",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792881751.481563,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-17",
+          "score": null,
+          "status": "verifier_error"
+        }
+      ],
+      "included": true,
+      "selected_round": "agent-11",
+      "selected_score": 1.1722764746921681,
+      "selected_recorded_elapsed_seconds": 52922.91277098656,
+      "verification_elapsed_seconds": 52912.51667356491,
+      "report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/cosyvoice3-dual-mode/codex-gpt-6-astra/submissions/agent-11/report.json",
+      "report_sha256": "9a787a89cd0f53261495628fc4c40cf609563a5fefef42bb15acfe13d00fb423",
+      "test_output_sha256": "34613f0a66021193b2e517e117fae187f132696efe6bdf94965ac15ac53cb120",
+      "protocol_sha256": "920117e3a76cf1ff28e0f9fac833fb07edd173add471030dda2623a57d0a27f2",
+      "initial_baseline_qps": {
+        "cosy": 9.087000000000002,
+        "cosy_stream": 7.542333333333333
+      }
+    },
+    {
+      "task_slug": "moss-tts-v1.5-dual-mode",
+      "agent": "claude-code",
+      "started_at_unix": 1792457541.053197,
+      "original_timeout_seconds": 86400.0,
+      "original_runtime_seconds": 86527.99933216628,
+      "original_status": "completed",
+      "original_best_score": 1.9352910297636827,
+      "original_best_round": "agent-4",
+      "source_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/moss-tts-v1.5-dual-mode/claude-code-claude-opus-5-5",
+      "metadata_sha256": {
+        "started_at": "690edce72fe59f85f7dc5d354e962c5351f15b7c6aab6695714e60056767caa4",
+        "final_result.json": "d981e2bf44c13fad6b028e625528176a902a4159bf14efdd0b9d94ce8747867e",
+        "evolve_state.json": "45ec926006b6e978081a1d7b0e9808c4ffcdb7872265a3250340f4e21c319d00",
+        "run-plan.json": "9aaf82a6d7b998ee321e1582dd95bc9cedc256a0f3531afa2dad4e6f2e51e8b3"
+      },
+      "submissions": [
+        {
+          "at": 1792461953.143237,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-1",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792506288.559007,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.4824314597971573
+          },
+          "round": "agent-2",
+          "score": 1.4824314597971573,
+          "status": "completed"
+        },
+        {
+          "at": 1792529984.372849,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.7106290447499863
+          },
+          "round": "agent-3",
+          "score": 1.7106290447499863,
+          "status": "completed"
+        },
+        {
+          "at": 1792540440.239375,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.9352910297636827
+          },
+          "round": "agent-4",
+          "score": 1.9352910297636827,
+          "status": "completed"
+        }
+      ],
+      "included": true,
+      "selected_round": "agent-4",
+      "selected_score": 1.9352910297636827,
+      "selected_recorded_elapsed_seconds": 82899.1861782074,
+      "verification_elapsed_seconds": 82887.99330186844,
+      "report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/moss-tts-v1.5-dual-mode/claude-code-claude-opus-5-5/submissions/agent-4/report.json",
+      "report_sha256": "dedfc9f837e581e04fb3e5a836aeba405ce331c9038e87811d3513c71cec5bf2",
+      "test_output_sha256": "a1f93ea3c3eab520a85cd4968402565c2729f9b07e22e78795fcf1eba11bcf36",
+      "protocol_sha256": "8fb4d76953596fa6d25c20b460c4c9a46c7792f2dbcddf9ddb823c70fe5958ae",
+      "initial_baseline_qps": {
+        "moss": 7.879666666666666,
+        "moss_stream": 6.5569999999999995
+      }
+    },
+    {
+      "task_slug": "moss-tts-v1.5-dual-mode",
+      "agent": "codex",
+      "started_at_unix": 1792731972.641245,
+      "original_timeout_seconds": 86400.0,
+      "original_runtime_seconds": 86803.4084060681,
+      "original_status": "completed",
+      "original_best_score": 1.3385290570993953,
+      "original_best_round": "agent-8",
+      "source_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/moss-tts-v1.5-dual-mode/codex-gpt-6-astra",
+      "metadata_sha256": {
+        "started_at": "ae9261ea915f9538704f37f09234e9ab73f2363402ecd06c049d3358b730a714",
+        "final_result.json": "e1ff7faa44f6cf10f015e77624c2d8b4810c1f951ec1a74d23e63b825e0ffbcc",
+        "evolve_state.json": "056d20c38ccbf9f1821e138c0df9c843f207543501db876a32b450fa9a55fa40",
+        "run-plan.json": "a4027bba9df4adf8277b2e814008c2b4746a4f53b244ccd3747f1c26f2d3248f"
+      },
+      "submissions": [
+        {
+          "at": 1792736003.022468,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-1",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792745877.025143,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.0894118945559883
+          },
+          "round": "agent-2",
+          "score": 1.0894118945559883,
+          "status": "completed"
+        },
+        {
+          "at": 1792754728.63189,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-3",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792761524.349,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.2517186121114958
+          },
+          "round": "agent-4",
+          "score": 1.2517186121114958,
+          "status": "completed"
+        },
+        {
+          "at": 1792772042.071287,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.2618369300353989
+          },
+          "round": "agent-5",
+          "score": 1.2618369300353989,
+          "status": "completed"
+        },
+        {
+          "at": 1792783336.936633,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.3125095008789613
+          },
+          "round": "agent-6",
+          "score": 1.3125095008789613,
+          "status": "completed"
+        },
+        {
+          "at": 1792793621.849421,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-7",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792802415.211995,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.3385290570993953
+          },
+          "round": "agent-8",
+          "score": 1.3385290570993953,
+          "status": "completed"
+        },
+        {
+          "at": 1792811137.263157,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-9",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792815479.873016,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-10",
+          "score": null,
+          "status": "verifier_error"
+        }
+      ],
+      "included": true,
+      "selected_round": "agent-8",
+      "selected_score": 1.3385290570993953,
+      "selected_recorded_elapsed_seconds": 70442.57074999809,
+      "verification_elapsed_seconds": 70431.12045574188,
+      "report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/moss-tts-v1.5-dual-mode/codex-gpt-6-astra/submissions/agent-8/report.json",
+      "report_sha256": "9ad77acb633302479febaa4edd9912ad56ad9490734d0eba802725c499f73475",
+      "test_output_sha256": "a5c1c80ecb7dec7ca9cbd38bd5c853950650842a1729c742a14e79fe28774414",
+      "protocol_sha256": "8fb4d76953596fa6d25c20b460c4c9a46c7792f2dbcddf9ddb823c70fe5958ae",
+      "initial_baseline_qps": {
+        "moss": 7.844666666666666,
+        "moss_stream": 6.563
+      }
+    },
+    {
+      "task_slug": "fish-s2-pro-dual-mode",
+      "agent": "claude-code",
+      "started_at_unix": 1792465848.969396,
+      "original_timeout_seconds": 86400.0,
+      "original_runtime_seconds": 86492.45189238014,
+      "original_status": "completed",
+      "original_best_score": 6.288294732047224,
+      "original_best_round": "agent-5",
+      "source_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/fish-s2-pro-dual-mode/claude-code-claude-opus-5-5",
+      "metadata_sha256": {
+        "started_at": "ed51f908f615e6ebc0e78c65b0ffbbea0895f2b58a871625fa902f31ce23c8e4",
+        "final_result.json": "9e6d530145f928a246ff839e949a8eaa38ed94422643728481ca694b18fb09ec",
+        "evolve_state.json": "91ead483b83658a29d997de4eb20082ce6aa1f730bab6baa9b9e1a09ad14c2fa",
+        "run-plan.json": "42ff776a308917591f68cbe134d0a47d7e6511cf10149b713eafe38875bfe7de"
+      },
+      "submissions": [
+        {
+          "at": 1792476869.588946,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-1",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792523622.517425,
+          "kind": "agent",
+          "rewards": {
+            "reward": 5.308382209031651
+          },
+          "round": "agent-2",
+          "score": 5.308382209031651,
+          "status": "completed"
+        },
+        {
+          "at": 1792534815.8824,
+          "kind": "agent",
+          "rewards": {
+            "reward": 5.729032984310018
+          },
+          "round": "agent-3",
+          "score": 5.729032984310018,
+          "status": "completed"
+        },
+        {
+          "at": 1792544056.850526,
+          "kind": "agent",
+          "rewards": {
+            "reward": 5.930412830092474
+          },
+          "round": "agent-4",
+          "score": 5.930412830092474,
+          "status": "completed"
+        },
+        {
+          "at": 1792550357.663444,
+          "kind": "agent",
+          "rewards": {
+            "reward": 6.288294732047224
+          },
+          "round": "agent-5",
+          "score": 6.288294732047224,
+          "status": "completed"
+        }
+      ],
+      "included": true,
+      "selected_round": "agent-5",
+      "selected_score": 6.288294732047224,
+      "selected_recorded_elapsed_seconds": 84508.69404792786,
+      "verification_elapsed_seconds": 84496.71363687515,
+      "report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/fish-s2-pro-dual-mode/claude-code-claude-opus-5-5/submissions/agent-5/report.json",
+      "report_sha256": "d4c33218a41aace57d51b0e1e97dc52ce7bf68c54c19fa9b37557fdd861c38eb",
+      "test_output_sha256": "cd1372657c39cd27d77f7d028d27575c6ec19c02dae628f8b7c6aad545f1e09c",
+      "protocol_sha256": "de225aa7b5a70f3ec8867debdb296612b83b17161dbe7531bea9838af2a17b9e",
+      "initial_baseline_qps": {
+        "fish": 1.2636666666666667,
+        "fish_stream": 1.2716666666666667
+      }
+    },
+    {
+      "task_slug": "fish-s2-pro-dual-mode",
+      "agent": "codex",
+      "started_at_unix": 1792709152.660058,
+      "original_timeout_seconds": 86400.0,
+      "original_runtime_seconds": 92536.52757242508,
+      "original_status": "completed",
+      "original_best_score": 1.803292724724463,
+      "original_best_round": "agent-10",
+      "source_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/fish-s2-pro-dual-mode/codex-gpt-6-astra",
+      "metadata_sha256": {
+        "started_at": "76e1bb2089ec98fb648375c5ee48be5ba75ee16b35f1b8d35fdbcfe35bf6b3e0",
+        "final_result.json": "9437abd85eaf04b7e23abc16ef8b162fc67666a5fb596e861f9b2fabe31dd332",
+        "evolve_state.json": "37775cc149fbd6ec37008a15b448fead2f8fa824b5c061045abccd0b4f6628f8",
+        "run-plan.json": "9e4e5dac51abb2087cc1937a38d41fd99bc883d5f764bb05c05d06964bff49de"
+      },
+      "submissions": [
+        {
+          "at": 1792717660.179178,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-1",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792727259.457308,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.106152806199088
+          },
+          "round": "agent-2",
+          "score": 1.106152806199088,
+          "status": "completed"
+        },
+        {
+          "at": 1792737675.152441,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.2075125366780801
+          },
+          "round": "agent-3",
+          "score": 1.2075125366780801,
+          "status": "completed"
+        },
+        {
+          "at": 1792748683.799337,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.4998951624869652
+          },
+          "round": "agent-4",
+          "score": 1.4998951624869652,
+          "status": "completed"
+        },
+        {
+          "at": 1792756604.764058,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.5748431790879456
+          },
+          "round": "agent-5",
+          "score": 1.5748431790879456,
+          "status": "completed"
+        },
+        {
+          "at": 1792764280.462767,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.6169215406238246
+          },
+          "round": "agent-6",
+          "score": 1.6169215406238246,
+          "status": "completed"
+        },
+        {
+          "at": 1792774016.121407,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-7",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792784113.825891,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.7163607442719135
+          },
+          "round": "agent-8",
+          "score": 1.7163607442719135,
+          "status": "completed"
+        },
+        {
+          "at": 1792791938.002987,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.7391630769433881
+          },
+          "round": "agent-9",
+          "score": 1.7391630769433881,
+          "status": "completed"
+        },
+        {
+          "at": 1792801481.112864,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.803292724724463
+          },
+          "round": "agent-10",
+          "score": 1.803292724724463,
+          "status": "completed"
+        }
+      ],
+      "included": true,
+      "selected_round": "agent-9",
+      "selected_score": 1.7391630769433881,
+      "selected_recorded_elapsed_seconds": 82785.34292888641,
+      "verification_elapsed_seconds": 82774.24253511429,
+      "report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/fish-s2-pro-dual-mode/codex-gpt-6-astra/submissions/agent-9/report.json",
+      "report_sha256": "1712310e0e6b839fae1852f887fa417d9022c824886eb3101ca603f1b887c4ec",
+      "test_output_sha256": "f54e807bc4481939aa280096f28abf98028cde75b4d3e40d84a7205f6cdf16b5",
+      "protocol_sha256": "de225aa7b5a70f3ec8867debdb296612b83b17161dbe7531bea9838af2a17b9e",
+      "initial_baseline_qps": {
+        "fish": 1.2276666666666667,
+        "fish_stream": 1.208
+      }
+    },
+    {
+      "task_slug": "qwen3-tts-0.6b-dual-mode",
+      "agent": "claude-code",
+      "started_at_unix": 1792562137.689996,
+      "original_timeout_seconds": 86400.0,
+      "original_runtime_seconds": 86641.75420257589,
+      "original_status": "completed",
+      "original_best_score": 1.2519226274224278,
+      "original_best_round": "agent-5",
+      "source_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/qwen3-tts-0.6b-dual-mode/claude-code-claude-opus-5-5",
+      "metadata_sha256": {
+        "started_at": "a128aee4b487f26dcca24e7f5b9460b897b158d66fcbd9deed308cd90cc07cbd",
+        "final_result.json": "ab6b36f6fff26cddcb031959a588f4cd538178f789d6c9ab6e356a2638b8885b",
+        "evolve_state.json": "f046d9e91ece0d28a4230eb3f7ce868b3eb659f2f47347a57df58236a57cedad",
+        "run-plan.json": "e91a81164c1155000f0bc3c38f450eef94dca9d335a9778f5d79d7936e6f7b21"
+      },
+      "submissions": [
+        {
+          "at": 1792566865.664307,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-1",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792608745.715839,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-2",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792628084.369643,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-3",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792635302.199284,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-4",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792641019.072203,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.2519226274224278
+          },
+          "round": "agent-5",
+          "score": 1.2519226274224278,
+          "status": "completed"
+        }
+      ],
+      "included": true,
+      "selected_round": "agent-5",
+      "selected_score": 1.2519226274224278,
+      "selected_recorded_elapsed_seconds": 78881.38220691681,
+      "verification_elapsed_seconds": 78865.33767175674,
+      "report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/qwen3-tts-0.6b-dual-mode/claude-code-claude-opus-5-5/submissions/agent-5/report.json",
+      "report_sha256": "cc1a74aea495daae57f799257002aa534e958d074b9852313e541f558d8193fa",
+      "test_output_sha256": "14b2aad8405c4a7d6295699ed3e781dc878b3dc48d619167375436166cdbb3d9",
+      "protocol_sha256": "3d9694efcf6442edf74450a263071a2bfc9506e6d004de831605fdc7d9efcbae",
+      "initial_baseline_qps": {
+        "qwen06": 17.697,
+        "qwen06_stream": 19.476666666666667
+      }
+    },
+    {
+      "task_slug": "qwen3-tts-0.6b-dual-mode",
+      "agent": "codex",
+      "started_at_unix": 1792752619.7845,
+      "original_timeout_seconds": 86400.0,
+      "original_runtime_seconds": 86431.77026150003,
+      "original_status": "completed",
+      "original_best_score": 1.1406409218448244,
+      "original_best_round": "agent-3",
+      "source_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/qwen3-tts-0.6b-dual-mode/codex-gpt-6-astra",
+      "metadata_sha256": {
+        "started_at": "58f07734392efb8085588bb190e1b4da93712554aa5eb148e48d7360129d368e",
+        "final_result.json": "b1ad40d03b4e7075f9898845af7e2238a6436d7f0a10d10a1d264b885e704941",
+        "evolve_state.json": "95da8d13fe8ec725a76ed060f6908736577a6c62aba8391ef92fb02ddc045a44",
+        "run-plan.json": "d92d61b92b9dda0443db7dfcf718566af681c53ab13a925ea5d1665ee632b2e5"
+      },
+      "submissions": [
+        {
+          "at": 1792756984.612651,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-1",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792761586.888342,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-2",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792765886.633092,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.1406409218448244
+          },
+          "round": "agent-3",
+          "score": 1.1406409218448244,
+          "status": "completed"
+        },
+        {
+          "at": 1792770310.793959,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-4",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792775490.509207,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-5",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792780029.105637,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-6",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792784547.026805,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-7",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792789210.689034,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-8",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792793833.651702,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-9",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792798426.598262,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-10",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792803107.634172,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-11",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792807738.652165,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-12",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792812202.715748,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-13",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792816667.080414,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-14",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792821074.978044,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-15",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792825457.958565,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-16",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792829811.335804,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-17",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792834160.864762,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-18",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792838529.23935,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-19",
+          "score": null,
+          "status": "verifier_error"
+        }
+      ],
+      "included": true,
+      "selected_round": "agent-3",
+      "selected_score": 1.1406409218448244,
+      "selected_recorded_elapsed_seconds": 13266.848592042923,
+      "verification_elapsed_seconds": 13250.079561471939,
+      "report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/qwen3-tts-0.6b-dual-mode/codex-gpt-6-astra/submissions/agent-3/report.json",
+      "report_sha256": "e8843d02037080d5af57538a13c43259d51aad16b5cae49c6ff3b5106832d032",
+      "test_output_sha256": "fb15b5f23bbe43cd3fae532f2c8ca980bc7b5a95476ef70a418357a718bd2f87",
+      "protocol_sha256": "3d9694efcf6442edf74450a263071a2bfc9506e6d004de831605fdc7d9efcbae",
+      "initial_baseline_qps": {
+        "qwen06": 17.462,
+        "qwen06_stream": 19.277666666666665
+      }
+    },
+    {
+      "task_slug": "qwen3-tts-1.7b-dual-mode",
+      "agent": "claude-code",
+      "started_at_unix": 1792458543.690445,
+      "original_timeout_seconds": 86400.0,
+      "original_runtime_seconds": 86903.4601529371,
+      "original_status": "completed",
+      "original_best_score": 1.2827467402490482,
+      "original_best_round": "agent-3",
+      "source_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/qwen3-tts-1.7b-dual-mode/claude-code-claude-opus-5-5",
+      "metadata_sha256": {
+        "started_at": "0954ea77d53f3b07218d2ff6eb4a965ca4435569b47ff53964721f6e8fa72f44",
+        "final_result.json": "a5535debaab23c07890a7698c0098f7dec8fe01ddbf6070e4818c2442e809fda",
+        "evolve_state.json": "d07cc8569b3677af58f5a97e3db48d8a0faf16c0986513afedb0f6c9ac595dec",
+        "run-plan.json": "638468700d436932474a035a021a3f2436e89831bd14eddbfa4a713b8974e2c8"
+      },
+      "submissions": [
+        {
+          "at": 1792467276.676141,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.0066846815242494
+          },
+          "round": "agent-1",
+          "score": 1.0066846815242494,
+          "status": "completed"
+        },
+        {
+          "at": 1792490687.764704,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.1102804386062843
+          },
+          "round": "agent-2",
+          "score": 1.1102804386062843,
+          "status": "completed"
+        },
+        {
+          "at": 1792522806.681628,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.2827467402490482
+          },
+          "round": "agent-3",
+          "score": 1.2827467402490482,
+          "status": "completed"
+        }
+      ],
+      "included": true,
+      "selected_round": "agent-3",
+      "selected_score": 1.2827467402490482,
+      "selected_recorded_elapsed_seconds": 64262.991183042526,
+      "verification_elapsed_seconds": 64247.80869722366,
+      "report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/qwen3-tts-1.7b-dual-mode/claude-code-claude-opus-5-5/submissions/agent-3/report.json",
+      "report_sha256": "0cf15f7006a2c0007ec63f18ced939ab9270f856e796e85c38219337c1b5e54b",
+      "test_output_sha256": "d5583f18c686d8a62ffa577921e2c4dd5328782fd4b9f15ce106830df09a2cd1",
+      "protocol_sha256": "3031ff16c7123bc2c14c9d11ce6c219d52b577ec9d53b61d5aae08ca7379a70a",
+      "initial_baseline_qps": {
+        "qwen17": 18.849666666666664,
+        "qwen17_stream": 20.075666666666667
+      }
+    },
+    {
+      "task_slug": "qwen3-tts-1.7b-dual-mode",
+      "agent": "codex",
+      "started_at_unix": 1792741756.273887,
+      "original_timeout_seconds": 86400.0,
+      "original_runtime_seconds": 86921.09762681695,
+      "original_status": "completed",
+      "original_best_score": 1.0963805683029137,
+      "original_best_round": "agent-10",
+      "source_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/qwen3-tts-1.7b-dual-mode/codex-gpt-6-astra",
+      "metadata_sha256": {
+        "started_at": "be543342e68396bafce061d2c5a893c395bf505df00788da75ba9e0cef21c063",
+        "final_result.json": "a3197bf3dca40d95640a3695252f96f888ce8c89e49ab66047c38f858cd864e6",
+        "evolve_state.json": "e55c4532c5ff391dc72f1fdcecd8001e0135284573339846ae1bc89356b82952",
+        "run-plan.json": "3aa68dfc7721035b0fac2bf1a5a459f00c38b87f749f28a61a50521249730a81"
+      },
+      "submissions": [
+        {
+          "at": 1792746596.366394,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-1",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792753217.415854,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-2",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792758927.029086,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.0706919926250773
+          },
+          "round": "agent-3",
+          "score": 1.0706919926250773,
+          "status": "completed"
+        },
+        {
+          "at": 1792763784.06846,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-4",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792770170.062051,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-5",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792774941.64155,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-6",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792780812.695249,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-7",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792788429.956393,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-8",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792798857.784834,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-9",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792804476.578506,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.0963805683029137
+          },
+          "round": "agent-10",
+          "score": 1.0963805683029137,
+          "status": "completed"
+        },
+        {
+          "at": 1792814238.665236,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-11",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792821348.357678,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-12",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792828059.365848,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-13",
+          "score": null,
+          "status": "verifier_error"
+        }
+      ],
+      "included": true,
+      "selected_round": "agent-10",
+      "selected_score": 1.0963805683029137,
+      "selected_recorded_elapsed_seconds": 62720.30461907387,
+      "verification_elapsed_seconds": 62704.131878614426,
+      "report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/qwen3-tts-1.7b-dual-mode/codex-gpt-6-astra/submissions/agent-10/report.json",
+      "report_sha256": "422fe5e11ab0205dede8d9ec331de85c670390d4648ec98042f29b115281d1aa",
+      "test_output_sha256": "ada8c19c69357cbe47886d65d8f6655b5fbecb94c3bb2a8f0bd716b7c288e1ea",
+      "protocol_sha256": "3031ff16c7123bc2c14c9d11ce6c219d52b577ec9d53b61d5aae08ca7379a70a",
+      "initial_baseline_qps": {
+        "qwen17": 18.730333333333334,
+        "qwen17_stream": 19.865333333333332
+      }
+    },
+    {
+      "task_slug": "ming3-tts-0.5b-nonstream",
+      "agent": "claude-code",
+      "started_at_unix": 1792736543.110479,
+      "original_timeout_seconds": 86400.0,
+      "original_runtime_seconds": 43961.53701242246,
+      "original_status": "cancelled",
+      "original_best_score": 4.297543913010418,
+      "original_best_round": "agent-10",
+      "source_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/ming3-tts-0.5b-nonstream/claude-code-claude-opus-5-5",
+      "metadata_sha256": {
+        "started_at": "0dd87bf36b7d34f3a4a1f1d5d48e680f7320743bd1a76c200f2f9575ff075a77",
+        "final_result.json": "abecb6882bba7502a8000840e244c1e608cc1b913521d4afe92fb5023e935b33",
+        "evolve_state.json": "8c7891d5dec98c1727cf5563c09e4191c4869c687772af03b046140275ca6200",
+        "run-plan.json": "2afaf4eb16d461b7c8df1dddee7aaa1594e635b801203c941b68f13c58072641"
+      },
+      "submissions": [
+        {
+          "at": 1792743312.521109,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.419245684738803
+          },
+          "round": "agent-1",
+          "score": 1.419245684738803,
+          "status": "completed"
+        },
+        {
+          "at": 1792745665.488153,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.6102957949965784
+          },
+          "round": "agent-2",
+          "score": 1.6102957949965784,
+          "status": "completed"
+        },
+        {
+          "at": 1792751304.940497,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-3",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792751558.436936,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-4",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792753198.445689,
+          "kind": "agent",
+          "rewards": {
+            "reward": 2.8254125161584667
+          },
+          "round": "agent-5",
+          "score": 2.8254125161584667,
+          "status": "completed"
+        },
+        {
+          "at": 1792755376.234471,
+          "kind": "agent",
+          "rewards": {
+            "reward": 3.0969127822979243
+          },
+          "round": "agent-6",
+          "score": 3.0969127822979243,
+          "status": "completed"
+        },
+        {
+          "at": 1792760308.346897,
+          "kind": "agent",
+          "rewards": {
+            "reward": 4.071933693255265
+          },
+          "round": "agent-7",
+          "score": 4.071933693255265,
+          "status": "completed"
+        },
+        {
+          "at": 1792766192.84277,
+          "kind": "agent",
+          "rewards": {
+            "reward": 4.134172306288495
+          },
+          "round": "agent-8",
+          "score": 4.134172306288495,
+          "status": "completed"
+        },
+        {
+          "at": 1792770182.179785,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-9",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792772561.442043,
+          "kind": "agent",
+          "rewards": {
+            "reward": 4.297543913010418
+          },
+          "round": "agent-10",
+          "score": 4.297543913010418,
+          "status": "completed"
+        },
+        {
+          "at": 1792775828.342498,
+          "kind": "agent",
+          "rewards": {
+            "reward": 4.282411983879553
+          },
+          "round": "agent-11",
+          "score": 4.282411983879553,
+          "status": "completed"
+        },
+        {
+          "at": 1792780153.748298,
+          "kind": "agent",
+          "rewards": {
+            "reward": 4.2511596076344
+          },
+          "round": "agent-12",
+          "score": 4.2511596076344,
+          "status": "completed"
+        }
+      ],
+      "included": false,
+      "exclusion_reason": "Published trajectory does not cover the full 24-hour window."
+    },
+    {
+      "task_slug": "ming3-tts-0.5b-streaming",
+      "agent": "codex",
+      "started_at_unix": 1793688829.580382,
+      "original_timeout_seconds": 28800.0,
+      "original_runtime_seconds": 28861.34567032568,
+      "original_status": "completed",
+      "original_best_score": 2.0382161357017403,
+      "original_best_round": "agent-17",
+      "source_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/ming3-tts-0.5b-streaming/codex-gpt-6-astra",
+      "metadata_sha256": {
+        "started_at": "4ce0ca6ccfeb294d86a54a0f3e507430d49dad49782821898105d391c50201f1",
+        "final_result.json": "07d4bb932fae51f317d5af166278e9cc2d72bd67e62d0b9c73eafdafeb119013",
+        "evolve_state.json": "d52d1b85d2620aab9c3a69f2e8331d6251591b929542a8179dc4baca13f3e45e",
+        "run-plan.json": "2045d44b20cdbc342861922ea99c8a676aab099becbbbb998c257019e693384e"
+      },
+      "submissions": [
+        {
+          "at": 1793689420.449541,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-1",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793690028.035076,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-2",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793690287.725234,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-3",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793690787.134146,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-4",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793691038.550257,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-5",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793694376.078671,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-6",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793695311.020583,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-7",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793695955.27625,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-8",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793698419.547864,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.5560570018452233
+          },
+          "round": "agent-9",
+          "score": 1.5560570018452233,
+          "status": "completed"
+        },
+        {
+          "at": 1793699949.001044,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-10",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793701588.478286,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-11",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793703698.682605,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.7651008203463683
+          },
+          "round": "agent-12",
+          "score": 1.7651008203463683,
+          "status": "completed"
+        },
+        {
+          "at": 1793704583.904435,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-13",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793707060.225537,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-14",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793709582.826911,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.982837197928014
+          },
+          "round": "agent-15",
+          "score": 1.982837197928014,
+          "status": "completed"
+        },
+        {
+          "at": 1793712924.320255,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-16",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793715108.666887,
+          "kind": "agent",
+          "rewards": {
+            "reward": 2.0382161357017403
+          },
+          "round": "agent-17",
+          "score": 2.0382161357017403,
+          "status": "completed"
+        },
+        {
+          "at": 1793717420.985851,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-18",
+          "score": null,
+          "status": "verifier_error"
+        }
+      ],
+      "included": false,
+      "exclusion_reason": "Published trajectory does not cover the full 24-hour window."
+    },
+    {
+      "task_slug": "ming3-tts-tiny-nonstream",
+      "agent": "claude-code",
+      "started_at_unix": 1792798202.19863,
+      "original_timeout_seconds": 43200.0,
+      "original_runtime_seconds": 43386.33294367604,
+      "original_status": "completed",
+      "original_best_score": 3.6341600901916564,
+      "original_best_round": "agent-11",
+      "source_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/ming3-tts-tiny-nonstream/claude-code-claude-opus-5-5",
+      "metadata_sha256": {
+        "started_at": "c58b0a6311ed9d325f22888ce769f7fdec1c66fd1529b5c9072af9399d6d6033",
+        "final_result.json": "11c0badfa91aa9a29e1e467acc7b8aa5015c48a8d0e290591165c43ed428b205",
+        "evolve_state.json": "4046b0a605790f20e2be76c4d7257d0590eaf4011c4b71e5687442e93cbd7ab7",
+        "run-plan.json": "65560fb8e00541a1f4d1923c89a4e874ee1602c60418641c839db406cc87dabd"
+      },
+      "submissions": [
+        {
+          "at": 1792802795.868899,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.8891770011273958
+          },
+          "round": "agent-1",
+          "score": 1.8891770011273958,
+          "status": "completed"
+        },
+        {
+          "at": 1792808829.080619,
+          "kind": "agent",
+          "rewards": {
+            "reward": 2.5395152198421647
+          },
+          "round": "agent-2",
+          "score": 2.5395152198421647,
+          "status": "completed"
+        },
+        {
+          "at": 1792810831.611115,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-3",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792812830.786526,
+          "kind": "agent",
+          "rewards": {
+            "reward": 3.072942502818489
+          },
+          "round": "agent-4",
+          "score": 3.072942502818489,
+          "status": "completed"
+        },
+        {
+          "at": 1792818998.878296,
+          "kind": "agent",
+          "rewards": {
+            "reward": 3.230552423900789
+          },
+          "round": "agent-5",
+          "score": 3.230552423900789,
+          "status": "completed"
+        },
+        {
+          "at": 1792821991.192454,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-6",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792824147.210619,
+          "kind": "agent",
+          "rewards": {
+            "reward": 3.3040586245772263
+          },
+          "round": "agent-7",
+          "score": 3.3040586245772263,
+          "status": "completed"
+        },
+        {
+          "at": 1792830908.162036,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-8",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792831189.153361,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-9",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792833074.466957,
+          "kind": "agent",
+          "rewards": {
+            "reward": 3.5344983089064255
+          },
+          "round": "agent-10",
+          "score": 3.5344983089064255,
+          "status": "completed"
+        },
+        {
+          "at": 1792836830.160753,
+          "kind": "agent",
+          "rewards": {
+            "reward": 3.6341600901916564
+          },
+          "round": "agent-11",
+          "score": 3.6341600901916564,
+          "status": "completed"
+        }
+      ],
+      "included": false,
+      "exclusion_reason": "Published trajectory does not cover the full 24-hour window."
+    },
+    {
+      "task_slug": "ming3-tts-tiny-nonstream",
+      "agent": "codex",
+      "started_at_unix": 1792735506.362778,
+      "original_timeout_seconds": 86400.0,
+      "original_runtime_seconds": 53674.357802791055,
+      "original_status": "failed",
+      "original_best_score": 1.8994120728796784,
+      "original_best_round": "agent-12",
+      "source_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/ming3-tts-tiny-nonstream/codex-gpt-6-astra",
+      "metadata_sha256": {
+        "started_at": "7fbf6d37cae82e921f71ffbc60777b045b4a4a99443cbee0f2d2327820e71c27",
+        "final_result.json": "735f9ee5b2ee8cdf041310576033ca678ab69de04e077f4eb860911d0a269142",
+        "evolve_state.json": "cbaf0943851938422c414d05ee73e97164dcd22c65d5eb5ffe08cbdfa3019289",
+        "run-plan.json": "2670b282436c5825cdab7817592434ffa0d77084993f028950a890a664457da2"
+      },
+      "submissions": [
+        {
+          "at": 1792737914.544845,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.395482856976541
+          },
+          "round": "agent-1",
+          "score": 1.395482856976541,
+          "status": "completed"
+        },
+        {
+          "at": 1792740527.35806,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.4372780720647302
+          },
+          "round": "agent-2",
+          "score": 1.4372780720647302,
+          "status": "completed"
+        },
+        {
+          "at": 1792742918.343567,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-3",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792748168.904052,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.6368822399441176
+          },
+          "round": "agent-4",
+          "score": 1.6368822399441176,
+          "status": "completed"
+        },
+        {
+          "at": 1792750851.206036,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.7429419640258452
+          },
+          "round": "agent-5",
+          "score": 1.7429419640258452,
+          "status": "completed"
+        },
+        {
+          "at": 1792753472.173384,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-6",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792756108.042838,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-7",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792758989.603628,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.8225740729961
+          },
+          "round": "agent-8",
+          "score": 1.8225740729961,
+          "status": "completed"
+        },
+        {
+          "at": 1792760768.458386,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-9",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792761114.564019,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-10",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792763960.568568,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-11",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792766598.835545,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.8994120728796784
+          },
+          "round": "agent-12",
+          "score": 1.8994120728796784,
+          "status": "completed"
+        },
+        {
+          "at": 1792767706.786363,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-13",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792768149.509378,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-14",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792769606.653202,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-15",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792771860.042705,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-16",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792772939.494786,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-17",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792774185.946711,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-18",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792775919.998847,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-19",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792776270.848676,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-20",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792776694.511622,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-21",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792778763.861619,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-22",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792780524.022609,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-23",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792780771.192715,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-24",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792781938.945313,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-25",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792782137.784582,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-26",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792783336.245578,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-27",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792783714.049841,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-28",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792784257.339945,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-29",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792784514.832836,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-30",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792786442.75752,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-31",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792788468.751091,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-32",
+          "score": null,
+          "status": "verifier_error"
+        }
+      ],
+      "included": false,
+      "exclusion_reason": "Resumed trajectory totals 23.68 h (8.77 h + 14.91 h); still short of 24 h."
+    },
+    {
+      "task_slug": "ming3-tts-tiny-streaming",
+      "agent": "codex",
+      "started_at_unix": 1793689471.924255,
+      "original_timeout_seconds": 28800.0,
+      "original_runtime_seconds": 28876.597628215328,
+      "original_status": "completed",
+      "original_best_score": 1.7221455457967378,
+      "original_best_round": "agent-10",
+      "source_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/ming3-tts-tiny-streaming/codex-gpt-6-astra",
+      "metadata_sha256": {
+        "started_at": "b40e9dcd14001ba0ae7fd54057b3c603a3235fbcbe1374d4392843dc34c55a20",
+        "final_result.json": "f500f38d419b3409e6499b87c5b2a9bae8020cde27ce5804ff71d2f75f63b2f6",
+        "evolve_state.json": "35515add42b21ff4dbd8fc9b771795ae86c2cebf07ba282b4fdad5f1ccb1e077",
+        "run-plan.json": "cca58aeea313e698c1bc82c219586840474a1fd1e5a97f606ddde35b22cd0175"
+      },
+      "submissions": [
+        {
+          "at": 1793692367.971084,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.0367001254705144
+          },
+          "round": "agent-1",
+          "score": 1.0367001254705144,
+          "status": "completed"
+        },
+        {
+          "at": 1793692790.066128,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-2",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793694949.386584,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.0508782936010037
+          },
+          "round": "agent-3",
+          "score": 1.0508782936010037,
+          "status": "completed"
+        },
+        {
+          "at": 1793697699.324524,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.1110414052697615
+          },
+          "round": "agent-4",
+          "score": 1.1110414052697615,
+          "status": "completed"
+        },
+        {
+          "at": 1793700300.028092,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-5",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793703430.681767,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.4365119196988707
+          },
+          "round": "agent-6",
+          "score": 1.4365119196988707,
+          "status": "completed"
+        },
+        {
+          "at": 1793706057.533999,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.6462358845671268
+          },
+          "round": "agent-7",
+          "score": 1.6462358845671268,
+          "status": "completed"
+        },
+        {
+          "at": 1793709038.262987,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-8",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793714210.878274,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.7146800501882058
+          },
+          "round": "agent-9",
+          "score": 1.7146800501882058,
+          "status": "completed"
+        },
+        {
+          "at": 1793717240.603315,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.7221455457967378
+          },
+          "round": "agent-10",
+          "score": 1.7221455457967378,
+          "status": "completed"
+        }
+      ],
+      "included": false,
+      "exclusion_reason": "Published trajectory does not cover the full 24-hour window."
+    },
+    {
+      "task_slug": "qwen3-asr-1.7b-dual-mode",
+      "agent": "claude-code",
+      "started_at_unix": 1792093761.69246,
+      "original_timeout_seconds": 172800.0,
+      "original_runtime_seconds": 87749.12621216592,
+      "original_status": "cancelled",
+      "original_best_score": 1.316675811414593,
+      "original_best_round": "agent-13",
+      "source_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/qwen3-asr-1.7b-dual-mode/claude-code-claude-opus-5-5",
+      "metadata_sha256": {
+        "started_at": "3e0e5b8c443bb30a5bc934ce38ca5a8bd163fe4658bf2bf7ab9e76c3688046c2",
+        "final_result.json": "2dc3427523be30bddb53827e31de8bb24695ad9fb68394bd53b0c127d147ad87",
+        "evolve_state.json": "83768c392923ecea900244aaf1f1df55024812b33179ceeacd49a62c3f7c0467",
+        "run-plan.json": "a4b15e1d12416ac5e5da63640d2f6f4a14a144f7842b7e217b56ec38075eccde"
+      },
+      "submissions": [
+        {
+          "at": 1792100690.421765,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-1",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792102318.877576,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-2",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792106167.827491,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.0391288507896748
+          },
+          "round": "agent-3",
+          "score": 1.0391288507896748,
+          "status": "completed"
+        },
+        {
+          "at": 1792110155.473856,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.1861858196310096
+          },
+          "round": "agent-4",
+          "score": 1.1861858196310096,
+          "status": "completed"
+        },
+        {
+          "at": 1792115388.092361,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-5",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792118641.891737,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.2481366294816483
+          },
+          "round": "agent-6",
+          "score": 1.2481366294816483,
+          "status": "completed"
+        },
+        {
+          "at": 1792130121.676438,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-7",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792134490.616563,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-8",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792143691.444914,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-9",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792153516.637201,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-10",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792159845.583942,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.2778859602733192
+          },
+          "round": "agent-11",
+          "score": 1.2778859602733192,
+          "status": "completed"
+        },
+        {
+          "at": 1792162572.818497,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-12",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792181474.879019,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.316675811414593
+          },
+          "round": "agent-13",
+          "score": 1.316675811414593,
+          "status": "completed"
+        }
+      ],
+      "included": true,
+      "selected_round": "agent-11",
+      "selected_score": 1.2778859602733192,
+      "selected_recorded_elapsed_seconds": 66083.89148187637,
+      "verification_elapsed_seconds": 66083.89148187637,
+      "report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/qwen3-asr-1.7b-dual-mode/claude-code-claude-opus-5-5/submissions/agent-11/report.json",
+      "report_sha256": "98cedb011f1f244c0b33e5d53d900cbc3e5a963c5829d5b995fceb95fba952d6",
+      "test_output_sha256": "03d814bc2c2abb6d4d9b75ecbb7bdc660031ab8f589315e471141ecd42a6c00a",
+      "protocol_sha256": "6eb9ccb5787412cd14991dd2899800c69549f23720302117c4bffb714392b271",
+      "initial_baseline_qps": {
+        "nonstream/en": 168.13238293620407,
+        "nonstream/zh": 181.32262167917176,
+        "stream/en": 161.05553034715226,
+        "stream/zh": 173.28994347905464
+      }
+    },
+    {
+      "task_slug": "qwen3-asr-1.7b-dual-mode",
+      "agent": "codex",
+      "started_at_unix": 1792940855.625467,
+      "original_timeout_seconds": 86400.0,
+      "original_runtime_seconds": 88266.62312062597,
+      "original_status": "completed",
+      "original_best_score": 1.1167962104780884,
+      "original_best_round": "agent-47",
+      "source_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/qwen3-asr-1.7b-dual-mode/codex-gpt-6-astra",
+      "metadata_sha256": {
+        "started_at": "dfed30130a6f18f9eb286448de4d28f38759c50d72e776c3e3a4a45b9f967807",
+        "final_result.json": "ebcdc9e88075ca1cc46f608ea7916e87b8e6bd4197fd0ce92cc530d21e09fb16",
+        "evolve_state.json": "f3076c4e33bdb9d9f8f9a4d1f17e73ef696b471586e80533957d8ad7df50dc03",
+        "run-plan.json": "5b694e01c837efaf2146df0a2f0f807f7fddc37a637f636365f47bb96b177b17"
+      },
+      "submissions": [
+        {
+          "at": 1792944705.965297,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-1",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792944889.756762,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-2",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792946533.003694,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.0279970490004595
+          },
+          "round": "agent-3",
+          "score": 1.0279970490004595,
+          "status": "completed"
+        },
+        {
+          "at": 1792948158.347084,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.0714654037918683
+          },
+          "round": "agent-4",
+          "score": 1.0714654037918683,
+          "status": "completed"
+        },
+        {
+          "at": 1792949812.589451,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-5",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792951483.753478,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-6",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792953199.821154,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-7",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792954826.173237,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-8",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792956462.632997,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-9",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792958096.053284,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-10",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792959903.816841,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-11",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792961690.218646,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-12",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792963511.717766,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-13",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792965299.232198,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-14",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792966980.286074,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-15",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792968764.367941,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-16",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792970713.077284,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-17",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792972392.926939,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-18",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792974163.098146,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-19",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792975978.454743,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-20",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792977836.702729,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-21",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792979558.421008,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-22",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792981296.350042,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-23",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792982996.312586,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-24",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792984789.531698,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-25",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792986414.135212,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.0993168456973863
+          },
+          "round": "agent-26",
+          "score": 1.0993168456973863,
+          "status": "completed"
+        },
+        {
+          "at": 1792988047.090596,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-27",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792989702.76092,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-28",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792991354.723676,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-29",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792993828.188832,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-30",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792995610.041986,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-31",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792997237.239628,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-32",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792998877.331552,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-33",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793000552.683746,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-34",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793002253.893199,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-35",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793003870.699044,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-36",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793005539.439532,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-37",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793007261.837649,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-38",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793008978.726579,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-39",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793011009.352685,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-40",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793012774.6556,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-41",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793014650.4022,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-42",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793016354.702624,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-43",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793018051.745254,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-44",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793019778.205222,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-45",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793021571.325854,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.1061964982251806
+          },
+          "round": "agent-46",
+          "score": 1.1061964982251806,
+          "status": "completed"
+        },
+        {
+          "at": 1793023381.637037,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.1167962104780884
+          },
+          "round": "agent-47",
+          "score": 1.1167962104780884,
+          "status": "completed"
+        },
+        {
+          "at": 1793025204.185679,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-48",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793027015.944739,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-49",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1793029107.374785,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-50",
+          "score": null,
+          "status": "verifier_error"
+        }
+      ],
+      "included": true,
+      "selected_round": "agent-47",
+      "selected_score": 1.1167962104780884,
+      "selected_recorded_elapsed_seconds": 82526.0115699768,
+      "verification_elapsed_seconds": 82526.0115699768,
+      "report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/qwen3-asr-1.7b-dual-mode/codex-gpt-6-astra/submissions/agent-47/report.json",
+      "report_sha256": "211500f2427a602ddb7bc131ff253e883d08607290054f1b0c93a74e3f699482",
+      "test_output_sha256": "c5f3a212f5e35365aefb8784fd2be9f34ff6ff4050dfa61ad68d5ea9893005ae",
+      "protocol_sha256": "6eb9ccb5787412cd14991dd2899800c69549f23720302117c4bffb714392b271",
+      "initial_baseline_qps": {
+        "nonstream/en": 169.70169039163625,
+        "nonstream/zh": 178.23744380371076,
+        "stream/en": 160.1434157302635,
+        "stream/zh": 170.8278695533022
+      }
+    },
+    {
+      "task_slug": "whisper-large-v3-dual-mode",
+      "agent": "claude-code",
+      "started_at_unix": 1792106134.002046,
+      "original_timeout_seconds": 172800.0,
+      "original_runtime_seconds": 86531.43732987391,
+      "original_status": "cancelled",
+      "original_best_score": 1.9789822170895919,
+      "original_best_round": "agent-12",
+      "source_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/whisper-large-v3-dual-mode/claude-code-claude-opus-5-5",
+      "metadata_sha256": {
+        "started_at": "b10da5b33a611e37c13242d7ca79ba6403bb46b2b0b6a29cbd03972050e1d97f",
+        "final_result.json": "09300344bb65e01f9564d120f13e688e0f6cac59afbbbed5dbe55e63b34241e2",
+        "evolve_state.json": "8d18b34b1b0edc53c6210d4a892b075f00854118a564cc927f0828e572aaee5c",
+        "run-plan.json": "43e092bbec0848f2a0555ce5117c77d9774f2e7c0fd88ab08e7e3df25f4459e2"
+      },
+      "submissions": [
+        {
+          "at": 1792115997.098632,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-1",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792116693.654866,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-2",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792121223.213831,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.347838483628495
+          },
+          "round": "agent-3",
+          "score": 1.347838483628495,
+          "status": "completed"
+        },
+        {
+          "at": 1792125651.515244,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.6217887548737349
+          },
+          "round": "agent-4",
+          "score": 1.6217887548737349,
+          "status": "completed"
+        },
+        {
+          "at": 1792129153.076676,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.736963139663483
+          },
+          "round": "agent-5",
+          "score": 1.736963139663483,
+          "status": "completed"
+        },
+        {
+          "at": 1792136902.071317,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.7587335290287796
+          },
+          "round": "agent-6",
+          "score": 1.7587335290287796,
+          "status": "completed"
+        },
+        {
+          "at": 1792142023.408205,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-7",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792146357.735503,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.9448559723867276
+          },
+          "round": "agent-8",
+          "score": 1.9448559723867276,
+          "status": "completed"
+        },
+        {
+          "at": 1792159050.716304,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-9",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792168538.268048,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-10",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792176158.554992,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-11",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792189248.508367,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.9789822170895919
+          },
+          "round": "agent-12",
+          "score": 1.9789822170895919,
+          "status": "completed"
+        }
+      ],
+      "included": true,
+      "selected_round": "agent-12",
+      "selected_score": 1.9789822170895919,
+      "selected_recorded_elapsed_seconds": 83114.50632095337,
+      "verification_elapsed_seconds": 83114.50632095337,
+      "report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/whisper-large-v3-dual-mode/claude-code-claude-opus-5-5/submissions/agent-12/report.json",
+      "report_sha256": "89c00ff4a137f14c61e06128781062de7db21ae56b2c4ac4cada83d6af42e5f5",
+      "test_output_sha256": "1d7775804f2a649a79b1a576bb4e659559998db8d1e089282f27e0478401651d",
+      "protocol_sha256": "92a4d07bd769a4f3c4e740e5fcbe93551bb80166c45306040d6b1bd3a08268ec",
+      "initial_baseline_qps": {
+        "nonstream/en": 53.53315627655462,
+        "nonstream/zh": 48.636940219390915,
+        "stream/en": 51.917708155986865,
+        "stream/zh": 48.36600624798051
+      }
+    },
+    {
+      "task_slug": "whisper-large-v3-dual-mode",
+      "agent": "codex",
+      "started_at_unix": 1792808787.811131,
+      "original_timeout_seconds": 86400.0,
+      "original_runtime_seconds": 92551.66095880326,
+      "original_status": "completed",
+      "original_best_score": 1.1256019736232843,
+      "original_best_round": "agent-8",
+      "source_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/whisper-large-v3-dual-mode/codex-gpt-6-astra",
+      "metadata_sha256": {
+        "started_at": "498d2114311c6d465772c5f24efc6f9c707be5aba33964a0693d622ff4b99f12",
+        "final_result.json": "859549a4bef74d625d63ed688f191cedaab5e97a637f731a74710a5259bb3de8",
+        "evolve_state.json": "5aa82e34fb72631f95d2b106405bca182bd0519e168ef31dc896c7be2ad411c9",
+        "run-plan.json": "8f84410263d531f448c477ae0b1f476b518adceb042d0285c34409db26219e66"
+      },
+      "submissions": [
+        {
+          "at": 1792808968.903011,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-1",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792816831.729536,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-2",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792824787.183564,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.053133098345699
+          },
+          "round": "agent-3",
+          "score": 1.053133098345699,
+          "status": "completed"
+        },
+        {
+          "at": 1792825496.008342,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-4",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792831775.632749,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.0599419487316744
+          },
+          "round": "agent-5",
+          "score": 1.0599419487316744,
+          "status": "completed"
+        },
+        {
+          "at": 1792838054.393378,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-6",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792844395.90937,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.108486370859526
+          },
+          "round": "agent-7",
+          "score": 1.108486370859526,
+          "status": "completed"
+        },
+        {
+          "at": 1792850621.697723,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.1256019736232843
+          },
+          "round": "agent-8",
+          "score": 1.1256019736232843,
+          "status": "completed"
+        },
+        {
+          "at": 1792856927.827617,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-9",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792863167.596289,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-10",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792869397.015274,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-11",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792875699.64494,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-12",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792881883.405599,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-13",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792888136.80993,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-14",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792895023.280069,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-15",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792901324.899821,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-16",
+          "score": null,
+          "status": "verifier_error"
+        }
+      ],
+      "included": true,
+      "selected_round": "agent-8",
+      "selected_score": 1.1256019736232843,
+      "selected_recorded_elapsed_seconds": 41833.886591911316,
+      "verification_elapsed_seconds": 41833.886591911316,
+      "report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/whisper-large-v3-dual-mode/codex-gpt-6-astra/submissions/agent-8/report.json",
+      "report_sha256": "435fdded0bae7dc9b41330009fd4bbfed9475af8dfa2709964d8d44eeaa89036",
+      "test_output_sha256": "1d12b92b63977e6b2cd8e925e94c51b83224a6bb43785dfee575a3695986c927",
+      "protocol_sha256": "92a4d07bd769a4f3c4e740e5fcbe93551bb80166c45306040d6b1bd3a08268ec",
+      "initial_baseline_qps": {
+        "nonstream/en": 52.891285596910805,
+        "nonstream/zh": 48.612217071996035,
+        "stream/en": 52.945313232009696,
+        "stream/zh": 48.774191396349146
+      }
+    },
+    {
+      "task_slug": "moss-transcribe-diarize-dual-mode",
+      "agent": "claude-code",
+      "started_at_unix": 1792246741.240928,
+      "original_timeout_seconds": 86400.0,
+      "original_runtime_seconds": 86513.64703547303,
+      "original_status": "completed",
+      "original_best_score": 1.4895412139290778,
+      "original_best_round": "agent-6",
+      "source_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/moss-transcribe-diarize-dual-mode/claude-code-claude-opus-5-5",
+      "metadata_sha256": {
+        "started_at": "bc286a637463857ee32ce0e3c9e277a86986c7faa7aeb35c556172019753867b",
+        "final_result.json": "ee4accb66397622ac9a73a3324e65c336f3f8de91d8de7aec529e2fc5319540f",
+        "evolve_state.json": "f039bcfb6a17612a315e435406fe2500bdd9e87ecab11a3d7cef28df0dffb113",
+        "run-plan.json": "3409a91ee617cd935c1ec1ab7f63506742c7eae3b1b1e08bbdb58367f56bb845"
+      },
+      "submissions": [
+        {
+          "at": 1792255945.863829,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.1171862328301916
+          },
+          "round": "agent-1",
+          "score": 1.1171862328301916,
+          "status": "completed"
+        },
+        {
+          "at": 1792260588.347343,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.1800151044491254
+          },
+          "round": "agent-2",
+          "score": 1.1800151044491254,
+          "status": "completed"
+        },
+        {
+          "at": 1792265118.102639,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.2905020895866148
+          },
+          "round": "agent-3",
+          "score": 1.2905020895866148,
+          "status": "completed"
+        },
+        {
+          "at": 1792271010.924527,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.325760215555035
+          },
+          "round": "agent-4",
+          "score": 1.325760215555035,
+          "status": "completed"
+        },
+        {
+          "at": 1792276387.913075,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.3265724893315356
+          },
+          "round": "agent-5",
+          "score": 1.3265724893315356,
+          "status": "completed"
+        },
+        {
+          "at": 1792283427.148671,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.4895412139290778
+          },
+          "round": "agent-6",
+          "score": 1.4895412139290778,
+          "status": "completed"
+        },
+        {
+          "at": 1792290083.015063,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-7",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792315782.246411,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-8",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792325199.328264,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-9",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792329808.959086,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-10",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792333211.3487,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-11",
+          "score": null,
+          "status": "verifier_error"
+        }
+      ],
+      "included": true,
+      "selected_round": "agent-6",
+      "selected_score": 1.4895412139290778,
+      "selected_recorded_elapsed_seconds": 36685.90774297714,
+      "verification_elapsed_seconds": 36685.90774297714,
+      "report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/moss-transcribe-diarize-dual-mode/claude-code-claude-opus-5-5/submissions/agent-6/report.json",
+      "report_sha256": "9d61acef9742bcf6ffa52f8f3b6e8f5675664506a06629f5635f107d347a69b7",
+      "test_output_sha256": "8f96a107a8c62fc4176e948eac324b636b53d598ba622d68595caf9ba01204e9",
+      "protocol_sha256": "7b91843fd10b3702106394e870dcb23a71560f2767c55eca3cc9f28eefc9d7c9",
+      "initial_baseline_qps": {
+        "nonstream/en": 106.46520786165263,
+        "nonstream/zh": 109.78071004630435,
+        "stream/en": 102.1000334224417,
+        "stream/zh": 105.81758973479272
+      }
+    },
+    {
+      "task_slug": "moss-transcribe-diarize-dual-mode",
+      "agent": "codex",
+      "started_at_unix": 1792806083.418029,
+      "original_timeout_seconds": 86400.0,
+      "original_runtime_seconds": 88964.72265140107,
+      "original_status": "completed",
+      "original_best_score": 1.133761118929018,
+      "original_best_round": "agent-19",
+      "source_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/moss-transcribe-diarize-dual-mode/codex-gpt-6-astra",
+      "metadata_sha256": {
+        "started_at": "58b0448e97f95368919afd5ffc37e68e91dec3825887e20580a536c38a54b54f",
+        "final_result.json": "95e8738531f4d5d0ec493c55b60fe8a114e64cf7f396b85505f8a1bd6d44622d",
+        "evolve_state.json": "8ef1b319f5210f7eb808d4ab99ac7c72c28014cf442c5743e7397feeb5a1ea70",
+        "run-plan.json": "587d67a0cdc8273020010f031a33335822f4a0177631c0184a63e0881f9e07c8"
+      },
+      "submissions": [
+        {
+          "at": 1792809845.718444,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-1",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792812032.002355,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-2",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792815167.911275,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-3",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792817938.911935,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-4",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792820712.811864,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-5",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792825001.415379,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-6",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792829320.199357,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.1145057979104194
+          },
+          "round": "agent-7",
+          "score": 1.1145057979104194,
+          "status": "completed"
+        },
+        {
+          "at": 1792833718.199724,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-8",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792838057.579069,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-9",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792842361.075913,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-10",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792846822.855419,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-11",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792851816.542012,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-12",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792856212.729809,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-13",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792860548.852066,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-14",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792864863.536429,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-15",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792869137.947302,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-16",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792873468.673431,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-17",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792877748.077183,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-18",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792882027.176717,
+          "kind": "agent",
+          "rewards": {
+            "reward": 1.133761118929018
+          },
+          "round": "agent-19",
+          "score": 1.133761118929018,
+          "status": "completed"
+        },
+        {
+          "at": 1792886361.309641,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-20",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792890740.568626,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-21",
+          "score": null,
+          "status": "verifier_error"
+        },
+        {
+          "at": 1792895026.650729,
+          "kind": "agent",
+          "rewards": {},
+          "round": "agent-22",
+          "score": null,
+          "status": "verifier_error"
+        }
+      ],
+      "included": true,
+      "selected_round": "agent-19",
+      "selected_score": 1.133761118929018,
+      "selected_recorded_elapsed_seconds": 75943.75868797302,
+      "verification_elapsed_seconds": 75943.75868797302,
+      "report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/moss-transcribe-diarize-dual-mode/codex-gpt-6-astra/submissions/agent-19/report.json",
+      "report_sha256": "5f3ae861dd59cb68173ade84b3f711c6b46306dc807617da8347ded7c87c58d1",
+      "test_output_sha256": "e72c4332f1b3eb21d040099bb6be17f1c4e1b1b1e9b9b64130616076e0ba3afd",
+      "protocol_sha256": "7b91843fd10b3702106394e870dcb23a71560f2767c55eca3cc9f28eefc9d7c9",
+      "initial_baseline_qps": {
+        "nonstream/en": 107.14672968581829,
+        "nonstream/zh": 109.41837260515317,
+        "stream/en": 102.20441915055468,
+        "stream/zh": 105.17954681325062
+      }
+    }
+  ]
+}

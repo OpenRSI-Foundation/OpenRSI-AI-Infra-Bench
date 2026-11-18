@@ -2,7 +2,7 @@
   "snapshot_date": "2026-11-18",
   "logs_viewer": "https://index.openrsi.foundation/logs/",
   "logs_dataset": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni",
-  "selection": "Unguided single-agent Main runs (codex / gpt-6-astra / xhigh and claude-code / claude-opus-5-5 / max) across all 12 SGLang-Omni benchmark tasks; 21 sanitized trajectories total.",
+  "selection": "Paired unguided single-agent runs with at least 24 hours of recorded runtime; best completed score recorded no later than started_at + 86400 seconds. Longer trajectories are truncated; shorter trajectories are excluded. 16 runs across 8 tasks.",
   "records": [
     {
       "task_slug": "cosyvoice3-dual-mode",
@@ -28,7 +28,15 @@
           ],
           "viewer_url": "https://index.openrsi.foundation/logs/#run=9de597863ceaafa7",
           "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/cosyvoice3-dual-mode/claude-code-claude-opus-5-5",
-          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/main/sglang-omni/cosyvoice3-dual-mode/claude-code-claude-opus-5-5/submissions/agent-3/report.json"
+          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/cosyvoice3-dual-mode/claude-code-claude-opus-5-5/submissions/agent-3/report.json",
+          "reporting_window_seconds": 86400,
+          "best_recorded_elapsed_seconds": 76453.0867459774,
+          "rounds_within_window": 3,
+          "protocol_sha256": "920117e3a76cf1ff28e0f9fac833fb07edd173add471030dda2623a57d0a27f2",
+          "initial_baseline_qps": {
+            "cosy": 9.041666666666666,
+            "cosy_stream": 7.495333333333334
+          }
         },
         "codex": {
           "task_slug": "cosyvoice3-dual-mode",
@@ -46,7 +54,15 @@
           ],
           "viewer_url": "https://index.openrsi.foundation/logs/#run=5e67e03919819ebb",
           "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/cosyvoice3-dual-mode/codex-gpt-6-astra",
-          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/main/sglang-omni/cosyvoice3-dual-mode/codex-gpt-6-astra/submissions/agent-11/report.json"
+          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/cosyvoice3-dual-mode/codex-gpt-6-astra/submissions/agent-11/report.json",
+          "reporting_window_seconds": 86400,
+          "best_recorded_elapsed_seconds": 52922.91277098656,
+          "rounds_within_window": 17,
+          "protocol_sha256": "920117e3a76cf1ff28e0f9fac833fb07edd173add471030dda2623a57d0a27f2",
+          "initial_baseline_qps": {
+            "cosy": 9.087000000000002,
+            "cosy_stream": 7.542333333333333
+          }
         }
       }
     },
@@ -74,7 +90,15 @@
           ],
           "viewer_url": "https://index.openrsi.foundation/logs/#run=cd131351fd998975",
           "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/moss-tts-v1.5-dual-mode/claude-code-claude-opus-5-5",
-          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/main/sglang-omni/moss-tts-v1.5-dual-mode/claude-code-claude-opus-5-5/submissions/agent-4/report.json"
+          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/moss-tts-v1.5-dual-mode/claude-code-claude-opus-5-5/submissions/agent-4/report.json",
+          "reporting_window_seconds": 86400,
+          "best_recorded_elapsed_seconds": 82899.1861782074,
+          "rounds_within_window": 4,
+          "protocol_sha256": "8fb4d76953596fa6d25c20b460c4c9a46c7792f2dbcddf9ddb823c70fe5958ae",
+          "initial_baseline_qps": {
+            "moss": 7.879666666666666,
+            "moss_stream": 6.5569999999999995
+          }
         },
         "codex": {
           "task_slug": "moss-tts-v1.5-dual-mode",
@@ -92,7 +116,15 @@
           ],
           "viewer_url": "https://index.openrsi.foundation/logs/#run=770379d74c291ea5",
           "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/moss-tts-v1.5-dual-mode/codex-gpt-6-astra",
-          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/main/sglang-omni/moss-tts-v1.5-dual-mode/codex-gpt-6-astra/submissions/agent-8/report.json"
+          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/moss-tts-v1.5-dual-mode/codex-gpt-6-astra/submissions/agent-8/report.json",
+          "reporting_window_seconds": 86400,
+          "best_recorded_elapsed_seconds": 70442.57074999809,
+          "rounds_within_window": 10,
+          "protocol_sha256": "8fb4d76953596fa6d25c20b460c4c9a46c7792f2dbcddf9ddb823c70fe5958ae",
+          "initial_baseline_qps": {
+            "moss": 7.844666666666666,
+            "moss_stream": 6.563
+          }
         }
       }
     },
@@ -120,7 +152,15 @@
           ],
           "viewer_url": "https://index.openrsi.foundation/logs/#run=a2067dc23a561358",
           "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/fish-s2-pro-dual-mode/claude-code-claude-opus-5-5",
-          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/main/sglang-omni/fish-s2-pro-dual-mode/claude-code-claude-opus-5-5/submissions/agent-5/report.json"
+          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/fish-s2-pro-dual-mode/claude-code-claude-opus-5-5/submissions/agent-5/report.json",
+          "reporting_window_seconds": 86400,
+          "best_recorded_elapsed_seconds": 84508.69404792786,
+          "rounds_within_window": 5,
+          "protocol_sha256": "de225aa7b5a70f3ec8867debdb296612b83b17161dbe7531bea9838af2a17b9e",
+          "initial_baseline_qps": {
+            "fish": 1.2636666666666667,
+            "fish_stream": 1.2716666666666667
+          }
         },
         "codex": {
           "task_slug": "fish-s2-pro-dual-mode",
@@ -128,8 +168,8 @@
           "model": "gpt-6-astra",
           "reasoning_effort": "xhigh",
           "status": "completed",
-          "best_score": 1.803292724724463,
-          "best_round": "agent-10",
+          "best_score": 1.7391630769433881,
+          "best_round": "agent-9",
           "total_rounds": 10,
           "timeout_seconds": 86400.0,
           "runtime_seconds": 92536.52757242508,
@@ -138,7 +178,15 @@
           ],
           "viewer_url": "https://index.openrsi.foundation/logs/#run=3a65be48b77269bd",
           "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/fish-s2-pro-dual-mode/codex-gpt-6-astra",
-          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/main/sglang-omni/fish-s2-pro-dual-mode/codex-gpt-6-astra/submissions/agent-10/report.json"
+          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/fish-s2-pro-dual-mode/codex-gpt-6-astra/submissions/agent-9/report.json",
+          "reporting_window_seconds": 86400,
+          "best_recorded_elapsed_seconds": 82785.34292888641,
+          "rounds_within_window": 9,
+          "protocol_sha256": "de225aa7b5a70f3ec8867debdb296612b83b17161dbe7531bea9838af2a17b9e",
+          "initial_baseline_qps": {
+            "fish": 1.2276666666666667,
+            "fish_stream": 1.208
+          }
         }
       }
     },
@@ -166,7 +214,15 @@
           ],
           "viewer_url": "https://index.openrsi.foundation/logs/#run=4bdc101cfe415ada",
           "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/qwen3-tts-0.6b-dual-mode/claude-code-claude-opus-5-5",
-          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/main/sglang-omni/qwen3-tts-0.6b-dual-mode/claude-code-claude-opus-5-5/submissions/agent-5/report.json"
+          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/qwen3-tts-0.6b-dual-mode/claude-code-claude-opus-5-5/submissions/agent-5/report.json",
+          "reporting_window_seconds": 86400,
+          "best_recorded_elapsed_seconds": 78881.38220691681,
+          "rounds_within_window": 5,
+          "protocol_sha256": "3d9694efcf6442edf74450a263071a2bfc9506e6d004de831605fdc7d9efcbae",
+          "initial_baseline_qps": {
+            "qwen06": 17.697,
+            "qwen06_stream": 19.476666666666667
+          }
         },
         "codex": {
           "task_slug": "qwen3-tts-0.6b-dual-mode",
@@ -184,7 +240,15 @@
           ],
           "viewer_url": "https://index.openrsi.foundation/logs/#run=c8f89a668fcb7e92",
           "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/qwen3-tts-0.6b-dual-mode/codex-gpt-6-astra",
-          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/main/sglang-omni/qwen3-tts-0.6b-dual-mode/codex-gpt-6-astra/submissions/agent-3/report.json"
+          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/qwen3-tts-0.6b-dual-mode/codex-gpt-6-astra/submissions/agent-3/report.json",
+          "reporting_window_seconds": 86400,
+          "best_recorded_elapsed_seconds": 13266.848592042923,
+          "rounds_within_window": 19,
+          "protocol_sha256": "3d9694efcf6442edf74450a263071a2bfc9506e6d004de831605fdc7d9efcbae",
+          "initial_baseline_qps": {
+            "qwen06": 17.462,
+            "qwen06_stream": 19.277666666666665
+          }
         }
       }
     },
@@ -212,7 +276,15 @@
           ],
           "viewer_url": "https://index.openrsi.foundation/logs/#run=6ee3ceb2d4cacae3",
           "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/qwen3-tts-1.7b-dual-mode/claude-code-claude-opus-5-5",
-          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/main/sglang-omni/qwen3-tts-1.7b-dual-mode/claude-code-claude-opus-5-5/submissions/agent-3/report.json"
+          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/qwen3-tts-1.7b-dual-mode/claude-code-claude-opus-5-5/submissions/agent-3/report.json",
+          "reporting_window_seconds": 86400,
+          "best_recorded_elapsed_seconds": 64262.991183042526,
+          "rounds_within_window": 3,
+          "protocol_sha256": "3031ff16c7123bc2c14c9d11ce6c219d52b577ec9d53b61d5aae08ca7379a70a",
+          "initial_baseline_qps": {
+            "qwen17": 18.849666666666664,
+            "qwen17_stream": 20.075666666666667
+          }
         },
         "codex": {
           "task_slug": "qwen3-tts-1.7b-dual-mode",
@@ -230,7 +302,15 @@
           ],
           "viewer_url": "https://index.openrsi.foundation/logs/#run=bb3980b8f4ef5741",
           "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/qwen3-tts-1.7b-dual-mode/codex-gpt-6-astra",
-          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/main/sglang-omni/qwen3-tts-1.7b-dual-mode/codex-gpt-6-astra/submissions/agent-10/report.json"
+          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/qwen3-tts-1.7b-dual-mode/codex-gpt-6-astra/submissions/agent-10/report.json",
+          "reporting_window_seconds": 86400,
+          "best_recorded_elapsed_seconds": 62720.30461907387,
+          "rounds_within_window": 13,
+          "protocol_sha256": "3031ff16c7123bc2c14c9d11ce6c219d52b577ec9d53b61d5aae08ca7379a70a",
+          "initial_baseline_qps": {
+            "qwen17": 18.730333333333334,
+            "qwen17_stream": 19.865333333333332
+          }
         }
       }
     },
@@ -241,26 +321,7 @@
       "mode": "Non-streaming",
       "sglang_omni_commit": "ca9e8789fcd8",
       "reference_b0_gpu": "NVIDIA H100 NVL",
-      "agents": {
-        "claude-code": {
-          "task_slug": "ming3-tts-0.5b-nonstream",
-          "agent": "claude-code",
-          "model": "claude-opus-5-5",
-          "reasoning_effort": "max",
-          "status": "cancelled",
-          "best_score": 4.297543913010418,
-          "best_round": "agent-10",
-          "total_rounds": 12,
-          "timeout_seconds": 86400.0,
-          "runtime_seconds": 43961.53701242246,
-          "gpu_names": [
-            "NVIDIA H100 NVL"
-          ],
-          "viewer_url": "https://index.openrsi.foundation/logs/#run=e7daa9d0dcc71af4",
-          "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/ming3-tts-0.5b-nonstream/claude-code-claude-opus-5-5",
-          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/main/sglang-omni/ming3-tts-0.5b-nonstream/claude-code-claude-opus-5-5/submissions/agent-10/report.json"
-        }
-      }
+      "agents": {}
     },
     {
       "task_slug": "ming3-tts-0.5b-streaming",
@@ -269,26 +330,7 @@
       "mode": "Streaming",
       "sglang_omni_commit": "0c663861d7d4",
       "reference_b0_gpu": "NVIDIA H200",
-      "agents": {
-        "codex": {
-          "task_slug": "ming3-tts-0.5b-streaming",
-          "agent": "codex",
-          "model": "gpt-6-astra",
-          "reasoning_effort": "xhigh",
-          "status": "completed",
-          "best_score": 2.0382161357017403,
-          "best_round": "agent-17",
-          "total_rounds": 18,
-          "timeout_seconds": 28800.0,
-          "runtime_seconds": 28861.34567032568,
-          "gpu_names": [
-            "NVIDIA H200"
-          ],
-          "viewer_url": "https://index.openrsi.foundation/logs/#run=a9073807b4975864",
-          "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/ming3-tts-0.5b-streaming/codex-gpt-6-astra",
-          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/main/sglang-omni/ming3-tts-0.5b-streaming/codex-gpt-6-astra/submissions/agent-17/report.json"
-        }
-      }
+      "agents": {}
     },
     {
       "task_slug": "ming3-tts-tiny-nonstream",
@@ -297,44 +339,7 @@
       "mode": "Non-streaming",
       "sglang_omni_commit": "ca9e8789fcd8",
       "reference_b0_gpu": "NVIDIA H100 NVL",
-      "agents": {
-        "claude-code": {
-          "task_slug": "ming3-tts-tiny-nonstream",
-          "agent": "claude-code",
-          "model": "claude-opus-5-5",
-          "reasoning_effort": "max",
-          "status": "completed",
-          "best_score": 3.6341600901916564,
-          "best_round": "agent-11",
-          "total_rounds": 11,
-          "timeout_seconds": 43200.0,
-          "runtime_seconds": 43386.33294367604,
-          "gpu_names": [
-            "NVIDIA H100 NVL"
-          ],
-          "viewer_url": "https://index.openrsi.foundation/logs/#run=283899e5e2403399",
-          "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/ming3-tts-tiny-nonstream/claude-code-claude-opus-5-5",
-          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/main/sglang-omni/ming3-tts-tiny-nonstream/claude-code-claude-opus-5-5/submissions/agent-11/report.json"
-        },
-        "codex": {
-          "task_slug": "ming3-tts-tiny-nonstream",
-          "agent": "codex",
-          "model": "gpt-6-astra",
-          "reasoning_effort": "xhigh",
-          "status": "failed",
-          "best_score": 1.8994120728796784,
-          "best_round": "agent-12",
-          "total_rounds": 32,
-          "timeout_seconds": 86400.0,
-          "runtime_seconds": 53674.357802791055,
-          "gpu_names": [
-            "NVIDIA H100 NVL"
-          ],
-          "viewer_url": "https://index.openrsi.foundation/logs/#run=5da5fe181e667430",
-          "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/ming3-tts-tiny-nonstream/codex-gpt-6-astra",
-          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/main/sglang-omni/ming3-tts-tiny-nonstream/codex-gpt-6-astra/submissions/agent-12/report.json"
-        }
-      }
+      "agents": {}
     },
     {
       "task_slug": "ming3-tts-tiny-streaming",
@@ -343,26 +348,7 @@
       "mode": "Streaming",
       "sglang_omni_commit": "0c663861d7d4",
       "reference_b0_gpu": "NVIDIA H200",
-      "agents": {
-        "codex": {
-          "task_slug": "ming3-tts-tiny-streaming",
-          "agent": "codex",
-          "model": "gpt-6-astra",
-          "reasoning_effort": "xhigh",
-          "status": "completed",
-          "best_score": 1.7221455457967378,
-          "best_round": "agent-10",
-          "total_rounds": 10,
-          "timeout_seconds": 28800.0,
-          "runtime_seconds": 28876.597628215328,
-          "gpu_names": [
-            "NVIDIA H200"
-          ],
-          "viewer_url": "https://index.openrsi.foundation/logs/#run=4dc68c591bbcb7cf",
-          "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/ming3-tts-tiny-streaming/codex-gpt-6-astra",
-          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/main/sglang-omni/ming3-tts-tiny-streaming/codex-gpt-6-astra/submissions/agent-10/report.json"
-        }
-      }
+      "agents": {}
     },
     {
       "task_slug": "qwen3-asr-1.7b-dual-mode",
@@ -378,8 +364,8 @@
           "model": "claude-opus-5-5",
           "reasoning_effort": "max",
           "status": "cancelled",
-          "best_score": 1.316675811414593,
-          "best_round": "agent-13",
+          "best_score": 1.2778859602733192,
+          "best_round": "agent-11",
           "total_rounds": 13,
           "timeout_seconds": 172800.0,
           "runtime_seconds": 87749.12621216592,
@@ -388,7 +374,17 @@
           ],
           "viewer_url": "https://index.openrsi.foundation/logs/#run=f19f174bf5532f64",
           "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/qwen3-asr-1.7b-dual-mode/claude-code-claude-opus-5-5",
-          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/main/sglang-omni/qwen3-asr-1.7b-dual-mode/claude-code-claude-opus-5-5/submissions/agent-13/report.json"
+          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/qwen3-asr-1.7b-dual-mode/claude-code-claude-opus-5-5/submissions/agent-11/report.json",
+          "reporting_window_seconds": 86400,
+          "best_recorded_elapsed_seconds": 66083.89148187637,
+          "rounds_within_window": 12,
+          "protocol_sha256": "6eb9ccb5787412cd14991dd2899800c69549f23720302117c4bffb714392b271",
+          "initial_baseline_qps": {
+            "nonstream/en": 168.13238293620407,
+            "nonstream/zh": 181.32262167917176,
+            "stream/en": 161.05553034715226,
+            "stream/zh": 173.28994347905464
+          }
         },
         "codex": {
           "task_slug": "qwen3-asr-1.7b-dual-mode",
@@ -406,7 +402,17 @@
           ],
           "viewer_url": "https://index.openrsi.foundation/logs/#run=536fb8d8084974b9",
           "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/qwen3-asr-1.7b-dual-mode/codex-gpt-6-astra",
-          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/main/sglang-omni/qwen3-asr-1.7b-dual-mode/codex-gpt-6-astra/submissions/agent-47/report.json"
+          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/qwen3-asr-1.7b-dual-mode/codex-gpt-6-astra/submissions/agent-47/report.json",
+          "reporting_window_seconds": 86400,
+          "best_recorded_elapsed_seconds": 82526.0115699768,
+          "rounds_within_window": 49,
+          "protocol_sha256": "6eb9ccb5787412cd14991dd2899800c69549f23720302117c4bffb714392b271",
+          "initial_baseline_qps": {
+            "nonstream/en": 169.70169039163625,
+            "nonstream/zh": 178.23744380371076,
+            "stream/en": 160.1434157302635,
+            "stream/zh": 170.8278695533022
+          }
         }
       }
     },
@@ -434,7 +440,17 @@
           ],
           "viewer_url": "https://index.openrsi.foundation/logs/#run=fb0a3a20e9dc5775",
           "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/whisper-large-v3-dual-mode/claude-code-claude-opus-5-5",
-          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/main/sglang-omni/whisper-large-v3-dual-mode/claude-code-claude-opus-5-5/submissions/agent-12/report.json"
+          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/whisper-large-v3-dual-mode/claude-code-claude-opus-5-5/submissions/agent-12/report.json",
+          "reporting_window_seconds": 86400,
+          "best_recorded_elapsed_seconds": 83114.50632095337,
+          "rounds_within_window": 12,
+          "protocol_sha256": "92a4d07bd769a4f3c4e740e5fcbe93551bb80166c45306040d6b1bd3a08268ec",
+          "initial_baseline_qps": {
+            "nonstream/en": 53.53315627655462,
+            "nonstream/zh": 48.636940219390915,
+            "stream/en": 51.917708155986865,
+            "stream/zh": 48.36600624798051
+          }
         },
         "codex": {
           "task_slug": "whisper-large-v3-dual-mode",
@@ -452,7 +468,17 @@
           ],
           "viewer_url": "https://index.openrsi.foundation/logs/#run=62020e82a96ad29a",
           "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/whisper-large-v3-dual-mode/codex-gpt-6-astra",
-          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/main/sglang-omni/whisper-large-v3-dual-mode/codex-gpt-6-astra/submissions/agent-8/report.json"
+          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/whisper-large-v3-dual-mode/codex-gpt-6-astra/submissions/agent-8/report.json",
+          "reporting_window_seconds": 86400,
+          "best_recorded_elapsed_seconds": 41833.886591911316,
+          "rounds_within_window": 15,
+          "protocol_sha256": "92a4d07bd769a4f3c4e740e5fcbe93551bb80166c45306040d6b1bd3a08268ec",
+          "initial_baseline_qps": {
+            "nonstream/en": 52.891285596910805,
+            "nonstream/zh": 48.612217071996035,
+            "stream/en": 52.945313232009696,
+            "stream/zh": 48.774191396349146
+          }
         }
       }
     },
@@ -480,7 +506,17 @@
           ],
           "viewer_url": "https://index.openrsi.foundation/logs/#run=85955c2d14726320",
           "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/moss-transcribe-diarize-dual-mode/claude-code-claude-opus-5-5",
-          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/main/sglang-omni/moss-transcribe-diarize-dual-mode/claude-code-claude-opus-5-5/submissions/agent-6/report.json"
+          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/moss-transcribe-diarize-dual-mode/claude-code-claude-opus-5-5/submissions/agent-6/report.json",
+          "reporting_window_seconds": 86400,
+          "best_recorded_elapsed_seconds": 36685.90774297714,
+          "rounds_within_window": 10,
+          "protocol_sha256": "7b91843fd10b3702106394e870dcb23a71560f2767c55eca3cc9f28eefc9d7c9",
+          "initial_baseline_qps": {
+            "nonstream/en": 106.46520786165263,
+            "nonstream/zh": 109.78071004630435,
+            "stream/en": 102.1000334224417,
+            "stream/zh": 105.81758973479272
+          }
         },
         "codex": {
           "task_slug": "moss-transcribe-diarize-dual-mode",
@@ -498,9 +534,54 @@
           ],
           "viewer_url": "https://index.openrsi.foundation/logs/#run=5cd12dacf82da288",
           "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/moss-transcribe-diarize-dual-mode/codex-gpt-6-astra",
-          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/main/sglang-omni/moss-transcribe-diarize-dual-mode/codex-gpt-6-astra/submissions/agent-19/report.json"
+          "best_report_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/blob/f5deed0f9c9f75ef0f8a5e9514712f8601aea360/sglang-omni/moss-transcribe-diarize-dual-mode/codex-gpt-6-astra/submissions/agent-19/report.json",
+          "reporting_window_seconds": 86400,
+          "best_recorded_elapsed_seconds": 75943.75868797302,
+          "rounds_within_window": 21,
+          "protocol_sha256": "7b91843fd10b3702106394e870dcb23a71560f2767c55eca3cc9f28eefc9d7c9",
+          "initial_baseline_qps": {
+            "nonstream/en": 107.14672968581829,
+            "nonstream/zh": 109.41837260515317,
+            "stream/en": 102.20441915055468,
+            "stream/zh": 105.17954681325062
+          }
         }
       }
+    }
+  ],
+  "reporting_window_seconds": 86400,
+  "archive": "archive.json",
+  "source_revision": "f5deed0f9c9f75ef0f8a5e9514712f8601aea360",
+  "excluded_runs": [
+    {
+      "task_slug": "ming3-tts-0.5b-nonstream",
+      "agent": "claude-code",
+      "reason": "Published trajectory does not cover the full 24-hour window.",
+      "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/ming3-tts-0.5b-nonstream/claude-code-claude-opus-5-5"
+    },
+    {
+      "task_slug": "ming3-tts-0.5b-streaming",
+      "agent": "codex",
+      "reason": "Published trajectory does not cover the full 24-hour window.",
+      "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/ming3-tts-0.5b-streaming/codex-gpt-6-astra"
+    },
+    {
+      "task_slug": "ming3-tts-tiny-nonstream",
+      "agent": "claude-code",
+      "reason": "Published trajectory does not cover the full 24-hour window.",
+      "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/ming3-tts-tiny-nonstream/claude-code-claude-opus-5-5"
+    },
+    {
+      "task_slug": "ming3-tts-tiny-nonstream",
+      "agent": "codex",
+      "reason": "Resumed trajectory totals 23.68 h (8.77 h + 14.91 h); still short of 24 h.",
+      "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/ming3-tts-tiny-nonstream/codex-gpt-6-astra"
+    },
+    {
+      "task_slug": "ming3-tts-tiny-streaming",
+      "agent": "codex",
+      "reason": "Published trajectory does not cover the full 24-hour window.",
+      "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/ming3-tts-tiny-streaming/codex-gpt-6-astra"
     }
   ]
 }

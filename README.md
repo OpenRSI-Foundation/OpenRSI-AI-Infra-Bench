@@ -37,7 +37,7 @@ Developed [jointly by OpenRSI and the SGLang-Omni team](https://index.openrsi.fo
 
 ## 🏆 Leaderboard
 
-Best verified scores from **21 unguided single-agent runs** with [RSI-Harness](https://github.com/OpenRSI-Foundation/OpenRSI-Index/tree/main/RSI-Harness). **Higher is better; 1.0× is the starting baseline B₀.**
+Best verified **normalized scores (× B₀)** from **21 unguided single-agent runs** with [RSI-Harness](https://github.com/OpenRSI-Foundation/OpenRSI-Index/tree/main/RSI-Harness). **1.0× is the initial baseline; higher is better.**
 
 **Codex:** `gpt-6-astra` (xhigh) · **Claude Code:** `claude-opus-5-5` (max).
 
@@ -59,13 +59,15 @@ Best verified scores from **21 unguided single-agent runs** with [RSI-Harness](h
 <sub>— No published score. † Best verified score from a cancelled run. ¹ Resumed run, totaling 23.68 h.</sub>
 
 <details>
-<summary><strong>Hardware and run notes</strong></summary>
+<summary><strong>How scores are calculated</strong></summary>
 
-- **Comparability.** Hardware and run durations vary; scores are reported per task without an aggregate ranking. The eight dual-mode tasks used H100 80GB HBM3 GPUs; Ming3 runs used H100 NVL or H200 GPUs. Ming3 streaming runs lasted 8 h; all current task packages default to 24 h.
-- **Task version.** CosyVoice3 is pinned to SGLang-Omni `1523543056bf`, matching both published baselines.
-- **Cancelled runs (†).** Ming3-TTS 0.5B non-streaming stopped after ~12.2 h; Qwen3-ASR and Whisper stopped after ~24.0–24.4 h. Each score is the best result verified before cancellation.
-- **Resumed run (¹).** Ming3-TTS Tiny non-streaming (Codex) resumed after a 4-minute gap: 8.77 h + 14.91 h = 23.68 h within the 24 h budget. The first segment reached 1.358× over 13 submissions; the resumed segment reached 1.899× over 32 submissions.
-- **Selection.** Calibration runs, guided-prompt ablations and multi-agent runs are excluded.
+Each entry is the highest verified score reached during a run. For each mode, divide the candidate's mean QPS by the fixed initial baseline's mean QPS; each mean uses three repetitions.
+
+- **Single mode:** the score is that mode's QPS ratio to B₀.
+- **Dual mode:** $\mathrm{score} = R_s^{2/3} R_n^{1/3}$, where $R_s$ and $R_n$ are the streaming and non-streaming QPS ratios. Streaming has weight ⅔; non-streaming has weight ⅓.
+- **ASR:** each mode's ratio is first the geometric mean of its English and Mandarin QPS ratios: $R_m = \sqrt{R_{m,\mathrm{en}} R_{m,\mathrm{zh}}}$.
+
+For example, **2.0× streaming** and **1.5× non-streaming** yield a **1.817× normalized score**. Only submissions passing the task's quality, latency, streaming and integrity gates qualify; dual-mode submissions must improve both modes over B₀.
 
 </details>
 

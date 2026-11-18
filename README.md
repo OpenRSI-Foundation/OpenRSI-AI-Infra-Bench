@@ -7,10 +7,10 @@
 <h3 align="center">Can coding agents make real AI infrastructure faster?</h3>
 
 <p align="center">
-  <a href="https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/"><img src="https://img.shields.io/badge/Blog-OpenRSI_×_SGLang--Omni-C04E1D?style=for-the-badge&logo=gitbook&logoColor=white&labelColor=141413" alt="Blog"></a>&nbsp;
-  <a href="results/archive.md"><img src="https://img.shields.io/badge/RSI_Logs-16_Runs-C96442?style=for-the-badge&logo=googlesheets&logoColor=white&labelColor=141413" alt="16 benchmark runs"></a>&nbsp;
-  <a href="docs/upstream-results.md"><img src="https://img.shields.io/badge/Upstream-11_PRs_Merged-9D2F24?style=for-the-badge&logo=github&logoColor=white&labelColor=141413" alt="11 PRs Merged"></a>&nbsp;
-  <a href="https://x.com/OpenRSI/status/2119869682929066288"><img src="https://img.shields.io/badge/X-@OpenRSI-3D3D3A?style=for-the-badge&logo=x&logoColor=white&labelColor=141413" alt="X / Twitter"></a>
+  <a href="https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/"><img src="https://img.shields.io/badge/Blog-OpenRSI_×_SGLang--Omni-C85A35?style=for-the-badge&logo=gitbook&logoColor=white&labelColor=2B2927" alt="Blog"></a>&nbsp;
+  <a href="results/archive.md"><img src="https://img.shields.io/badge/RSI_Logs-16_Runs-C9862E?style=for-the-badge&logo=googlesheets&logoColor=white&labelColor=2B2927" alt="16 benchmark runs"></a>&nbsp;
+  <a href="docs/upstream-results.md"><img src="https://img.shields.io/badge/Upstream-11_PRs_Merged-4D6B5D?style=for-the-badge&logo=github&logoColor=white&labelColor=2B2927" alt="11 PRs Merged"></a>&nbsp;
+  <a href="https://x.com/OpenRSI/status/2119869682929066288"><img src="https://img.shields.io/badge/X-@OpenRSI-4A4742?style=for-the-badge&logo=x&logoColor=white&labelColor=2B2927" alt="X / Twitter"></a>
 </p>
 
 ---
@@ -68,7 +68,7 @@ Both agents are evaluated over the same first 24 hours. Each run keeps its own i
 ## 📦 Tasks
 
 <p align="center">
-  <img src="assets/tasks.png" width="100%" alt="Serving pipelines for eight SGLang-Omni tasks: five TTS and three ASR or diarization tasks, all in streaming and non-streaming modes">
+  <img src="assets/tasks.svg" width="100%" alt="Serving pipelines for eight SGLang-Omni tasks: five TTS and three ASR or diarization tasks, all in streaming and non-streaming modes">
 </p>
 
 **8 model checkpoints across 7 model families**, all evaluated in streaming and non-streaming modes. Each task link includes its workload, reference throughput, and GPU calibration instructions.
@@ -142,7 +142,7 @@ To run another benchmark, replace `cosyvoice3-dual-mode` with any [task slug](#t
   </tr>
 </table>
 
-We thank the [SGLang-Omni](https://github.com/sgl-project/sglang-omni) maintainers and contributors for task design, code review, and independent reproductions. To contribute a benchmark, see the [OpenRSI call for contributors](https://github.com/OpenRSI-Foundation/OpenRSI-Index#-call-for-contributors). Join the community on [Discord](https://discord.gg/3EG8Qhmfsa) or follow [OpenRSI on X](https://x.com/OpenRSI/status/2102831770458890626).
+We thank the [SGLang-Omni](https://github.com/sgl-project/sglang-omni) maintainers and contributors for task design, code review, and independent reproductions. To contribute a benchmark, see the [OpenRSI call for contributors](https://github.com/OpenRSI-Foundation/OpenRSI-Index#-call-for-contributors). Join the community on [Discord](https://discord.gg/3EG8Qhmfsa) or follow [OpenRSI on X](https://x.com/OpenRSI/status/2119869682929066288).
 
 <a id="citation"></a>
 

@@ -7,16 +7,24 @@
 <h3 align="center">Can coding agents make real AI infrastructure faster?</h3>
 
 <p align="center">
-  <a href="https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/"><img src="https://img.shields.io/badge/Blog-C96442?style=for-the-badge&logo=gitbook&logoColor=white" alt="Blog"></a>&nbsp;
-  <a href="https://index.openrsi.foundation"><img src="https://img.shields.io/badge/OpenRSI_Index-4F86D8?style=for-the-badge&logo=googleearth&logoColor=white" alt="OpenRSI Index website"></a>&nbsp;
-  <a href="https://index.openrsi.foundation/logs/"><img src="https://img.shields.io/badge/RSI_Logs-14967F?style=for-the-badge&logo=googlesheets&logoColor=white" alt="RSI Logs Viewer"></a>
+  <a href="https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/"><img src="https://img.shields.io/badge/Blog-OpenRSI_×_SGLang--Omni-C96442?style=for-the-badge&logo=gitbook&logoColor=white" alt="Blog"></a>&nbsp;
+  <a href="https://index.openrsi.foundation"><img src="https://img.shields.io/badge/Website-OpenRSI_Index-4F86D8?style=for-the-badge&logo=googleearth&logoColor=white" alt="Website"></a>&nbsp;
+  <a href="https://index.openrsi.foundation/logs/"><img src="https://img.shields.io/badge/RSI_Logs-21_Trajectories-14967F?style=for-the-badge&logo=googlesheets&logoColor=white" alt="RSI Logs Viewer"></a>&nbsp;
+  <a href="https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni"><img src="https://img.shields.io/badge/Hugging_Face-Logs_Archive-E08A3C?style=for-the-badge&logo=huggingface&logoColor=white" alt="Hugging Face Dataset"></a>&nbsp;
+  <a href="#upstream"><img src="https://img.shields.io/badge/Upstream-14_PRs_Merged-2F8F4E?style=for-the-badge&logo=github&logoColor=white" alt="14 PRs Merged"></a>&nbsp;
+  <a href="https://x.com/OpenRSI/status/2102831770458890626"><img src="https://img.shields.io/badge/Twitter-35434D?style=for-the-badge&logo=x&logoColor=white" alt="X / Twitter"></a>&nbsp;
+  <a href="https://discord.gg/3EG8Qhmfsa"><img src="https://img.shields.io/badge/Discord-6674D8?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"></a>
 </p>
 
 <p align="center">
   <a href="#leaderboard"><b>🏆&nbsp;Leaderboard</b></a> &nbsp;·&nbsp;
   <a href="#highlights"><b>✨&nbsp;Highlights</b></a> &nbsp;·&nbsp;
-  <a href="#tasks"><b>📦&nbsp;Tasks</b></a> &nbsp;·&nbsp;
-  <a href="#quick-start"><b>🚀&nbsp;Quick&nbsp;Start</b></a>
+  <a href="#how-it-works"><b>⚙️&nbsp;How&nbsp;It&nbsp;Works</b></a> &nbsp;·&nbsp;
+  <a href="#tasks"><b>📦&nbsp;12&nbsp;Tasks</b></a> &nbsp;·&nbsp;
+  <a href="#upstream"><b>🔁&nbsp;Upstream&nbsp;PRs</b></a> &nbsp;·&nbsp;
+  <a href="#quick-start"><b>🚀&nbsp;Quick&nbsp;Start</b></a> &nbsp;·&nbsp;
+  <a href="#evaluation"><b>⚖️&nbsp;Evaluation</b></a> &nbsp;·&nbsp;
+  <a href="#citation"><b>📖&nbsp;Citation</b></a>
 </p>
 
 ---

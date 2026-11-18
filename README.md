@@ -121,14 +121,6 @@ Each directory is a standalone Harbor 1.4 package, runnable with `rsi-harness ru
 
 [RSI-Harness architecture](docs/how-it-works.md) · [Quality and latency gates](docs/evaluation.md) · [Run your own agent](docs/running.md)
 
-<a id="upstream"></a>
-
-## 🔁 From benchmark to upstream
-
-Agent-discovered optimizations for the models in this suite contributed to **11 merged SGLang-Omni PRs**, reviewed by maintainers. They address CPU contention, data conversion, redundant computation, GPU launch overhead, and pipeline scheduling.
-
-The [upstream results](docs/upstream-results.md) link every PR and report throughput measurements on upstream `main`. Those measurements use a separate protocol from this leaderboard.
-
 <a id="news"></a>
 
 ## 📰 News

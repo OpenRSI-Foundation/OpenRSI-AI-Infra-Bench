@@ -15,9 +15,9 @@
 
 ---
 
-**OpenRSI-AI-Infra-Bench** evaluates whether coding agents can improve real AI serving systems. Agents profile and modify [SGLang-Omni](https://github.com/sgl-project/sglang-omni) under fixed model weights and GPU resources. An isolated evaluator measures throughput against each run's **fixed initial baseline B₀**, subject to quality, latency, and streaming constraints.
+**OpenRSI-AI-Infra-bench** benchmarks **recursive self-improvement (RSI) in real AI serving systems**. Agents iteratively optimize a serving stack with fixed model weights and GPU resources. An independent evaluator verifies speedups under quality and latency constraints; each accepted improvement becomes the next baseline.
 
-Built [jointly with the SGLang-Omni team](https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/), the suite contains **8 tasks: 5 text-to-speech and 3 speech recognition / diarization tasks**. Every task evaluates both streaming and non-streaming serving and ships with pinned source, dependencies, model assets, and evaluation code. This is the AI infrastructure track of the [OpenRSI Index](https://index.openrsi.foundation/).
+Developed jointly by [OpenRSI and the SGLang-Omni team](https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/), the benchmark includes **8 carefully reviewed tasks for omni models**. Each task provides a production serving stack with pinned source code, assets, dependencies and evaluation protocols. The collection is part of the [OpenRSI Index](https://index.openrsi.foundation/).
 
 <a id="highlights"></a>
 

@@ -30,28 +30,6 @@ Built [jointly with the SGLang-Omni team](https://index.openrsi.foundation/blog/
   </tr>
 </table>
 
-<a id="quick-start"></a>
-
-## 🚀 Quick start
-
-**Requires:** Linux, Docker Engine 26+ with daemon access, NVIDIA drivers + Container Toolkit, Git, and [uv](https://docs.astral.sh/uv/getting-started/installation/). Use one NVIDIA GPU (80 GB+ VRAM recommended); see [full hardware requirements](docs/running.md#1-host-requirements--integrity-check).
-
-Copy and run to set up RSI-Harness and validate CosyVoice3 on GPU 0. No model API key is needed:
-
-```bash
-git clone --depth 1 https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench.git &&
-cd OpenRSI-AI-Infra-Bench &&
-git clone --depth 1 --filter=blob:none --sparse \
-  https://github.com/OpenRSI-Foundation/OpenRSI-Index.git vendor/OpenRSI-Index &&
-git -C vendor/OpenRSI-Index sparse-checkout set RSI-Harness &&
-uvx --python 3.12 --from ./vendor/OpenRSI-Index/RSI-Harness \
-  rsi-harness run tasks/cosyvoice3-dual-mode --agent oracle --gpus 0
-```
-
-The first run installs the Harness, builds the task image, and downloads model weights. Expected result: **`reward = 1.0`**, with artifacts under `logs/runs/<run-id>/`.
-
-To run another benchmark, replace `cosyvoice3-dual-mode` with any [task slug](#tasks). See the [full guide](docs/running.md) for Codex / Claude Code runs, GPU calibration, and result inspection, or [browse the 16 benchmark runs](results/archive.md).
-
 <a id="leaderboard"></a>
 
 ## 🏆 Leaderboard
@@ -111,15 +89,40 @@ Both agents are evaluated over the same first 24 hours. Each run keeps its own i
 
 Each directory is a standalone Harbor 1.4 package, runnable with `rsi-harness run`. See the [task catalog](tasks/README.md) and [package layout](docs/how-it-works.md).
 
+<a id="quick-start"></a>
+
+## 🚀 Quick start
+
+**Requires:** Linux, Docker Engine 26+ with daemon access, NVIDIA drivers + Container Toolkit, Git, and [uv](https://docs.astral.sh/uv/getting-started/installation/). Use one NVIDIA GPU (80 GB+ VRAM recommended); see [full hardware requirements](docs/running.md#1-host-requirements--integrity-check).
+
+Copy and run to set up RSI-Harness and validate CosyVoice3 on GPU 0. No model API key is needed:
+
+```bash
+git clone --depth 1 https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench.git &&
+cd OpenRSI-AI-Infra-Bench &&
+git clone --depth 1 --filter=blob:none --sparse \
+  https://github.com/OpenRSI-Foundation/OpenRSI-Index.git vendor/OpenRSI-Index &&
+git -C vendor/OpenRSI-Index sparse-checkout set RSI-Harness &&
+uvx --python 3.12 --from ./vendor/OpenRSI-Index/RSI-Harness \
+  rsi-harness run tasks/cosyvoice3-dual-mode --agent oracle --gpus 0
+```
+
+The first run installs the Harness, builds the task image, and downloads model weights. Expected result: **`reward = 1.0`**, with artifacts under `logs/runs/<run-id>/`.
+
+To run another benchmark, replace `cosyvoice3-dual-mode` with any [task slug](#tasks). See the [full guide](docs/running.md) for Codex / Claude Code runs, GPU calibration, and result inspection, or [browse the 16 benchmark runs](results/archive.md).
+
 <a id="how-it-works"></a>
 
-## ⚙️ How it works
+<details>
+<summary><strong>⚙️ How it works</strong></summary>
 
 1. **Optimize.** A coding agent profiles and edits the serving runtime in a persistent container, with fixed model weights and one GPU.
 2. **Evaluate.** Each submitted candidate is tested in a fresh Judge container against the fixed initial B₀, using three repetitions per mode.
 3. **Iterate.** The agent uses the evaluator's feedback to improve its next submission. The leaderboard reports the highest valid score within 24 hours.
 
 [RSI-Harness architecture](docs/how-it-works.md) · [Quality and latency gates](docs/evaluation.md) · [Run your own agent](docs/running.md)
+
+</details>
 
 <a id="news"></a>
 

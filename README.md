@@ -61,6 +61,8 @@ Best verified **normalized scores (× B₀)** from **21 unguided single-agent ru
 <details>
 <summary><strong>How scores are calculated</strong></summary>
 
+**Run settings.** Each run uses one unguided agent in RSI-Harness: **Codex** with `gpt-6-astra` (`xhigh` reasoning effort), or **Claude Code** with `claude-opus-5-5` (`max`). Model weights remain fixed, with **one GPU per task**: H100 80GB HBM3 for dual-mode tasks, H100 NVL for Ming3 non-streaming, and H200 for Ming3 streaming. Most published runs have a **24-hour budget**, with configured budgets ranging from **8 to 48 hours**. See [per-run settings and elapsed times](results/README.md) and the [reproduction guide](docs/running.md).
+
 Each entry is the highest verified score reached during a run. For each mode, divide the candidate's mean QPS by the fixed initial baseline's mean QPS; each mean uses three repetitions.
 
 - **Single mode:** the score is that mode's QPS ratio to B₀.

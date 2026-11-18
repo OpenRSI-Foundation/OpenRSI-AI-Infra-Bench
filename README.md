@@ -37,13 +37,24 @@ Developed [jointly by OpenRSI and the SGLang-Omni team](https://index.openrsi.fo
 
 ## ✨ Highlights
 
-- **Easy to run and observe.** Each task needs just one GPU. RSI-Harness lets you
-  inspect agent actions, experiments and evaluation results, making it easy to
-  follow how agents explore, respond to feedback and improve across rounds.
-- **Production tasks, carefully validated.** Each task targets a real bottleneck
-  in SGLang-Omni's production serving stack. The OpenRSI and SGLang-Omni teams
-  repeatedly review and refine its objectives and evaluator, with real
-  optimization PRs validating its practical value.
+<table>
+  <tr>
+    <td align="center" width="20%"><h2>10</h2>omni models<br><sub>SGLang-Omni</sub></td>
+    <td align="center" width="20%"><h2>10</h2>tasks<br><sub>pinned &amp; reproducible</sub></td>
+    <td align="center" width="20%"><h2>6.29×</h2>best agent reward<br><sub>Fish S2-Pro, Claude Code</sub></td>
+    <td align="center" width="20%"><h2>14</h2>PRs merged<br><sub>into SGLang-Omni</sub></td>
+    <td align="center" width="20%"><h2>1 GPU</h2>per task<br><sub>H100-class</sub></td>
+  </tr>
+</table>
+
+- **Production tasks, validated through real PRs.** Each task targets a real
+  bottleneck in SGLang-Omni's production serving stack. The OpenRSI and SGLang-Omni
+  teams jointly refine its objective, constraints and evaluator through repeated
+  review, then validate the task through concrete optimization PRs.
+- **Easy to run and inspect.** Each task needs just one GPU. RSI-Harness lets you
+  inspect agent actions, experiments and evaluator feedback round by round, so
+  you can follow how agents test ideas, respond to results and build on previous
+  improvements.
 
 ## ⚙️ How it works
 

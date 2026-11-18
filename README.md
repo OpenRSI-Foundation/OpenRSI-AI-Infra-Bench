@@ -17,28 +17,19 @@
 
 <p align="center">
   <a href="https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/"><img alt="Blog" src="https://img.shields.io/badge/Blog-OpenRSI_×_SGLang--Omni-5b59db"></a>
-  <a href="#-tasks"><img alt="10 models · 12 tasks" src="https://img.shields.io/badge/Tasks-10_models_·_12_packages-30928a"></a>
+  <a href="#-tasks"><img alt="10 omni models · 10 tasks" src="https://img.shields.io/badge/Tasks-10_models_·_10_tasks-30928a"></a>
   <a href="#-baselines"><img alt="Codex and Claude Code" src="https://img.shields.io/badge/Agents-Codex_|_Claude_Code-435063"></a>
   <a href="#-from-benchmark-to-upstream"><img alt="14 upstream PRs merged" src="https://img.shields.io/badge/Upstream-14_PRs_merged-2f8f4e"></a>
   <a href="LICENSE"><img alt="Apache 2.0" src="https://img.shields.io/badge/License-Apache_2.0-667181"></a>
 </p>
 
-**OpenRSI AI Infra** is a benchmark for coding agents that optimize **real AI
-serving systems**. Each task hands an agent a production serving stack, a fixed
-model and a GPU. The agent profiles the runtime, forms hypotheses, runs
-experiments and submits code. An independent evaluator then decides whether the
-system got **faster without losing quality or latency**.
+**OpenRSI-AI-Infra-bench** benchmarks **recursive self-improvement (RSI) in real AI serving systems**. Agents iteratively optimize a serving stack with fixed model weights and GPU resources. An independent evaluator verifies speedups under **quality and latency constraints**, and each accepted improvement becomes the baseline for the next round.
 
-The first collection targets **[SGLang-Omni](https://github.com/sgl-project/sglang-omni)
-speech serving**: 10 text-to-speech (TTS) and speech-recognition (ASR) models,
-packaged as 12 reproducible tasks with pinned source, assets, dependencies and
-evaluation rules. It is part of the [OpenRSI Index](https://index.openrsi.foundation),
-an open effort to measure recursive self-improvement (RSI) in real-world settings,
-starting with agents that improve the infrastructure AI runs on.
+Developed [jointly by OpenRSI and the SGLang-Omni team](https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/), the collection includes **10 carefully reviewed tasks for omni models**, with pinned source code, assets, dependencies and evaluation protocols. It is part of the [OpenRSI Index](https://index.openrsi.foundation/), starting with agents that improve the infrastructure AI runs on.
 
 ## 📰 News
 
-- **2026.11** — 🚀 **OpenRSI AI Infra released**: 12 SGLang-Omni task packages with
+- **2026.11** — 🚀 **OpenRSI AI Infra released**: 10 SGLang-Omni tasks with
   Codex and Claude Code baselines.
 - **2026.11** — 📝 Blog: **[OpenRSI × SGLang-Omni: Scaling RSI for AI Infra](https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/)**.
   Agent-found optimizations raised throughput by **+7.6% to +326.5%** on H100 across
@@ -48,8 +39,8 @@ starting with agents that improve the infrastructure AI runs on.
 
 <table>
   <tr>
-    <td align="center" width="20%"><h2>10</h2>speech models<br><sub>TTS + ASR</sub></td>
-    <td align="center" width="20%"><h2>12</h2>task packages<br><sub>pinned &amp; reproducible</sub></td>
+    <td align="center" width="20%"><h2>10</h2>omni models<br><sub>SGLang-Omni</sub></td>
+    <td align="center" width="20%"><h2>10</h2>tasks<br><sub>pinned &amp; reproducible</sub></td>
     <td align="center" width="20%"><h2>6.29×</h2>best agent reward<br><sub>Fish S2-Pro, Claude Code</sub></td>
     <td align="center" width="20%"><h2>14</h2>PRs merged<br><sub>into SGLang-Omni</sub></td>
     <td align="center" width="20%"><h2>1 GPU</h2>per task<br><sub>H100-class</sub></td>
@@ -97,8 +88,9 @@ tasks/<model>/<task-name>/
 
 ## 📦 Tasks
 
-**Eight dual-mode tasks** score streaming and non-streaming together.
-**Four Ming3 tasks** score each mode separately, for the 0.5B and Tiny models.
+The collection contains **10 tasks, one per model**. Eight evaluate streaming
+and non-streaming together; Ming3 0.5B and Tiny each provide separate packages
+for the two modes, yielding 12 runnable packages in total.
 
 | Model | Track | Evaluation modes | Agent budget | Package |
 | :--- | :---: | :--- | :---: | :--- |

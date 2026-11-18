@@ -149,6 +149,12 @@ Replace `cosyvoice3-dual-mode` with any [task slug](#tasks) to run a different b
 
 We thank the [SGLang-Omni](https://github.com/sgl-project/sglang-omni) maintainers and contributors for task design, code review, and independent reproductions. To contribute a benchmark, see the [OpenRSI call for contributors](https://github.com/OpenRSI-Foundation/OpenRSI-Index#-call-for-contributors). Join the community on [Discord](https://discord.gg/3EG8Qhmfsa) or follow [OpenRSI on X](https://x.com/OpenRSI/status/2119869682929066288).
 
+<a id="contributing"></a>
+
+## ✨ Contributing
+
+[Open an issue](https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench/issues/new) to report a bug or suggest a benchmark. [Submit a pull request](https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench/compare) to contribute a task, fix, or documentation update. For collaborations, email [zhuofengli12345@gmail.com](mailto:zhuofengli12345@gmail.com).
+
 <a id="citation"></a>
 
 ## 📖 Citation

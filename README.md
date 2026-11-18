@@ -67,7 +67,7 @@ Both agents are evaluated over the same first 24 hours. Each run keeps its own i
 
 ## 📦 Tasks
 
-OpenRSI-AI-Infra-Bench targets **omni model serving optimization in SGLang-Omni**: improve **both streaming and non-streaming throughput** without degrading quality, latency, or streaming continuity. Its **8 tasks across 7 model families** cover core speech models for text-to-speech, recognition, and diarization. Each task is **self-contained and ready to run**, with pinned code, dependencies, model assets, and evaluators, plus reference throughput and GPU calibration instructions.
+OpenRSI-AI-Infra-Bench targets omni model serving optimization in **SGLang-Omni**: improve both streaming and non-streaming throughput without degrading quality, latency, or streaming continuity. Its **8 tasks across 7 model families** cover core speech models for text-to-speech, recognition, and diarization. Each task is **self-contained and ready to run**, with pinned code, dependencies, model assets, and evaluators, plus reference throughput and GPU calibration instructions.
 
 
 | Task package | Model checkpoint | SGLang-Omni base commit |

@@ -315,42 +315,6 @@
       }
     },
     {
-      "task_slug": "ming3-tts-0.5b-nonstream",
-      "task": "Ming3-TTS 0.5B (non-streaming)",
-      "modality": "TTS",
-      "mode": "Non-streaming",
-      "sglang_omni_commit": "ca9e8789fcd8",
-      "reference_b0_gpu": "NVIDIA H100 NVL",
-      "agents": {}
-    },
-    {
-      "task_slug": "ming3-tts-0.5b-streaming",
-      "task": "Ming3-TTS 0.5B (streaming)",
-      "modality": "TTS",
-      "mode": "Streaming",
-      "sglang_omni_commit": "0c663861d7d4",
-      "reference_b0_gpu": "NVIDIA H200",
-      "agents": {}
-    },
-    {
-      "task_slug": "ming3-tts-tiny-nonstream",
-      "task": "Ming3-TTS Tiny (non-streaming)",
-      "modality": "TTS",
-      "mode": "Non-streaming",
-      "sglang_omni_commit": "ca9e8789fcd8",
-      "reference_b0_gpu": "NVIDIA H100 NVL",
-      "agents": {}
-    },
-    {
-      "task_slug": "ming3-tts-tiny-streaming",
-      "task": "Ming3-TTS Tiny (streaming)",
-      "modality": "TTS",
-      "mode": "Streaming",
-      "sglang_omni_commit": "0c663861d7d4",
-      "reference_b0_gpu": "NVIDIA H200",
-      "agents": {}
-    },
-    {
       "task_slug": "qwen3-asr-1.7b-dual-mode",
       "task": "Qwen3-ASR 1.7B",
       "modality": "ASR",
@@ -552,36 +516,5 @@
   "reporting_window_seconds": 86400,
   "archive": "archive.json",
   "source_revision": "f5deed0f9c9f75ef0f8a5e9514712f8601aea360",
-  "excluded_runs": [
-    {
-      "task_slug": "ming3-tts-0.5b-nonstream",
-      "agent": "claude-code",
-      "reason": "Published trajectory does not cover the full 24-hour window.",
-      "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/ming3-tts-0.5b-nonstream/claude-code-claude-opus-5-5"
-    },
-    {
-      "task_slug": "ming3-tts-0.5b-streaming",
-      "agent": "codex",
-      "reason": "Published trajectory does not cover the full 24-hour window.",
-      "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/ming3-tts-0.5b-streaming/codex-gpt-6-astra"
-    },
-    {
-      "task_slug": "ming3-tts-tiny-nonstream",
-      "agent": "claude-code",
-      "reason": "Published trajectory does not cover the full 24-hour window.",
-      "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/ming3-tts-tiny-nonstream/claude-code-claude-opus-5-5"
-    },
-    {
-      "task_slug": "ming3-tts-tiny-nonstream",
-      "agent": "codex",
-      "reason": "Resumed trajectory totals 23.68 h (8.77 h + 14.91 h); still short of 24 h.",
-      "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/ming3-tts-tiny-nonstream/codex-gpt-6-astra"
-    },
-    {
-      "task_slug": "ming3-tts-tiny-streaming",
-      "agent": "codex",
-      "reason": "Published trajectory does not cover the full 24-hour window.",
-      "logs_url": "https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/ming3-tts-tiny-streaming/codex-gpt-6-astra"
-    }
-  ]
+  "excluded_runs": []
 }

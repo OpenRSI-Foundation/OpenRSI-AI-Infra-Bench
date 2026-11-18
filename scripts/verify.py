@@ -43,8 +43,8 @@ def main():
         elif path.suffix == '.sh':
             subprocess.run(['bash', '-n', str(path)], check=True)
     tasks = list((ROOT / 'tasks').glob('*/task.toml'))
-    if len(tasks) != 12:
-        raise SystemExit(f'Expected 12 tasks, found {len(tasks)}')
+    if len(tasks) != manifest['task_count']:
+        raise SystemExit(f"Expected {manifest['task_count']} tasks, found {len(tasks)}")
     print(f'PASS: {len(tasks)} task packages; {len(expected)} files match the source snapshot.')
     print('Checked hashes, executable modes, and Python/JSON/TOML/shell syntax. No GPU evaluation performed.')
 

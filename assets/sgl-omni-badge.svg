@@ -12,5 +12,5 @@
     <path fill="#9d2f24" d="M307.53,515.89,322.41,530l-5.27,5.81-19.42-18.17,19.53-19.17c5,3,5.26,4.2.52,8.71C314.64,510.18,311.19,512.81,307.53,515.89Z"/>
     <path fill="#9d2f24" d="M343.62,494.92c5.71,1.47,7.13,3.55,4.77,8.38-5.37,11-10.16,22.28-15.45,34l-7.07-2.61Z"/>
   </g>
-  <text x="74" y="18" text-anchor="middle" fill="#952d23" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="10" font-weight="bold" letter-spacing="1" textLength="76" lengthAdjust="spacingAndGlyphs">SGL-OMNI</text>
+  <text x="74" y="18" text-anchor="middle" fill="#952d23" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="10" font-weight="bold" letter-spacing="1" textLength="76" lengthAdjust="spacingAndGlyphs">SGL-Omni</text>
 </svg>

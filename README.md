@@ -10,7 +10,7 @@
   <a href="https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/"><img src="https://img.shields.io/badge/Blog-F97316?style=for-the-badge&logo=gitbook&logoColor=white" alt="Blog"></a>
   <a href="https://x.com/OpenRSI/status/2119869682929066288"><img src="https://img.shields.io/badge/Twitter-000000?style=for-the-badge&logo=x&logoColor=white" alt="X / Twitter"></a>
   <a href="https://github.com/OpenRSI-Foundation/OpenRSI-Index"><img src="assets/openrsi-index-badge.svg" alt="OpenRSI-Index" height="28"></a>
-  <a href="https://github.com/sgl-project/sglang-omni"><img src="assets/sgl-omni-badge.svg" alt="SGL-Omni" height="28"></a>
+  <a href="https://github.com/sgl-project/sglang-omni"><img src="assets/sgl-omni-badge.svg?v=2" alt="SGL-Omni" height="28"></a>
 </p>
 
 <p align="center">

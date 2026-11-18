@@ -23,11 +23,10 @@ Built [jointly with the SGLang-Omni team](https://index.openrsi.foundation/blog/
 
 <table>
   <tr>
-    <td align="center" width="20%"><h3>8</h3><strong>Tasks</strong><br><sub>TTS &amp; ASR</sub></td>
-    <td align="center" width="20%"><h3>16</h3><strong>Public runs</strong><br><sub>Two agents per task</sub></td>
-    <td align="center" width="20%"><h3>24 h</h3><strong>Comparison window</strong><br><sub>Same cutoff for both agents</sub></td>
-    <td align="center" width="20%"><h3>1 GPU</h3><strong>Per run</strong><br><sub>H100 80GB HBM3</sub></td>
-    <td align="center" width="20%"><h3>6.288×</h3><strong>Best verified score</strong><br><sub>Relative to initial B₀</sub></td>
+    <td align="center" width="25%"><h3>8</h3><strong>Tasks</strong><br><sub>TTS &amp; ASR</sub></td>
+    <td align="center" width="25%"><h3>16</h3><strong>Public runs</strong><br><sub>Two agents per task</sub></td>
+    <td align="center" width="25%"><h3>24 h</h3><strong>Comparison window</strong><br><sub>Same cutoff for both agents</sub></td>
+    <td align="center" width="25%"><h3>1 GPU</h3><strong>Per run</strong><br><sub>H100 80GB HBM3</sub></td>
   </tr>
 </table>
 
@@ -94,7 +93,7 @@ Both agents are evaluated over the same first 24 hours. Each run keeps its own i
 ## 📦 Tasks
 
 <p align="center">
-  <img src="assets/tasks.png" width="100%" alt="Eight SGLang-Omni benchmark tasks: five dual-mode TTS tasks and three dual-mode ASR or diarization tasks, with best verified 24-hour scores">
+  <img src="assets/tasks.png" width="100%" alt="Serving pipelines for eight SGLang-Omni tasks: five TTS and three ASR or diarization tasks, all in streaming and non-streaming modes">
 </p>
 
 **8 model checkpoints across 7 model families**, all evaluated in streaming and non-streaming modes. Each task link includes its workload, reference throughput, and GPU calibration instructions.

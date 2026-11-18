@@ -110,8 +110,7 @@
   <rect x="864" y="130" width="212" height="120" rx="6" fill="#faf9f5" stroke="#e5e3da" stroke-width="1"/>
   <line x1="898" y1="222" x2="1066" y2="222" stroke="#b0aea5" stroke-width="1.4" stroke-dasharray="4 3"/>
   <text x="893" y="226" text-anchor="end" class="mono tx3" font-size="9.8">1.0×</text>
-  <text x="893" y="188" text-anchor="end" class="mono tx3" font-size="9.8">3.0×</text>
-  <text x="893" y="155" text-anchor="end" class="mono w6 txr" font-size="9.8">6.3×</text>
+  <text x="893" y="155" text-anchor="end" class="mono w6 txr" font-size="9.8">Score</text>
   <text x="900" y="243" class="mono tx3" font-size="9.2">0h</text>
   <text x="980" y="243" text-anchor="middle" class="mono tx3" font-size="9.2">12h</text>
   <text x="1066" y="243" text-anchor="end" class="mono tx3" font-size="9.2">24h</text>
@@ -125,7 +124,7 @@
   <circle cx="1018" cy="166" r="3.8" fill="#c96442" stroke="#faf9f5" stroke-width="1.4"/>
   <circle cx="1048" cy="151" r="3.8" fill="#c96442" stroke="#faf9f5" stroke-width="1.4"/>
   <circle cx="870" cy="262" r="3.5" fill="#c96442"/>
-  <text x="878" y="266" class="sans tx2" font-size="10.5">Verified best</text>
+  <text x="878" y="266" class="sans tx2" font-size="10.5">Verified gain</text>
   <circle cx="968" cy="262" r="3.4" fill="#ffffff" stroke="#b0aea5" stroke-width="1.5"/>
   <text x="976" y="266" class="sans tx3" font-size="10.5">Failed guard</text>
   <rect x="864" y="278" width="212" height="56" rx="7" fill="#fbf0ec" stroke="#e5c4b7" stroke-width="1.1"/>
@@ -133,7 +132,7 @@
   <text x="970.0" y="323" text-anchor="middle" class="mono w5 txr" font-size="10.2">Dual-mode: R<tspan dy="2.5" font-size="8.5">s</tspan><tspan dy="-2.5"> &gt; 1.0 &amp; R</tspan><tspan dy="2.5" font-size="8.5">n</tspan><tspan dy="-2.5"> &gt; 1.0</tspan></text>
   <rect x="864" y="344" width="212" height="42" rx="7" fill="#f0eee6" stroke="#dcd9cf" stroke-width="1"/>
   <text x="970.0" y="362" text-anchor="middle" class="sans w6 tx" font-size="11.5">16 Public Trajectories</text>
-  <text x="970.0" y="378" text-anchor="middle" class="mono tx2" font-size="10.5">11 Upstream PRs · Up to 6.29×</text>
+  <text x="970.0" y="378" text-anchor="middle" class="mono tx2" font-size="10.5">11 Upstream PRs</text>
   <rect x="28" y="414" width="1064" height="34" rx="8" fill="#f0eee6" stroke="#dedbd0" stroke-width="1"/>
   <text x="46" y="435" class="cap txr">OPEN PIPELINE</text>
   <text x="246" y="435" text-anchor="middle" class="sans w5 tx2" font-size="12">Harbor 1.4 Tasks (8)</text>

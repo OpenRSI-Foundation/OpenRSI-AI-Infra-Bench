@@ -139,15 +139,14 @@ Replace `cosyvoice3-dual-mode` with any [task slug](#tasks) to run a different b
     <td align="center" width="16.67%"><a href="https://yichenfeng.me/"><strong>Yichen Feng</strong></a></td>
     <td align="center" width="16.67%"><a href="https://wenhaochai.com/"><strong>Wenhao Chai</strong></a></td>
     <td align="center" width="16.67%"><a href="https://weikangda.github.io/kangda.github.io/"><strong>Kangda Wei</strong></a></td>
-    <td align="center" width="16.67%"><a href="https://davidhanx.github.io/"><strong>Xinyang Han</strong></a></td>
+    <td align="center" width="16.67%"><strong>Simon Yu</strong></td>
   </tr>
   <tr>
+    <td align="center" width="16.67%"><a href="https://davidhanx.github.io/"><strong>Xinyang Han</strong></a></td>
     <td align="center" width="16.67%"><a href="https://caralinotes.com/"><strong>Cara Li</strong></a></td>
     <td align="center" width="16.67%"><a href="https://vincentcaptain.github.io/"><strong>Shujia Liang</strong></a></td>
     <td align="center" width="16.67%"><a href="https://yuetl9.github.io/"><strong>Yuetai Li</strong></a></td>
     <td align="center" width="16.67%"><a href="https://github.com/zhaochenyang20"><strong>Chenyang Zhao</strong></a></td>
-    <td align="center" width="16.67%"><strong>Simon Yu</strong></td>
-    <td align="center" width="16.67%"><strong>Bo Liu</strong></td>
   </tr>
 </table>
 

@@ -94,20 +94,88 @@ export RSI_BASELINE_JSON="$(sed -n 's/^RSI_BASELINE_JSON=//p' calibration.log)"
 
 ## 5. Run a Coding Agent
 
-All 8 TTS and ASR tasks share the exact same `rsi-harness run` interface (default budget: `86400` seconds = 24 hours in `task.toml`):
+After [installing RSI-Harness](#2-install-rsi-harness) and configuring local credentials for your chosen agent, choose one task and one agent command below and run it from the repository root. Each command starts an optimization run with the default **24-hour budget** (`86400` seconds in `task.toml`) on **GPU 0**, using `--agent-auth local`.
+
+**Agent settings:** Codex uses `gpt-6-astra` with `xhigh` reasoning; Claude Code uses `claude-opus-5-5` with `max` reasoning. Change `--gpus 0` to select another GPU; each concurrent run needs an exclusive GPU. For GPU types other than the reference H100 80GB HBM3, [calibrate the initial baseline and set `RSI_BASELINE_JSON`](#4-optional-recalibrating-reference-b_0-for-custom-gpu-skus) before launching.
+
+### cosyvoice3-dual-mode
 
 ```bash
-TASK_DIR="$PWD/tasks/cosyvoice3-dual-mode"
+# Codex
+rsi-harness run tasks/cosyvoice3-dual-mode --agent codex --model gpt-6-astra --reasoning-effort xhigh --agent-auth local --gpus 0
 
-# Codex (gpt-6-astra, xhigh reasoning)
-rsi-harness run "$TASK_DIR" \
-  --agent codex --model gpt-6-astra --reasoning-effort xhigh \
-  --agent-auth local --gpus 0
+# Claude Code
+rsi-harness run tasks/cosyvoice3-dual-mode --agent claude-code --model claude-opus-5-5 --reasoning-effort max --agent-auth local --gpus 0
+```
 
-# Claude Code (claude-opus-5-5, max reasoning)
-rsi-harness run "$TASK_DIR" \
-  --agent claude-code --model claude-opus-5-5 --reasoning-effort max \
-  --agent-auth local --gpus 0
+### moss-tts-v1.5-dual-mode
+
+```bash
+# Codex
+rsi-harness run tasks/moss-tts-v1.5-dual-mode --agent codex --model gpt-6-astra --reasoning-effort xhigh --agent-auth local --gpus 0
+
+# Claude Code
+rsi-harness run tasks/moss-tts-v1.5-dual-mode --agent claude-code --model claude-opus-5-5 --reasoning-effort max --agent-auth local --gpus 0
+```
+
+### fish-s2-pro-dual-mode
+
+```bash
+# Codex
+rsi-harness run tasks/fish-s2-pro-dual-mode --agent codex --model gpt-6-astra --reasoning-effort xhigh --agent-auth local --gpus 0
+
+# Claude Code
+rsi-harness run tasks/fish-s2-pro-dual-mode --agent claude-code --model claude-opus-5-5 --reasoning-effort max --agent-auth local --gpus 0
+```
+
+### qwen3-tts-0.6b-dual-mode
+
+```bash
+# Codex
+rsi-harness run tasks/qwen3-tts-0.6b-dual-mode --agent codex --model gpt-6-astra --reasoning-effort xhigh --agent-auth local --gpus 0
+
+# Claude Code
+rsi-harness run tasks/qwen3-tts-0.6b-dual-mode --agent claude-code --model claude-opus-5-5 --reasoning-effort max --agent-auth local --gpus 0
+```
+
+### qwen3-tts-1.7b-dual-mode
+
+```bash
+# Codex
+rsi-harness run tasks/qwen3-tts-1.7b-dual-mode --agent codex --model gpt-6-astra --reasoning-effort xhigh --agent-auth local --gpus 0
+
+# Claude Code
+rsi-harness run tasks/qwen3-tts-1.7b-dual-mode --agent claude-code --model claude-opus-5-5 --reasoning-effort max --agent-auth local --gpus 0
+```
+
+### qwen3-asr-1.7b-dual-mode
+
+```bash
+# Codex
+rsi-harness run tasks/qwen3-asr-1.7b-dual-mode --agent codex --model gpt-6-astra --reasoning-effort xhigh --agent-auth local --gpus 0
+
+# Claude Code
+rsi-harness run tasks/qwen3-asr-1.7b-dual-mode --agent claude-code --model claude-opus-5-5 --reasoning-effort max --agent-auth local --gpus 0
+```
+
+### whisper-large-v3-dual-mode
+
+```bash
+# Codex
+rsi-harness run tasks/whisper-large-v3-dual-mode --agent codex --model gpt-6-astra --reasoning-effort xhigh --agent-auth local --gpus 0
+
+# Claude Code
+rsi-harness run tasks/whisper-large-v3-dual-mode --agent claude-code --model claude-opus-5-5 --reasoning-effort max --agent-auth local --gpus 0
+```
+
+### moss-transcribe-diarize-dual-mode
+
+```bash
+# Codex
+rsi-harness run tasks/moss-transcribe-diarize-dual-mode --agent codex --model gpt-6-astra --reasoning-effort xhigh --agent-auth local --gpus 0
+
+# Claude Code
+rsi-harness run tasks/moss-transcribe-diarize-dual-mode --agent claude-code --model claude-opus-5-5 --reasoning-effort max --agent-auth local --gpus 0
 ```
 
 ## 6. Inspect Local Runs & Public Trajectories

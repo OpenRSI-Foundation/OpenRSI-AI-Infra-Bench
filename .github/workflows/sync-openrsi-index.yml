@@ -1,0 +1,102 @@
+name: Sync OpenRSI-Index Submodule
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: sync-openrsi-index-submodule
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  sync-submodule:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Resolve target SHA
+        id: target
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          PUSH_SHA: ${{ github.sha }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if [ "$EVENT_NAME" = "push" ]; then
+            target_sha="$PUSH_SHA"
+          else
+            target_sha=$(git ls-remote https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench.git refs/heads/main | awk '{print $1}')
+          fi
+          current_sha=$(gh api repos/OpenRSI-Foundation/OpenRSI-Index/contents/rsi-tasks/sglang-omni --jq .sha)
+          echo "target_sha=$target_sha" >> "$GITHUB_OUTPUT"
+          echo "current_sha=$current_sha" >> "$GITHUB_OUTPUT"
+          if [ "$current_sha" = "$target_sha" ]; then
+            echo "OpenRSI-Index rsi-tasks/sglang-omni is already synced at $target_sha."
+            echo "needs_sync=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "OpenRSI-Index rsi-tasks/sglang-omni ($current_sha) -> $target_sha."
+            echo "needs_sync=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Check sync token availability
+        id: auth
+        if: steps.target.outputs.needs_sync == 'true'
+        env:
+          SYNC_TOKEN: ${{ secrets.OPENRSI_INDEX_SYNC_TOKEN }}
+          CURRENT_SHA: ${{ steps.target.outputs.current_sha }}
+          TARGET_SHA: ${{ steps.target.outputs.target_sha }}
+        run: |
+          if [ -z "$SYNC_TOKEN" ]; then
+            echo "::notice::OpenRSI-Index submodule update pending (${CURRENT_SHA:0:7} -> ${TARGET_SHA:0:7}). Configure repository secret OPENRSI_INDEX_SYNC_TOKEN (fine-grained PAT on OpenRSI-Foundation/OpenRSI-Index with Contents: write and Pull requests: write) to auto-open and squash-merge sync PRs."
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Update OpenRSI-Index submodule and merge PR
+        if: steps.target.outputs.needs_sync == 'true' && steps.auth.outputs.ready == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.OPENRSI_INDEX_SYNC_TOKEN }}
+          TARGET_SHA: ${{ steps.target.outputs.target_sha }}
+        run: |
+          set -euo pipefail
+          short_sha="${TARGET_SHA:0:7}"
+          branch="chore/sync-sglang-omni"
+          workdir=$(mktemp -d)
+
+          git -c credential.helper= clone --filter=blob:none --no-checkout \
+            "https://x-access-token:${GH_TOKEN}@github.com/OpenRSI-Foundation/OpenRSI-Index.git" \
+            "$workdir/OpenRSI-Index"
+          cd "$workdir/OpenRSI-Index"
+          git sparse-checkout set --no-cone /.gitmodules
+          git checkout -B "$branch" origin/main
+
+          current_in_tree=$(git ls-tree HEAD rsi-tasks/sglang-omni | awk '{print $3}')
+          if [ "$current_in_tree" = "$TARGET_SHA" ]; then
+            echo "Already up to date on origin/main."
+            exit 0
+          fi
+
+          git config user.name "openrsi-bot"
+          git config user.email "noreply@openrsi.foundation"
+          git update-index --cacheinfo "160000,${TARGET_SHA},rsi-tasks/sglang-omni"
+          git commit -m "tasks: sync rsi-tasks/sglang-omni to OpenRSI-AI-Infra-Bench@${short_sha}"
+          git push --force-with-lease origin "HEAD:refs/heads/${branch}"
+
+          pr_url=$(gh pr list -R OpenRSI-Foundation/OpenRSI-Index --head "$branch" --state open --json url --jq '.[0].url // empty')
+          title="tasks: sync rsi-tasks/sglang-omni to ${short_sha}"
+          body="Automated submodule pointer sync to [\`OpenRSI-Foundation/OpenRSI-AI-Infra-Bench@${short_sha}\`](https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench/commit/${TARGET_SHA})."
+          if [ -z "$pr_url" ]; then
+            pr_url=$(gh pr create -R OpenRSI-Foundation/OpenRSI-Index --base main --head "$branch" --title "$title" --body "$body")
+          else
+            gh pr edit "$pr_url" --title "$title" --body "$body"
+          fi
+          echo "Sync PR: $pr_url"
+
+          # Wait briefly for status checks to register, then watch until green and squash-merge.
+          sleep 8
+          gh pr checks "$pr_url" --watch --fail-fast
+          gh pr merge "$pr_url" --squash --delete-branch

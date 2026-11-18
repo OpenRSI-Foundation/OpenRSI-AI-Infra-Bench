@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.svg" width="100%" alt="OpenRSI AI Infra — a benchmark for agents that optimize AI serving systems">
+  <img src="assets/banner.jpg" width="100%" alt="OpenRSI AI Infra: hand-drawn notes on RadixAttention, GPUs, SGLang-Omni pipelines, rooflines, CUDA graphs and the RSI loop around the OpenRSI AI-Infra-Bench title">
 </p>
 
 <h3 align="center">Can coding agents make real AI infrastructure faster?</h3>

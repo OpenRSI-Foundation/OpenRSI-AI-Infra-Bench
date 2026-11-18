@@ -25,7 +25,7 @@ Built [jointly with the SGLang-Omni team](https://index.openrsi.foundation/blog/
 
 - **Built with SGLang-Omni maintainers.** OpenRSI and the maintainers designed the tasks around production serving workloads. Optimizations that agents found for these models contributed to **11 PRs** the maintainers merged upstream. [Upstream results →](docs/upstream-results.md)
 - **16 public agent trajectories.** Follow each run round by round to see what the agent changed, how the evaluator scored it, and what the agent tried next. [Browse runs →](results/archive.md)
-- **Single-GPU experiments for RSI research.** Each benchmark task runs on one 80 GB H100. Researchers can reuse the same GPU to compare an ordinary run with an intervention such as R-clamping. [Running guide →](docs/running.md)
+- **Hill-climbing RSI on a single GPU.** One 80 GB H100 per task is enough to test whether an agent can improve serving throughput by building on its best result from earlier rounds. [Running guide →](docs/running.md)
 
 <a id="leaderboard"></a>
 

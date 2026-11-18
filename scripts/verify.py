@@ -42,7 +42,7 @@ def main():
             tomllib.loads(path.read_text())
         elif path.suffix == '.sh':
             subprocess.run(['bash', '-n', str(path)], check=True)
-    tasks = list((ROOT / 'tasks').glob('*/*/task.toml'))
+    tasks = list((ROOT / 'tasks').glob('*/task.toml'))
     if len(tasks) != 12:
         raise SystemExit(f'Expected 12 tasks, found {len(tasks)}')
     print(f'PASS: {len(tasks)} task packages; {len(expected)} files match the source snapshot.')

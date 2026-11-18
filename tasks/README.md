@@ -1,34 +1,44 @@
-# SGNOMI: SGLang-Omni tasks
+# OpenRSI × SGLang-Omni Benchmark Suite
 
-One task entry per model, with the final non-streaming and streaming task versions. The ten models below cover the eight model families in [OpenRSI × SGLang-Omni: Scaling RSI for AI Infra](https://claude.ai/artifact/TJ3xRTHHpt23suwjjKUvEW); Qwen3-TTS Base 0.6B / 1.7B and Ming3-TTS 0.5B / Tiny each have their own entry. Historical iterations, reward-weight variants and objective ablations are omitted.
+**Task repository:** [OpenRSI-Foundation/OpenRSI-Index-SGLang-Omni](https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench) · **Parent index:** [OpenRSI-Index](https://github.com/OpenRSI-Foundation/OpenRSI-Index) (`rsi-tasks/sglang-omni/`) · **Trajectories:** [OpenRSI-Index-Logs](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni) · **Blog:** [OpenRSI × SGLang-Omni](https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/)
 
-Each model has its own directory below. Task links open complete public copies containing `task.toml`, instructions, environment build files, the evaluator and its fixed assets. All twelve per-model packages are available in this repository; the original task directory names are retained inside the ten model directories.
+This repository hosts **12 native Harbor 1.4 GPU inference optimization benchmarks** for [RSI-Harness](https://github.com/OpenRSI-Foundation/OpenRSI-Index/tree/main/RSI-Harness), built on [SGLang-Omni](https://github.com/sgl-project/sglang-omni) across **9 Text-to-Speech (TTS)** tasks and **3 Automatic Speech Recognition / Diarization (ASR)** tasks spanning 8 open-weight model checkpoints.
 
-## Model index
+Every task runs out of the box with `rsi-harness run`:
+- **Self-contained Docker build**: Pinned CUDA/SGLang dependencies, deterministic source manifests, and SHA-256-verified Hugging Face weights and SeedTTS evaluation splits.
+- **Clean-image multi-repetition Judge**: Fresh server processes and empty compiler caches per repetition, automatic 16-physical-core NUMA affinity binding, host CPU contention monitoring (`peak_foreign_cores <= 2`), strict throughput improvement over fixed reference `B0`, `3%` tail-latency/TTFA/TTFT/continuity guards, and authoritative WER/CER verification.
+- **Out-of-the-box `--agent oracle` verification**: Restores pristine baseline code, verifies full end-to-end execution health, and emits `reward = 1.0`.
 
-| Model | Final task package | Evaluation modes | Related merged upstream PRs |
-| --- | --- | --- | --- |
-| CosyVoice3 | [Dual-mode task](cosyvoice3/sglang-omni-cosyvoice3-dual-mode-runtime/) | Non-streaming + streaming audio | [#2524](https://github.com/sgl-project/sglang-omni/pull/2524), [#2555](https://github.com/sgl-project/sglang-omni/pull/2555) |
-| MOSS-TTS v1.5 | [Dual-mode task](moss-tts-v1.5/sglang-omni-moss-v1.5-dual-mode-runtime/) | Non-streaming + streaming audio | [#2525](https://github.com/sgl-project/sglang-omni/pull/2525), [#2859](https://github.com/sgl-project/sglang-omni/pull/2859) |
-| Fish S2-Pro | [Dual-mode task](fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/) | Non-streaming + streaming audio | [#2778](https://github.com/sgl-project/sglang-omni/pull/2778) |
-| Qwen3-TTS Base 0.6B | [Dual-mode task](qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/) | Non-streaming + streaming audio | [#2779](https://github.com/sgl-project/sglang-omni/pull/2779) |
-| Qwen3-TTS Base 1.7B | [Dual-mode task](qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/) | Non-streaming + streaming audio | [#2779](https://github.com/sgl-project/sglang-omni/pull/2779) |
-| Qwen3-ASR 1.7B | [Dual-mode task](qwen3-asr-1.7b/qwen3-asr-streaming-throughput/) | Non-streaming + post-upload SSE text streaming | [#2880](https://github.com/sgl-project/sglang-omni/pull/2880), [#2881](https://github.com/sgl-project/sglang-omni/pull/2881), [#2882](https://github.com/sgl-project/sglang-omni/pull/2882) |
-| Whisper large-v3 | [Dual-mode task](whisper-large-v3/whisper-asr-streaming-throughput/) | Non-streaming + post-upload SSE text streaming | [#2901](https://github.com/sgl-project/sglang-omni/pull/2901) |
-| MOSS-Transcribe-Diarize | [Dual-mode task](moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/) | Non-streaming + post-upload SSE text streaming | [#3071](https://github.com/sgl-project/sglang-omni/pull/3071) |
-| Ming3-TTS 0.5B | [Non-streaming](ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/) / [Streaming](ming3-0.5b/sglang-omni-ming3-0.5b-streaming/) | Separate packages for the two modes; see below | [#3136](https://github.com/sgl-project/sglang-omni/pull/3136), [#3190](https://github.com/sgl-project/sglang-omni/pull/3190) |
-| Ming3-TTS Tiny | [Non-streaming](ming3-tiny/sglang-omni-ming3-tiny-nonstream/) / [Streaming](ming3-tiny/sglang-omni-ming3-tiny-streaming/) | Separate packages for the two modes; see below | [#3189](https://github.com/sgl-project/sglang-omni/pull/3189) |
+## Benchmark Catalog
 
-The dual-mode tasks evaluate both modes in one task and require both throughput ratios to improve. The listed versions use streaming:non-streaming reward weights of 2:1. CosyVoice3 uses the final guided task on SGLang-Omni 0.1.9 at `fa90213e1674`.
+| Task Package | Modality | Model Checkpoint | Workload Mode | Reference $B_0$ GPU | Codex | Claude Code | Trajectories |
+| :--- | :--- | :--- | :--- | :--- | ---: | ---: | :--- |
+| [`cosyvoice3-dual-mode`](./cosyvoice3-dual-mode/) | TTS | `FunAudioLLM/Fun-CosyVoice3-0.5B-2512` | Dual-Mode (Stream + Non-Stream) | `NVIDIA H100 80GB HBM3` | `1.172x` | `1.297x` | [Logs](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/cosyvoice3-dual-mode) |
+| [`moss-tts-v1.5-dual-mode`](./moss-tts-v1.5-dual-mode/) | TTS | `OpenMOSS-Team/MOSS-TTS-v1.5` | Dual-Mode (Stream + Non-Stream) | `NVIDIA H100 80GB HBM3` | `1.339x` | `1.935x` | [Logs](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/moss-tts-v1.5-dual-mode) |
+| [`fish-s2-pro-dual-mode`](./fish-s2-pro-dual-mode/) | TTS | `fishaudio/s2-pro` | Dual-Mode (Stream + Non-Stream) | `NVIDIA H100 80GB HBM3` | `1.803x` | `6.288x` | [Logs](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/fish-s2-pro-dual-mode) |
+| [`qwen3-tts-0.6b-dual-mode`](./qwen3-tts-0.6b-dual-mode/) | TTS | `Qwen/Qwen3-TTS-12Hz-0.6B-Base` | Dual-Mode (Stream + Non-Stream) | `NVIDIA H100 80GB HBM3` | `1.141x` | `1.252x` | [Logs](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/qwen3-tts-0.6b-dual-mode) |
+| [`qwen3-tts-1.7b-dual-mode`](./qwen3-tts-1.7b-dual-mode/) | TTS | `Qwen/Qwen3-TTS-12Hz-1.7B-Base` | Dual-Mode (Stream + Non-Stream) | `NVIDIA H100 80GB HBM3` | `1.096x` | `1.283x` | [Logs](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/qwen3-tts-1.7b-dual-mode) |
+| [`ming3-tts-0.5b-nonstream`](./ming3-tts-0.5b-nonstream/) | TTS | `inclusionAI/Ming-3.0-tts-0.5B` | Non-Streaming | `NVIDIA H100 NVL` | — | `4.298x` | [Logs](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/ming3-tts-0.5b-nonstream) |
+| [`ming3-tts-0.5b-streaming`](./ming3-tts-0.5b-streaming/) | TTS | `inclusionAI/Ming-3.0-tts-0.5B` | Streaming | `NVIDIA H200` | `2.038x` | — | [Logs](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/ming3-tts-0.5b-streaming) |
+| [`ming3-tts-tiny-nonstream`](./ming3-tts-tiny-nonstream/) | TTS | `inclusionAI/Ming-3.0-tts-tiny` | Non-Streaming | `NVIDIA H100 NVL` | `1.899x` | `3.634x` | [Logs](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/ming3-tts-tiny-nonstream) |
+| [`ming3-tts-tiny-streaming`](./ming3-tts-tiny-streaming/) | TTS | `inclusionAI/Ming-3.0-tts-tiny` | Streaming | `NVIDIA H200` | `1.722x` | — | [Logs](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/ming3-tts-tiny-streaming) |
+| [`qwen3-asr-1.7b-dual-mode`](./qwen3-asr-1.7b-dual-mode/) | ASR | `Qwen/Qwen3-ASR-1.7B` | Dual-Mode (Stream + Non-Stream) | `NVIDIA H100 80GB HBM3` | `1.117x` | `1.317x` | [Logs](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/qwen3-asr-1.7b-dual-mode) |
+| [`whisper-large-v3-dual-mode`](./whisper-large-v3-dual-mode/) | ASR | `openai/whisper-large-v3` | Dual-Mode (Stream + Non-Stream) | `NVIDIA H100 80GB HBM3` | `1.126x` | `1.979x` | [Logs](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/whisper-large-v3-dual-mode) |
+| [`moss-transcribe-diarize-dual-mode`](./moss-transcribe-diarize-dual-mode/) | ASR | `OpenMOSS-Team/MOSS-Transcribe-Diarize` | Dual-Mode (Stream + Non-Stream) | `NVIDIA H100 80GB HBM3` | `1.134x` | `1.490x` | [Logs](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/moss-transcribe-diarize-dual-mode) |
 
-Ming3 has one index entry per model, with the final package for each mode linked in that entry. Its existing packages have separate evaluators and baselines: non-streaming uses `ca9e8789fcd8`, while native streaming uses `0c663861d7d4` with the declared compatibility port. They are not a combined dual-mode evaluator; follow each package's own protocol and calibration.
+## Quick Start
 
-The TTS and ASR task families originate from proposals [#154](https://github.com/OpenRSI-Foundation/OpenRSI-Index/discussions/154) and [#257](https://github.com/OpenRSI-Foundation/OpenRSI-Index/discussions/257). Upstream PRs are related results for the model family, not measurements against every final task baseline.
+You can run any benchmark either from a recursive `OpenRSI-Index` checkout or directly from a standalone clone of this repository:
 
-## Run a task
+```bash
+# Option A: via OpenRSI-Index submodule
+git clone --recurse-submodules https://github.com/OpenRSI-Foundation/OpenRSI-Index.git
+cd OpenRSI-Index
+rsi-harness run rsi-tasks/sglang-omni/tasks/cosyvoice3-dual-mode --agent oracle
 
-Open the selected package and follow its README, instruction.md and task.toml. Use this repository's [RSI-Harness](https://github.com/OpenRSI-Foundation/OpenRSI-Index/tree/21e552f396fa1c3f4d418ada4b4ac7e73dde5b2f/RSI-Harness/) to compile and run it on resources matching the task contract. Preserve the pinned model assets, runtime, evaluation protocol and scoring rules. A new run needs a fresh matching environment validation and calibration; source-run baseline statements are historical context.
+# Option B: standalone task repository clone
+git clone https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench.git
+rsi-harness run OpenRSI-AI-Infra-Bench/tasks/qwen3-asr-1.7b-dual-mode --agent oracle
+```
 
-Each package includes publication.json with its source commit and original file hashes. Source archives, dependency locks, evaluator code and fixed data are retained. Model weights and dependencies declared for build-time download remain pinned in the package. No GPU evaluation was performed for this publication.
-
-Task packages copied and mode coverage checked on November 5, 2026.
+See each task's `README.md` for hardware recalibration options (`RSI_BASELINE_JSON` via `/tests/calibrate.py`) when benchmarking on a GPU SKU different from the recorded reference `B0`.

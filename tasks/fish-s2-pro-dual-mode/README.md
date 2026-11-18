@@ -6,10 +6,12 @@
 
 ## Official Single-Agent Reference Results
 
-| Agent Harness | Best Verified Score (vs. $B_0$) | Best / Total Submissions | Wall Runtime | Trajectory Archive |
+| Agent Harness | Best Verified Score @ 24h (vs. $B_0$) | Best / Rounds (≤ 24h) | Wall Runtime | Trajectory Archive |
 | :--- | ---: | ---: | ---: | :--- |
 | Claude Code | **`6.288x`** | `agent-5` / `5` | `24.0 h` | [`sglang-omni/fish-s2-pro-dual-mode`](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/fish-s2-pro-dual-mode) |
-| Codex | **`1.803x`** | `agent-10` / `10` | `25.7 h` | [`sglang-omni/fish-s2-pro-dual-mode`](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/fish-s2-pro-dual-mode) |
+| Codex | **`1.739x`**¹ | `agent-9` / `9` | `25.7 h` | [`sglang-omni/fish-s2-pro-dual-mode`](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/fish-s2-pro-dual-mode) |
+
+<sub>¹ Codex reached **`1.739x`** within the aligned 24-hour comparison window (`agent-9` at `23.0 h`); `agent-10` completed after the 24-hour cutoff at `25.6 h` with **`1.803x`** (see [`results/README.md`](../../results/README.md)).</sub>
 
 ## Reference Baseline ($B_0$)
 

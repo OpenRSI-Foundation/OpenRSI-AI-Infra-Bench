@@ -39,7 +39,7 @@ tasks/<task-slug>/
 | `/workspace/sglang-omni` | Read / Write | Unpacked `SGLang-Omni` runtime edited by the agent (sampling semantics & model weights remain locked) |
 | `/workspace/research` | Read / Write | Unscored scratchpad for profiling scripts, FlameGraphs, traces, and round-by-round ablation notes |
 | `environment/` | Build-time only | Rebuilds deterministic container layers and verifies SHA-256 hashes of model weights & SeedTTS splits |
-| `tests/` | Judge-only (`ro`) | Runs outside the agent workspace in a clean container; enforces `baseline.json` gates and writes `reward.txt` |
+| `tests/` | Judge-only (`ro`) | Runs outside the agent workspace in a clean container; enforces `baseline.json` gates and writes `reward.json` |
 | `solution/solve.sh` | Oracle-only | Restores unmodified `SGLang-Omni` source so `rsi-harness run <task> --agent oracle` validates the full evaluation path (`reward = 1.0`) |
 
 ## 3. Trajectory Artifacts & 24-Hour Cutoff

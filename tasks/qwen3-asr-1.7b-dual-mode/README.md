@@ -6,10 +6,12 @@
 
 ## Official Single-Agent Reference Results
 
-| Agent Harness | Best Verified Score (vs. $B_0$) | Best / Total Submissions | Wall Runtime | Trajectory Archive |
+| Agent Harness | Best Verified Score @ 24h (vs. $B_0$) | Best / Rounds (≤ 24h) | Wall Runtime | Trajectory Archive |
 | :--- | ---: | ---: | ---: | :--- |
-| Claude Code | **`1.317x`** | `agent-13` / `13` | `24.4 h` | [`sglang-omni/qwen3-asr-1.7b-dual-mode`](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/qwen3-asr-1.7b-dual-mode) |
-| Codex | **`1.117x`** | `agent-47` / `50` | `24.5 h` | [`sglang-omni/qwen3-asr-1.7b-dual-mode`](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/qwen3-asr-1.7b-dual-mode) |
+| Claude Code | **`1.278x`**¹ | `agent-11` / `12` | `24.4 h` | [`sglang-omni/qwen3-asr-1.7b-dual-mode`](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/qwen3-asr-1.7b-dual-mode) |
+| Codex | **`1.117x`** | `agent-47` / `49` | `24.5 h` | [`sglang-omni/qwen3-asr-1.7b-dual-mode`](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/qwen3-asr-1.7b-dual-mode) |
+
+<sub>¹ Claude Code reached **`1.278x`** within the aligned 24-hour comparison window (`agent-11` at `18.4 h`); `agent-13` completed after the 24-hour cutoff at `24.4 h` with **`1.317x`** (see [`results/README.md`](../../results/README.md)).</sub>
 
 ## Reference Baseline ($B_0$)
 

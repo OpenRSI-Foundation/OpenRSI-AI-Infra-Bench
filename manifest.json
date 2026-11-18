@@ -129,8 +129,8 @@
       "mode": "100755"
     },
     "tasks/fish-s2-pro-dual-mode/README.md": {
-      "sha256": "007cd686908ca2714acf9ca85e6b0b605edc053749a4d6545d7756ea93bf1fcc",
-      "bytes": 3588,
+      "sha256": "aa43f2b05512fad9c2bdb1b6467329bb63c0d330aefe65ad82bf7aec318b9657",
+      "bytes": 3835,
       "mode": "100644"
     },
     "tasks/fish-s2-pro-dual-mode/environment/Dockerfile": {
@@ -539,8 +539,8 @@
       "mode": "100755"
     },
     "tasks/qwen3-asr-1.7b-dual-mode/README.md": {
-      "sha256": "1281fc978eb17e326c97dd1a9e612587832d39e5a3567a58eb5e3b315e29ea72",
-      "bytes": 3900,
+      "sha256": "722e5a7682f6333080ee271688818447a6b335cfa7fcbe7c8ed746c93081500a",
+      "bytes": 4156,
       "mode": "100644"
     },
     "tasks/qwen3-asr-1.7b-dual-mode/environment/Dockerfile": {

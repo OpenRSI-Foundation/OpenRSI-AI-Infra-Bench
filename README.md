@@ -41,8 +41,6 @@ Best verified scores from **21 unguided single-agent runs** with [RSI-Harness](h
 
 **Codex:** `gpt-6-astra` (xhigh) · **Claude Code:** `claude-opus-5-5` (max).
 
-Click a score to explore the run's progress and agent transcript; `HF ↗` opens the raw logs.
-
 | Task | Track | Mode | Codex | Claude Code | Raw Archive |
 | :--- | :---: | :--- | ---: | ---: | :--- |
 | **[CosyVoice3 (0.5B)](tasks/cosyvoice3-dual-mode/)** | 🗣️ TTS | Dual mode | [1.172×](https://index.openrsi.foundation/logs/#run=5e67e03919819ebb) | [**1.297×**](https://index.openrsi.foundation/logs/#run=9de597863ceaafa7) | [HF ↗](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/cosyvoice3-dual-mode) |

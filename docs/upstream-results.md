@@ -2,7 +2,7 @@
 
 [Back to the overview](../README.md) · [Running guide](running.md) · [Evaluation](evaluation.md)
 
-The same harnessed loop was used to land real optimizations in [`sgl-project/sglang-omni`](https://github.com/sgl-project/sglang-omni). Agents ran the profiling and optimization experiments; people defined the problems and reviewed the pull requests. Across 11 merged PRs for the models in this suite, agent-found changes fall into **five recurring systems patterns**:
+Agent-discovered optimizations for the models in this suite contributed to **11 merged SGLang-Omni PRs**, reviewed by maintainers. Agents ran the profiling and optimization experiments; people defined the problems and reviewed the pull requests. These changes address **five recurring systems patterns**: CPU contention, data conversion, redundant computation, GPU launch overhead, and pipeline scheduling.
 
 <p align="center">
   <img src="../assets/five-patterns.svg" width="100%" alt="Five serving optimization patterns across 11 merged SGLang-Omni PRs: CPU contention, data conversion, redundant computation, GPU launch overhead, and pipeline scheduling">
@@ -20,4 +20,4 @@ Throughput gains on **H100** (non-streaming / streaming), measured on `sglang-om
 | Whisper large-v3 | [#2901](https://github.com/sgl-project/sglang-omni/pull/2901) | +7.6% | +12.2% |
 | MOSS-Transcribe-Diarize | [#3071](https://github.com/sgl-project/sglang-omni/pull/3071) | +18.8% | +30.0% |
 
-<sub>These upstream numbers come from a separate measurement protocol (`128` requests/round on `sglang-omni` `main`) than the benchmark rewards above, and some commit ranges include concurrent upstream changes. See the <a href="https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/">blog post</a> for H200 numbers and per-PR caveats.</sub>
+<sub>These upstream numbers come from a separate measurement protocol (`128` requests/round on `sglang-omni` `main`) than the <a href="../README.md#leaderboard">benchmark leaderboard</a>, and some commit ranges include concurrent upstream changes. See the <a href="https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/">blog post</a> for H200 numbers and per-PR caveats.</sub>

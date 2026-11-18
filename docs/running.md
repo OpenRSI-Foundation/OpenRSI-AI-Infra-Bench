@@ -20,7 +20,7 @@ python3 -B scripts/verify.py
 
 ## 2. Install RSI-Harness
 
-Install `rsi-harness` from [`OpenRSI-Index`](https://github.com/OpenRSI-Foundation/OpenRSI-Index):
+The [Quick start](../README.md#quick-start) uses `uvx` for a one-off run. To make `rsi-harness` available for the commands below, install it from [`OpenRSI-Index`](https://github.com/OpenRSI-Foundation/OpenRSI-Index):
 
 ```bash
 git clone --filter=blob:none --sparse \
@@ -92,3 +92,12 @@ rsi-harness run "$TASK_DIR" \
 ```bash
 rsi-harness visualize   # open http://127.0.0.1:8000
 ```
+
+Browse the 21 published baseline trajectories in the [RSI Logs Viewer](https://index.openrsi.foundation/logs/), or download one task's raw files with the [Hugging Face CLI](https://huggingface.co/docs/huggingface_hub/guides/cli):
+
+```bash
+hf download OpenRSI-Foundation/OpenRSI-Index-Logs --repo-type dataset \
+  --include "sglang-omni/cosyvoice3-dual-mode/*" --local-dir OpenRSI-Index-Logs
+```
+
+Omit `--include` to download the entire dataset, including runs from other benchmark tracks.

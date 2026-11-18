@@ -127,87 +127,23 @@ Technical specification across all **12 benchmark packages** (best verified sing
 
 ## 🚀 Quick start
 
-### 1. Clone and verify task integrity
+**Requires:** Linux, Docker Engine 26+ with daemon access, NVIDIA drivers + Container Toolkit, Git, and [uv](https://docs.astral.sh/uv/getting-started/installation/). Use one NVIDIA GPU (80 GB+ VRAM recommended); see [full hardware requirements](docs/running.md#1-host-requirements--integrity-check).
 
-Clone this repository directly—or pull it via the `rsi-tasks/sglang-omni` submodule inside `OpenRSI-Index`:
-
-```bash
-# Option A: standalone repository
-git clone https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench.git
-cd OpenRSI-AI-Infra-Bench
-
-# Option B: via OpenRSI-Index
-git clone --recurse-submodules https://github.com/OpenRSI-Foundation/OpenRSI-Index.git
-cd OpenRSI-Index/rsi-tasks/sglang-omni
-
-# Verify all 12 task manifests, SHA-256 hashes, and Python/JSON/TOML/shell syntax (CPU-only)
-python3 -B scripts/verify.py
-```
-
-Expected output:
-
-```text
-PASS: 12 task packages; 320 files match the source snapshot.
-Checked hashes, executable modes, and Python/JSON/TOML/shell syntax. No GPU evaluation performed.
-```
-
-### 2. Install RSI-Harness and validate with `--agent oracle`
-
-**Requirements:** Linux, Docker Engine 26+, NVIDIA Container Toolkit, Python 3.12, 1 GPU (80 GB+ VRAM recommended), 16 idle physical CPU cores, 128 GiB RAM, and ~200 GiB free SSD storage.
-
-Install [RSI-Harness](https://github.com/OpenRSI-Foundation/OpenRSI-Index/tree/main/RSI-Harness), then run `--agent oracle` on any TTS or ASR task to verify Docker image build, NUMA core pinning, and full 3-repetition Judge evaluation (`reward = 1.0`):
+Copy and run to set up RSI-Harness and validate CosyVoice3 on GPU 0. No model API key is needed:
 
 ```bash
-rsi-harness run tasks/cosyvoice3-dual-mode --agent oracle --gpus 0
-rsi-harness run tasks/qwen3-asr-1.7b-dual-mode --agent oracle --gpus 0
+git clone --depth 1 https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench.git &&
+cd OpenRSI-AI-Infra-Bench &&
+git clone --depth 1 --filter=blob:none --sparse \
+  https://github.com/OpenRSI-Foundation/OpenRSI-Index.git vendor/OpenRSI-Index &&
+git -C vendor/OpenRSI-Index sparse-checkout set RSI-Harness &&
+uvx --python 3.12 --from ./vendor/OpenRSI-Index/RSI-Harness \
+  rsi-harness run tasks/cosyvoice3-dual-mode --agent oracle --gpus 0
 ```
 
-<details>
-<summary><strong>Expected clean-image Judge verification output (<code>reward = 1.0</code>)</strong></summary>
+The first run installs the Harness, builds the task image, and downloads model weights. Expected result: **`reward = 1.0`**, with artifacts under `logs/runs/<run-id>/`.
 
-```text
-[judge] Pinned 16 idle physical CPU cores on GPU 0 NUMA node 0 (peak_foreign_cores <= 2.0)
-[judge] Unmodified baseline source detected -> running 3x verification repeats per mode
-[judge] Non-streaming mean throughput : R_n = 1.000x  (WER <= 2.0%, P95 <= 1.03x B0)
-[judge] Streaming mean throughput     : R_s = 1.000x  (multi-chunk >= 95%, c50 >= 95%)
-[judge] All quality, latency, streaming, and cleanup gates PASSED -> /logs/verifier/reward.txt = 1.0
-```
-
-</details>
-
-### 3. Run a coding agent
-
-All 12 TTS and ASR tasks share the exact same `rsi-harness run` interface:
-
-```bash
-TASK_DIR="$PWD/tasks/cosyvoice3-dual-mode"
-
-# Codex
-rsi-harness run "$TASK_DIR" \
-  --agent codex --model gpt-6-astra --reasoning-effort xhigh \
-  --agent-auth local --gpus 0
-
-# Claude Code
-rsi-harness run "$TASK_DIR" \
-  --agent claude-code --model claude-opus-5-5 --reasoning-effort max \
-  --agent-auth local --gpus 0
-```
-
-> [!TIP]
-> **Custom GPU SKUs (`RSI_BASELINE_JSON`):** Each task bakes reference B₀ metrics into `tests/baseline.json`. When running optimization loops on a different GPU SKU (e.g., PCIe H100 NVL vs. SXM5 H100, or A100/B200), measure a fresh 3-repetition B₀ once with `/opt/sglang/bin/python3 -I -B /tests/calibrate.py` and export `RSI_BASELINE_JSON`—see [docs/running.md](docs/running.md#4-optional-recalibrating-reference-b_0-for-custom-gpu-skus).
-
-### 4. Inspect local runs or download the 21 baseline trajectories
-
-```bash
-# Visualize local RSI-Harness runs at http://127.0.0.1:8000
-rsi-harness visualize
-
-# Download one task's published trajectories (or omit --include for all 21 runs)
-hf download OpenRSI-Foundation/OpenRSI-Index-Logs --repo-type dataset \
-  --include "sglang-omni/cosyvoice3-dual-mode/*" --local-dir OpenRSI-Index-Logs
-```
-
-📖 **[Full setup, GPU calibration and execution guide →](docs/running.md)**
+To run another benchmark, replace `cosyvoice3-dual-mode` with any [task slug](#tasks). See the [full guide](docs/running.md) for Codex / Claude Code runs, GPU calibration, and result inspection, or [browse the 21 published trajectories](https://index.openrsi.foundation/logs/).
 
 <a id="contributors"></a>
 

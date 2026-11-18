@@ -7,10 +7,11 @@
 <h3 align="center">Can coding agents make real AI infrastructure faster?</h3>
 
 <p align="center">
-  <a href="https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/"><img src="https://img.shields.io/badge/Blog-OpenRSI_×_SGLang--Omni-C85A35?style=for-the-badge&logo=gitbook&logoColor=white&labelColor=2B2927" alt="Blog"></a>&nbsp;
-  <a href="results/archive.md"><img src="https://img.shields.io/badge/RSI_Logs-16_Runs-C9862E?style=for-the-badge&logo=googlesheets&logoColor=white&labelColor=2B2927" alt="16 benchmark runs"></a>&nbsp;
-  <a href="docs/upstream-results.md"><img src="https://img.shields.io/badge/Upstream-11_PRs_Merged-4D6B5D?style=for-the-badge&logo=github&logoColor=white&labelColor=2B2927" alt="11 PRs Merged"></a>&nbsp;
-  <a href="https://x.com/OpenRSI/status/2119869682929066288"><img src="https://img.shields.io/badge/X-@OpenRSI-4A4742?style=for-the-badge&logo=x&logoColor=white&labelColor=2B2927" alt="X / Twitter"></a>
+  <a href="https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/"><img src="https://img.shields.io/badge/Blog-F97316?style=for-the-badge&logo=gitbook&logoColor=white" alt="Blog"></a>
+  <a href="results/archive.md"><img src="https://img.shields.io/badge/RSI%20Logs-755BB4?style=for-the-badge&logo=googlesheets&logoColor=white" alt="RSI Logs"></a>
+  <a href="docs/upstream-results.md"><img src="https://img.shields.io/badge/Upstream%20PRs-181717?style=for-the-badge&logo=github&logoColor=white" alt="Upstream PRs"></a>
+  <a href="https://github.com/sgl-project/sglang-omni"><img src="https://img.shields.io/badge/SGLang%20Omni-2563EB?style=for-the-badge&logo=github&logoColor=white" alt="SGLang Omni"></a>
+  <a href="https://x.com/OpenRSI/status/2119869682929066288"><img src="https://img.shields.io/badge/Twitter-000000?style=for-the-badge&logo=x&logoColor=white" alt="X / Twitter"></a>
 </p>
 
 ---

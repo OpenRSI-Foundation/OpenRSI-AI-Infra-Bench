@@ -11,7 +11,7 @@
   <a href="https://index.openrsi.foundation"><img src="https://img.shields.io/badge/Website-OpenRSI_Index-4F86D8?style=for-the-badge&logo=googleearth&logoColor=white" alt="Website"></a>&nbsp;
   <a href="https://index.openrsi.foundation/logs/"><img src="https://img.shields.io/badge/RSI_Logs-21_Trajectories-14967F?style=for-the-badge&logo=googlesheets&logoColor=white" alt="RSI Logs Viewer"></a>&nbsp;
   <a href="https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni"><img src="https://img.shields.io/badge/Hugging_Face-Logs_Archive-E08A3C?style=for-the-badge&logo=huggingface&logoColor=white" alt="Hugging Face Dataset"></a>&nbsp;
-  <a href="#upstream"><img src="https://img.shields.io/badge/Upstream-14_PRs_Merged-2F8F4E?style=for-the-badge&logo=github&logoColor=white" alt="14 PRs Merged"></a>&nbsp;
+  <a href="docs/upstream-results.md"><img src="https://img.shields.io/badge/Upstream-14_PRs_Merged-2F8F4E?style=for-the-badge&logo=github&logoColor=white" alt="14 PRs Merged"></a>&nbsp;
   <a href="https://x.com/OpenRSI/status/2102831770458890626"><img src="https://img.shields.io/badge/Twitter-35434D?style=for-the-badge&logo=x&logoColor=white" alt="X / Twitter"></a>&nbsp;
   <a href="https://discord.gg/3EG8Qhmfsa"><img src="https://img.shields.io/badge/Discord-6674D8?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"></a>
 </p>
@@ -19,11 +19,11 @@
 <p align="center">
   <a href="#leaderboard"><b>🏆&nbsp;Leaderboard</b></a> &nbsp;·&nbsp;
   <a href="#highlights"><b>✨&nbsp;Highlights</b></a> &nbsp;·&nbsp;
-  <a href="#how-it-works"><b>⚙️&nbsp;How&nbsp;It&nbsp;Works</b></a> &nbsp;·&nbsp;
+  <a href="docs/how-it-works.md"><b>⚙️&nbsp;How&nbsp;It&nbsp;Works</b></a> &nbsp;·&nbsp;
   <a href="#tasks"><b>📦&nbsp;12&nbsp;Tasks</b></a> &nbsp;·&nbsp;
-  <a href="#upstream"><b>🔁&nbsp;Upstream&nbsp;PRs</b></a> &nbsp;·&nbsp;
+  <a href="docs/upstream-results.md"><b>🔁&nbsp;Upstream&nbsp;PRs</b></a> &nbsp;·&nbsp;
   <a href="#quick-start"><b>🚀&nbsp;Quick&nbsp;Start</b></a> &nbsp;·&nbsp;
-  <a href="#evaluation"><b>⚖️&nbsp;Evaluation</b></a> &nbsp;·&nbsp;
+  <a href="docs/evaluation.md"><b>⚖️&nbsp;Evaluation</b></a> &nbsp;·&nbsp;
   <a href="#citation"><b>📖&nbsp;Citation</b></a>
 </p>
 
@@ -85,47 +85,20 @@ For example, **2.0× streaming** and **1.5× non-streaming** yield a **1.817× n
 
 <table>
   <tr>
-    <td align="center" width="20%"><h3>10</h3></td>
-    <td align="center" width="20%"><h3>10</h3></td>
-    <td align="center" width="20%"><h3>6.29×</h3></td>
-    <td align="center" width="20%"><h3>14</h3></td>
-    <td align="center" width="20%"><h3>1 GPU</h3></td>
-  </tr>
-  <tr>
-    <td align="center">Omni models</td>
-    <td align="center">Tasks</td>
-    <td align="center">Best reward</td>
-    <td align="center">Merged PRs</td>
-    <td align="center">Per task</td>
+    <td align="center" width="20%"><h3>10</h3><strong>Omni models</strong><br><sub>TTS &amp; ASR</sub></td>
+    <td align="center" width="20%"><h3>10</h3><strong>Reviewed tasks</strong><br><sub>Production workloads</sub></td>
+    <td align="center" width="20%"><h3>6.29×</h3><strong>Peak verified score</strong><br><sub>1.0× initial baseline</sub></td>
+    <td align="center" width="20%"><h3>14</h3><strong>Merged PRs</strong><br><sub>SGLang-Omni upstream</sub></td>
+    <td align="center" width="20%"><h3>1 GPU</h3><strong>Per task</strong><br><sub>Fixed GPU resources</sub></td>
   </tr>
 </table>
 
-- **Production tasks, validated by real PRs.** Jointly designed and reviewed by
-  OpenRSI and SGLang-Omni.
-- **Easy to run and inspect.** One GPU per task, with agent actions and evaluator
-  feedback visible round by round.
+- **Built with maintainers.** Production serving tasks jointly designed and reviewed by OpenRSI and SGLang-Omni, with pinned source code, assets, and dependencies.
+- **Verified under constraints.** An independent evaluator checks performance alongside quality, latency, and integrity before accepting a score. [Evaluation protocol →](docs/evaluation.md)
+- **Improvements that ship.** The collaboration has produced 14 PRs reviewed and merged by SGLang-Omni maintainers. [Upstream results →](docs/upstream-results.md)
+- **Every round inspectable.** Explore agent actions and evaluator feedback across 21 public single-agent trajectories, or run a task yourself on one GPU. [Browse runs →](https://index.openrsi.foundation/logs/)
 
-<a id="how-it-works"></a>
-
-## ⚙️ How it works
-
-<p align="center">
-  <img src="assets/how-it-works.svg" width="100%" alt="Harnessed RSI architecture: Harbor 1.4 task package, RSI-Harness outer loop with coding agent and isolated clean-image Judge, and verified reward frontier">
-</p>
-
-[RSI-Harness](https://github.com/OpenRSI-Foundation/OpenRSI-Index/tree/main/RSI-Harness) orchestrates the outer loop: the coding agent iterates inside an offline container (`/workspace/sglang-omni`) with 1 GPU and submits candidates whenever ready; each candidate is mounted read-only into a fresh Judge container that benchmarks serving throughput from scratch against the fixed reference baseline B₀ and returns structured telemetry.
-
-Each standalone package under [`tasks/`](tasks/) follows the Harbor 1.4 layout:
-
-```text
-tasks/<task-slug>/
-├── task.toml           # Harbor 1.4 resources, 24h budget, clean-image Judge config
-├── instruction.md      # Self-contained agent prompt, allowed scope & evaluation contract
-├── README.md           # Reference B0 table, logged baselines & GPU recalibration guide
-├── environment/        # Pinned Dockerfile, lockfiles & trimmed SGLang-Omni source.tar.gz
-├── solution/solve.sh   # Restores pristine baseline source (--agent oracle -> reward 1.0)
-└── tests/              # Clean-image evaluator, baseline.json, calibrate.py & gates
-```
+Agents iterate on the serving runtime; an isolated evaluator measures each submitted candidate. [How it works →](docs/how-it-works.md)
 
 <a id="tasks"></a>
 
@@ -147,34 +120,6 @@ Technical specification across all **12 benchmark packages** (best verified sing
 | [`qwen3-asr-1.7b-dual-mode`](tasks/qwen3-asr-1.7b-dual-mode/) | [`Qwen3-ASR-1.7B`](https://huggingface.co/Qwen/Qwen3-ASR-1.7B) | [`eb7e97ed`](https://github.com/sgl-project/sglang-omni/tree/eb7e97ed9438ef4e4352656aec6170aeeb90966f) | [**1.317×**](https://index.openrsi.foundation/logs/#run=f19f174bf5532f64) | EN `168.92` NS / `160.60` S · ZH `179.78` NS / `172.06` S <sub>(H100 80GB HBM3)</sub> |
 | [`whisper-large-v3-dual-mode`](tasks/whisper-large-v3-dual-mode/) | [`openai/whisper-large-v3`](https://huggingface.co/openai/whisper-large-v3) | [`eb7e97ed`](https://github.com/sgl-project/sglang-omni/tree/eb7e97ed9438ef4e4352656aec6170aeeb90966f) | [**1.979×**](https://index.openrsi.foundation/logs/#run=fb0a3a20e9dc5775) | EN `53.21` NS / `52.43` S · ZH `48.62` NS / `48.57` S <sub>(H100 80GB HBM3)</sub> |
 | [`moss-transcribe-diarize-dual-mode`](tasks/moss-transcribe-diarize-dual-mode/) | [`MOSS-Transcribe-Diarize`](https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize) | [`8220d220`](https://github.com/sgl-project/sglang-omni/tree/8220d220703cf8d8f5c5d9a2cde00b5ed13717b8) | [**1.490×**](https://index.openrsi.foundation/logs/#run=85955c2d14726320) | EN `106.81` NS / `102.15` S · ZH `109.60` NS / `105.50` S <sub>(H100 80GB HBM3)</sub> |
-
-> [!NOTE]
-> For TTS, *streaming* means incremental multi-chunk PCM audio delivery over HTTP (`chunk_count >= 2` on ≥ 95% of requests and `c50 >= 95%`). For ASR, it means incremental SSE text deltas (`single_delta_fraction <= 5%`) after audio upload, evaluated across 1,088 English and 2,020 Mandarin SeedTTS utterances per repetition.
-
-<a id="upstream"></a>
-
-## 🔁 From benchmark to upstream
-
-The same harnessed loop was used to land real optimizations in [`sgl-project/sglang-omni`](https://github.com/sgl-project/sglang-omni). Agents ran the profiling and optimization experiments; people defined the problems and reviewed the pull requests. Across 14 merged PRs, agent-found changes fall into **five recurring systems patterns**:
-
-<p align="center">
-  <img src="assets/five-patterns.svg" width="100%" alt="Five recurring serving optimization patterns across 14 merged SGLang-Omni PRs: idle-thread spinning, per-hop data conversion, redundant work, fragmented small GPU launches, and unpipelined stages">
-</p>
-
-Throughput gains on **H100** (non-streaming / streaming), measured on `sglang-omni` `main` before the first and after the last OpenRSI PR:
-
-| Model | Merged PRs | Non-streaming | Streaming |
-| :--- | :--- | ---: | ---: |
-| CosyVoice3 | [#2524](https://github.com/sgl-project/sglang-omni/pull/2524) [#2555](https://github.com/sgl-project/sglang-omni/pull/2555) | +44.4% | +46.2% |
-| MOSS-TTS | [#2525](https://github.com/sgl-project/sglang-omni/pull/2525) [#2859](https://github.com/sgl-project/sglang-omni/pull/2859) | +48.5% | +76.3% |
-| Fish S2-Pro | [#2778](https://github.com/sgl-project/sglang-omni/pull/2778) | +9.6% | +0.3% |
-| Qwen3-TTS | [#2779](https://github.com/sgl-project/sglang-omni/pull/2779) | +25.2% | +4.7% |
-| Qwen3-ASR | [#2880](https://github.com/sgl-project/sglang-omni/pull/2880) [#2881](https://github.com/sgl-project/sglang-omni/pull/2881) [#2882](https://github.com/sgl-project/sglang-omni/pull/2882) | +14.2% | +5.0% |
-| Whisper large-v3 | [#2901](https://github.com/sgl-project/sglang-omni/pull/2901) | +7.6% | +12.2% |
-| MOSS-Transcribe-Diarize | [#3071](https://github.com/sgl-project/sglang-omni/pull/3071) | +18.8% | +30.0% |
-| Ming3-TTS 0.5B | [#3136](https://github.com/sgl-project/sglang-omni/pull/3136) [#3189](https://github.com/sgl-project/sglang-omni/pull/3189) [#3190](https://github.com/sgl-project/sglang-omni/pull/3190) | **+326.5%** | **+93.9%** |
-
-<sub>These upstream numbers come from a separate measurement protocol (`128` requests/round on `sglang-omni` `main`) than the benchmark rewards above, and some commit ranges include concurrent upstream changes (#3189 and #3190 also add people-designed opt-in streaming for Ming3-TTS). See the <a href="https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/">blog post</a> for H200 numbers and per-PR caveats.</sub>
 
 <a id="quick-start"></a>
 
@@ -262,57 +207,29 @@ hf download OpenRSI-Foundation/OpenRSI-Index-Logs --repo-type dataset \
 
 📖 **[Full setup, GPU calibration and execution guide →](docs/running.md)**
 
-<a id="evaluation"></a>
-
-## ⚖️ Evaluation
-
-The target is **serving throughput**, subject to each task's quality, tail-latency, streaming-continuity, resource, and integrity gates. A faster implementation is rejected (`reward = 0`) if it violates any guard.
-
-For all eight dual-mode tasks (TTS and ASR), let **Rₛ** and **Rₙ** be the streaming and non-streaming throughput ratios against the reference baseline **B₀** (for ASR, each mode ratio is the geometric mean across English and Mandarin):
-
-$$
-\mathrm{reward} = R_s^{2/3} \, R_n^{1/3}
-$$
-
-**Both modes must strictly improve** over B₀ (`> 1.0`) for modified candidates, preventing a gain in one mode from masking a regression in the other. Ming3's four single-mode tasks score the target mode's throughput ratio against B₀.
-
-| Gate Layer | Workload and checks |
-| :--- | :--- |
-| **TTS (9 tasks)** | 1,088 English SeedTTS requests per repetition; concurrency 16; 3 repetitions per mode; independent `Qwen3-ASR-1.7B` WER verification (≤ 2.0%), 3% latency/RTF/TTFA P95 budgets, and ≥ 95% multi-chunk streaming (`c50` ≥ 95%) |
-| **ASR (3 tasks)** | 1,088 English + 2,020 Mandarin SeedTTS requests per repetition; non-streaming HTTP and post-upload SSE; 3 repetitions per language and mode; strict WER/CER ceilings, `single_delta_fraction` ≤ 5%, and ≥ 80% speaker-turn tags on MOSS-TD |
-| **System guards** | Automatic NUMA-local 16-physical-core pinning, host contention gate (`peak_foreign_cores <= 2.0`), frozen weights & sampling semantics, AST & call-site liveness checks, and `0 MiB` GPU process cleanup |
-
-<a id="resources"></a>
-
-## 🔗 Resources
-
-| Resource | Link |
-| :--- | :--- |
-| Blog post | [OpenRSI × SGLang-Omni: Scaling RSI for AI Infra](https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/) |
-| Interactive Logs Viewer | [index.openrsi.foundation/logs](https://index.openrsi.foundation/logs/) (all 21 single-agent runs) |
-| Trajectory dataset | [OpenRSI-Foundation/OpenRSI-Index-Logs (`sglang-omni/`)](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni) |
-| Featured Task Sample | [CosyVoice3 Dual-Mode (`cosyvoice3-dual-mode`)](https://index.openrsi.foundation/tasks/cosyvoice3-dual-mode.html) |
-| OpenRSI Index | [index.openrsi.foundation](https://index.openrsi.foundation) · [GitHub](https://github.com/OpenRSI-Foundation/OpenRSI-Index) (`rsi-tasks/sglang-omni`) |
-| Runner & Pipeline | [RSI-Harness](https://github.com/OpenRSI-Foundation/OpenRSI-Index/tree/main/RSI-Harness) · [RSI-Anything (`CONTRIBUTING.md`)](https://github.com/OpenRSI-Foundation/OpenRSI-Index/blob/main/CONTRIBUTING.md) |
-| Serving framework | [SGLang-Omni](https://github.com/sgl-project/sglang-omni) |
-| Task collection | [Browse `tasks/`](tasks/) · [Running guide](docs/running.md) · [Baseline records](results/README.md) |
-| Contribute a task | [Call for contributors](https://github.com/OpenRSI-Foundation/OpenRSI-Index#-call-for-contributors) |
-
 <a id="contributors"></a>
 
 ## 🤝 Contributors & acknowledgements
 
-Led by **[Zhuofeng Li](https://zhuofeng-li.github.io/)**, **[Aaron Tian](https://github.com/db-ol)**, and **[Chenyang Zhao](https://github.com/zhaochenyang20)**, with **[Yichen Feng](https://yichenfeng.me/)**, **[Wenhao Chai](https://wenhaochai.com/)**, **[Xinyang Han](https://davidhanx.github.io/)**, **[Cara Li](https://caralinotes.com/)**, **[Shujia Liang](https://vincentcaptain.github.io/)**, and **[Yuetai Li](https://yuetl9.github.io/)**.
+<table>
+  <tr>
+    <td align="center" width="33%"><a href="https://zhuofeng-li.github.io/"><strong>Zhuofeng Li</strong></a><br><sub>Project lead</sub></td>
+    <td align="center" width="33%"><a href="https://github.com/db-ol"><strong>Aaron Tian</strong></a><br><sub>Project lead</sub></td>
+    <td align="center" width="33%"><a href="https://github.com/zhaochenyang20"><strong>Chenyang Zhao</strong></a><br><sub>Project lead</sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="33%"><a href="https://yichenfeng.me/"><strong>Yichen Feng</strong></a><br><sub>Contributor</sub></td>
+    <td align="center" width="33%"><a href="https://wenhaochai.com/"><strong>Wenhao Chai</strong></a><br><sub>Contributor</sub></td>
+    <td align="center" width="33%"><a href="https://davidhanx.github.io/"><strong>Xinyang Han</strong></a><br><sub>Contributor</sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="33%"><a href="https://caralinotes.com/"><strong>Cara Li</strong></a><br><sub>Contributor</sub></td>
+    <td align="center" width="33%"><a href="https://vincentcaptain.github.io/"><strong>Shujia Liang</strong></a><br><sub>Contributor</sub></td>
+    <td align="center" width="33%"><a href="https://yuetl9.github.io/"><strong>Yuetai Li</strong></a><br><sub>Contributor</sub></td>
+  </tr>
+</table>
 
 We thank the **[SGLang-Omni](https://github.com/sgl-project/sglang-omni)** maintainers and contributors for many rounds of code review, design guidance, and independent benchmark reproductions. Interested in building new AI infrastructure RSI benchmarks? See the **[OpenRSI Call for Contributors](https://github.com/OpenRSI-Foundation/OpenRSI-Index#-call-for-contributors)**.
-
-<a id="provenance"></a>
-
-## 📜 Provenance & license
-
-The benchmark tasks originate from OpenRSI Index discussions [#154](https://github.com/OpenRSI-Foundation/OpenRSI-Index/discussions/154) (TTS) and [#257](https://github.com/OpenRSI-Foundation/OpenRSI-Index/discussions/257) (ASR). All 21 single-agent baseline trajectories are archived uncompressed in [OpenRSI-Index-Logs](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni).
-
-This repository carries the [Apache-2.0 license](LICENSE). Bundled source, model weights, and datasets retain their own upstream licenses and attribution requirements.
 
 <a id="citation"></a>
 

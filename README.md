@@ -29,9 +29,9 @@
 
 ---
 
-**OpenRSI-AI-Infra-Bench** benchmarks **recursive self-improvement (RSI) in real AI serving systems**. Coding agents iteratively profile, hypothesize, and rewrite a production multimodal serving stack under fixed model weights and single-GPU budgets; an isolated clean-image Judge verifies speedups against the starting baseline **B₀** under strict **speech intelligibility, tail-latency, and streaming-continuity constraints**.
+**OpenRSI-AI-Infra-bench** benchmarks **recursive self-improvement (RSI) in real AI serving systems**. Agents iteratively optimize a serving stack with fixed model weights and GPU resources. An independent evaluator verifies speedups under **quality and latency constraints**; each accepted improvement becomes the next baseline.
 
-Developed [jointly by OpenRSI and the SGLang-Omni team](https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/) as the AI Infrastructure track of [OpenRSI Index](https://github.com/OpenRSI-Foundation/OpenRSI-Index) ([`rsi-tasks/sglang-omni/`](https://github.com/OpenRSI-Foundation/OpenRSI-Index/tree/main/rsi-tasks)), this repository packages **12 natively `rsi-harness`-runnable Harbor 1.4 benchmarks** across **10 open-weight model checkpoints (8 model families)**—9 Text-to-Speech (TTS) tasks and 3 Automatic Speech Recognition / Diarization (ASR) tasks—paired with **21 complete uncompressed single-agent trajectories**.
+Developed [jointly by OpenRSI and the SGLang-Omni team](https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/), the benchmark includes **10 carefully reviewed tasks for omni models**. Each task provides a production serving stack with pinned source code, assets, dependencies and evaluation protocols. The collection is part of the [OpenRSI Index](https://index.openrsi.foundation/).
 
 <details>
 <summary><strong>📑 Table of Contents</strong></summary>

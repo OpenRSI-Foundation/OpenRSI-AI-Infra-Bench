@@ -8,9 +8,15 @@
 
 <p align="center">
   <a href="https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/"><img src="https://img.shields.io/badge/Blog-F97316?style=for-the-badge&logo=gitbook&logoColor=white" alt="Blog"></a>
-  <a href="results/archive.md"><img src="https://img.shields.io/badge/RSI%20Logs-755BB4?style=for-the-badge&logo=googlesheets&logoColor=white" alt="RSI Logs"></a>
-  <a href="https://github.com/sgl-project/sglang-omni"><img src="assets/sglang-omni-badge.svg" alt="SGLang Omni" height="28"></a>
   <a href="https://x.com/OpenRSI/status/2119869682929066288"><img src="https://img.shields.io/badge/Twitter-000000?style=for-the-badge&logo=x&logoColor=white" alt="X / Twitter"></a>
+  <a href="https://github.com/OpenRSI-Foundation/OpenRSI-Index"><img src="https://raw.githubusercontent.com/OpenRSI-Foundation/OpenRSI-Index/main/assets/figures/openrsi-index-header-starry.svg" alt="OpenRSI-Index" height="28"></a>
+  <a href="https://github.com/sgl-project/sglang-omni"><img src="assets/sglang-omni-badge.svg" alt="SGLang Omni" height="28"></a>
+</p>
+
+<p align="center">
+  <a href="#leaderboard"><b>Leaderboard</b></a> ·
+  <a href="#tasks"><b>Tasks</b></a> ·
+  <a href="results/archive.md"><b>RSI Logs</b></a>
 </p>
 
 ---

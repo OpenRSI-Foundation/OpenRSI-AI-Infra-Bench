@@ -39,22 +39,25 @@ Developed [jointly by OpenRSI and the SGLang-Omni team](https://index.openrsi.fo
 
 <table>
   <tr>
-    <td align="center" width="20%"><h2>10</h2>omni models<br><sub>SGLang-Omni</sub></td>
-    <td align="center" width="20%"><h2>10</h2>tasks<br><sub>pinned &amp; reproducible</sub></td>
-    <td align="center" width="20%"><h2>6.29×</h2>best agent reward<br><sub>Fish S2-Pro, Claude Code</sub></td>
-    <td align="center" width="20%"><h2>14</h2>PRs merged<br><sub>into SGLang-Omni</sub></td>
-    <td align="center" width="20%"><h2>1 GPU</h2>per task<br><sub>H100-class</sub></td>
+    <td align="center" width="20%"><h3>10</h3></td>
+    <td align="center" width="20%"><h3>10</h3></td>
+    <td align="center" width="20%"><h3>6.29×</h3></td>
+    <td align="center" width="20%"><h3>14</h3></td>
+    <td align="center" width="20%"><h3>1 GPU</h3></td>
+  </tr>
+  <tr>
+    <td align="center">Omni models</td>
+    <td align="center">Tasks</td>
+    <td align="center">Best reward</td>
+    <td align="center">Merged PRs</td>
+    <td align="center">Per task</td>
   </tr>
 </table>
 
-- **Production tasks, validated through real PRs.** Each task targets a real
-  bottleneck in SGLang-Omni's production serving stack. The OpenRSI and SGLang-Omni
-  teams jointly refine its objective, constraints and evaluator through repeated
-  review, then validate the task through concrete optimization PRs.
-- **Easy to run and inspect.** Each task needs just one GPU. RSI-Harness lets you
-  inspect agent actions, experiments and evaluator feedback round by round, so
-  you can follow how agents test ideas, respond to results and build on previous
-  improvements.
+- **Production tasks, validated by real PRs.** Jointly designed and reviewed by
+  OpenRSI and SGLang-Omni.
+- **Easy to run and inspect.** One GPU per task, with agent actions and evaluator
+  feedback visible round by round.
 
 ## ⚙️ How it works
 
@@ -86,9 +89,8 @@ tasks/<model>/<task-name>/
 
 ## 📦 Tasks
 
-The collection contains **10 tasks, one per model**. Eight evaluate streaming
-and non-streaming together; Ming3 0.5B and Tiny each provide separate packages
-for the two modes, yielding 12 runnable packages in total.
+The collection contains **10 tasks**: eight dual-mode tasks and two non-streaming
+Ming3 tasks.
 
 | Model | Track | Evaluation modes | Agent budget | Package |
 | :--- | :---: | :--- | :---: | :--- |
@@ -97,17 +99,15 @@ for the two modes, yielding 12 runnable packages in total.
 | **Fish S2-Pro** | 🗣️ TTS | Dual mode | 24 h | [Task](tasks/fish-s2-pro/sglang-omni-fish-s2-pro-dual-mode-runtime/) |
 | **Qwen3-TTS Base 0.6B** | 🗣️ TTS | Dual mode | 24 h | [Task](tasks/qwen3-tts-0.6b/sglang-omni-qwen3-tts-base-0.6b-dual-mode-runtime/) |
 | **Qwen3-TTS Base 1.7B** | 🗣️ TTS | Dual mode | 24 h | [Task](tasks/qwen3-tts-1.7b/sglang-omni-qwen3-tts-base-1.7b-dual-mode-runtime/) |
-| **Ming3-TTS 0.5B** | 🗣️ TTS | Separate NS / S | 24 h / 8 h | [Non-streaming](tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/) · [Streaming](tasks/ming3-0.5b/sglang-omni-ming3-0.5b-streaming/) |
-| **Ming3-TTS Tiny** | 🗣️ TTS | Separate NS / S | 24 h / 8 h | [Non-streaming](tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/) · [Streaming](tasks/ming3-tiny/sglang-omni-ming3-tiny-streaming/) |
+| **Ming3-TTS 0.5B** | 🗣️ TTS | Non-streaming | 24 h | [Task](tasks/ming3-0.5b/sglang-omni-ming3-0.5b-nonstream/) |
+| **Ming3-TTS Tiny** | 🗣️ TTS | Non-streaming | 24 h | [Task](tasks/ming3-tiny/sglang-omni-ming3-tiny-nonstream/) |
 | **Qwen3-ASR 1.7B** | 👂 ASR | Dual mode | 24 h | [Task](tasks/qwen3-asr-1.7b/qwen3-asr-streaming-throughput/) |
 | **Whisper large-v3** | 👂 ASR | Dual mode | 24 h | [Task](tasks/whisper-large-v3/whisper-asr-streaming-throughput/) |
 | **MOSS-Transcribe-Diarize** | 👂 ASR | Dual mode | 24 h | [Task](tasks/moss-transcribe-diarize/moss-transcribe-diarize-streaming-throughput/) |
 
 > [!NOTE]
 > For TTS, *streaming* means incremental audio delivery. For ASR, it means text
-> delivered over SSE after the audio upload, not live microphone streaming. The
-> Ming3 streaming packages use a different source baseline and compatibility port
-> from their non-streaming counterparts.
+> delivered over SSE after the audio upload, not live microphone streaming.
 
 ## 🏆 Baselines
 
@@ -123,18 +123,18 @@ research runs. Each score was checked against the completed evaluator report of
 its best submission. **Higher is better; 1.0× is the starting performance.**
 These are historical results, not new evaluations of this repository snapshot.
 
-| Task | Scored modes | Codex | Claude Code | Runs¹ |
-| :--- | :--- | ---: | ---: | :---: |
-| CosyVoice3 | Dual | 1.172× | **1.297×** | 1 / 1 |
-| MOSS-TTS v1.5 | Dual | 1.440× | **2.195×** | 2 / 2 |
-| Fish S2-Pro | Dual | 1.803× | **6.288×** | 2 / 1 |
-| Qwen3-TTS Base 0.6B | Dual | 1.141× | **1.252×** | 1 / 2 |
-| Qwen3-TTS Base 1.7B | Dual | 1.096× | **1.283×** | 2 / 1 |
-| Ming3-TTS 0.5B | Non-streaming | n/a‡ | **4.298×**† | — / 2 |
-| Ming3-TTS Tiny | Non-streaming | 1.899×† | **3.634×** | 2 / 1 |
-| Qwen3-ASR 1.7B | Dual | 1.139× | **1.317×**† | 2 / 1 |
-| Whisper large-v3 | Dual | 1.126× | **1.979×**† | 1 / 1 |
-| MOSS-Transcribe-Diarize | Dual | 1.134× | **1.490×** | 1 / 1 |
+| Task | Codex | Claude Code | Runs¹ |
+| :--- | ---: | ---: | :---: |
+| CosyVoice3 | 1.172× | **1.297×** | 1 / 1 |
+| MOSS-TTS v1.5 | 1.440× | **2.195×** | 2 / 2 |
+| Fish S2-Pro | 1.803× | **6.288×** | 2 / 1 |
+| Qwen3-TTS Base 0.6B | 1.141× | **1.252×** | 1 / 2 |
+| Qwen3-TTS Base 1.7B | 1.096× | **1.283×** | 2 / 1 |
+| Ming3-TTS 0.5B (non-streaming) | n/a‡ | **4.298×**† | — / 2 |
+| Ming3-TTS Tiny (non-streaming) | 1.899×† | **3.634×** | 2 / 1 |
+| Qwen3-ASR 1.7B | 1.139× | **1.317×**† | 2 / 1 |
+| Whisper large-v3 | 1.126× | **1.979×**† | 1 / 1 |
+| MOSS-Transcribe-Diarize | 1.134× | **1.490×** | 1 / 1 |
 
 <sub>
 ¹ Run counts are <b>Codex / Claude Code</b>, including interrupted and unscored
@@ -159,8 +159,7 @@ result was not found in the inspected archive, so no score is assigned.
 - **CosyVoice3 differs by version:** Main baselines use SGLang-Omni
   `1523543056bf` (0.1.7); the task copied from SGNOMI is the later guided version at
   `fa90213e1674` (0.1.9). Its Main scores do not measure that later task.
-- Ming3 scores above are **non-streaming only**. The two streaming task packages
-  are included in the benchmark but have no scores in this Main selection.
+- Ming3 scores above are **non-streaming only**.
 - Hardware, time budgets and the number of attempts vary. We therefore do not
   report an aggregate ranking or a controlled agent-to-agent win rate.
 

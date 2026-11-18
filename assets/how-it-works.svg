@@ -136,7 +136,7 @@
   <text x="970.0" y="378" text-anchor="middle" class="mono tx2" font-size="10.5">11 Upstream PRs · Up to 6.29×</text>
   <rect x="28" y="414" width="1064" height="34" rx="8" fill="#f0eee6" stroke="#dedbd0" stroke-width="1"/>
   <text x="46" y="435" class="cap txr">OPEN PIPELINE</text>
-  <text x="246" y="435" text-anchor="middle" class="sans w5 tx2" font-size="12">Harbor 1.4 Tasks (12)</text>
+  <text x="246" y="435" text-anchor="middle" class="sans w5 tx2" font-size="12">Harbor 1.4 Tasks (8)</text>
   <text x="466" y="435" text-anchor="middle" class="sans w5 tx2" font-size="12">RSI-Harness Search</text>
   <text x="714" y="435" text-anchor="middle" class="sans w5 tx2" font-size="12">HF Logs &amp; Web Viewer (16)</text>
   <text x="974" y="435" text-anchor="middle" class="sans w6 txr" font-size="12">SGLang-Omni PRs (11)</text>

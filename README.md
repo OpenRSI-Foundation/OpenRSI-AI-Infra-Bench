@@ -8,10 +8,9 @@
 
 <p align="center">
   <a href="https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/"><img src="https://img.shields.io/badge/Blog-OpenRSI_×_SGLang--Omni-C96442?style=for-the-badge&logo=gitbook&logoColor=white" alt="Blog"></a>&nbsp;
-  <a href="https://index.openrsi.foundation"><img src="https://img.shields.io/badge/Website-OpenRSI_Index-4F86D8?style=for-the-badge&logo=googleearth&logoColor=white" alt="Website"></a>&nbsp;
   <a href="results/archive.md"><img src="https://img.shields.io/badge/RSI_Logs-16_Runs-14967F?style=for-the-badge&logo=googlesheets&logoColor=white" alt="16 benchmark runs"></a>&nbsp;
-  <a href="https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni"><img src="https://img.shields.io/badge/Hugging_Face-Logs_Archive-E08A3C?style=for-the-badge&logo=huggingface&logoColor=white" alt="Hugging Face Dataset"></a>&nbsp;
-  <a href="docs/upstream-results.md"><img src="https://img.shields.io/badge/Upstream-11_PRs_Merged-2F8F4E?style=for-the-badge&logo=github&logoColor=white" alt="11 PRs Merged"></a>
+  <a href="docs/upstream-results.md"><img src="https://img.shields.io/badge/Upstream-11_PRs_Merged-2F8F4E?style=for-the-badge&logo=github&logoColor=white" alt="11 PRs Merged"></a>&nbsp;
+  <a href="https://x.com/OpenRSI/status/2102831770458890626"><img src="https://img.shields.io/badge/Twitter-35434D?style=for-the-badge&logo=x&logoColor=white" alt="X / Twitter"></a>
 </p>
 
 ---

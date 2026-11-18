@@ -90,7 +90,7 @@ OpenRSI-AI-Infra-Bench targets omni model serving optimization in **SGLang-Omni*
 
 **Requires:** A Linux host with an NVIDIA GPU (80 GB+ VRAM recommended), Docker Engine 26+ with daemon access, NVIDIA drivers + Container Toolkit, Git, and [uv](https://docs.astral.sh/uv/getting-started/installation/).
 
-This quick start uses `cosyvoice3-dual-mode` as an example of running a benchmark with a coding agent such as Codex or Claude Code. Open your agent on the GPU host and paste the prompt below. It will check the environment, set up RSI-Harness, optimize the implementation, and summarize the benchmark results.
+This example runs `cosyvoice3-dual-mode` with a coding agent. Open Codex or Claude Code on your GPU host and paste the prompt below.
 
 ```text
 Run the cosyvoice3-dual-mode benchmark on GPU 0 from:

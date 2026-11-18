@@ -59,14 +59,11 @@ Developed [jointly by OpenRSI and the SGLang-Omni team](https://index.openrsi.fo
 
 ## 🏆 Leaderboard
 
-Two frontier coding agents, evaluated in unguided single-agent [RSI-Harness](https://github.com/OpenRSI-Foundation/OpenRSI-Index/tree/main/RSI-Harness) runs:
+Best verified scores from **21 unguided single-agent runs** with [RSI-Harness](https://github.com/OpenRSI-Foundation/OpenRSI-Index/tree/main/RSI-Harness). **Higher is better; 1.0× is the starting baseline B₀.**
 
-| Agent | Model | Reasoning effort |
-| :--- | :--- | :---: |
-| **Codex** | `gpt-6-astra` | `xhigh` |
-| **Claude Code** | `claude-opus-5-5` | `max` |
+**Codex:** `gpt-6-astra` (xhigh) · **Claude Code:** `claude-opus-5-5` (max).
 
-Below is the **best verified Judge reward per task and agent** across all **21 published single-agent trajectories**. **Higher is better; `1.000×` is the starting baseline B₀.** Click any score to inspect that run's round-by-round evaluation curve and full tool-call transcript in the [RSI Logs Viewer](https://index.openrsi.foundation/logs/), or open `HF ↗` for the raw uncompressed files.
+Click a score to explore the run's progress and agent transcript; `HF ↗` opens the raw logs.
 
 | Task | Track | Mode | Codex | Claude Code | Raw Archive |
 | :--- | :---: | :--- | ---: | ---: | :--- |
@@ -83,25 +80,20 @@ Below is the **best verified Judge reward per task and agent** across all **21 p
 | **[Whisper large-v3](tasks/whisper-large-v3-dual-mode/)** | 👂 ASR | Dual mode | [1.126×](https://index.openrsi.foundation/logs/#run=62020e82a96ad29a) | [**1.979×**†](https://index.openrsi.foundation/logs/#run=fb0a3a20e9dc5775) | [HF ↗](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/whisper-large-v3-dual-mode) |
 | **[MOSS-Transcribe-Diarize](tasks/moss-transcribe-diarize-dual-mode/)** | 👂 ASR | Dual mode | [1.134×](https://index.openrsi.foundation/logs/#run=5cd12dacf82da288) | [**1.490×**](https://index.openrsi.foundation/logs/#run=85955c2d14726320) | [HF ↗](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs/tree/main/sglang-omni/moss-transcribe-diarize-dual-mode) |
 
-<sub>
-† Run stopped as <code>cancelled</code> after ~12.2 h (`ming3-tts-0.5b-nonstream`) or ~24.0–24.4 h (`qwen3-asr-1.7b-dual-mode`, `whisper-large-v3-dual-mode`), retaining the highest earlier verified Judge submission.<br>
-¹ `ming3-tts-tiny-nonstream` Codex (`1.899×`, 32 submissions, 14.91 h) continued 4 minutes after an initial warm segment (`1.358×`, 13 submissions, 8.77 h), totaling 23.68 h within the 24 h single-agent budget.<br>
-Calibration/preparation runs, guided-prompt ablations, and multi-agent framework runs are excluded so every entry reflects unguided single-agent optimization.
-</sub>
+<sub>— No published score. † Best verified score from a cancelled run. ¹ Resumed run, totaling 23.68 h.</sub>
 
 <details>
-<summary><strong>Hardware, budgets and version notes</strong></summary>
+<summary><strong>Hardware and run notes</strong></summary>
 
-- **Dual-mode tasks (8 tasks):** Measured on **NVIDIA H100 80GB HBM3** over ~24-hour budgets. `cosyvoice3-dual-mode` ships at the exact unguided SGLang-Omni `1523543056bf` commit measured by both Main baselines (`1.172×` and `1.297×`).
-- **Ming3-TTS single-mode tasks (4 tasks):** Non-streaming baselines used **H100 NVL** (Claude Code) and **H200** (Codex); streaming baselines used **H200** (8-hour recorded runs; standardized to a 24-hour `86400s` default ceiling in `task.toml`).
-- Because hardware SKUs and recorded runtimes vary across historical runs, we report per-task verified rewards rather than an aggregate cross-task win rate.
+- **Comparability.** Hardware and run durations vary; scores are reported per task without an aggregate ranking. The eight dual-mode tasks used H100 80GB HBM3 GPUs; Ming3 runs used H100 NVL or H200 GPUs. Ming3 streaming runs lasted 8 h; all current task packages default to 24 h.
+- **Task version.** CosyVoice3 is pinned to SGLang-Omni `1523543056bf`, matching both published baselines.
+- **Cancelled runs (†).** Ming3-TTS 0.5B non-streaming stopped after ~12.2 h; Qwen3-ASR and Whisper stopped after ~24.0–24.4 h. Each score is the best result verified before cancellation.
+- **Resumed run (¹).** Ming3-TTS Tiny non-streaming (Codex) resumed after a 4-minute gap: 8.77 h + 14.91 h = 23.68 h within the 24 h budget. The first segment reached 1.358× over 13 submissions; the resumed segment reached 1.899× over 32 submissions.
+- **Selection.** Calibration runs, guided-prompt ablations and multi-agent runs are excluded.
 
 </details>
 
-📊 [Run records & methodology](results/README.md) ·
-🗂️ [Machine-readable JSON](results/main.json) ·
-📋 [Published runs CSV](results/runs.csv) ·
-🔍 [Interactive RSI Logs Viewer](https://index.openrsi.foundation/logs/)
+[Run records & methodology](results/README.md) · [JSON](results/main.json) · [CSV](results/runs.csv) · [Logs viewer](https://index.openrsi.foundation/logs/)
 
 <a id="news"></a>
 

@@ -1,6 +1,6 @@
 # Full trajectories
 
-[Back to the 24-hour results](README.md)
+[Overview](../README.md) · [How it works](../docs/how-it-works.md) · [Evaluation](../docs/evaluation.md) · [Running guide](../docs/running.md) · [Upstream results](../docs/upstream-results.md) · [24h results](README.md) · **Full trajectories**
 
 These are the original full-run maxima for the 16 runs in the current benchmark, preserved for provenance. They are **not** the aligned 24-hour leaderboard.
 
@@ -10,7 +10,7 @@ Snapshot: **November 18, 2026** · [Interactive RSI Logs Viewer](https://index.o
 
 ## Selection Criteria
 
-All **16 unguided single-agent Main runs** (`codex / gpt-6-astra / xhigh` and `claude-code / claude-opus-5-5 / max`) across the 8 SGLang-Omni benchmark tasks (8 model checkpoints, 7 model families) are included. Preparation/calibration runs, guided prompt ablations, and multi-agent framework runs are excluded so every entry reflects unguided single-agent optimization against its initial 3-repetition baseline $B_0$.
+All **16 unguided single-agent Main runs** (`codex / gpt-6-astra / xhigh` and `claude-code / claude-opus-5-5 / max`) across the 8 SGLang-Omni benchmark tasks (8 model checkpoints, 7 model families) are included. Preparation/calibration runs, guided prompt ablations, and multi-agent framework runs are excluded so every entry reflects unguided single-agent optimization against its initial 3-repetition baseline B₀.
 
 ## Published Runs (16 Total)
 

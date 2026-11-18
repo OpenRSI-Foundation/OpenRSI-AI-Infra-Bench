@@ -1,6 +1,6 @@
 # Results at 24 Hours
 
-[Back to the benchmark](../README.md)
+[Overview](../README.md) · [How it works](../docs/how-it-works.md) · [Evaluation](../docs/evaluation.md) · [Running guide](../docs/running.md) · [Upstream results](../docs/upstream-results.md) · **24h results**
 
 **16 runs across 8 tasks**, with Codex and Claude Code evaluated over the same first **24 hours**. [Structured JSON](main.json) · [CSV](runs.csv) · [Cutoff audit](24h-audit.json) · [Full trajectories for these 16 runs](archive.md)
 

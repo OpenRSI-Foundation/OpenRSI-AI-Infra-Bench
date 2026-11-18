@@ -2,6 +2,8 @@
 
 [Overview](../README.md) · [How it works](how-it-works.md) · [Evaluation](evaluation.md) · **Running guide** · [Upstream results](upstream-results.md) · [24h results](../results/README.md)
 
+**Jump to:** [1. Requirements](#1-host-requirements--integrity-check) · [2. Install](#2-install-rsi-harness) · [3. Oracle check](#3-validate-with-oracle) · [4. Recalibrate B₀](#4-optional-recalibrating-reference-b_0-for-custom-gpu-skus) · [5. Agent commands](#5-run-a-coding-agent) · [6. Inspect logs](#6-inspect-logs) · [7. Troubleshooting](#7-troubleshooting)
+
 Every directory under [`tasks/`](../tasks/) is a standalone Harbor 1.4 package (`task.toml`, `instruction.md`, `README.md`, `environment/`, `tests/`, and `solution/solve.sh`) that runs natively with [RSI-Harness](https://github.com/OpenRSI-Foundation/OpenRSI-Index/tree/main/RSI-Harness)—no external launcher wrappers or manual snapshot scripts are needed.
 
 <a id="1-host-requirements--integrity-check"></a>
@@ -42,6 +44,8 @@ uv tool install --python 3.12 ./vendor/OpenRSI-Index/RSI-Harness
 
 If you already cloned `OpenRSI-Index` with `--recurse-submodules`, this repository is mounted directly at `OpenRSI-Index/rsi-tasks/sglang-omni` and you can install from `../../RSI-Harness`.
 
+<a id="3-validate-with-oracle"></a>
+
 ## 3. Validate with `--agent oracle`
 
 Before starting a 24-hour optimization run, validate image build, GPU/NUMA isolation, and evaluation health with `--agent oracle` (no LLM API key required). Both TTS and ASR tasks restore the unmodified baseline source, run all 3 scored repetitions per mode, check every quality/latency/streaming guard, and emit `reward = 1.0`:
@@ -68,7 +72,7 @@ export RSI_ASR_CPU_LANES='0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15'
 
 ## 4. Optional: Recalibrating Reference B₀ for Custom GPU SKUs
 
-Each task ships pre-calibrated reference **B₀** metrics in `tests/baseline.json` measured on **NVIDIA H100 80GB HBM3** (see [Evaluation](evaluation.md#2-per-task-reference-b-gate-specification) or each task's `README.md`).
+Each task ships pre-calibrated reference **B₀** metrics in `tests/baseline.json` measured on **NVIDIA H100 80GB HBM3** (see [Evaluation](evaluation.md#per-task-reference-b0) or each task's `README.md`).
 
 - `--agent oracle` succeeds (`reward = 1.0`) out of the box on any compatible GPU because SHA-256-verified unmodified source bypasses cross-SKU throughput-ratio drift while still enforcing all quality, streaming, and contention gates.
 - When running an **optimization agent** on a different GPU SKU (for example PCIe H100 NVL, H200, A100, or B200), measure a fresh 3-repetition **B₀** on that exact GPU once and pass `RSI_BASELINE_JSON` so speedups are measured against your hardware's true baseline:
@@ -92,11 +96,16 @@ docker run --rm --gpus '"device=0"' --ipc=host --network=none \
 export RSI_BASELINE_JSON="$(sed -n 's/^RSI_BASELINE_JSON=//p' calibration.log)"
 ```
 
+<a id="5-run-a-coding-agent"></a>
+
 ## 5. Run a Coding Agent
 
-After [installing RSI-Harness](#2-install-rsi-harness) and configuring local credentials for your chosen agent, choose one task and one agent command below and run it from the repository root. Each command starts an optimization run with the default **24-hour budget** (`86400` seconds in `task.toml`) on **GPU 0**, using `--agent-auth local`.
+After [installing RSI-Harness](#2-install-rsi-harness) and configuring local credentials for your chosen agent (`--agent-auth local` reuses your host Codex or Claude Code CLI login), choose one task and one agent command below and run it from the repository root. Each command starts an optimization run with the default **24-hour budget** (`86400` seconds in `task.toml`) on **GPU 0**.
 
 **Agent settings:** Codex uses `gpt-6-astra` with `xhigh` reasoning; Claude Code uses `claude-opus-5-5` with `max` reasoning. Change `--gpus 0` to select another GPU; each concurrent run needs an exclusive GPU. For GPU types other than the reference H100 80GB HBM3, [calibrate the initial baseline and set `RSI_BASELINE_JSON`](#4-optional-recalibrating-reference-b_0-for-custom-gpu-skus) before launching.
+
+> [!TIP]
+> **Quick index:** [`cosyvoice3`](#cosyvoice3-dual-mode-codex) · [`moss-tts-v1.5`](#moss-tts-v1-5-dual-mode-codex) · [`fish-s2-pro`](#fish-s2-pro-dual-mode-codex) · [`qwen3-tts-0.6b`](#qwen3-tts-0-6b-dual-mode-codex) · [`qwen3-tts-1.7b`](#qwen3-tts-1-7b-dual-mode-codex) · [`qwen3-asr-1.7b`](#qwen3-asr-1-7b-dual-mode-codex) · [`whisper-large-v3`](#whisper-large-v3-dual-mode-codex) · [`moss-transcribe-diarize`](#moss-transcribe-diarize-dual-mode-codex) · or jump past commands to [6. Inspect logs](#6-inspect-logs).
 
 ### cosyvoice3-dual-mode
 
@@ -242,6 +251,8 @@ rsi-harness run tasks/moss-transcribe-diarize-dual-mode --agent codex --model gp
 rsi-harness run tasks/moss-transcribe-diarize-dual-mode --agent claude-code --model claude-opus-5-5 --reasoning-effort max --agent-auth local --gpus 0
 ```
 
+<a id="6-inspect-logs"></a>
+
 ## 6. Inspect Local Runs & Public Trajectories
 
 `rsi-harness` writes run artifacts under `logs/runs/<run-id>/`:
@@ -267,3 +278,15 @@ hf download OpenRSI-Foundation/OpenRSI-Index-Logs --repo-type dataset \
   --include "sglang-omni/cosyvoice3-dual-mode/*" \
   --local-dir OpenRSI-Index-Logs
 ```
+
+<a id="7-troubleshooting"></a>
+
+## 7. Troubleshooting & Common Pitfalls
+
+| Symptom | Likely Cause | Fix |
+| :--- | :--- | :--- |
+| Judge rejects with residual GPU memory (`> 0 MiB`) | Another job or stale Work-container process holds VRAM on the target GPU | Run `nvidia-smi` on the assigned GPU, terminate lingering processes, and ensure each concurrent `rsi-harness` run gets an exclusive `--gpus <id>` |
+| Judge invalidates run with `peak_foreign_cores > 2.0` | Background host jobs or overlapping runs are sharing the GPU's NUMA node | Stop competing CPU workloads or pin 16 dedicated idle physical cores via `RSI_TTS_CPU_LANES` / `RSI_ASR_CPU_LANES` |
+| `--agent oracle` passes, but agent scores look skewed on a non-H100 GPU | Default `tests/baseline.json` targets H100 80GB HBM3 | Run [Section 4 calibration](#4-optional-recalibrating-reference-b_0-for-custom-gpu-skus) once on your GPU and export `RSI_BASELINE_JSON` before launching |
+| Docker build or runtime fails with CUDA / shared-memory errors | Missing NVIDIA Container Toolkit or small `/dev/shm` | Verify `docker run --rm --gpus all nvidia/cuda:12.4.1-base-ubuntu22.04 nvidia-smi` succeeds, and pass `--ipc=host` for manual container runs |
+| `--agent-auth local` fails to authenticate | Host Codex or Claude Code CLI is not signed in | Log into your chosen CLI on the host first (or configure the provider credentials expected by `rsi-harness`) before launching a 24-hour run |

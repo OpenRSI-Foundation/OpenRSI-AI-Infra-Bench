@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 464" width="1120" height="464" role="img" aria-label="Harnessed RSI architecture: Harbor 1.4 task package, RSI-Harness outer loop with coding agent and isolated clean-image Judge, and verified score frontier">
+  <defs>
+    <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    .cap  { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.09em; }
+    .tx   { fill: #F3EFE8; }
+    .tx2  { fill: #CFC9BE; }
+    .tx3  { fill: #9B9589; }
+    .txr  { fill: #F08A64; }
+    .txa  { fill: #E8B358; }
+    .txm  { fill: #88BBA6; }
+    .txw  { fill: #FFFFFF; }
+    .txw2 { fill: #FFEBE2; }
+    .w4   { font-weight: 400; }
+    .w5   { font-weight: 500; }
+    .w6   { font-weight: 600; }
+    .w7   { font-weight: 700; }
+</style>
+    <marker id="arr-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0 1L9 5L0 9z" fill="#9C968B"/>
+    </marker>
+    <marker id="arr-rust" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0 1L9 5L0 9z" fill="#E8805A"/>
+    </marker>
+    <linearGradient id="clay-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#CE623B"/>
+      <stop offset="100%" stop-color="#B44B27"/>
+    </linearGradient>
+  </defs>
+  <rect x="1.5" y="1.5" width="1117" height="461" rx="14" fill="#161513" stroke="#302D28" stroke-width="1.5"/>
+  <text x="28" y="29" class="cap txr">HARNESSED RSI ARCHITECTURE</text>
+  <text x="28" y="52" class="sans w6 tx" font-size="17" letter-spacing="-0.015em">Single-GPU hill-climbing optimization against an isolated clean-image verifier</text>
+  <rect x="686" y="39" width="11" height="11" rx="2.5" fill="#C45731" stroke="#E58560" stroke-width="1.3"/>
+  <text x="703" y="49" class="sans w5 tx2" font-size="11.5">Agent / GPU Compute</text>
+  <rect x="844" y="39" width="11" height="11" rx="2.5" fill="#2D1D17" stroke="#DF7A54" stroke-width="1.3"/>
+  <text x="861" y="49" class="sans w5 tx2" font-size="11.5">Clean-Image Judge</text>
+  <rect x="988" y="39" width="11" height="11" rx="2.5" fill="#2A2215" stroke="#D99B3B" stroke-width="1.3"/>
+  <text x="1005" y="49" class="sans w5 tx2" font-size="11.5">Frozen Baseline B₀</text>
+  <line x1="28" y1="68" x2="1092" y2="68" stroke="#312E29" stroke-width="1.2"/>
+  <rect x="28" y="84" width="236" height="316" rx="10" fill="#1F1D1A" stroke="#34302A" stroke-width="1.3"/>
+  <text x="44" y="108" class="mono w6 tx3" font-size="11.5">01</text>
+  <text x="248" y="108" text-anchor="end" class="cap tx3">HARBOR 1.4 TASK</text>
+  <line x1="44" y1="118" x2="248" y2="118" stroke="#2C2924" stroke-width="1"/>
+  <text x="44" y="141" class="mono w6 tx" font-size="14">tasks/&lt;slug&gt;/</text>
+  <text x="44" y="158" class="sans tx3" font-size="11.5">Self-contained, offline contract</text>
+  <rect x="42" y="172" width="208" height="46" rx="6" fill="#191714" stroke="#312E28" stroke-width="1.15"/>
+  <text x="53" y="191" class="sans w6 tx" font-size="12">Pinned SGLang-Omni</text>
+  <text x="53" y="208" class="mono tx3" font-size="10.3">source.tar.gz + uv lockfiles</text>
+  <rect x="42" y="226" width="208" height="46" rx="6" fill="#191714" stroke="#312E28" stroke-width="1.15"/>
+  <text x="53" y="245" class="sans w6 tx" font-size="12">SHA-256 Frozen Weights</text>
+  <text x="53" y="262" class="mono tx3" font-size="10.3">Model + ASR judge checkpoints</text>
+  <rect x="42" y="280" width="208" height="46" rx="6" fill="#191714" stroke="#312E28" stroke-width="1.15"/>
+  <text x="53" y="299" class="sans w6 tx" font-size="12">SeedTTS Eval Splits</text>
+  <text x="53" y="316" class="mono tx3" font-size="10.3">1,088 EN · +2,020 ZH (ASR)</text>
+  <rect x="42" y="334" width="208" height="46" rx="6" fill="#2A2215" stroke="#5A4421" stroke-width="1.15"/>
+  <text x="53" y="353" class="sans w6 txa" font-size="12">Reference Baseline B₀</text>
+  <text x="53" y="370" class="mono tx3" font-size="10.3">baseline.json + calibrate.py</text>
+  <line x1="264" y1="242" x2="294" y2="242" stroke="#9C968B" stroke-width="1.5" marker-end="url(#arr-ink)"/>
+  <text x="279" y="233" text-anchor="middle" class="mono tx3" font-size="9.5">load</text>
+  <rect x="298" y="84" width="516" height="316" rx="11" fill="#25231F" stroke="#3A3630" stroke-width="1.3"/>
+  <text x="316" y="109" class="cap tx2">02 · OUTER LOOP · RSI-HARNESS</text>
+  <rect x="592" y="94" width="204" height="22" rx="11" fill="#191714" stroke="#3A3630" stroke-width="1"/>
+  <text x="694" y="109" text-anchor="middle" class="mono w5 tx2" font-size="10.5">24h · 1× H100 · Offline</text>
+  <rect x="314" y="126" width="206" height="232" rx="9" fill="url(#clay-grad)" stroke="#E58560" stroke-width="1.3"/>
+  <text x="329" y="148" class="cap txw2">INNER LOOP · AGENT</text>
+  <text x="329" y="170" class="sans w7 txw" font-size="15.5">Coding Agent</text>
+  <text x="329" y="187" class="mono txw2" font-size="10.8">Codex · Claude Code</text>
+  <line x1="329" y1="198" x2="505" y2="198" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="1"/>
+  <rect x="327" y="209" width="180" height="31" rx="5" fill="#FFFFFF" fill-opacity="0.14" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="1"/>
+  <text x="337" y="229" class="mono w6 txw2" font-size="10.8">1</text>
+  <text x="352" y="229" class="sans w5 txw" font-size="11.5">Profile CPU &amp; GPU traces</text>
+  <rect x="327" y="245" width="180" height="31" rx="5" fill="#FFFFFF" fill-opacity="0.14" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="1"/>
+  <text x="337" y="265" class="mono w6 txw2" font-size="10.8">2</text>
+  <text x="352" y="265" class="sans w5 txw" font-size="11.5">Hypothesize bottleneck</text>
+  <rect x="327" y="281" width="180" height="31" rx="5" fill="#FFFFFF" fill-opacity="0.14" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="1"/>
+  <text x="337" y="301" class="mono w6 txw2" font-size="10.8">3</text>
+  <text x="352" y="301" class="sans w5 txw" font-size="11.5">Edit scheduler &amp; kernels</text>
+  <rect x="327" y="317" width="180" height="31" rx="5" fill="#FFFFFF" fill-opacity="0.14" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="1"/>
+  <text x="337" y="337" class="mono w6 txw2" font-size="10.8">4</text>
+  <text x="352" y="337" class="sans w5 txw" font-size="11.5">Local bench (/workspace)</text>
+  <line x1="525" y1="210" x2="587" y2="210" stroke="#E8805A" stroke-width="1.7" marker-end="url(#arr-rust)"/>
+  <text x="556.0" y="199" text-anchor="middle" class="mono w6 txr" font-size="10.5">submit</text>
+  <text x="556.0" y="224" text-anchor="middle" class="mono tx3" font-size="9.5">ro bind</text>
+  <line x1="587" y1="278" x2="525" y2="278" stroke="#9C968B" stroke-width="1.5" marker-end="url(#arr-ink)"/>
+  <text x="556.0" y="268" text-anchor="middle" class="mono w5 tx2" font-size="10.5">report</text>
+  <text x="556.0" y="292" text-anchor="middle" class="mono tx3" font-size="9.5">&amp; logs</text>
+  <rect x="592" y="126" width="206" height="232" rx="9" fill="#2D1D17" stroke="#DF7A54" stroke-width="1.5"/>
+  <text x="607" y="148" class="cap txr">ISOLATED VERIFIER</text>
+  <text x="607" y="170" class="sans w7 tx" font-size="15.5">Clean-Image Judge</text>
+  <text x="607" y="187" class="mono tx2" font-size="10.8">3× fresh repeats vs. B₀</text>
+  <line x1="607" y1="198" x2="783" y2="198" stroke="#5D382B" stroke-width="1"/>
+  <rect x="605" y="209" width="180" height="31" rx="5" fill="#1F1D1A" stroke="#4E3126" stroke-width="1"/>
+  <text x="614" y="229" class="mono w7 txr" font-size="10.2">NUMA</text>
+  <text x="651" y="229" class="sans w5 tx2" font-size="11">16 idle physical cores</text>
+  <rect x="605" y="245" width="180" height="31" rx="5" fill="#1F1D1A" stroke="#4E3126" stroke-width="1"/>
+  <text x="614" y="265" class="mono w7 txr" font-size="10.2">WER</text>
+  <text x="651" y="265" class="sans w5 tx2" font-size="11">Speech error ceilings</text>
+  <rect x="605" y="281" width="180" height="31" rx="5" fill="#1F1D1A" stroke="#4E3126" stroke-width="1"/>
+  <text x="614" y="301" class="mono w7 txr" font-size="10.2">P95</text>
+  <text x="651" y="301" class="sans w5 tx2" font-size="11">TTFA / TTFT / RTF +3%</text>
+  <rect x="605" y="317" width="180" height="31" rx="5" fill="#1F1D1A" stroke="#4E3126" stroke-width="1"/>
+  <text x="614" y="337" class="mono w7 txr" font-size="10.2">SSE</text>
+  <text x="651" y="337" class="sans w5 tx2" font-size="11">Chunks &amp; delta continuity</text>
+  <text x="556.0" y="384" text-anchor="middle" class="sans tx2" font-size="11.5">Hill-climbing across rounds · Any guard violation scores 0</text>
+  <line x1="814" y1="242" x2="844" y2="242" stroke="#E8805A" stroke-width="1.7" marker-end="url(#arr-rust)"/>
+  <text x="829" y="233" text-anchor="middle" class="mono w6 txr" font-size="9.5">pass</text>
+  <rect x="848" y="84" width="244" height="316" rx="10" fill="#1F1D1A" stroke="#34302A" stroke-width="1.3"/>
+  <text x="864" y="108" class="mono w6 tx3" font-size="11.5">03</text>
+  <text x="1076" y="108" text-anchor="end" class="cap txr">VERIFIED FRONTIER</text>
+  <line x1="864" y1="118" x2="1076" y2="118" stroke="#2C2924" stroke-width="1"/>
+  <rect x="864" y="130" width="212" height="120" rx="6" fill="#191714" stroke="#312E28" stroke-width="1"/>
+  <text x="874" y="146" class="mono w6 tx3" font-size="9.2">Score vs. B₀</text>
+  <line x1="902" y1="168" x2="1066" y2="168" stroke="#2C2924" stroke-width="1"/>
+  <line x1="902" y1="195" x2="1066" y2="195" stroke="#2C2924" stroke-width="1"/>
+  <line x1="902" y1="222" x2="1066" y2="222" stroke="#D99B3B" stroke-width="1.4" stroke-dasharray="4 3"/>
+  <text x="897" y="225.5" text-anchor="end" class="mono w6 txa" font-size="9.5">1.0×</text>
+  <text x="902" y="243" class="mono tx3" font-size="9.2">0h</text>
+  <text x="982" y="243" text-anchor="middle" class="mono tx3" font-size="9.2">12h</text>
+  <text x="1066" y="243" text-anchor="end" class="mono tx3" font-size="9.2">24h</text>
+  <path d="M902 222 H932 V206 H978 V186 H1020 V168 H1050 V155 H1066" fill="none" stroke="#E67F58" stroke-width="2.3" stroke-linejoin="round"/>
+  <circle cx="916" cy="198" r="3.4" fill="#191714" stroke="#6A645B" stroke-width="1.5"/>
+  <circle cx="958" cy="178" r="3.4" fill="#191714" stroke="#6A645B" stroke-width="1.5"/>
+  <circle cx="1001" cy="194" r="3.4" fill="#191714" stroke="#6A645B" stroke-width="1.5"/>
+  <circle cx="1036" cy="162" r="3.4" fill="#191714" stroke="#6A645B" stroke-width="1.5"/>
+  <circle cx="932" cy="206" r="3.8" fill="#F08D67" stroke="#191714" stroke-width="1.4"/>
+  <circle cx="978" cy="186" r="3.8" fill="#F08D67" stroke="#191714" stroke-width="1.4"/>
+  <circle cx="1020" cy="168" r="3.8" fill="#F08D67" stroke="#191714" stroke-width="1.4"/>
+  <circle cx="1050" cy="155" r="3.8" fill="#F08D67" stroke="#191714" stroke-width="1.4"/>
+  <circle cx="870" cy="262" r="3.5" fill="#F08D67"/>
+  <text x="878" y="266" class="sans tx2" font-size="10.5">Verified gain</text>
+  <circle cx="968" cy="262" r="3.4" fill="#1F1D1A" stroke="#6A645B" stroke-width="1.5"/>
+  <text x="976" y="266" class="sans tx3" font-size="10.5">Failed guard</text>
+  <rect x="864" y="278" width="212" height="56" rx="7" fill="#2D1D17" stroke="#5D382B" stroke-width="1.15"/>
+  <text x="970.0" y="303" text-anchor="middle" class="mono w6 tx" font-size="13">score = R<tspan dy="3" font-size="9.5">s</tspan><tspan dy="-8" font-size="9.2">2/3</tspan><tspan dy="5"> · R</tspan><tspan dy="3" font-size="9.5">n</tspan><tspan dy="-8" font-size="9.2">1/3</tspan></text>
+  <text x="970.0" y="323" text-anchor="middle" class="mono w5 txr" font-size="10.2">Dual-mode: R<tspan dy="2.5" font-size="8.5">s</tspan><tspan dy="-2.5"> &gt; 1.0 &amp; R</tspan><tspan dy="2.5" font-size="8.5">n</tspan><tspan dy="-2.5"> &gt; 1.0</tspan></text>
+  <rect x="864" y="344" width="212" height="42" rx="7" fill="#1C2923" stroke="#334A40" stroke-width="1"/>
+  <text x="970.0" y="362" text-anchor="middle" class="sans w6 tx" font-size="11.5">16 Public Trajectories</text>
+  <text x="970.0" y="378" text-anchor="middle" class="mono txm" font-size="10.2">11 Suite PRs · 14 Total Merged</text>
+  <rect x="28" y="414" width="1064" height="34" rx="8" fill="#25231F" stroke="#302D28" stroke-width="1"/>
+  <text x="46" y="435" class="cap txr">OPEN PIPELINE</text>
+  <text x="244" y="435" text-anchor="middle" class="sans w5 tx2" font-size="12">Harbor 1.4 Tasks (8)</text>
+  <text x="466" y="435" text-anchor="middle" class="sans w5 tx2" font-size="12">RSI-Harness 24h Loop</text>
+  <text x="710" y="435" text-anchor="middle" class="sans w5 tx2" font-size="12">HF Logs &amp; Viewer (16)</text>
+  <text x="968" y="435" text-anchor="middle" class="sans w6 txr" font-size="12">SGLang-Omni PRs (11 / 14)</text>
+  <line x1="330" y1="431" x2="382" y2="431" stroke="#9C968B" stroke-width="1.3" marker-end="url(#arr-ink)"/>
+  <line x1="550" y1="431" x2="614" y2="431" stroke="#9C968B" stroke-width="1.3" marker-end="url(#arr-ink)"/>
+  <line x1="806" y1="431" x2="868" y2="431" stroke="#9C968B" stroke-width="1.3" marker-end="url(#arr-ink)"/>
+</svg>

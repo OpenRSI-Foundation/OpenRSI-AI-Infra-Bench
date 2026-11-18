@@ -7,8 +7,8 @@
 <h3 align="center">Can coding agents make real AI infrastructure faster?</h3>
 
 <p align="center">
-  <a href="https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/"><img src="https://img.shields.io/badge/Blog-F97316?style=for-the-badge&logo=gitbook&logoColor=white" alt="Blog"></a>
-  <a href="https://x.com/OpenRSI/status/2119869682929066288"><img src="https://img.shields.io/badge/Twitter-000000?style=for-the-badge&logo=x&logoColor=white" alt="X / Twitter"></a>
+  <a href="https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/"><img src="https://img.shields.io/badge/Blog-C85A35?style=for-the-badge&logo=gitbook&logoColor=white" alt="Blog"></a>
+  <a href="https://x.com/OpenRSI/status/2119869682929066288"><img src="https://img.shields.io/badge/Twitter-181715?style=for-the-badge&logo=x&logoColor=white" alt="X / Twitter"></a>
   <a href="https://github.com/OpenRSI-Foundation/OpenRSI-Index"><img src="assets/openrsi-index-badge.svg" alt="OpenRSI-Index" height="28"></a>
   <a href="https://github.com/sgl-project/sglang-omni"><img src="assets/sgl-omni-badge.svg?v=2" alt="SGL-Omni" height="28"></a>
 </p>
@@ -21,7 +21,7 @@
 
 ---
 
-**OpenRSI-AI-Infra-bench** benchmarks **recursive self-improvement (RSI) in real AI serving systems**. Agents iteratively optimize a serving stack with fixed model weights and GPU resources. An independent evaluator verifies speedups under quality and latency constraints; each accepted improvement becomes the next baseline.
+**OpenRSI-AI-Infra-Bench** benchmarks **recursive self-improvement (RSI) in real AI serving systems**. Agents iteratively optimize a serving stack with fixed model weights and GPU resources. An independent evaluator verifies speedups under quality and latency constraints; each accepted improvement becomes the next baseline.
 
 Developed jointly by [OpenRSI and the SGLang-Omni team](https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/), the benchmark includes **8 carefully reviewed tasks for omni models**. Each task provides a production serving stack with pinned source code, assets, dependencies and evaluation protocols. The collection is part of the [OpenRSI Index](https://index.openrsi.foundation/).
 
@@ -45,14 +45,14 @@ Best verified score within the **first 24 hours** of each unguided single-agent 
 
 | Task | Track | Codex | Claude Code | Trajectories |
 | :--- | :---: | ---: | ---: | :--- |
-| [**CosyVoice3 (0.5B)**](https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench/tree/main/tasks/cosyvoice3-dual-mode) | 🗣️ TTS | [1.172×](https://index.openrsi.foundation/logs/#run=5e67e03919819ebb&tab=submissions) | [**1.297×**](https://index.openrsi.foundation/logs/#run=9de597863ceaafa7&tab=submissions) | [View logs ↗](https://index.openrsi.foundation/logs/#run=5e67e03919819ebb) |
-| [**MOSS-TTS v1.5**](https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench/tree/main/tasks/moss-tts-v1.5-dual-mode) | 🗣️ TTS | [1.339×](https://index.openrsi.foundation/logs/#run=770379d74c291ea5&tab=submissions) | [**1.935×**](https://index.openrsi.foundation/logs/#run=cd131351fd998975&tab=submissions) | [View logs ↗](https://index.openrsi.foundation/logs/#run=770379d74c291ea5) |
-| [**Fish Audio S2-Pro**](https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench/tree/main/tasks/fish-s2-pro-dual-mode) | 🗣️ TTS | [1.739×](https://index.openrsi.foundation/logs/#run=3a65be48b77269bd&tab=submissions) | [**6.288×**](https://index.openrsi.foundation/logs/#run=a2067dc23a561358&tab=submissions) | [View logs ↗](https://index.openrsi.foundation/logs/#run=3a65be48b77269bd) |
-| [**Qwen3-TTS Base 0.6B**](https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench/tree/main/tasks/qwen3-tts-0.6b-dual-mode) | 🗣️ TTS | [1.141×](https://index.openrsi.foundation/logs/#run=c8f89a668fcb7e92&tab=submissions) | [**1.252×**](https://index.openrsi.foundation/logs/#run=4bdc101cfe415ada&tab=submissions) | [View logs ↗](https://index.openrsi.foundation/logs/#run=c8f89a668fcb7e92) |
-| [**Qwen3-TTS Base 1.7B**](https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench/tree/main/tasks/qwen3-tts-1.7b-dual-mode) | 🗣️ TTS | [1.096×](https://index.openrsi.foundation/logs/#run=bb3980b8f4ef5741&tab=submissions) | [**1.283×**](https://index.openrsi.foundation/logs/#run=6ee3ceb2d4cacae3&tab=submissions) | [View logs ↗](https://index.openrsi.foundation/logs/#run=bb3980b8f4ef5741) |
-| [**Qwen3-ASR 1.7B**](https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench/tree/main/tasks/qwen3-asr-1.7b-dual-mode) | 👂 ASR | [1.117×](https://index.openrsi.foundation/logs/#run=536fb8d8084974b9&tab=submissions) | [**1.278×**](https://index.openrsi.foundation/logs/#run=f19f174bf5532f64&tab=submissions) | [View logs ↗](https://index.openrsi.foundation/logs/#run=536fb8d8084974b9) |
-| [**Whisper large-v3**](https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench/tree/main/tasks/whisper-large-v3-dual-mode) | 👂 ASR | [1.126×](https://index.openrsi.foundation/logs/#run=62020e82a96ad29a&tab=submissions) | [**1.979×**](https://index.openrsi.foundation/logs/#run=fb0a3a20e9dc5775&tab=submissions) | [View logs ↗](https://index.openrsi.foundation/logs/#run=62020e82a96ad29a) |
-| [**MOSS-Transcribe-Diarize**](https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench/tree/main/tasks/moss-transcribe-diarize-dual-mode) | 👂 ASR | [1.134×](https://index.openrsi.foundation/logs/#run=5cd12dacf82da288&tab=submissions) | [**1.490×**](https://index.openrsi.foundation/logs/#run=85955c2d14726320&tab=submissions) | [View logs ↗](https://index.openrsi.foundation/logs/#run=5cd12dacf82da288) |
+| [**CosyVoice3 (0.5B)**](https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench/tree/main/tasks/cosyvoice3-dual-mode) | 🗣️ TTS | [1.172×](https://index.openrsi.foundation/logs/#run=5e67e03919819ebb&tab=submissions) | [**1.297×**](https://index.openrsi.foundation/logs/#run=9de597863ceaafa7&tab=submissions) | [Codex ↗](https://index.openrsi.foundation/logs/#run=5e67e03919819ebb) · [Claude ↗](https://index.openrsi.foundation/logs/#run=9de597863ceaafa7) |
+| [**MOSS-TTS v1.5**](https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench/tree/main/tasks/moss-tts-v1.5-dual-mode) | 🗣️ TTS | [1.339×](https://index.openrsi.foundation/logs/#run=770379d74c291ea5&tab=submissions) | [**1.935×**](https://index.openrsi.foundation/logs/#run=cd131351fd998975&tab=submissions) | [Codex ↗](https://index.openrsi.foundation/logs/#run=770379d74c291ea5) · [Claude ↗](https://index.openrsi.foundation/logs/#run=cd131351fd998975) |
+| [**Fish Audio S2-Pro**](https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench/tree/main/tasks/fish-s2-pro-dual-mode) | 🗣️ TTS | [1.739×](https://index.openrsi.foundation/logs/#run=3a65be48b77269bd&tab=submissions) | [**6.288×**](https://index.openrsi.foundation/logs/#run=a2067dc23a561358&tab=submissions) | [Codex ↗](https://index.openrsi.foundation/logs/#run=3a65be48b77269bd) · [Claude ↗](https://index.openrsi.foundation/logs/#run=a2067dc23a561358) |
+| [**Qwen3-TTS Base 0.6B**](https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench/tree/main/tasks/qwen3-tts-0.6b-dual-mode) | 🗣️ TTS | [1.141×](https://index.openrsi.foundation/logs/#run=c8f89a668fcb7e92&tab=submissions) | [**1.252×**](https://index.openrsi.foundation/logs/#run=4bdc101cfe415ada&tab=submissions) | [Codex ↗](https://index.openrsi.foundation/logs/#run=c8f89a668fcb7e92) · [Claude ↗](https://index.openrsi.foundation/logs/#run=4bdc101cfe415ada) |
+| [**Qwen3-TTS Base 1.7B**](https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench/tree/main/tasks/qwen3-tts-1.7b-dual-mode) | 🗣️ TTS | [1.096×](https://index.openrsi.foundation/logs/#run=bb3980b8f4ef5741&tab=submissions) | [**1.283×**](https://index.openrsi.foundation/logs/#run=6ee3ceb2d4cacae3&tab=submissions) | [Codex ↗](https://index.openrsi.foundation/logs/#run=bb3980b8f4ef5741) · [Claude ↗](https://index.openrsi.foundation/logs/#run=6ee3ceb2d4cacae3) |
+| [**Qwen3-ASR 1.7B**](https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench/tree/main/tasks/qwen3-asr-1.7b-dual-mode) | 👂 ASR | [1.117×](https://index.openrsi.foundation/logs/#run=536fb8d8084974b9&tab=submissions) | [**1.278×**](https://index.openrsi.foundation/logs/#run=f19f174bf5532f64&tab=submissions) | [Codex ↗](https://index.openrsi.foundation/logs/#run=536fb8d8084974b9) · [Claude ↗](https://index.openrsi.foundation/logs/#run=f19f174bf5532f64) |
+| [**Whisper large-v3**](https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench/tree/main/tasks/whisper-large-v3-dual-mode) | 👂 ASR | [1.126×](https://index.openrsi.foundation/logs/#run=62020e82a96ad29a&tab=submissions) | [**1.979×**](https://index.openrsi.foundation/logs/#run=fb0a3a20e9dc5775&tab=submissions) | [Codex ↗](https://index.openrsi.foundation/logs/#run=62020e82a96ad29a) · [Claude ↗](https://index.openrsi.foundation/logs/#run=fb0a3a20e9dc5775) |
+| [**MOSS-Transcribe-Diarize**](https://github.com/OpenRSI-Foundation/OpenRSI-AI-Infra-Bench/tree/main/tasks/moss-transcribe-diarize-dual-mode) | 👂 ASR | [1.134×](https://index.openrsi.foundation/logs/#run=5cd12dacf82da288&tab=submissions) | [**1.490×**](https://index.openrsi.foundation/logs/#run=85955c2d14726320&tab=submissions) | [Codex ↗](https://index.openrsi.foundation/logs/#run=5cd12dacf82da288) · [Claude ↗](https://index.openrsi.foundation/logs/#run=85955c2d14726320) |
 <details>
 <summary><strong>Scoring and comparison protocol</strong></summary>
 
@@ -86,7 +86,11 @@ OpenRSI-AI-Infra-Bench targets omni model serving optimization in **SGLang-Omni*
 | [`moss-transcribe-diarize-dual-mode`](tasks/moss-transcribe-diarize-dual-mode/) | [`MOSS-Transcribe-Diarize`](https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize) | [`8220d220`](https://github.com/sgl-project/sglang-omni/tree/8220d220703cf8d8f5c5d9a2cde00b5ed13717b8) | [Codex](docs/running.md#moss-transcribe-diarize-dual-mode-codex) · [Claude Code](docs/running.md#moss-transcribe-diarize-dual-mode-claude-code) |
 
 <p align="center">
-  <img src="assets/tasks.svg" width="100%" alt="Serving pipelines for eight SGLang-Omni tasks: five TTS and three ASR or diarization tasks, all in streaming and non-streaming modes">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/tasks-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/tasks.svg">
+    <img src="assets/tasks.svg" width="100%" alt="Serving pipelines for eight SGLang-Omni tasks: five TTS and three ASR or diarization tasks, all in streaming and non-streaming modes">
+  </picture>
 </p>
 
 
@@ -124,7 +128,7 @@ Replace `cosyvoice3-dual-mode` with any [task slug](#tasks) to run a different b
 2. **Evaluate.** Each submitted candidate is tested in a fresh Judge container against the fixed initial B₀, using three repetitions per mode.
 3. **Iterate.** The agent uses the evaluator's feedback to improve its next submission. The leaderboard reports the highest valid score within 24 hours.
 
-[RSI-Harness architecture](docs/how-it-works.md) · [Quality and latency gates](docs/evaluation.md) · [Run your own agent](docs/running.md)
+[RSI-Harness architecture](docs/how-it-works.md) · [Quality and latency gates](docs/evaluation.md) · [Run your own agent](docs/running.md) · [Upstream PRs & patterns](docs/upstream-results.md)
 
 </details>
 

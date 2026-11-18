@@ -3,7 +3,11 @@
 [Overview](../README.md) · **How it works** · [Evaluation](evaluation.md) · [Running guide](running.md) · [Upstream results](upstream-results.md) · [24h results](../results/README.md)
 
 <p align="center">
-  <img src="../assets/how-it-works.svg" width="100%" alt="Harnessed RSI architecture: Harbor 1.4 task package, RSI-Harness outer loop with coding agent and isolated clean-image Judge, and verified score frontier">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="../assets/how-it-works-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="../assets/how-it-works.svg">
+    <img src="../assets/how-it-works.svg" width="100%" alt="Harnessed RSI architecture: Harbor 1.4 task package, RSI-Harness outer loop with coding agent and isolated clean-image Judge, and verified score frontier">
+  </picture>
 </p>
 
 OpenRSI-AI-Infra-Bench pairs self-contained [Harbor 1.4](../tasks/) serving benchmarks with [RSI-Harness](https://github.com/OpenRSI-Foundation/OpenRSI-Index/tree/main/RSI-Harness) to run autonomous, verifier-checked single-GPU hill-climbing loops.

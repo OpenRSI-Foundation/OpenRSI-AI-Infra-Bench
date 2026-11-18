@@ -2,10 +2,14 @@
 
 [Overview](../README.md) · [How it works](how-it-works.md) · [Evaluation](evaluation.md) · [Running guide](running.md) · **Upstream results** · [24h results](../results/README.md)
 
-Agent-discovered optimizations for the models in this suite contributed to **11 pull requests merged into [`sgl-project/sglang-omni`](https://github.com/sgl-project/sglang-omni)** after multi-round maintainer review. Agents ran the profiling, hypothesis testing, and runtime optimization loops; people defined the tasks and owned architectural review and merge decisions.
+Agent-discovered optimizations across the OpenRSI × SGLang-Omni collaboration resulted in **[14 merged pull requests](https://github.com/sgl-project/sglang-omni/pulls?q=is%3Apr+state%3Aclosed+author%3AZhuofeng-Li)** into [`sgl-project/sglang-omni`](https://github.com/sgl-project/sglang-omni) after multi-round maintainer review: **11 PRs directly cover the 7 model families in this 8-task benchmark suite** (detailed below), while **3 additional PRs** ([#3136](https://github.com/sgl-project/sglang-omni/pull/3136), [#3189](https://github.com/sgl-project/sglang-omni/pull/3189), [#3190](https://github.com/sgl-project/sglang-omni/pull/3190)) target exploratory Ming3-TTS models outside the current suite. Agents ran the profiling, hypothesis testing, and runtime optimization loops; people defined the tasks and owned architectural review and merge decisions.
 
 <p align="center">
-  <img src="../assets/five-patterns.svg" width="100%" alt="Five serving optimization patterns across 11 merged SGLang-Omni PRs: CPU contention, data conversion, redundant computation, GPU launch overhead, and pipeline scheduling">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="../assets/five-patterns-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="../assets/five-patterns.svg">
+    <img src="../assets/five-patterns.svg" width="100%" alt="Five serving optimization patterns across 11 merged SGLang-Omni PRs for this benchmark suite: CPU contention, data conversion, redundant computation, GPU launch overhead, and pipeline scheduling">
+  </picture>
 </p>
 
 ## 1. Five Recurring Runtime Patterns

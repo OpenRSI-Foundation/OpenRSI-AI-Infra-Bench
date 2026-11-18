@@ -1,0 +1,238 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 606" width="1120" height="606" role="img" aria-label="Five serving optimization patterns across 11 merged SGLang-Omni PRs for this benchmark suite">
+  <defs>
+    <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    .cap  { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.09em; }
+    .tx   { fill: #F3EFE8; }
+    .tx2  { fill: #CFC9BE; }
+    .tx3  { fill: #9B9589; }
+    .txr  { fill: #F08A64; }
+    .txa  { fill: #E8B358; }
+    .txm  { fill: #88BBA6; }
+    .txw  { fill: #FFFFFF; }
+    .txw2 { fill: #FFEBE2; }
+    .w4   { font-weight: 400; }
+    .w5   { font-weight: 500; }
+    .w6   { font-weight: 600; }
+    .w7   { font-weight: 700; }
+</style>
+    <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="6" height="6" fill="#161513"/>
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#44403A" stroke-width="2"/>
+    </pattern>
+    <marker id="p-arr" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 1L9 5L0 9z" fill="#9C968B"/>
+    </marker>
+  </defs>
+  <rect x="1.5" y="1.5" width="1117" height="603" rx="14" fill="#161513" stroke="#302D28" stroke-width="1.5"/>
+  <text x="28" y="29" class="cap txr">11 SUITE PRS (14 MERGED TOTAL) · FIVE RECURRING PATTERNS</text>
+  <text x="28" y="52" class="sans w6 tx" font-size="17" letter-spacing="-0.015em">What coding agents actually changed inside the SGLang-Omni runtime</text>
+  <rect x="676" y="39" width="14" height="11" rx="2.5" fill="#C45731"/>
+  <text x="696" y="49" class="sans w5 tx2" font-size="11.5">Useful work</text>
+  <rect x="786" y="39" width="14" height="11" rx="2.5" fill="url(#hatch)" stroke="#6A645B" stroke-width="1"/>
+  <text x="806" y="49" class="sans w5 tx2" font-size="11.5">Spin / Launch gap</text>
+  <rect x="928" y="39" width="14" height="11" rx="2.5" fill="#2D1D17" stroke="#DF7A54" stroke-width="1.2"/>
+  <text x="948" y="49" class="sans w5 tx2" font-size="11.5">Removed overhead</text>
+  <line x1="28" y1="68" x2="1092" y2="68" stroke="#38342E" stroke-width="1.3"/>
+  <rect x="28" y="84" width="26" height="20" rx="4" fill="#25231F" stroke="#3A3630" stroke-width="1"/>
+  <text x="41" y="98" text-anchor="middle" class="mono w6 txr" font-size="11">01</text>
+  <text x="64" y="99" class="sans w6 tx" font-size="14.5">Idle threads compete for CPU cores</text>
+  <text x="64" y="119" class="sans tx2" font-size="12">Spinning wait-loops hold physical cores the pipeline needs; letting</text>
+  <text x="64" y="135" class="sans tx2" font-size="12">idle encoder threads sleep frees all cores at once.</text>
+  <rect x="64" y="142" width="102" height="19" rx="9.5" fill="#25231F" stroke="#3C3831" stroke-width="1"/>
+  <text x="115.0" y="155" text-anchor="middle" class="mono w6 tx" font-size="9.8">#2524 <tspan class="sans w4 tx3" font-size="9.8">CosyVoice3</tspan></text>
+  <line x1="28" y1="172" x2="1092" y2="172" stroke="#2D2A25" stroke-width="1"/>
+  <rect x="28" y="186" width="26" height="20" rx="4" fill="#25231F" stroke="#3A3630" stroke-width="1"/>
+  <text x="41" y="200" text-anchor="middle" class="mono w6 txr" font-size="11">02</text>
+  <text x="64" y="201" class="sans w6 tx" font-size="14.5">Data is converted at every stage hop</text>
+  <text x="64" y="221" class="sans tx2" font-size="12">Features crossed stage boundaries as Python lists; keeping tensors</text>
+  <text x="64" y="237" class="sans tx2" font-size="12">native avoids per-hop serialization stalls.</text>
+  <rect x="64" y="244" width="102" height="19" rx="9.5" fill="#25231F" stroke="#3C3831" stroke-width="1"/>
+  <text x="115.0" y="257" text-anchor="middle" class="mono w6 tx" font-size="9.8">#2555 <tspan class="sans w4 tx3" font-size="9.8">CosyVoice3</tspan></text>
+  <rect x="171" y="244" width="107" height="19" rx="9.5" fill="#25231F" stroke="#3C3831" stroke-width="1"/>
+  <text x="224.5" y="257" text-anchor="middle" class="mono w6 tx" font-size="9.8">#2778 <tspan class="sans w4 tx3" font-size="9.8">Fish S2-Pro</tspan></text>
+  <line x1="28" y1="274" x2="1092" y2="274" stroke="#2D2A25" stroke-width="1"/>
+  <rect x="28" y="288" width="26" height="20" rx="4" fill="#25231F" stroke="#3A3630" stroke-width="1"/>
+  <text x="41" y="302" text-anchor="middle" class="mono w6 txr" font-size="11">03</text>
+  <text x="64" y="303" class="sans w6 tx" font-size="14.5">Redundant &amp; discarded computation</text>
+  <text x="64" y="323" class="sans tx2" font-size="12">Skips unused quantizer reconstructions, duplicate fallback</text>
+  <text x="64" y="339" class="sans tx2" font-size="12">frontends, and excess fbank feature frames.</text>
+  <rect x="64" y="346" width="90" height="19" rx="9.5" fill="#25231F" stroke="#3C3831" stroke-width="1"/>
+  <text x="109.0" y="359" text-anchor="middle" class="mono w6 tx" font-size="9.8">#2525 <tspan class="sans w4 tx3" font-size="9.8">MOSS-TTS</tspan></text>
+  <rect x="159" y="346" width="107" height="19" rx="9.5" fill="#25231F" stroke="#3C3831" stroke-width="1"/>
+  <text x="212.5" y="359" text-anchor="middle" class="mono w6 tx" font-size="9.8">#2778 <tspan class="sans w4 tx3" font-size="9.8">Fish S2-Pro</tspan></text>
+  <rect x="271" y="346" width="96" height="19" rx="9.5" fill="#25231F" stroke="#3C3831" stroke-width="1"/>
+  <text x="319.0" y="359" text-anchor="middle" class="mono w6 tx" font-size="9.8">#2882 <tspan class="sans w4 tx3" font-size="9.8">Qwen3-ASR</tspan></text>
+  <rect x="372" y="346" width="85" height="19" rx="9.5" fill="#25231F" stroke="#3C3831" stroke-width="1"/>
+  <text x="414.5" y="359" text-anchor="middle" class="mono w6 tx" font-size="9.8">#3071 <tspan class="sans w4 tx3" font-size="9.8">MOSS-TD</tspan></text>
+  <line x1="28" y1="376" x2="1092" y2="376" stroke="#2D2A25" stroke-width="1"/>
+  <rect x="28" y="390" width="26" height="20" rx="4" fill="#25231F" stroke="#3A3630" stroke-width="1"/>
+  <text x="41" y="404" text-anchor="middle" class="mono w6 txr" font-size="11">04</text>
+  <text x="64" y="405" class="sans w6 tx" font-size="14.5">Too many small GPU kernel launches</text>
+  <text x="64" y="425" class="sans tx2" font-size="12">Replaces CPU-bound per-kernel launch gaps with full-step CUDA Graph</text>
+  <text x="64" y="441" class="sans tx2" font-size="12">replay, fused ops &amp; FlashAttention-4.</text>
+  <rect x="64" y="448" width="96" height="19" rx="9.5" fill="#25231F" stroke="#3C3831" stroke-width="1"/>
+  <text x="112.0" y="461" text-anchor="middle" class="mono w6 tx" font-size="9.8">#2779 <tspan class="sans w4 tx3" font-size="9.8">Qwen3-TTS</tspan></text>
+  <rect x="165" y="448" width="90" height="19" rx="9.5" fill="#25231F" stroke="#3C3831" stroke-width="1"/>
+  <text x="210.0" y="461" text-anchor="middle" class="mono w6 tx" font-size="9.8">#2859 <tspan class="sans w4 tx3" font-size="9.8">MOSS-TTS</tspan></text>
+  <rect x="260" y="448" width="96" height="19" rx="9.5" fill="#25231F" stroke="#3C3831" stroke-width="1"/>
+  <text x="308.0" y="461" text-anchor="middle" class="mono w6 tx" font-size="9.8">#2880 <tspan class="sans w4 tx3" font-size="9.8">Qwen3-ASR</tspan></text>
+  <rect x="361" y="448" width="85" height="19" rx="9.5" fill="#25231F" stroke="#3C3831" stroke-width="1"/>
+  <text x="403.5" y="461" text-anchor="middle" class="mono w6 tx" font-size="9.8">#2901 <tspan class="sans w4 tx3" font-size="9.8">Whisper</tspan></text>
+  <rect x="451" y="448" width="85" height="19" rx="9.5" fill="#25231F" stroke="#3C3831" stroke-width="1"/>
+  <text x="493.5" y="461" text-anchor="middle" class="mono w6 tx" font-size="9.8">#3071 <tspan class="sans w4 tx3" font-size="9.8">MOSS-TD</tspan></text>
+  <line x1="28" y1="478" x2="1092" y2="478" stroke="#2D2A25" stroke-width="1"/>
+  <rect x="28" y="492" width="26" height="20" rx="4" fill="#25231F" stroke="#3A3630" stroke-width="1"/>
+  <text x="41" y="506" text-anchor="middle" class="mono w6 txr" font-size="11">05</text>
+  <text x="64" y="507" class="sans w6 tx" font-size="14.5">Unpipelined prefill &amp; decode stages</text>
+  <text x="64" y="527" class="sans tx2" font-size="12">Prefill and decode took turns idling; async prefill overlaps request</text>
+  <text x="64" y="543" class="sans tx2" font-size="12">k+1 prefill with request k decode.</text>
+  <rect x="64" y="550" width="96" height="19" rx="9.5" fill="#25231F" stroke="#3C3831" stroke-width="1"/>
+  <text x="112.0" y="563" text-anchor="middle" class="mono w6 tx" font-size="9.8">#2779 <tspan class="sans w4 tx3" font-size="9.8">Qwen3-TTS</tspan></text>
+  <rect x="165" y="550" width="90" height="19" rx="9.5" fill="#25231F" stroke="#3C3831" stroke-width="1"/>
+  <text x="210.0" y="563" text-anchor="middle" class="mono w6 tx" font-size="9.8">#2859 <tspan class="sans w4 tx3" font-size="9.8">MOSS-TTS</tspan></text>
+  <rect x="260" y="550" width="96" height="19" rx="9.5" fill="#25231F" stroke="#3C3831" stroke-width="1"/>
+  <text x="308.0" y="563" text-anchor="middle" class="mono w6 tx" font-size="9.8">#2881 <tspan class="sans w4 tx3" font-size="9.8">Qwen3-ASR</tspan></text>
+  <rect x="361" y="550" width="85" height="19" rx="9.5" fill="#25231F" stroke="#3C3831" stroke-width="1"/>
+  <text x="403.5" y="563" text-anchor="middle" class="mono w6 tx" font-size="9.8">#3071 <tspan class="sans w4 tx3" font-size="9.8">MOSS-TD</tspan></text>
+  <text x="642" y="104" text-anchor="end" class="cap tx3">BEFORE</text>
+  <text x="642" y="144" text-anchor="end" class="cap txr">AFTER</text>
+  <rect x="652" y="88" width="56" height="24" rx="4" fill="#C45731"/>
+  <text x="680" y="104" text-anchor="middle" class="mono w5 txw" font-size="10">core 0</text>
+  <rect x="714" y="88" width="56" height="24" rx="4" fill="#C45731"/>
+  <text x="742" y="104" text-anchor="middle" class="mono w5 txw" font-size="10">core 1</text>
+  <rect x="776" y="88" width="56" height="24" rx="4" fill="url(#hatch)" stroke="#DF7A54" stroke-width="1.2"/>
+  <rect x="782" y="92" width="44" height="16" rx="3" fill="#161513" fill-opacity="0.92"/>
+  <text x="804" y="104" text-anchor="middle" class="mono w6 txr" font-size="9.8">spin ↻</text>
+  <rect x="838" y="88" width="56" height="24" rx="4" fill="url(#hatch)" stroke="#DF7A54" stroke-width="1.2"/>
+  <rect x="844" y="92" width="44" height="16" rx="3" fill="#161513" fill-opacity="0.92"/>
+  <text x="866" y="104" text-anchor="middle" class="mono w6 txr" font-size="9.8">spin ↻</text>
+  <rect x="910" y="88" width="68" height="24" rx="4" fill="#2D1D17" stroke="#DF7A54" stroke-width="1.2"/>
+  <text x="944" y="104" text-anchor="middle" class="mono w5 txr" font-size="10">2 queued</text>
+  <text x="1092" y="104" text-anchor="end" class="mono tx3" font-size="10.2">2× batch time</text>
+  <rect x="652" y="128" width="56" height="24" rx="4" fill="#C45731"/>
+  <text x="680" y="144" text-anchor="middle" class="mono w5 txw" font-size="10">core 0</text>
+  <rect x="714" y="128" width="56" height="24" rx="4" fill="#C45731"/>
+  <text x="742" y="144" text-anchor="middle" class="mono w5 txw" font-size="10">core 1</text>
+  <rect x="776" y="128" width="56" height="24" rx="4" fill="#C45731"/>
+  <text x="804" y="144" text-anchor="middle" class="mono w5 txw" font-size="10">core 2</text>
+  <rect x="838" y="128" width="56" height="24" rx="4" fill="#C45731"/>
+  <text x="866" y="144" text-anchor="middle" class="mono w5 txw" font-size="10">core 3</text>
+  <rect x="910" y="128" width="68" height="24" rx="4" fill="#161513" stroke="#6A645B" stroke-width="1.1" stroke-dasharray="3 3"/>
+  <text x="944" y="144" text-anchor="middle" class="mono tx3" font-size="10">idle zz</text>
+  <text x="1092" y="144" text-anchor="end" class="mono w6 txr" font-size="10.2">4/4 parallel ✓</text>
+  <text x="642" y="206" text-anchor="end" class="cap tx3">BEFORE</text>
+  <text x="642" y="246" text-anchor="end" class="cap txr">AFTER</text>
+  <line x1="682" y1="202" x2="1062" y2="202" stroke="#9C968B" stroke-width="1.3"/>
+  <rect x="652" y="190" width="64" height="24" rx="12" fill="#1F1D1A" stroke="#8F8A80" stroke-width="1.2"/>
+  <text x="684" y="206" text-anchor="middle" class="mono tx w5" font-size="10">tensor</text>
+  <rect x="746" y="190" width="64" height="24" rx="12" fill="#2D1D17" stroke="#DF7A54" stroke-width="1.2"/>
+  <text x="778" y="206" text-anchor="middle" class="mono txr w6" font-size="10">py list</text>
+  <rect x="840" y="190" width="64" height="24" rx="12" fill="#2D1D17" stroke="#DF7A54" stroke-width="1.2"/>
+  <text x="872" y="206" text-anchor="middle" class="mono txr w6" font-size="10">wire</text>
+  <rect x="934" y="190" width="64" height="24" rx="12" fill="#2D1D17" stroke="#DF7A54" stroke-width="1.2"/>
+  <text x="966" y="206" text-anchor="middle" class="mono txr w6" font-size="10">py list</text>
+  <rect x="1028" y="190" width="64" height="24" rx="12" fill="#1F1D1A" stroke="#8F8A80" stroke-width="1.2"/>
+  <text x="1060" y="206" text-anchor="middle" class="mono tx w5" font-size="10">tensor</text>
+  <line x1="682" y1="242" x2="870" y2="242" stroke="#9C968B" stroke-width="1.3"/>
+  <rect x="652" y="230" width="64" height="24" rx="12" fill="#C45731" stroke="#E58560" stroke-width="1.2"/>
+  <text x="684" y="246" text-anchor="middle" class="mono txw w5" font-size="10">tensor</text>
+  <rect x="746" y="230" width="64" height="24" rx="12" fill="#1F1D1A" stroke="#8F8A80" stroke-width="1.2"/>
+  <text x="778" y="246" text-anchor="middle" class="mono tx w5" font-size="10">clone</text>
+  <rect x="840" y="230" width="64" height="24" rx="12" fill="#C45731" stroke="#E58560" stroke-width="1.2"/>
+  <text x="872" y="246" text-anchor="middle" class="mono txw w5" font-size="10">tensor</text>
+  <path d="M914 242H1092M914 237V247M1092 237V247" stroke="#DF7A54" stroke-width="1.4" fill="none"/>
+  <rect x="964.4" y="234" width="77.2" height="16" rx="3" fill="#161513"/>
+  <text x="1003.0" y="246" text-anchor="middle" class="mono w6 txr" font-size="10.2">IPC saved</text>
+  <text x="642" y="308" text-anchor="end" class="cap tx3">BEFORE</text>
+  <text x="642" y="348" text-anchor="end" class="cap txr">AFTER</text>
+  <rect x="652" y="292" width="118" height="24" rx="4" fill="#C45731"/>
+  <text x="711" y="308" text-anchor="middle" class="mono w5 txw" font-size="10">needed</text>
+  <rect x="776" y="292" width="118" height="24" rx="4" fill="#C45731"/>
+  <text x="835" y="308" text-anchor="middle" class="mono w5 txw" font-size="10">needed</text>
+  <rect x="652" y="332" width="118" height="24" rx="4" fill="#C45731"/>
+  <text x="711" y="348" text-anchor="middle" class="mono w5 txw" font-size="10">needed</text>
+  <rect x="776" y="332" width="118" height="24" rx="4" fill="#C45731"/>
+  <text x="835" y="348" text-anchor="middle" class="mono w5 txw" font-size="10">needed</text>
+  <rect x="900" y="292" width="192" height="24" rx="4" fill="#2D1D17" stroke="#DF7A54" stroke-width="1.2"/>
+  <text x="996.0" y="308" text-anchor="middle" class="mono w6 txr" font-size="10">computed, then discarded</text>
+  <rect x="900" y="332" width="192" height="24" rx="4" fill="none" stroke="#4F4A43" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <path d="M908 344H1084M908 339V349M1084 339V349" stroke="#DF7A54" stroke-width="1.4" fill="none"/>
+  <rect x="964.2" y="336" width="63.6" height="16" rx="3" fill="#161513"/>
+  <text x="996.0" y="348" text-anchor="middle" class="mono w6 txr" font-size="10.2">skipped</text>
+  <text x="642" y="410" text-anchor="end" class="cap tx3">BEFORE</text>
+  <text x="642" y="450" text-anchor="end" class="cap txr">AFTER</text>
+  <rect x="652.0" y="394" width="28" height="24" rx="3" fill="#C45731"/>
+  <rect x="680.0" y="394" width="23.5" height="24" fill="url(#hatch)"/>
+  <rect x="703.5" y="394" width="28" height="24" rx="3" fill="#C45731"/>
+  <rect x="731.5" y="394" width="23.5" height="24" fill="url(#hatch)"/>
+  <rect x="755.0" y="394" width="28" height="24" rx="3" fill="#C45731"/>
+  <rect x="783.0" y="394" width="23.5" height="24" fill="url(#hatch)"/>
+  <rect x="806.5" y="394" width="28" height="24" rx="3" fill="#C45731"/>
+  <rect x="834.5" y="394" width="23.5" height="24" fill="url(#hatch)"/>
+  <rect x="858.0" y="394" width="28" height="24" rx="3" fill="#C45731"/>
+  <rect x="886.0" y="394" width="23.5" height="24" fill="url(#hatch)"/>
+  <rect x="909.5" y="394" width="28" height="24" rx="3" fill="#C45731"/>
+  <rect x="937.5" y="394" width="23.5" height="24" fill="url(#hatch)"/>
+  <rect x="961.0" y="394" width="28" height="24" rx="3" fill="#C45731"/>
+  <rect x="989.0" y="394" width="23.5" height="24" fill="url(#hatch)"/>
+  <rect x="1012.5" y="394" width="28" height="24" rx="3" fill="#C45731"/>
+  <rect x="1040.5" y="394" width="23.5" height="24" fill="url(#hatch)"/>
+  <rect x="1064.0" y="394" width="28" height="24" rx="3" fill="#C45731"/>
+  <rect x="652" y="432" width="260" height="28" rx="5" fill="#191714" stroke="#9C968B" stroke-width="1.3"/>
+  <rect x="656" y="436" width="25" height="20" rx="2.5" fill="#C45731"/>
+  <rect x="684" y="436" width="25" height="20" rx="2.5" fill="#C45731"/>
+  <rect x="712" y="436" width="25" height="20" rx="2.5" fill="#C45731"/>
+  <rect x="740" y="436" width="25" height="20" rx="2.5" fill="#C45731"/>
+  <rect x="768" y="436" width="25" height="20" rx="2.5" fill="#C45731"/>
+  <rect x="796" y="436" width="25" height="20" rx="2.5" fill="#C45731"/>
+  <rect x="824" y="436" width="25" height="20" rx="2.5" fill="#C45731"/>
+  <rect x="852" y="436" width="25" height="20" rx="2.5" fill="#C45731"/>
+  <rect x="880" y="436" width="25" height="20" rx="2.5" fill="#C45731"/>
+  <path d="M922 446H1092M922 441V451M1092 441V451" stroke="#DF7A54" stroke-width="1.4" fill="none"/>
+  <rect x="965.0" y="438" width="84.0" height="16" rx="3" fill="#161513"/>
+  <text x="1007.0" y="450" text-anchor="middle" class="mono w6 txr" font-size="10.2">CUDA Graph</text>
+  <text x="642" y="507" text-anchor="end" class="cap tx3">BEFORE</text>
+  <text x="642" y="532" text-anchor="end" class="mono tx3" font-size="9.5">P / D</text>
+  <text x="642" y="563" text-anchor="end" class="cap txr">AFTER</text>
+  <text x="642" y="588" text-anchor="end" class="mono tx3" font-size="9.5">P / D</text>
+  <rect x="652" y="492" width="82" height="20" rx="3.5" fill="#C45731"/>
+  <text x="693.0" y="506" text-anchor="middle" class="mono w5 txw" font-size="9.8">P req1</text>
+  <rect x="736" y="492" width="136" height="20" fill="url(#hatch)" stroke="#302D28" stroke-width="0.8"/>
+  <rect x="787.0" y="495" width="34" height="14" rx="2.5" fill="#161513" fill-opacity="0.9"/>
+  <text x="804.0" y="506" text-anchor="middle" class="mono tx3" font-size="9.2">idle</text>
+  <rect x="872" y="492" width="82" height="20" rx="3.5" fill="#C45731"/>
+  <text x="913.0" y="506" text-anchor="middle" class="mono w5 txw" font-size="9.8">P req2</text>
+  <rect x="956" y="492" width="136" height="20" fill="url(#hatch)" stroke="#302D28" stroke-width="0.8"/>
+  <rect x="1007.0" y="495" width="34" height="14" rx="2.5" fill="#161513" fill-opacity="0.9"/>
+  <text x="1024.0" y="506" text-anchor="middle" class="mono tx3" font-size="9.2">idle</text>
+  <rect x="652" y="518" width="84" height="20" fill="url(#hatch)" stroke="#302D28" stroke-width="0.8"/>
+  <rect x="677.0" y="521" width="34" height="14" rx="2.5" fill="#161513" fill-opacity="0.9"/>
+  <text x="694.0" y="532" text-anchor="middle" class="mono tx3" font-size="9.2">idle</text>
+  <rect x="736" y="518" width="134" height="20" rx="3.5" fill="#1C2923" stroke="#6EA28C" stroke-width="1.2"/>
+  <text x="803.0" y="532" text-anchor="middle" class="mono w6 txm" font-size="9.8">D req1</text>
+  <rect x="872" y="518" width="84" height="20" fill="url(#hatch)" stroke="#302D28" stroke-width="0.8"/>
+  <rect x="897.0" y="521" width="34" height="14" rx="2.5" fill="#161513" fill-opacity="0.9"/>
+  <text x="914.0" y="532" text-anchor="middle" class="mono tx3" font-size="9.2">idle</text>
+  <rect x="956" y="518" width="134" height="20" rx="3.5" fill="#1C2923" stroke="#6EA28C" stroke-width="1.2"/>
+  <text x="1023.0" y="532" text-anchor="middle" class="mono w6 txm" font-size="9.8">D req2</text>
+  <line x1="734" y1="512" x2="734" y2="518" stroke="#9C968B" stroke-width="1.1" marker-end="url(#p-arr)"/>
+  <line x1="954" y1="512" x2="954" y2="518" stroke="#9C968B" stroke-width="1.1" marker-end="url(#p-arr)"/>
+  <rect x="652" y="548" width="82" height="20" rx="3.5" fill="#C45731"/>
+  <text x="693.0" y="562" text-anchor="middle" class="mono w5 txw" font-size="9.8">P req1</text>
+  <rect x="736" y="548" width="82" height="20" rx="3.5" fill="#C45731"/>
+  <text x="777.0" y="562" text-anchor="middle" class="mono w5 txw" font-size="9.8">P req2</text>
+  <rect x="652" y="574" width="84" height="20" fill="url(#hatch)" stroke="#302D28" stroke-width="0.8"/>
+  <rect x="677.0" y="577" width="34" height="14" rx="2.5" fill="#161513" fill-opacity="0.9"/>
+  <text x="694.0" y="588" text-anchor="middle" class="mono tx3" font-size="9.2">idle</text>
+  <rect x="736" y="574" width="134" height="20" rx="3.5" fill="#1C2923" stroke="#6EA28C" stroke-width="1.2"/>
+  <text x="803.0" y="588" text-anchor="middle" class="mono w6 txm" font-size="9.8">D req1</text>
+  <rect x="872" y="574" width="134" height="20" rx="3.5" fill="#1C2923" stroke="#6EA28C" stroke-width="1.2"/>
+  <text x="939.0" y="588" text-anchor="middle" class="mono w6 txm" font-size="9.8">D req2</text>
+  <line x1="734" y1="568" x2="734" y2="574" stroke="#9C968B" stroke-width="1.1" marker-end="url(#p-arr)"/>
+  <line x1="818" y1="568" x2="872" y2="574" stroke="#9C968B" stroke-width="1.1" stroke-dasharray="3 2" marker-end="url(#p-arr)"/>
+  <path d="M1014 584H1092M1014 579V589M1092 579V589" stroke="#DF7A54" stroke-width="1.4" fill="none"/>
+  <rect x="1028.0" y="576" width="50.0" height="16" rx="3" fill="#161513"/>
+  <text x="1053.0" y="588" text-anchor="middle" class="mono w6 txr" font-size="10.2">saved</text>
+</svg>

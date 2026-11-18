@@ -3,7 +3,7 @@
     <style>
     .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
     .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
-    .cap  { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.09em; }
+    .cap  { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.09em; }
     .tx   { fill: #181715; }
     .tx2  { fill: #42403B; }
     .tx3  { fill: #737068; }
@@ -67,16 +67,16 @@
   <text x="329" y="170" class="sans w7 txw" font-size="15.5">Coding Agent</text>
   <text x="329" y="187" class="mono txw2" font-size="10.8">Codex · Claude Code</text>
   <line x1="329" y1="198" x2="505" y2="198" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="1"/>
-  <rect x="327" y="209" width="180" height="31" rx="5" fill="#FFFFFF" fill-opacity="0.16" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="1"/>
+  <rect x="327" y="209" width="180" height="31" rx="5" fill="#FFFFFF" fill-opacity="0.14" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="1"/>
   <text x="337" y="229" class="mono w6 txw2" font-size="10.8">1</text>
   <text x="352" y="229" class="sans w5 txw" font-size="11.5">Profile CPU &amp; GPU traces</text>
-  <rect x="327" y="245" width="180" height="31" rx="5" fill="#FFFFFF" fill-opacity="0.16" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="1"/>
+  <rect x="327" y="245" width="180" height="31" rx="5" fill="#FFFFFF" fill-opacity="0.14" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="1"/>
   <text x="337" y="265" class="mono w6 txw2" font-size="10.8">2</text>
   <text x="352" y="265" class="sans w5 txw" font-size="11.5">Hypothesize bottleneck</text>
-  <rect x="327" y="281" width="180" height="31" rx="5" fill="#FFFFFF" fill-opacity="0.16" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="1"/>
+  <rect x="327" y="281" width="180" height="31" rx="5" fill="#FFFFFF" fill-opacity="0.14" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="1"/>
   <text x="337" y="301" class="mono w6 txw2" font-size="10.8">3</text>
   <text x="352" y="301" class="sans w5 txw" font-size="11.5">Edit scheduler &amp; kernels</text>
-  <rect x="327" y="317" width="180" height="31" rx="5" fill="#FFFFFF" fill-opacity="0.16" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="1"/>
+  <rect x="327" y="317" width="180" height="31" rx="5" fill="#FFFFFF" fill-opacity="0.14" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="1"/>
   <text x="337" y="337" class="mono w6 txw2" font-size="10.8">4</text>
   <text x="352" y="337" class="sans w5 txw" font-size="11.5">Local bench (/workspace)</text>
   <line x1="525" y1="210" x2="587" y2="210" stroke="#B5452A" stroke-width="1.7" marker-end="url(#arr-rust)"/>
@@ -89,7 +89,7 @@
   <text x="607" y="148" class="cap txr">ISOLATED VERIFIER</text>
   <text x="607" y="170" class="sans w7 tx" font-size="15.5">Clean-Image Judge</text>
   <text x="607" y="187" class="mono tx2" font-size="10.8">3× fresh repeats vs. B₀</text>
-  <line x1="607" y1="198" x2="783" y2="198" stroke="#E3C3B8" stroke-width="1"/>
+  <line x1="607" y1="198" x2="783" y2="198" stroke="#E2BFB3" stroke-width="1"/>
   <rect x="605" y="209" width="180" height="31" rx="5" fill="#FFFFFF" stroke="#E8CEC5" stroke-width="1"/>
   <text x="614" y="229" class="mono w7 txr" font-size="10.2">NUMA</text>
   <text x="651" y="229" class="sans w5 tx2" font-size="11">16 idle physical cores</text>
@@ -136,14 +136,14 @@
   <text x="970.0" y="323" text-anchor="middle" class="mono w5 txr" font-size="10.2">Dual-mode: R<tspan dy="2.5" font-size="8.5">s</tspan><tspan dy="-2.5"> &gt; 1.0 &amp; R</tspan><tspan dy="2.5" font-size="8.5">n</tspan><tspan dy="-2.5"> &gt; 1.0</tspan></text>
   <rect x="864" y="344" width="212" height="42" rx="7" fill="#EEF1EF" stroke="#C5CEC9" stroke-width="1"/>
   <text x="970.0" y="362" text-anchor="middle" class="sans w6 tx" font-size="11.5">16 Public Trajectories</text>
-  <text x="970.0" y="378" text-anchor="middle" class="mono txm" font-size="10.5">11 Merged SGLang-Omni PRs</text>
+  <text x="970.0" y="378" text-anchor="middle" class="mono txm" font-size="10.2">11 Suite PRs · 14 Total Merged</text>
   <rect x="28" y="414" width="1064" height="34" rx="8" fill="#F2EFE7" stroke="#DFDBD0" stroke-width="1"/>
   <text x="46" y="435" class="cap txr">OPEN PIPELINE</text>
-  <text x="246" y="435" text-anchor="middle" class="sans w5 tx2" font-size="12">Harbor 1.4 Tasks (8)</text>
-  <text x="468" y="435" text-anchor="middle" class="sans w5 tx2" font-size="12">RSI-Harness 24h Loop</text>
-  <text x="716" y="435" text-anchor="middle" class="sans w5 tx2" font-size="12">HF Logs &amp; Viewer (16)</text>
-  <text x="974" y="435" text-anchor="middle" class="sans w6 txr" font-size="12">SGLang-Omni PRs (11)</text>
-  <line x1="334" y1="431" x2="382" y2="431" stroke="#737068" stroke-width="1.3" marker-end="url(#arr-ink)"/>
-  <line x1="554" y1="431" x2="618" y2="431" stroke="#737068" stroke-width="1.3" marker-end="url(#arr-ink)"/>
-  <line x1="814" y1="431" x2="884" y2="431" stroke="#737068" stroke-width="1.3" marker-end="url(#arr-ink)"/>
+  <text x="244" y="435" text-anchor="middle" class="sans w5 tx2" font-size="12">Harbor 1.4 Tasks (8)</text>
+  <text x="466" y="435" text-anchor="middle" class="sans w5 tx2" font-size="12">RSI-Harness 24h Loop</text>
+  <text x="710" y="435" text-anchor="middle" class="sans w5 tx2" font-size="12">HF Logs &amp; Viewer (16)</text>
+  <text x="968" y="435" text-anchor="middle" class="sans w6 txr" font-size="12">SGLang-Omni PRs (11 / 14)</text>
+  <line x1="330" y1="431" x2="382" y2="431" stroke="#5C5A54" stroke-width="1.3" marker-end="url(#arr-ink)"/>
+  <line x1="550" y1="431" x2="614" y2="431" stroke="#5C5A54" stroke-width="1.3" marker-end="url(#arr-ink)"/>
+  <line x1="806" y1="431" x2="868" y2="431" stroke="#5C5A54" stroke-width="1.3" marker-end="url(#arr-ink)"/>
 </svg>

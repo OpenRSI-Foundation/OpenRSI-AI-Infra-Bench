@@ -7,8 +7,8 @@
 <p align="center">
   <a href="https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/">Blog</a> ·
   <a href="https://index.openrsi.foundation">OpenRSI Index</a> ·
+  <a href="#-leaderboard">Leaderboard</a> ·
   <a href="#-tasks">Tasks</a> ·
-  <a href="#-baselines">Baselines</a> ·
   <a href="#-quick-start">Quick Start</a> ·
   <a href="#-evaluation">Evaluation</a> ·
   <a href="https://github.com/OpenRSI-Foundation/OpenRSI-Index/tree/main/RSI-Harness">RSI-Harness</a> ·
@@ -18,14 +18,77 @@
 <p align="center">
   <a href="https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/"><img alt="Blog" src="https://img.shields.io/badge/Blog-OpenRSI_×_SGLang--Omni-5b59db"></a>
   <a href="#-tasks"><img alt="10 omni models · 10 tasks" src="https://img.shields.io/badge/Tasks-10_models_·_10_tasks-30928a"></a>
-  <a href="#-baselines"><img alt="Codex and Claude Code" src="https://img.shields.io/badge/Agents-Codex_|_Claude_Code-435063"></a>
+  <a href="#-leaderboard"><img alt="Codex and Claude Code" src="https://img.shields.io/badge/Agents-Codex_|_Claude_Code-435063"></a>
   <a href="#-from-benchmark-to-upstream"><img alt="14 upstream PRs merged" src="https://img.shields.io/badge/Upstream-14_PRs_merged-2f8f4e"></a>
   <a href="LICENSE"><img alt="Apache 2.0" src="https://img.shields.io/badge/License-Apache_2.0-667181"></a>
 </p>
 
-**OpenRSI-AI-Infra-bench** benchmarks **recursive self-improvement (RSI) in real AI serving systems**. Agents iteratively optimize a serving stack with fixed model weights and GPU resources. An independent evaluator verifies speedups under **quality and latency constraints**, and each accepted improvement becomes the baseline for the next round.
+**OpenRSI-AI-Infra-bench** benchmarks **recursive self-improvement (RSI) in real AI serving systems**. Agents iteratively optimize a serving stack with fixed model weights and GPU resources. An independent evaluator verifies speedups under **quality and latency constraints**; each accepted improvement becomes the next baseline.
 
-Developed [jointly by OpenRSI and the SGLang-Omni team](https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/), the collection includes **10 carefully reviewed tasks for omni models**, with pinned source code, assets, dependencies and evaluation protocols. It is part of the [OpenRSI Index](https://index.openrsi.foundation/), starting with agents that improve the infrastructure AI runs on.
+Developed [jointly by OpenRSI and the SGLang-Omni team](https://index.openrsi.foundation/blog/2026/openrsi-sglang-omni/), the benchmark includes **10 carefully reviewed tasks for omni models**. Each task provides a production serving stack with pinned source code, assets, dependencies and evaluation protocols. The collection is part of the [OpenRSI Index](https://index.openrsi.foundation/).
+
+## 🏆 Leaderboard
+
+Two coding agents, run under RSI-Harness:
+
+| Agent | Model | Reasoning effort |
+| :--- | :--- | :---: |
+| **Codex** | `gpt-6-astra` | `xhigh` |
+| **Claude Code** | `claude-opus-5-5` | `max` |
+
+Below is the **best recorded reward per task and agent** among archived Main
+research runs. Each score was checked against the completed evaluator report of
+its best submission. **Higher is better; 1.0× is the starting performance.**
+These are historical results, not new evaluations of this repository snapshot.
+
+| Task | Codex | Claude Code | Runs¹ |
+| :--- | ---: | ---: | :---: |
+| CosyVoice3 | 1.172× | **1.297×** | 1 / 1 |
+| MOSS-TTS v1.5 | 1.440× | **2.195×** | 2 / 2 |
+| Fish S2-Pro | 1.803× | **6.288×** | 2 / 1 |
+| Qwen3-TTS Base 0.6B | 1.141× | **1.252×** | 1 / 2 |
+| Qwen3-TTS Base 1.7B | 1.096× | **1.283×** | 2 / 1 |
+| Ming3-TTS 0.5B (non-streaming) | n/a‡ | **4.298×**† | — / 2 |
+| Ming3-TTS Tiny (non-streaming) | 1.899×† | **3.634×** | 2 / 1 |
+| Qwen3-ASR 1.7B | 1.139× | **1.317×**† | 2 / 1 |
+| Whisper large-v3 | 1.126× | **1.979×**† | 1 / 1 |
+| MOSS-Transcribe-Diarize | 1.134× | **1.490×** | 1 / 1 |
+
+<sub>
+¹ Run counts are <b>Codex / Claude Code</b>, including interrupted and unscored
+research runs. Preparation runs, model-scaling experiments and other agent frameworks
+are excluded. The table is a best-observed summary, not a mean over seeds.<br>
+† The overall run ended as <code>failed</code> or <code>cancelled</code>, but kept the
+shown score from an earlier completed submission.<br>
+‡ The Main tracking sheet marks the Ming3-0.5B Codex run as done, but its numerical
+result was not found in the inspected archive, so no score is assigned.
+</sub>
+
+<details>
+<summary><strong>Hardware, budgets and version notes</strong></summary>
+
+- Most selected runs used one **H100 80GB HBM3** and a **24-hour** budget.
+- Ming3 Tiny used **H200 / 24 h** for Codex and **H100 NVL / 12 h** for Claude Code.
+  Its Codex run failed after about 14.9 h. Ming3-0.5B Claude Code used H100 NVL with
+  a 24 h budget and was cancelled after about 12.2 h.
+- Qwen3-ASR and Whisper Claude Code runs had 48 h configured budgets and were
+  cancelled after about 24.4 h and 24.0 h, respectively. Runtime can include
+  evaluator overhead beyond an agent's configured limit.
+- **CosyVoice3 differs by version:** Main baselines use SGLang-Omni
+  `1523543056bf` (0.1.7); the task copied from SGNOMI is the later guided version at
+  `fa90213e1674` (0.1.9). Its Main scores do not measure that later task.
+- Ming3 scores above are **non-streaming only**.
+- Hardware, time budgets and the number of attempts vary. We therefore do not
+  report an aggregate ranking or a controlled agent-to-agent win rate.
+
+</details>
+
+📊 [Run records and methodology](results/README.md) ·
+🗂️ [Machine-readable snapshot](results/main.json) ·
+📋 [All qualifying runs](results/runs.csv) ·
+Public dashboard: *coming soon*
+
+<!-- TODO: Replace the dashboard placeholder with the public Main-results URL. -->
 
 ## 📰 News
 
@@ -108,69 +171,6 @@ Ming3 tasks.
 > [!NOTE]
 > For TTS, *streaming* means incremental audio delivery. For ASR, it means text
 > delivered over SSE after the audio upload, not live microphone streaming.
-
-## 🏆 Baselines
-
-Two coding agents, run under RSI-Harness:
-
-| Agent | Model | Reasoning effort |
-| :--- | :--- | :---: |
-| **Codex** | `gpt-6-astra` | `xhigh` |
-| **Claude Code** | `claude-opus-5-5` | `max` |
-
-Below is the **best recorded reward per task and agent** among archived Main
-research runs. Each score was checked against the completed evaluator report of
-its best submission. **Higher is better; 1.0× is the starting performance.**
-These are historical results, not new evaluations of this repository snapshot.
-
-| Task | Codex | Claude Code | Runs¹ |
-| :--- | ---: | ---: | :---: |
-| CosyVoice3 | 1.172× | **1.297×** | 1 / 1 |
-| MOSS-TTS v1.5 | 1.440× | **2.195×** | 2 / 2 |
-| Fish S2-Pro | 1.803× | **6.288×** | 2 / 1 |
-| Qwen3-TTS Base 0.6B | 1.141× | **1.252×** | 1 / 2 |
-| Qwen3-TTS Base 1.7B | 1.096× | **1.283×** | 2 / 1 |
-| Ming3-TTS 0.5B (non-streaming) | n/a‡ | **4.298×**† | — / 2 |
-| Ming3-TTS Tiny (non-streaming) | 1.899×† | **3.634×** | 2 / 1 |
-| Qwen3-ASR 1.7B | 1.139× | **1.317×**† | 2 / 1 |
-| Whisper large-v3 | 1.126× | **1.979×**† | 1 / 1 |
-| MOSS-Transcribe-Diarize | 1.134× | **1.490×** | 1 / 1 |
-
-<sub>
-¹ Run counts are <b>Codex / Claude Code</b>, including interrupted and unscored
-research runs. Preparation runs, model-scaling experiments and other agent frameworks
-are excluded. The table is a best-observed summary, not a mean over seeds.<br>
-† The overall run ended as <code>failed</code> or <code>cancelled</code>, but kept the
-shown score from an earlier completed submission.<br>
-‡ The Main tracking sheet marks the Ming3-0.5B Codex run as done, but its numerical
-result was not found in the inspected archive, so no score is assigned.
-</sub>
-
-<details>
-<summary><strong>Hardware, budgets and version notes</strong></summary>
-
-- Most selected runs used one **H100 80GB HBM3** and a **24-hour** budget.
-- Ming3 Tiny used **H200 / 24 h** for Codex and **H100 NVL / 12 h** for Claude Code.
-  Its Codex run failed after about 14.9 h. Ming3-0.5B Claude Code used H100 NVL with
-  a 24 h budget and was cancelled after about 12.2 h.
-- Qwen3-ASR and Whisper Claude Code runs had 48 h configured budgets and were
-  cancelled after about 24.4 h and 24.0 h, respectively. Runtime can include
-  evaluator overhead beyond an agent's configured limit.
-- **CosyVoice3 differs by version:** Main baselines use SGLang-Omni
-  `1523543056bf` (0.1.7); the task copied from SGNOMI is the later guided version at
-  `fa90213e1674` (0.1.9). Its Main scores do not measure that later task.
-- Ming3 scores above are **non-streaming only**.
-- Hardware, time budgets and the number of attempts vary. We therefore do not
-  report an aggregate ranking or a controlled agent-to-agent win rate.
-
-</details>
-
-📊 [Run records and methodology](results/README.md) ·
-🗂️ [Machine-readable snapshot](results/main.json) ·
-📋 [All qualifying runs](results/runs.csv) ·
-Public dashboard: *coming soon*
-
-<!-- TODO: Replace the dashboard placeholder with the public Main-results URL. -->
 
 ## 🔁 From benchmark to upstream
 

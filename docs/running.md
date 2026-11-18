@@ -100,81 +100,145 @@ After [installing RSI-Harness](#2-install-rsi-harness) and configuring local cre
 
 ### cosyvoice3-dual-mode
 
-```bash
-# Codex
-rsi-harness run tasks/cosyvoice3-dual-mode --agent codex --model gpt-6-astra --reasoning-effort xhigh --agent-auth local --gpus 0
+<a id="cosyvoice3-dual-mode-codex"></a>
 
-# Claude Code
+**Codex**
+
+```bash
+rsi-harness run tasks/cosyvoice3-dual-mode --agent codex --model gpt-6-astra --reasoning-effort xhigh --agent-auth local --gpus 0
+```
+
+<a id="cosyvoice3-dual-mode-claude-code"></a>
+
+**Claude Code**
+
+```bash
 rsi-harness run tasks/cosyvoice3-dual-mode --agent claude-code --model claude-opus-5-5 --reasoning-effort max --agent-auth local --gpus 0
 ```
 
 ### moss-tts-v1.5-dual-mode
 
-```bash
-# Codex
-rsi-harness run tasks/moss-tts-v1.5-dual-mode --agent codex --model gpt-6-astra --reasoning-effort xhigh --agent-auth local --gpus 0
+<a id="moss-tts-v1-5-dual-mode-codex"></a>
 
-# Claude Code
+**Codex**
+
+```bash
+rsi-harness run tasks/moss-tts-v1.5-dual-mode --agent codex --model gpt-6-astra --reasoning-effort xhigh --agent-auth local --gpus 0
+```
+
+<a id="moss-tts-v1-5-dual-mode-claude-code"></a>
+
+**Claude Code**
+
+```bash
 rsi-harness run tasks/moss-tts-v1.5-dual-mode --agent claude-code --model claude-opus-5-5 --reasoning-effort max --agent-auth local --gpus 0
 ```
 
 ### fish-s2-pro-dual-mode
 
-```bash
-# Codex
-rsi-harness run tasks/fish-s2-pro-dual-mode --agent codex --model gpt-6-astra --reasoning-effort xhigh --agent-auth local --gpus 0
+<a id="fish-s2-pro-dual-mode-codex"></a>
 
-# Claude Code
+**Codex**
+
+```bash
+rsi-harness run tasks/fish-s2-pro-dual-mode --agent codex --model gpt-6-astra --reasoning-effort xhigh --agent-auth local --gpus 0
+```
+
+<a id="fish-s2-pro-dual-mode-claude-code"></a>
+
+**Claude Code**
+
+```bash
 rsi-harness run tasks/fish-s2-pro-dual-mode --agent claude-code --model claude-opus-5-5 --reasoning-effort max --agent-auth local --gpus 0
 ```
 
 ### qwen3-tts-0.6b-dual-mode
 
-```bash
-# Codex
-rsi-harness run tasks/qwen3-tts-0.6b-dual-mode --agent codex --model gpt-6-astra --reasoning-effort xhigh --agent-auth local --gpus 0
+<a id="qwen3-tts-0-6b-dual-mode-codex"></a>
 
-# Claude Code
+**Codex**
+
+```bash
+rsi-harness run tasks/qwen3-tts-0.6b-dual-mode --agent codex --model gpt-6-astra --reasoning-effort xhigh --agent-auth local --gpus 0
+```
+
+<a id="qwen3-tts-0-6b-dual-mode-claude-code"></a>
+
+**Claude Code**
+
+```bash
 rsi-harness run tasks/qwen3-tts-0.6b-dual-mode --agent claude-code --model claude-opus-5-5 --reasoning-effort max --agent-auth local --gpus 0
 ```
 
 ### qwen3-tts-1.7b-dual-mode
 
-```bash
-# Codex
-rsi-harness run tasks/qwen3-tts-1.7b-dual-mode --agent codex --model gpt-6-astra --reasoning-effort xhigh --agent-auth local --gpus 0
+<a id="qwen3-tts-1-7b-dual-mode-codex"></a>
 
-# Claude Code
+**Codex**
+
+```bash
+rsi-harness run tasks/qwen3-tts-1.7b-dual-mode --agent codex --model gpt-6-astra --reasoning-effort xhigh --agent-auth local --gpus 0
+```
+
+<a id="qwen3-tts-1-7b-dual-mode-claude-code"></a>
+
+**Claude Code**
+
+```bash
 rsi-harness run tasks/qwen3-tts-1.7b-dual-mode --agent claude-code --model claude-opus-5-5 --reasoning-effort max --agent-auth local --gpus 0
 ```
 
 ### qwen3-asr-1.7b-dual-mode
 
-```bash
-# Codex
-rsi-harness run tasks/qwen3-asr-1.7b-dual-mode --agent codex --model gpt-6-astra --reasoning-effort xhigh --agent-auth local --gpus 0
+<a id="qwen3-asr-1-7b-dual-mode-codex"></a>
 
-# Claude Code
+**Codex**
+
+```bash
+rsi-harness run tasks/qwen3-asr-1.7b-dual-mode --agent codex --model gpt-6-astra --reasoning-effort xhigh --agent-auth local --gpus 0
+```
+
+<a id="qwen3-asr-1-7b-dual-mode-claude-code"></a>
+
+**Claude Code**
+
+```bash
 rsi-harness run tasks/qwen3-asr-1.7b-dual-mode --agent claude-code --model claude-opus-5-5 --reasoning-effort max --agent-auth local --gpus 0
 ```
 
 ### whisper-large-v3-dual-mode
 
-```bash
-# Codex
-rsi-harness run tasks/whisper-large-v3-dual-mode --agent codex --model gpt-6-astra --reasoning-effort xhigh --agent-auth local --gpus 0
+<a id="whisper-large-v3-dual-mode-codex"></a>
 
-# Claude Code
+**Codex**
+
+```bash
+rsi-harness run tasks/whisper-large-v3-dual-mode --agent codex --model gpt-6-astra --reasoning-effort xhigh --agent-auth local --gpus 0
+```
+
+<a id="whisper-large-v3-dual-mode-claude-code"></a>
+
+**Claude Code**
+
+```bash
 rsi-harness run tasks/whisper-large-v3-dual-mode --agent claude-code --model claude-opus-5-5 --reasoning-effort max --agent-auth local --gpus 0
 ```
 
 ### moss-transcribe-diarize-dual-mode
 
-```bash
-# Codex
-rsi-harness run tasks/moss-transcribe-diarize-dual-mode --agent codex --model gpt-6-astra --reasoning-effort xhigh --agent-auth local --gpus 0
+<a id="moss-transcribe-diarize-dual-mode-codex"></a>
 
-# Claude Code
+**Codex**
+
+```bash
+rsi-harness run tasks/moss-transcribe-diarize-dual-mode --agent codex --model gpt-6-astra --reasoning-effort xhigh --agent-auth local --gpus 0
+```
+
+<a id="moss-transcribe-diarize-dual-mode-claude-code"></a>
+
+**Claude Code**
+
+```bash
 rsi-harness run tasks/moss-transcribe-diarize-dual-mode --agent claude-code --model claude-opus-5-5 --reasoning-effort max --agent-auth local --gpus 0
 ```
 

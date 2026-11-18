@@ -106,6 +106,10 @@ Agents iterate on the serving runtime; an isolated evaluator measures each submi
 
 ## 📦 Tasks
 
+<p align="center">
+  <img src="assets/tasks.jpg" width="100%" alt="OpenRSI AI-Infra-Bench task overview: 12 SGLang-Omni serving-optimization packages across 10 omni models, grouped into dual-mode TTS, Ming3 latent-diffusion TTS and EN+ZH ASR, each with its inference pipeline, best 24-hour score and B0 throughput">
+</p>
+
 Technical specification across all **12 benchmark packages** (best verified single-agent score within the first 24 hours vs. that run's B₀, paired with detailed 3-repetition mean B₀ throughput from `tests/baseline.json`; `NS` = non-streaming, `S` = streaming):
 
 | Package | Model Checkpoint | `sglang-omni` Base | Best 24h Score | Reference B₀ Throughput (`req/s`) |

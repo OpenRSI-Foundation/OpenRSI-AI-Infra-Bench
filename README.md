@@ -23,10 +23,9 @@ Built [jointly with the SGLang-Omni team](https://index.openrsi.foundation/blog/
 
 ## ✨ Highlights
 
-- **Built with maintainers.** Production serving tasks jointly designed and reviewed by OpenRSI and SGLang-Omni, with pinned source code, assets, and dependencies.
-- **Verified under constraints.** An independent evaluator checks throughput against a fixed initial baseline and enforces quality, latency, streaming, and integrity requirements. [Evaluation protocol →](docs/evaluation.md)
-- **Improvements that ship.** Agent-discovered optimizations for models in this suite contributed to **11 PRs** reviewed and merged by SGLang-Omni maintainers. [Upstream results →](docs/upstream-results.md)
-- **Every round inspectable.** Explore agent actions and evaluator feedback across **16 public single-agent trajectories**, or run a task yourself on one GPU. [Browse runs →](results/archive.md)
+- **Built with SGLang-Omni maintainers.** OpenRSI and the maintainers designed the tasks around production serving workloads. Optimizations that agents found for these models contributed to **11 PRs** the maintainers merged upstream. [Upstream results →](docs/upstream-results.md)
+- **16 public agent trajectories.** Follow each run round by round to see what the agent changed, how the evaluator scored it, and what the agent tried next. [Browse runs →](results/archive.md)
+- **Single-GPU experiments for RSI research.** Each benchmark task runs on one 80 GB H100. Researchers can reuse the same GPU to compare an ordinary run with an intervention such as R-clamping. [Running guide →](docs/running.md)
 
 <a id="leaderboard"></a>
 

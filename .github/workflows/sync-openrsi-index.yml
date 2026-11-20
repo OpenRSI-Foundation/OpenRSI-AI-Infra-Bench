@@ -41,25 +41,44 @@ jobs:
             echo "needs_sync=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Check sync token availability
+      - name: Check sync credentials
         id: auth
         if: steps.target.outputs.needs_sync == 'true'
         env:
-          SYNC_TOKEN: ${{ secrets.OPENRSI_INDEX_SYNC_TOKEN }}
+          APP_CLIENT_ID: ${{ vars.OPENRSI_INDEX_SYNC_APP_CLIENT_ID }}
+          APP_PRIVATE_KEY: ${{ secrets.OPENRSI_INDEX_SYNC_APP_PRIVATE_KEY }}
+          PAT_TOKEN: ${{ secrets.OPENRSI_INDEX_SYNC_TOKEN }}
           CURRENT_SHA: ${{ steps.target.outputs.current_sha }}
           TARGET_SHA: ${{ steps.target.outputs.target_sha }}
         run: |
-          if [ -z "$SYNC_TOKEN" ]; then
-            echo "::notice::OpenRSI-Index submodule update pending (${CURRENT_SHA:0:7} -> ${TARGET_SHA:0:7}). Configure repository secret OPENRSI_INDEX_SYNC_TOKEN (fine-grained PAT on OpenRSI-Foundation/OpenRSI-Index with Contents: write and Pull requests: write) to auto-open and squash-merge sync PRs."
-            echo "ready=false" >> "$GITHUB_OUTPUT"
+          if [ -n "$APP_CLIENT_ID" ] && [ -n "$APP_PRIVATE_KEY" ]; then
+            echo "mode=app" >> "$GITHUB_OUTPUT"
+          elif [ -n "$PAT_TOKEN" ]; then
+            echo "mode=pat" >> "$GITHUB_OUTPUT"
           else
-            echo "ready=true" >> "$GITHUB_OUTPUT"
+            echo "::notice::OpenRSI-Index submodule update pending (${CURRENT_SHA:0:7} -> ${TARGET_SHA:0:7}). Configure OPENRSI_INDEX_SYNC_APP_CLIENT_ID + OPENRSI_INDEX_SYNC_APP_PRIVATE_KEY (or OPENRSI_INDEX_SYNC_TOKEN) to auto-open and squash-merge sync PRs."
+            echo "mode=none" >> "$GITHUB_OUTPUT"
           fi
 
+      - name: Mint OpenRSI-Index sync bot token
+        id: app-token
+        if: steps.target.outputs.needs_sync == 'true' && steps.auth.outputs.mode == 'app'
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1
+        with:
+          client-id: ${{ vars.OPENRSI_INDEX_SYNC_APP_CLIENT_ID }}
+          private-key: ${{ secrets.OPENRSI_INDEX_SYNC_APP_PRIVATE_KEY }}
+          owner: OpenRSI-Foundation
+          repositories: OpenRSI-Index
+          permission-contents: write
+          permission-pull-requests: write
+
       - name: Update OpenRSI-Index submodule and merge PR
-        if: steps.target.outputs.needs_sync == 'true' && steps.auth.outputs.ready == 'true'
+        if: steps.target.outputs.needs_sync == 'true' && steps.auth.outputs.mode != 'none'
         env:
-          GH_TOKEN: ${{ secrets.OPENRSI_INDEX_SYNC_TOKEN }}
+          GH_TOKEN: ${{ steps.auth.outputs.mode == 'app' && steps.app-token.outputs.token || secrets.OPENRSI_INDEX_SYNC_TOKEN }}
+          ACTIONS_TOKEN: ${{ github.token }}
+          APP_SLUG: ${{ steps.app-token.outputs.app-slug }}
+          AUTH_MODE: ${{ steps.auth.outputs.mode }}
           TARGET_SHA: ${{ steps.target.outputs.target_sha }}
         run: |
           set -euo pipefail
@@ -80,11 +99,25 @@ jobs:
             exit 0
           fi
 
-          git config user.name "openrsi-bot"
-          git config user.email "noreply@openrsi.foundation"
+          author_name="openrsi-bot"
+          author_email="noreply@openrsi.foundation"
+          if [ "$AUTH_MODE" = "app" ] && [ -n "$APP_SLUG" ]; then
+            bot_login="${APP_SLUG}[bot]"
+            bot_id=$(GH_TOKEN="$ACTIONS_TOKEN" gh api "users/${APP_SLUG}%5Bbot%5D" --jq .id 2>/dev/null || true)
+            author_name="$bot_login"
+            if [ -n "$bot_id" ]; then
+              author_email="${bot_id}+${bot_login}@users.noreply.github.com"
+            fi
+          fi
+
+          git config user.name "$author_name"
+          git config user.email "$author_email"
           git update-index --cacheinfo "160000,${TARGET_SHA},rsi-tasks/sglang-omni"
           git commit -m "tasks: sync rsi-tasks/sglang-omni to OpenRSI-AI-Infra-Bench@${short_sha}"
+          head_sha=$(git rev-parse HEAD)
           git push --force-with-lease origin "HEAD:refs/heads/${branch}"
+
+          cd "${RUNNER_TEMP:-/tmp}"
 
           pr_url=$(gh pr list -R OpenRSI-Foundation/OpenRSI-Index --head "$branch" --state open --json url --jq '.[0].url // empty')
           title="tasks: sync rsi-tasks/sglang-omni to ${short_sha}"
@@ -94,9 +127,73 @@ jobs:
           else
             gh pr edit "$pr_url" --title "$title" --body "$body"
           fi
-          echo "Sync PR: $pr_url"
+          echo "Sync PR: $pr_url (head $head_sha)"
 
-          # Wait briefly for status checks to register, then watch until green and squash-merge.
-          sleep 8
-          gh pr checks "$pr_url" --watch --fail-fast
+          # Wait for all PR check-runs (including required history-guard) to pass.
+          HEAD_SHA="$head_sha" python3 - <<'PY'
+          import json
+          import os
+          import sys
+          import time
+          import urllib.error
+          import urllib.request
+
+          head_sha = os.environ["HEAD_SHA"]
+          url = f"https://api.github.com/repos/OpenRSI-Foundation/OpenRSI-Index/commits/{head_sha}/check-runs?per_page=100"
+          tokens = [
+              os.environ.get("ACTIONS_TOKEN", ""),
+              os.environ.get("GH_TOKEN", ""),
+              "",
+          ]
+
+          def fetch_runs():
+              last_err = None
+              for tok in tokens:
+                  headers = {
+                      "Accept": "application/vnd.github+json",
+                      "User-Agent": "openrsi-submodule-sync",
+                  }
+                  if tok:
+                      headers["Authorization"] = f"Bearer {tok}"
+                  req = urllib.request.Request(url, headers=headers)
+                  try:
+                      with urllib.request.urlopen(req, timeout=20) as resp:
+                          return json.loads(resp.read().decode("utf-8"))
+                  except urllib.error.HTTPError as e:
+                      last_err = e
+                      if e.code in (401, 403):
+                          continue
+                      raise
+              raise RuntimeError(f"Failed to query check-runs: {last_err}")
+
+          # Give GitHub Actions a short window to register all triggered check-runs.
+          time.sleep(10)
+          deadline = time.time() + 480
+          while time.time() < deadline:
+              data = fetch_runs()
+              runs = data.get("check_runs", [])
+              summary = [(r["name"], r["status"], r.get("conclusion")) for r in runs]
+              print(f"check-runs ({len(runs)}): {summary}", flush=True)
+
+              failed = [
+                  (name, conc)
+                  for name, status, conc in summary
+                  if status == "completed" and conc not in ("success", "skipped", "neutral")
+              ]
+              if failed:
+                  print(f"Failing check-runs: {failed}", file=sys.stderr)
+                  sys.exit(1)
+
+              has_required = any(name == "history-guard" for name, _, _ in summary)
+              all_done = bool(runs) and all(status == "completed" for _, status, _ in summary)
+              if has_required and all_done:
+                  print("All PR check-runs passed.")
+                  sys.exit(0)
+
+              time.sleep(10)
+
+          print("Timed out waiting for PR check-runs.", file=sys.stderr)
+          sys.exit(1)
+          PY
+
           gh pr merge "$pr_url" --squash --delete-branch

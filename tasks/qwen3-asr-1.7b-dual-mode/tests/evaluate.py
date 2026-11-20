@@ -173,8 +173,11 @@ def load_baseline():
     if override:
         if len(override) > 1_000_000:
             raise EvaluationFailure('infrastructure', 'baseline_oversized', 'RSI_BASELINE_JSON exceeds 1 MB.')
-        p = Path(override)
-        raw = authority_json(p, 'baseline_override') if p.is_file() else json.loads(override)
+        if override.startswith('{'):
+            raw = json.loads(override)
+        else:
+            p = Path(override)
+            raw = authority_json(p, 'baseline_override') if p.is_file() else json.loads(override)
     else:
         raw = authority_json(TESTS / 'baseline.json', 'baseline')
     means = raw.get('means') or raw.get('b0', {}).get('means')

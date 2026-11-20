@@ -83,8 +83,11 @@ def load_baseline():
     override = os.environ.get('RSI_BASELINE_JSON', '').strip() or os.environ.get('RSI_TTS_BASELINE_JSON', '').strip()
     if override:
         require(len(override) <= 1_000_000, 'baseline_oversized', 'RSI_BASELINE_JSON', 'Baseline override exceeds 1 MB')
-        p = Path(override)
-        raw = load(p) if p.is_file() else json.loads(override)
+        if override.startswith('{'):
+            raw = json.loads(override)
+        else:
+            p = Path(override)
+            raw = load(p) if p.is_file() else json.loads(override)
         return validate_baseline_record(raw, location='RSI_BASELINE_JSON')
     return validate_baseline_record(load(HERE / 'baseline.json'), location=str(HERE / 'baseline.json'))
 

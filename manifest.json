@@ -109,8 +109,8 @@
       "mode": "100644"
     },
     "tasks/cosyvoice3-dual-mode/tests/noise.py": {
-      "sha256": "e003bfc4f4b4d18b0865e920be353c203b797f9277a76996f9365c7a73533093",
-      "bytes": 7105,
+      "sha256": "0878a2edec58aea267c563279a19ff4a7f18bf31a6cc8cea5063de6383a868c0",
+      "bytes": 7203,
       "mode": "100644"
     },
     "tasks/cosyvoice3-dual-mode/tests/preflight.py": {
@@ -244,8 +244,8 @@
       "mode": "100644"
     },
     "tasks/fish-s2-pro-dual-mode/tests/noise.py": {
-      "sha256": "e003bfc4f4b4d18b0865e920be353c203b797f9277a76996f9365c7a73533093",
-      "bytes": 7105,
+      "sha256": "0878a2edec58aea267c563279a19ff4a7f18bf31a6cc8cea5063de6383a868c0",
+      "bytes": 7203,
       "mode": "100644"
     },
     "tasks/fish-s2-pro-dual-mode/tests/preflight.py": {
@@ -389,8 +389,8 @@
       "mode": "100644"
     },
     "tasks/moss-transcribe-diarize-dual-mode/tests/evaluate.py": {
-      "sha256": "529be7774030d47ed01a89a87d705abdd4ac618e2255da260f9056910d52ce61",
-      "bytes": 30378,
+      "sha256": "d89f6d11cd2788d3e803a0324bec7ee21b267a49484d69a6d735ca91349b8bab",
+      "bytes": 30476,
       "mode": "100644"
     },
     "tasks/moss-transcribe-diarize-dual-mode/tests/gates.py": {
@@ -519,8 +519,8 @@
       "mode": "100644"
     },
     "tasks/moss-tts-v1.5-dual-mode/tests/noise.py": {
-      "sha256": "e003bfc4f4b4d18b0865e920be353c203b797f9277a76996f9365c7a73533093",
-      "bytes": 7105,
+      "sha256": "0878a2edec58aea267c563279a19ff4a7f18bf31a6cc8cea5063de6383a868c0",
+      "bytes": 7203,
       "mode": "100644"
     },
     "tasks/moss-tts-v1.5-dual-mode/tests/preflight.py": {
@@ -649,8 +649,8 @@
       "mode": "100644"
     },
     "tasks/qwen3-asr-1.7b-dual-mode/tests/evaluate.py": {
-      "sha256": "d4f680a80023875e636f703085ff8a6fc991d475e48d54400a9d05798b931ff8",
-      "bytes": 29945,
+      "sha256": "9fb89f30958842fe7fe4346e70a02d57024f783afdfb99c0170bdf5eb177d1b1",
+      "bytes": 30043,
       "mode": "100644"
     },
     "tasks/qwen3-asr-1.7b-dual-mode/tests/gates.py": {
@@ -774,8 +774,8 @@
       "mode": "100644"
     },
     "tasks/qwen3-tts-0.6b-dual-mode/tests/noise.py": {
-      "sha256": "e003bfc4f4b4d18b0865e920be353c203b797f9277a76996f9365c7a73533093",
-      "bytes": 7105,
+      "sha256": "0878a2edec58aea267c563279a19ff4a7f18bf31a6cc8cea5063de6383a868c0",
+      "bytes": 7203,
       "mode": "100644"
     },
     "tasks/qwen3-tts-0.6b-dual-mode/tests/preflight.py": {
@@ -899,8 +899,8 @@
       "mode": "100644"
     },
     "tasks/qwen3-tts-1.7b-dual-mode/tests/noise.py": {
-      "sha256": "e003bfc4f4b4d18b0865e920be353c203b797f9277a76996f9365c7a73533093",
-      "bytes": 7105,
+      "sha256": "0878a2edec58aea267c563279a19ff4a7f18bf31a6cc8cea5063de6383a868c0",
+      "bytes": 7203,
       "mode": "100644"
     },
     "tasks/qwen3-tts-1.7b-dual-mode/tests/preflight.py": {
@@ -1044,8 +1044,8 @@
       "mode": "100644"
     },
     "tasks/whisper-large-v3-dual-mode/tests/evaluate.py": {
-      "sha256": "220259e2b17513bea2d447ade90cb974f4a9a8defb0b1e6bb2375cd398db5eaa",
-      "bytes": 29953,
+      "sha256": "5853ed4006ee8b739b31e2bfd844ecaeeeda77415d7ee4c568e14b0ca25ed2ec",
+      "bytes": 30051,
       "mode": "100644"
     },
     "tasks/whisper-large-v3-dual-mode/tests/gates.py": {

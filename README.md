@@ -68,6 +68,8 @@ Both agents are ranked by their best valid score within each run's first 24 hour
 
 </details>
 
+See the [additional Kimi Code and DeepSeek Harness results](results/additional-agents/README.md) for a side-by-side comparison and round trajectories.
+
 <a id="tasks"></a>
 
 ## 📦 Tasks

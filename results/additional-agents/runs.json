@@ -1,0 +1,3664 @@
+{
+  "snapshot_date": "2026-11-25",
+  "benchmark_revision": "1c37f97ce5fc2a67686e3bf3475ab988548da0cc",
+  "runs": [
+    {
+      "task": "cosyvoice3-dual-mode",
+      "adapter": "dsh",
+      "model": "deepseek-v4.1-flash-m17",
+      "gpu": "NVIDIA H100 80GB HBM3",
+      "platform": "Modal",
+      "source_commit": "1523543056bf334bc2f4d69db23aad0a002cedf2",
+      "task_instruction_sha256": "c94857d71196c095ea1ffe08a09a0e8feaf5e693d05a6c23e2d07fb1b21d47fc",
+      "started_at_utc": "2026-11-22T20:07:13+00:00",
+      "deadline_utc": "2026-11-23T20:07:13+00:00",
+      "duration_seconds": 86400,
+      "outcome": "completed_without_eligible_score",
+      "round_count": 8,
+      "best": null,
+      "trajectory": [
+        {
+          "round": 1,
+          "status": "valid_but_ineligible",
+          "reward": null,
+          "started_elapsed_seconds": 0.015,
+          "outcome_elapsed_seconds": 10863.789,
+          "failed_gates": {
+            "cosy": [
+              "latency_median_s",
+              "throughput_qps"
+            ],
+            "cosy_stream": [
+              "throughput_qps"
+            ]
+          }
+        },
+        {
+          "round": 2,
+          "status": "valid_but_ineligible",
+          "reward": null,
+          "started_elapsed_seconds": 19240.871,
+          "outcome_elapsed_seconds": 25828.079,
+          "failed_gates": {
+            "cosy": [],
+            "cosy_stream": [
+              "audio_ttfp_p95_s",
+              "audio_ttfp_p99_s",
+              "c50",
+              "latency_p95_s",
+              "latency_p99_s",
+              "throughput_qps"
+            ]
+          }
+        },
+        {
+          "round": 3,
+          "status": "valid_but_ineligible",
+          "reward": null,
+          "started_elapsed_seconds": 25838.183,
+          "outcome_elapsed_seconds": 38162.083,
+          "failed_gates": {
+            "cosy": [],
+            "cosy_stream": [
+              "audio_ttfp_mean_s",
+              "audio_ttfp_median_s",
+              "audio_ttfp_p95_s",
+              "audio_ttfp_p99_s",
+              "c50"
+            ]
+          }
+        },
+        {
+          "round": 4,
+          "status": "judge_error",
+          "reward": null,
+          "started_elapsed_seconds": 38172.625,
+          "outcome_elapsed_seconds": 45719.744
+        },
+        {
+          "round": 5,
+          "status": "valid_but_ineligible",
+          "reward": null,
+          "started_elapsed_seconds": 45899.75,
+          "outcome_elapsed_seconds": 59211.912,
+          "failed_gates": {
+            "cosy": [
+              "rtf_p95",
+              "rtf_p99",
+              "throughput_qps"
+            ],
+            "cosy_stream": []
+          }
+        },
+        {
+          "round": 6,
+          "status": "judge_error",
+          "reward": null,
+          "started_elapsed_seconds": 59221.275,
+          "outcome_elapsed_seconds": 71222.494
+        },
+        {
+          "round": 7,
+          "status": "valid_but_ineligible",
+          "reward": null,
+          "started_elapsed_seconds": 71402.502,
+          "outcome_elapsed_seconds": 83395.849,
+          "failed_gates": {
+            "cosy": [],
+            "cosy_stream": [
+              "audio_ttfp_mean_s",
+              "audio_ttfp_median_s",
+              "audio_ttfp_p95_s",
+              "audio_ttfp_p99_s",
+              "rtf_p99",
+              "throughput_qps"
+            ]
+          }
+        },
+        {
+          "round": 8,
+          "status": "saved_after_last_scoring_slot",
+          "reward": null,
+          "started_elapsed_seconds": 83413.629,
+          "outcome_elapsed_seconds": 83635.188
+        }
+      ]
+    },
+    {
+      "task": "cosyvoice3-dual-mode",
+      "adapter": "kimi-code",
+      "model": "kimi-k3.1-pro-m17",
+      "gpu": "NVIDIA H100 80GB HBM3",
+      "platform": "Modal",
+      "source_commit": "1523543056bf334bc2f4d69db23aad0a002cedf2",
+      "task_instruction_sha256": "c94857d71196c095ea1ffe08a09a0e8feaf5e693d05a6c23e2d07fb1b21d47fc",
+      "started_at_utc": "2026-11-24T03:35:04+00:00",
+      "deadline_utc": "2026-11-25T03:35:04+00:00",
+      "duration_seconds": 86400,
+      "outcome": "completed_without_eligible_score",
+      "round_count": 7,
+      "best": null,
+      "trajectory": [
+        {
+          "round": 1,
+          "status": "valid_but_ineligible",
+          "reward": null,
+          "started_elapsed_seconds": 0.41,
+          "outcome_elapsed_seconds": 16154.701,
+          "failed_gates": {
+            "cosy": [],
+            "cosy_stream": [
+              "audio_ttfp_p99_s"
+            ]
+          }
+        },
+        {
+          "round": 2,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 16166.687,
+          "outcome_elapsed_seconds": 19046.583
+        },
+        {
+          "round": 3,
+          "status": "valid_but_ineligible",
+          "reward": null,
+          "started_elapsed_seconds": 19046.589,
+          "outcome_elapsed_seconds": 31582.117,
+          "failed_gates": {
+            "cosy": [],
+            "cosy_stream": [
+              "audio_throughput_s_per_s",
+              "c50",
+              "latency_mean_s",
+              "latency_median_s",
+              "latency_p99_s",
+              "rtf_mean",
+              "rtf_median",
+              "rtf_p95",
+              "rtf_p99",
+              "throughput_qps"
+            ]
+          }
+        },
+        {
+          "round": 4,
+          "status": "valid_but_ineligible",
+          "reward": null,
+          "started_elapsed_seconds": 31591.832,
+          "outcome_elapsed_seconds": 43276.132,
+          "failed_gates": {
+            "cosy": [],
+            "cosy_stream": [
+              "audio_ttfp_p99_s"
+            ]
+          }
+        },
+        {
+          "round": 5,
+          "status": "valid_but_ineligible",
+          "reward": null,
+          "started_elapsed_seconds": 43284.532,
+          "outcome_elapsed_seconds": 60025.313,
+          "failed_gates": {
+            "cosy": [],
+            "cosy_stream": [
+              "c50"
+            ]
+          }
+        },
+        {
+          "round": 6,
+          "status": "valid_but_ineligible",
+          "reward": null,
+          "started_elapsed_seconds": 60036.444,
+          "outcome_elapsed_seconds": 74513.365,
+          "failed_gates": {
+            "cosy": [
+              "rtf_p99",
+              "throughput_qps"
+            ],
+            "cosy_stream": [
+              "audio_ttfp_p99_s",
+              "rtf_p99",
+              "throughput_qps"
+            ]
+          }
+        },
+        {
+          "round": 7,
+          "status": "saved_after_last_scoring_slot",
+          "reward": null,
+          "started_elapsed_seconds": 74522.643,
+          "outcome_elapsed_seconds": 74679.063
+        }
+      ]
+    },
+    {
+      "task": "fish-s2-pro-dual-mode",
+      "adapter": "dsh",
+      "model": "deepseek-v4.1-flash-m17",
+      "gpu": "NVIDIA H100 80GB HBM3",
+      "platform": "Modal",
+      "source_commit": "1523543056bf334bc2f4d69db23aad0a002cedf2",
+      "task_instruction_sha256": "6487b18b9750a4400b46e229dc9a15ee7040eb51e236ea1c78a98fbec73a60b7",
+      "started_at_utc": "2026-11-23T19:20:23+00:00",
+      "deadline_utc": "2026-11-24T19:20:23+00:00",
+      "duration_seconds": 86400,
+      "outcome": "eligible_score",
+      "round_count": 8,
+      "best": {
+        "round": 6,
+        "reward": 7.457841152283831,
+        "elapsed_seconds": 70187.194,
+        "baseline_ratios": {
+          "fish": 7.754527813712808,
+          "fish_stream": 7.31378205128205
+        },
+        "same_gpu_and_evaluator": true,
+        "source_files": [
+          "sglang_omni/models/fishaudio_s2_pro/engine_builder.py",
+          "sglang_omni/models/fishaudio_s2_pro/fish_speech/models/dac/modded_dac.py",
+          "sglang_omni/models/fishaudio_s2_pro/model_runner.py",
+          "sglang_omni/models/fishaudio_s2_pro/stages.py",
+          "sglang_omni/models/fishaudio_s2_pro/streaming_vocoder.py"
+        ]
+      },
+      "trajectory": [
+        {
+          "round": 1,
+          "status": "eligible",
+          "reward": 2.43708713204271,
+          "started_elapsed_seconds": 0.47,
+          "outcome_elapsed_seconds": 12457.851,
+          "failed_gates": {
+            "fish": [],
+            "fish_stream": []
+          }
+        },
+        {
+          "round": 2,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 12465.789,
+          "outcome_elapsed_seconds": 14267.725
+        },
+        {
+          "round": 3,
+          "status": "eligible",
+          "reward": 2.248452859384776,
+          "started_elapsed_seconds": 14267.734,
+          "outcome_elapsed_seconds": 25956.892,
+          "failed_gates": {
+            "fish": [],
+            "fish_stream": []
+          }
+        },
+        {
+          "round": 4,
+          "status": "eligible",
+          "reward": 2.9472033499815513,
+          "started_elapsed_seconds": 25965.245,
+          "outcome_elapsed_seconds": 41115.376,
+          "failed_gates": {
+            "fish": [],
+            "fish_stream": []
+          }
+        },
+        {
+          "round": 5,
+          "status": "eligible",
+          "reward": 2.8598400614465267,
+          "started_elapsed_seconds": 41127.932,
+          "outcome_elapsed_seconds": 53661.489,
+          "failed_gates": {
+            "fish": [],
+            "fish_stream": []
+          }
+        },
+        {
+          "round": 6,
+          "status": "eligible",
+          "reward": 7.457841152283831,
+          "started_elapsed_seconds": 53670.218,
+          "outcome_elapsed_seconds": 70187.194,
+          "failed_gates": {
+            "fish": [],
+            "fish_stream": []
+          }
+        },
+        {
+          "round": 7,
+          "status": "eligible",
+          "reward": 3.362633371080812,
+          "started_elapsed_seconds": 70197.993,
+          "outcome_elapsed_seconds": 81813.046,
+          "failed_gates": {
+            "fish": [],
+            "fish_stream": []
+          }
+        },
+        {
+          "round": 8,
+          "status": "saved_after_last_scoring_slot",
+          "reward": null,
+          "started_elapsed_seconds": 81822.772,
+          "outcome_elapsed_seconds": 81979.132
+        }
+      ]
+    },
+    {
+      "task": "fish-s2-pro-dual-mode",
+      "adapter": "kimi-code",
+      "model": "kimi-k3.1-pro-m17",
+      "gpu": "NVIDIA H100 80GB HBM3",
+      "platform": "Modal",
+      "source_commit": "1523543056bf334bc2f4d69db23aad0a002cedf2",
+      "task_instruction_sha256": "6487b18b9750a4400b46e229dc9a15ee7040eb51e236ea1c78a98fbec73a60b7",
+      "started_at_utc": "2026-11-24T03:34:46+00:00",
+      "deadline_utc": "2026-11-25T03:34:46+00:00",
+      "duration_seconds": 86400,
+      "outcome": "eligible_score",
+      "round_count": 264,
+      "best": {
+        "round": 4,
+        "reward": 1.0140131387901472,
+        "elapsed_seconds": 37642.294,
+        "baseline_ratios": {
+          "fish": 1.0397562391178181,
+          "fish_stream": 1.001381597126278
+        },
+        "same_gpu_and_evaluator": true,
+        "source_files": [
+          "sglang_omni/models/fishaudio_s2_pro/sglang_model.py",
+          "sglang_omni/models/fishaudio_s2_pro/streaming_vocoder.py"
+        ]
+      },
+      "trajectory": [
+        {
+          "round": 1,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 0.076,
+          "outcome_elapsed_seconds": 3038.576
+        },
+        {
+          "round": 2,
+          "status": "work_error",
+          "reward": null,
+          "started_elapsed_seconds": 3038.584,
+          "outcome_elapsed_seconds": 6076.531
+        },
+        {
+          "round": 3,
+          "status": "valid_but_ineligible",
+          "reward": null,
+          "started_elapsed_seconds": 6256.562,
+          "outcome_elapsed_seconds": 23607.114,
+          "failed_gates": {
+            "fish": [],
+            "fish_stream": [
+              "audio_throughput_s_per_s",
+              "audio_ttfp_mean_s",
+              "audio_ttfp_median_s",
+              "audio_ttfp_p95_s",
+              "audio_ttfp_p99_s",
+              "latency_mean_s",
+              "latency_median_s",
+              "latency_p95_s",
+              "latency_p99_s",
+              "rtf_mean",
+              "rtf_median",
+              "rtf_p95",
+              "throughput_qps"
+            ]
+          }
+        },
+        {
+          "round": 4,
+          "status": "eligible",
+          "reward": 1.0140131387901472,
+          "started_elapsed_seconds": 23618.276,
+          "outcome_elapsed_seconds": 37642.294,
+          "failed_gates": {
+            "fish": [],
+            "fish_stream": []
+          }
+        },
+        {
+          "round": 5,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 37653.528,
+          "outcome_elapsed_seconds": 40716.712
+        },
+        {
+          "round": 6,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 40716.717,
+          "outcome_elapsed_seconds": 41167.052
+        },
+        {
+          "round": 7,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 41167.061,
+          "outcome_elapsed_seconds": 43821.723
+        },
+        {
+          "round": 8,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 43821.728,
+          "outcome_elapsed_seconds": 46388.358
+        },
+        {
+          "round": 9,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 46388.364,
+          "outcome_elapsed_seconds": 48551.441
+        },
+        {
+          "round": 10,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 48551.469,
+          "outcome_elapsed_seconds": 50368.143
+        },
+        {
+          "round": 11,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 50368.15,
+          "outcome_elapsed_seconds": 52853.22
+        },
+        {
+          "round": 12,
+          "status": "eligible",
+          "reward": 1.0084365152974542,
+          "started_elapsed_seconds": 52853.226,
+          "outcome_elapsed_seconds": 65209.219,
+          "failed_gates": {
+            "fish": [],
+            "fish_stream": []
+          }
+        },
+        {
+          "round": 13,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 65218.516,
+          "outcome_elapsed_seconds": 66124.43
+        },
+        {
+          "round": 14,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 66124.439,
+          "outcome_elapsed_seconds": 68486.228
+        },
+        {
+          "round": 15,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 68486.238,
+          "outcome_elapsed_seconds": 68607.464
+        },
+        {
+          "round": 16,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 68607.473,
+          "outcome_elapsed_seconds": 70973.563
+        },
+        {
+          "round": 17,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 70973.57,
+          "outcome_elapsed_seconds": 71121.28
+        },
+        {
+          "round": 18,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 71121.286,
+          "outcome_elapsed_seconds": 71193.103
+        },
+        {
+          "round": 19,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 71193.109,
+          "outcome_elapsed_seconds": 71341.428
+        },
+        {
+          "round": 20,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 71341.433,
+          "outcome_elapsed_seconds": 71383.966
+        },
+        {
+          "round": 21,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 71383.974,
+          "outcome_elapsed_seconds": 71428.451
+        },
+        {
+          "round": 22,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 71428.457,
+          "outcome_elapsed_seconds": 71516.537
+        },
+        {
+          "round": 23,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 71516.543,
+          "outcome_elapsed_seconds": 71563.172
+        },
+        {
+          "round": 24,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 71563.178,
+          "outcome_elapsed_seconds": 71605.758
+        },
+        {
+          "round": 25,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 71605.764,
+          "outcome_elapsed_seconds": 71659.107
+        },
+        {
+          "round": 26,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 71659.113,
+          "outcome_elapsed_seconds": 71698.132
+        },
+        {
+          "round": 27,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 71698.138,
+          "outcome_elapsed_seconds": 71737.76
+        },
+        {
+          "round": 28,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 71737.767,
+          "outcome_elapsed_seconds": 71778.15
+        },
+        {
+          "round": 29,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 71778.156,
+          "outcome_elapsed_seconds": 71814.733
+        },
+        {
+          "round": 30,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 71814.739,
+          "outcome_elapsed_seconds": 71912.982
+        },
+        {
+          "round": 31,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 71912.988,
+          "outcome_elapsed_seconds": 71956.471
+        },
+        {
+          "round": 32,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 71956.479,
+          "outcome_elapsed_seconds": 71994.746
+        },
+        {
+          "round": 33,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 71994.753,
+          "outcome_elapsed_seconds": 72038.779
+        },
+        {
+          "round": 34,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 72038.787,
+          "outcome_elapsed_seconds": 72081.214
+        },
+        {
+          "round": 35,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 72081.22,
+          "outcome_elapsed_seconds": 72126.497
+        },
+        {
+          "round": 36,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 72126.503,
+          "outcome_elapsed_seconds": 72174.215
+        },
+        {
+          "round": 37,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 72174.221,
+          "outcome_elapsed_seconds": 72212.488
+        },
+        {
+          "round": 38,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 72212.494,
+          "outcome_elapsed_seconds": 72248.51
+        },
+        {
+          "round": 39,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 72248.516,
+          "outcome_elapsed_seconds": 72284.131
+        },
+        {
+          "round": 40,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 72284.137,
+          "outcome_elapsed_seconds": 72327.314
+        },
+        {
+          "round": 41,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 72327.32,
+          "outcome_elapsed_seconds": 72366.394
+        },
+        {
+          "round": 42,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 72366.4,
+          "outcome_elapsed_seconds": 72401.365
+        },
+        {
+          "round": 43,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 72401.371,
+          "outcome_elapsed_seconds": 72445.045
+        },
+        {
+          "round": 44,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 72445.052,
+          "outcome_elapsed_seconds": 72518.461
+        },
+        {
+          "round": 45,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 72518.468,
+          "outcome_elapsed_seconds": 72564.793
+        },
+        {
+          "round": 46,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 72564.799,
+          "outcome_elapsed_seconds": 72610.626
+        },
+        {
+          "round": 47,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 72610.634,
+          "outcome_elapsed_seconds": 72653.609
+        },
+        {
+          "round": 48,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 72653.616,
+          "outcome_elapsed_seconds": 72692.178
+        },
+        {
+          "round": 49,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 72692.185,
+          "outcome_elapsed_seconds": 72736.77
+        },
+        {
+          "round": 50,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 72736.776,
+          "outcome_elapsed_seconds": 72774.396
+        },
+        {
+          "round": 51,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 72774.402,
+          "outcome_elapsed_seconds": 72811.92
+        },
+        {
+          "round": 52,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 72811.927,
+          "outcome_elapsed_seconds": 72847.192
+        },
+        {
+          "round": 53,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 72847.198,
+          "outcome_elapsed_seconds": 72890.928
+        },
+        {
+          "round": 54,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 72890.936,
+          "outcome_elapsed_seconds": 72926.356
+        },
+        {
+          "round": 55,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 72926.366,
+          "outcome_elapsed_seconds": 72960.832
+        },
+        {
+          "round": 56,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 72960.849,
+          "outcome_elapsed_seconds": 73001.523
+        },
+        {
+          "round": 57,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 73001.529,
+          "outcome_elapsed_seconds": 73037.492
+        },
+        {
+          "round": 58,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 73037.502,
+          "outcome_elapsed_seconds": 73106.01
+        },
+        {
+          "round": 59,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 73106.017,
+          "outcome_elapsed_seconds": 73145.563
+        },
+        {
+          "round": 60,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 73145.569,
+          "outcome_elapsed_seconds": 73190.096
+        },
+        {
+          "round": 61,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 73190.103,
+          "outcome_elapsed_seconds": 73238.137
+        },
+        {
+          "round": 62,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 73238.143,
+          "outcome_elapsed_seconds": 73282.024
+        },
+        {
+          "round": 63,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 73282.031,
+          "outcome_elapsed_seconds": 73319.546
+        },
+        {
+          "round": 64,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 73319.553,
+          "outcome_elapsed_seconds": 73359.27
+        },
+        {
+          "round": 65,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 73359.277,
+          "outcome_elapsed_seconds": 73405.254
+        },
+        {
+          "round": 66,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 73405.263,
+          "outcome_elapsed_seconds": 73449.287
+        },
+        {
+          "round": 67,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 73449.294,
+          "outcome_elapsed_seconds": 73493.317
+        },
+        {
+          "round": 68,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 73493.325,
+          "outcome_elapsed_seconds": 73542.061
+        },
+        {
+          "round": 69,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 73542.068,
+          "outcome_elapsed_seconds": 73595.959
+        },
+        {
+          "round": 70,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 73595.967,
+          "outcome_elapsed_seconds": 73648.25
+        },
+        {
+          "round": 71,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 73648.257,
+          "outcome_elapsed_seconds": 73701.645
+        },
+        {
+          "round": 72,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 73701.652,
+          "outcome_elapsed_seconds": 73754.742
+        },
+        {
+          "round": 73,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 73754.749,
+          "outcome_elapsed_seconds": 73857.619
+        },
+        {
+          "round": 74,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 73857.626,
+          "outcome_elapsed_seconds": 73909.616
+        },
+        {
+          "round": 75,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 73909.623,
+          "outcome_elapsed_seconds": 73953.947
+        },
+        {
+          "round": 76,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 73953.954,
+          "outcome_elapsed_seconds": 74002.935
+        },
+        {
+          "round": 77,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 74002.943,
+          "outcome_elapsed_seconds": 74044.369
+        },
+        {
+          "round": 78,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 74044.376,
+          "outcome_elapsed_seconds": 74079.341
+        },
+        {
+          "round": 79,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 74079.348,
+          "outcome_elapsed_seconds": 74131.88
+        },
+        {
+          "round": 80,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 74131.888,
+          "outcome_elapsed_seconds": 74187.782
+        },
+        {
+          "round": 81,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 74187.789,
+          "outcome_elapsed_seconds": 74226.56
+        },
+        {
+          "round": 82,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 74226.569,
+          "outcome_elapsed_seconds": 74264.688
+        },
+        {
+          "round": 83,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 74264.695,
+          "outcome_elapsed_seconds": 74321.683
+        },
+        {
+          "round": 84,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 74321.692,
+          "outcome_elapsed_seconds": 74359.625
+        },
+        {
+          "round": 85,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 74359.633,
+          "outcome_elapsed_seconds": 74420.083
+        },
+        {
+          "round": 86,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 74420.09,
+          "outcome_elapsed_seconds": 74468.575
+        },
+        {
+          "round": 87,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 74468.582,
+          "outcome_elapsed_seconds": 74520.719
+        },
+        {
+          "round": 88,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 74520.727,
+          "outcome_elapsed_seconds": 74616.116
+        },
+        {
+          "round": 89,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 74616.124,
+          "outcome_elapsed_seconds": 74686.195
+        },
+        {
+          "round": 90,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 74686.203,
+          "outcome_elapsed_seconds": 74771.016
+        },
+        {
+          "round": 91,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 74771.024,
+          "outcome_elapsed_seconds": 74819.954
+        },
+        {
+          "round": 92,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 74819.961,
+          "outcome_elapsed_seconds": 74871.543
+        },
+        {
+          "round": 93,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 74871.55,
+          "outcome_elapsed_seconds": 74917.432
+        },
+        {
+          "round": 94,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 74917.44,
+          "outcome_elapsed_seconds": 74977.036
+        },
+        {
+          "round": 95,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 74977.043,
+          "outcome_elapsed_seconds": 75015.871
+        },
+        {
+          "round": 96,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 75015.878,
+          "outcome_elapsed_seconds": 75058.998
+        },
+        {
+          "round": 97,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 75059.006,
+          "outcome_elapsed_seconds": 75106.885
+        },
+        {
+          "round": 98,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 75106.892,
+          "outcome_elapsed_seconds": 75170.893
+        },
+        {
+          "round": 99,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 75170.901,
+          "outcome_elapsed_seconds": 75208.02
+        },
+        {
+          "round": 100,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 75208.027,
+          "outcome_elapsed_seconds": 75248.65
+        },
+        {
+          "round": 101,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 75248.657,
+          "outcome_elapsed_seconds": 75298.687
+        },
+        {
+          "round": 102,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 75298.694,
+          "outcome_elapsed_seconds": 75455.213
+        },
+        {
+          "round": 103,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 75455.221,
+          "outcome_elapsed_seconds": 75504.253
+        },
+        {
+          "round": 104,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 75504.261,
+          "outcome_elapsed_seconds": 75555.893
+        },
+        {
+          "round": 105,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 75555.901,
+          "outcome_elapsed_seconds": 75638.156
+        },
+        {
+          "round": 106,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 75638.163,
+          "outcome_elapsed_seconds": 75731.661
+        },
+        {
+          "round": 107,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 75731.669,
+          "outcome_elapsed_seconds": 75815.892
+        },
+        {
+          "round": 108,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 75815.9,
+          "outcome_elapsed_seconds": 75927.469
+        },
+        {
+          "round": 109,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 75927.477,
+          "outcome_elapsed_seconds": 76003.897
+        },
+        {
+          "round": 110,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 76003.905,
+          "outcome_elapsed_seconds": 76117.771
+        },
+        {
+          "round": 111,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 76117.779,
+          "outcome_elapsed_seconds": 76198.15
+        },
+        {
+          "round": 112,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 76198.159,
+          "outcome_elapsed_seconds": 76245.038
+        },
+        {
+          "round": 113,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 76245.046,
+          "outcome_elapsed_seconds": 76333.927
+        },
+        {
+          "round": 114,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 76333.935,
+          "outcome_elapsed_seconds": 76378.12
+        },
+        {
+          "round": 115,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 76378.128,
+          "outcome_elapsed_seconds": 76464.96
+        },
+        {
+          "round": 116,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 76464.968,
+          "outcome_elapsed_seconds": 76536.133
+        },
+        {
+          "round": 117,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 76536.141,
+          "outcome_elapsed_seconds": 76701.083
+        },
+        {
+          "round": 118,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 76701.091,
+          "outcome_elapsed_seconds": 76745.565
+        },
+        {
+          "round": 119,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 76745.574,
+          "outcome_elapsed_seconds": 76818.385
+        },
+        {
+          "round": 120,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 76818.394,
+          "outcome_elapsed_seconds": 76876.034
+        },
+        {
+          "round": 121,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 76876.044,
+          "outcome_elapsed_seconds": 76928.334
+        },
+        {
+          "round": 122,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 76928.342,
+          "outcome_elapsed_seconds": 76977.586
+        },
+        {
+          "round": 123,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 76977.594,
+          "outcome_elapsed_seconds": 77024.223
+        },
+        {
+          "round": 124,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 77024.233,
+          "outcome_elapsed_seconds": 77101.351
+        },
+        {
+          "round": 125,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 77101.359,
+          "outcome_elapsed_seconds": 77176.188
+        },
+        {
+          "round": 126,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 77176.197,
+          "outcome_elapsed_seconds": 77235.727
+        },
+        {
+          "round": 127,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 77235.736,
+          "outcome_elapsed_seconds": 77296.642
+        },
+        {
+          "round": 128,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 77296.651,
+          "outcome_elapsed_seconds": 77355.698
+        },
+        {
+          "round": 129,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 77355.706,
+          "outcome_elapsed_seconds": 77417.917
+        },
+        {
+          "round": 130,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 77417.925,
+          "outcome_elapsed_seconds": 77476.867
+        },
+        {
+          "round": 131,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 77476.876,
+          "outcome_elapsed_seconds": 77551.291
+        },
+        {
+          "round": 132,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 77551.299,
+          "outcome_elapsed_seconds": 77654.103
+        },
+        {
+          "round": 133,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 77654.112,
+          "outcome_elapsed_seconds": 77718.417
+        },
+        {
+          "round": 134,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 77718.428,
+          "outcome_elapsed_seconds": 77790.539
+        },
+        {
+          "round": 135,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 77790.547,
+          "outcome_elapsed_seconds": 77838.083
+        },
+        {
+          "round": 136,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 77838.091,
+          "outcome_elapsed_seconds": 77906.449
+        },
+        {
+          "round": 137,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 77906.458,
+          "outcome_elapsed_seconds": 77956.395
+        },
+        {
+          "round": 138,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 77956.403,
+          "outcome_elapsed_seconds": 78010.59
+        },
+        {
+          "round": 139,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 78010.599,
+          "outcome_elapsed_seconds": 78086.663
+        },
+        {
+          "round": 140,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 78086.673,
+          "outcome_elapsed_seconds": 78168.933
+        },
+        {
+          "round": 141,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 78168.941,
+          "outcome_elapsed_seconds": 78242.133
+        },
+        {
+          "round": 142,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 78242.142,
+          "outcome_elapsed_seconds": 78336.98
+        },
+        {
+          "round": 143,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 78336.988,
+          "outcome_elapsed_seconds": 78419.517
+        },
+        {
+          "round": 144,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 78419.526,
+          "outcome_elapsed_seconds": 78487.98
+        },
+        {
+          "round": 145,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 78487.989,
+          "outcome_elapsed_seconds": 78534.318
+        },
+        {
+          "round": 146,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 78534.327,
+          "outcome_elapsed_seconds": 78734.855
+        },
+        {
+          "round": 147,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 78734.866,
+          "outcome_elapsed_seconds": 78790.512
+        },
+        {
+          "round": 148,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 78790.52,
+          "outcome_elapsed_seconds": 78840.302
+        },
+        {
+          "round": 149,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 78840.31,
+          "outcome_elapsed_seconds": 78931.744
+        },
+        {
+          "round": 150,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 78931.755,
+          "outcome_elapsed_seconds": 78980.863
+        },
+        {
+          "round": 151,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 78980.872,
+          "outcome_elapsed_seconds": 79049.178
+        },
+        {
+          "round": 152,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 79049.187,
+          "outcome_elapsed_seconds": 79093.02
+        },
+        {
+          "round": 153,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 79093.031,
+          "outcome_elapsed_seconds": 79155.299
+        },
+        {
+          "round": 154,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 79155.31,
+          "outcome_elapsed_seconds": 79218.193
+        },
+        {
+          "round": 155,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 79218.202,
+          "outcome_elapsed_seconds": 79278.299
+        },
+        {
+          "round": 156,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 79278.308,
+          "outcome_elapsed_seconds": 79344.013
+        },
+        {
+          "round": 157,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 79344.022,
+          "outcome_elapsed_seconds": 79399.042
+        },
+        {
+          "round": 158,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 79399.053,
+          "outcome_elapsed_seconds": 79448.888
+        },
+        {
+          "round": 159,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 79448.897,
+          "outcome_elapsed_seconds": 79523.013
+        },
+        {
+          "round": 160,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 79523.022,
+          "outcome_elapsed_seconds": 79605.793
+        },
+        {
+          "round": 161,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 79605.804,
+          "outcome_elapsed_seconds": 79673.114
+        },
+        {
+          "round": 162,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 79673.124,
+          "outcome_elapsed_seconds": 79724.111
+        },
+        {
+          "round": 163,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 79724.12,
+          "outcome_elapsed_seconds": 79777.464
+        },
+        {
+          "round": 164,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 79777.473,
+          "outcome_elapsed_seconds": 79830.212
+        },
+        {
+          "round": 165,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 79830.222,
+          "outcome_elapsed_seconds": 79898.431
+        },
+        {
+          "round": 166,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 79898.44,
+          "outcome_elapsed_seconds": 79950.981
+        },
+        {
+          "round": 167,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 79950.991,
+          "outcome_elapsed_seconds": 80008.131
+        },
+        {
+          "round": 168,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 80008.143,
+          "outcome_elapsed_seconds": 80053.393
+        },
+        {
+          "round": 169,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 80053.403,
+          "outcome_elapsed_seconds": 80105.687
+        },
+        {
+          "round": 170,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 80105.696,
+          "outcome_elapsed_seconds": 80157.031
+        },
+        {
+          "round": 171,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 80157.04,
+          "outcome_elapsed_seconds": 80225.195
+        },
+        {
+          "round": 172,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 80225.204,
+          "outcome_elapsed_seconds": 80273.236
+        },
+        {
+          "round": 173,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 80273.245,
+          "outcome_elapsed_seconds": 80337.903
+        },
+        {
+          "round": 174,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 80337.912,
+          "outcome_elapsed_seconds": 80441.515
+        },
+        {
+          "round": 175,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 80441.722,
+          "outcome_elapsed_seconds": 80499.374
+        },
+        {
+          "round": 176,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 80499.383,
+          "outcome_elapsed_seconds": 80572.601
+        },
+        {
+          "round": 177,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 80572.61,
+          "outcome_elapsed_seconds": 80644.069
+        },
+        {
+          "round": 178,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 80644.079,
+          "outcome_elapsed_seconds": 80687.608
+        },
+        {
+          "round": 179,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 80687.618,
+          "outcome_elapsed_seconds": 80751.566
+        },
+        {
+          "round": 180,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 80751.576,
+          "outcome_elapsed_seconds": 80815.031
+        },
+        {
+          "round": 181,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 80815.04,
+          "outcome_elapsed_seconds": 80880.73
+        },
+        {
+          "round": 182,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 80880.742,
+          "outcome_elapsed_seconds": 80942.942
+        },
+        {
+          "round": 183,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 80942.952,
+          "outcome_elapsed_seconds": 80990.13
+        },
+        {
+          "round": 184,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 80990.14,
+          "outcome_elapsed_seconds": 81035.215
+        },
+        {
+          "round": 185,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 81035.225,
+          "outcome_elapsed_seconds": 81099.423
+        },
+        {
+          "round": 186,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 81099.433,
+          "outcome_elapsed_seconds": 81175.157
+        },
+        {
+          "round": 187,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 81175.167,
+          "outcome_elapsed_seconds": 81330.483
+        },
+        {
+          "round": 188,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 81330.496,
+          "outcome_elapsed_seconds": 81380.887
+        },
+        {
+          "round": 189,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 81380.898,
+          "outcome_elapsed_seconds": 81475.892
+        },
+        {
+          "round": 190,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 81475.902,
+          "outcome_elapsed_seconds": 81520.327
+        },
+        {
+          "round": 191,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 81520.336,
+          "outcome_elapsed_seconds": 81564.522
+        },
+        {
+          "round": 192,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 81564.532,
+          "outcome_elapsed_seconds": 81608.258
+        },
+        {
+          "round": 193,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 81608.268,
+          "outcome_elapsed_seconds": 81664.358
+        },
+        {
+          "round": 194,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 81664.368,
+          "outcome_elapsed_seconds": 81728.32
+        },
+        {
+          "round": 195,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 81728.33,
+          "outcome_elapsed_seconds": 81781.769
+        },
+        {
+          "round": 196,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 81781.783,
+          "outcome_elapsed_seconds": 81826.867
+        },
+        {
+          "round": 197,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 81826.877,
+          "outcome_elapsed_seconds": 81871.453
+        },
+        {
+          "round": 198,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 81871.464,
+          "outcome_elapsed_seconds": 81925.001
+        },
+        {
+          "round": 199,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 81925.011,
+          "outcome_elapsed_seconds": 81985.755
+        },
+        {
+          "round": 200,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 81985.765,
+          "outcome_elapsed_seconds": 82062.63
+        },
+        {
+          "round": 201,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 82062.64,
+          "outcome_elapsed_seconds": 82123.413
+        },
+        {
+          "round": 202,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 82123.423,
+          "outcome_elapsed_seconds": 82184.019
+        },
+        {
+          "round": 203,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 82184.029,
+          "outcome_elapsed_seconds": 82293.891
+        },
+        {
+          "round": 204,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 82293.902,
+          "outcome_elapsed_seconds": 82354.955
+        },
+        {
+          "round": 205,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 82354.965,
+          "outcome_elapsed_seconds": 82417.915
+        },
+        {
+          "round": 206,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 82417.925,
+          "outcome_elapsed_seconds": 82480.128
+        },
+        {
+          "round": 207,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 82480.138,
+          "outcome_elapsed_seconds": 82566.823
+        },
+        {
+          "round": 208,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 82566.835,
+          "outcome_elapsed_seconds": 82632.508
+        },
+        {
+          "round": 209,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 82632.518,
+          "outcome_elapsed_seconds": 82683.058
+        },
+        {
+          "round": 210,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 82683.068,
+          "outcome_elapsed_seconds": 82764.155
+        },
+        {
+          "round": 211,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 82764.165,
+          "outcome_elapsed_seconds": 82810.305
+        },
+        {
+          "round": 212,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 82810.317,
+          "outcome_elapsed_seconds": 82872.178
+        },
+        {
+          "round": 213,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 82872.191,
+          "outcome_elapsed_seconds": 82938.055
+        },
+        {
+          "round": 214,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 82938.065,
+          "outcome_elapsed_seconds": 82995.429
+        },
+        {
+          "round": 215,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 82995.44,
+          "outcome_elapsed_seconds": 83054.558
+        },
+        {
+          "round": 216,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 83054.569,
+          "outcome_elapsed_seconds": 83116.947
+        },
+        {
+          "round": 217,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 83116.958,
+          "outcome_elapsed_seconds": 83219.581
+        },
+        {
+          "round": 218,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 83219.592,
+          "outcome_elapsed_seconds": 83273.045
+        },
+        {
+          "round": 219,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 83273.055,
+          "outcome_elapsed_seconds": 83318.047
+        },
+        {
+          "round": 220,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 83318.058,
+          "outcome_elapsed_seconds": 83385.576
+        },
+        {
+          "round": 221,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 83385.594,
+          "outcome_elapsed_seconds": 83432.549
+        },
+        {
+          "round": 222,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 83432.561,
+          "outcome_elapsed_seconds": 83475.796
+        },
+        {
+          "round": 223,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 83475.806,
+          "outcome_elapsed_seconds": 83524.763
+        },
+        {
+          "round": 224,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 83524.782,
+          "outcome_elapsed_seconds": 83582.112
+        },
+        {
+          "round": 225,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 83582.123,
+          "outcome_elapsed_seconds": 83666.777
+        },
+        {
+          "round": 226,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 83666.787,
+          "outcome_elapsed_seconds": 83717.048
+        },
+        {
+          "round": 227,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 83717.062,
+          "outcome_elapsed_seconds": 83767.461
+        },
+        {
+          "round": 228,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 83767.472,
+          "outcome_elapsed_seconds": 83810.283
+        },
+        {
+          "round": 229,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 83810.297,
+          "outcome_elapsed_seconds": 83876.873
+        },
+        {
+          "round": 230,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 83876.887,
+          "outcome_elapsed_seconds": 83930.648
+        },
+        {
+          "round": 231,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 83930.659,
+          "outcome_elapsed_seconds": 84049.412
+        },
+        {
+          "round": 232,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 84049.424,
+          "outcome_elapsed_seconds": 84115.249
+        },
+        {
+          "round": 233,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 84115.265,
+          "outcome_elapsed_seconds": 84157.376
+        },
+        {
+          "round": 234,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 84157.389,
+          "outcome_elapsed_seconds": 84202.131
+        },
+        {
+          "round": 235,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 84202.145,
+          "outcome_elapsed_seconds": 84282.705
+        },
+        {
+          "round": 236,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 84282.719,
+          "outcome_elapsed_seconds": 84340.134
+        },
+        {
+          "round": 237,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 84340.147,
+          "outcome_elapsed_seconds": 84411.209
+        },
+        {
+          "round": 238,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 84411.22,
+          "outcome_elapsed_seconds": 84464.994
+        },
+        {
+          "round": 239,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 84465.007,
+          "outcome_elapsed_seconds": 84519.608
+        },
+        {
+          "round": 240,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 84519.62,
+          "outcome_elapsed_seconds": 84574.772
+        },
+        {
+          "round": 241,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 84574.785,
+          "outcome_elapsed_seconds": 84625.037
+        },
+        {
+          "round": 242,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 84625.049,
+          "outcome_elapsed_seconds": 84675.345
+        },
+        {
+          "round": 243,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 84675.356,
+          "outcome_elapsed_seconds": 84729.226
+        },
+        {
+          "round": 244,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 84729.238,
+          "outcome_elapsed_seconds": 84782.145
+        },
+        {
+          "round": 245,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 84782.158,
+          "outcome_elapsed_seconds": 84884.94
+        },
+        {
+          "round": 246,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 84884.952,
+          "outcome_elapsed_seconds": 84938.563
+        },
+        {
+          "round": 247,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 84938.575,
+          "outcome_elapsed_seconds": 84992.632
+        },
+        {
+          "round": 248,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 84992.645,
+          "outcome_elapsed_seconds": 85039.601
+        },
+        {
+          "round": 249,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 85039.613,
+          "outcome_elapsed_seconds": 85115.747
+        },
+        {
+          "round": 250,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 85115.759,
+          "outcome_elapsed_seconds": 85171.097
+        },
+        {
+          "round": 251,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 85171.113,
+          "outcome_elapsed_seconds": 85247.637
+        },
+        {
+          "round": 252,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 85247.649,
+          "outcome_elapsed_seconds": 85295.889
+        },
+        {
+          "round": 253,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 85295.903,
+          "outcome_elapsed_seconds": 85340.988
+        },
+        {
+          "round": 254,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 85340.999,
+          "outcome_elapsed_seconds": 85406.063
+        },
+        {
+          "round": 255,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 85406.077,
+          "outcome_elapsed_seconds": 85472.392
+        },
+        {
+          "round": 256,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 85472.409,
+          "outcome_elapsed_seconds": 85535.378
+        },
+        {
+          "round": 257,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 85535.409,
+          "outcome_elapsed_seconds": 85591.442
+        },
+        {
+          "round": 258,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 85591.454,
+          "outcome_elapsed_seconds": 85630.977
+        },
+        {
+          "round": 259,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 85630.989,
+          "outcome_elapsed_seconds": 85728.094
+        },
+        {
+          "round": 260,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 85728.107,
+          "outcome_elapsed_seconds": 85814.441
+        },
+        {
+          "round": 261,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 85814.454,
+          "outcome_elapsed_seconds": 85884.724
+        },
+        {
+          "round": 262,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 85884.737,
+          "outcome_elapsed_seconds": 85934.569
+        },
+        {
+          "round": 263,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 85934.584,
+          "outcome_elapsed_seconds": 85983.778
+        },
+        {
+          "round": 264,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 85983.791,
+          "outcome_elapsed_seconds": 86061.058
+        }
+      ]
+    },
+    {
+      "task": "qwen3-tts-0.6b-dual-mode",
+      "adapter": "kimi-code",
+      "model": "kimi-k3.1-pro-m17",
+      "gpu": "NVIDIA H100 80GB HBM3",
+      "platform": "Modal",
+      "source_commit": "1523543056bf334bc2f4d69db23aad0a002cedf2",
+      "task_instruction_sha256": "4e6fd772efb0d3ec8b2a63df213e17fc206682069d69a2becad08d9c288ea6b8",
+      "started_at_utc": "2026-11-24T00:33:16+00:00",
+      "deadline_utc": "2026-11-25T00:33:16+00:00",
+      "duration_seconds": 86400,
+      "outcome": "eligible_score",
+      "round_count": 20,
+      "best": {
+        "round": 5,
+        "reward": 1.1062060713243846,
+        "elapsed_seconds": 47184.056,
+        "baseline_ratios": {
+          "qwen06": 1.100430010184452,
+          "qwen06_stream": 1.1091054612332476
+        },
+        "same_gpu_and_evaluator": true,
+        "source_files": [
+          "sglang_omni/models/qwen3_tts/engine_builder.py"
+        ]
+      },
+      "trajectory": [
+        {
+          "round": 1,
+          "status": "judge_error",
+          "reward": null,
+          "started_elapsed_seconds": 0.435,
+          "outcome_elapsed_seconds": 11433.74
+        },
+        {
+          "round": 2,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 11613.746,
+          "outcome_elapsed_seconds": 13533.44
+        },
+        {
+          "round": 3,
+          "status": "valid_but_ineligible",
+          "reward": null,
+          "started_elapsed_seconds": 13533.447,
+          "outcome_elapsed_seconds": 24764.76,
+          "failed_gates": {
+            "qwen06": [],
+            "qwen06_stream": [
+              "throughput_qps"
+            ]
+          }
+        },
+        {
+          "round": 4,
+          "status": "valid_but_ineligible",
+          "reward": null,
+          "started_elapsed_seconds": 24774.413,
+          "outcome_elapsed_seconds": 35868.976,
+          "failed_gates": {
+            "qwen06": [
+              "audio_throughput_s_per_s",
+              "throughput_qps"
+            ],
+            "qwen06_stream": [
+              "throughput_qps"
+            ]
+          }
+        },
+        {
+          "round": 5,
+          "status": "eligible",
+          "reward": 1.1062060713243846,
+          "started_elapsed_seconds": 35879.094,
+          "outcome_elapsed_seconds": 47184.056,
+          "failed_gates": {
+            "qwen06": [],
+            "qwen06_stream": []
+          }
+        },
+        {
+          "round": 6,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 47195.664,
+          "outcome_elapsed_seconds": 49483.595
+        },
+        {
+          "round": 7,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 49483.601,
+          "outcome_elapsed_seconds": 51365.159
+        },
+        {
+          "round": 8,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 51365.165,
+          "outcome_elapsed_seconds": 51917.679
+        },
+        {
+          "round": 9,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 51917.685,
+          "outcome_elapsed_seconds": 53183.505
+        },
+        {
+          "round": 10,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 53183.511,
+          "outcome_elapsed_seconds": 55309.051
+        },
+        {
+          "round": 11,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 55309.057,
+          "outcome_elapsed_seconds": 57896.908
+        },
+        {
+          "round": 12,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 57896.914,
+          "outcome_elapsed_seconds": 60185.555
+        },
+        {
+          "round": 13,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 60185.578,
+          "outcome_elapsed_seconds": 60530.667
+        },
+        {
+          "round": 14,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 60530.744,
+          "outcome_elapsed_seconds": 62155.426
+        },
+        {
+          "round": 15,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 62155.433,
+          "outcome_elapsed_seconds": 63707.345
+        },
+        {
+          "round": 16,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 63707.352,
+          "outcome_elapsed_seconds": 63824.104
+        },
+        {
+          "round": 17,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 63824.111,
+          "outcome_elapsed_seconds": 64812.99
+        },
+        {
+          "round": 18,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 64813.021,
+          "outcome_elapsed_seconds": 67502.287
+        },
+        {
+          "round": 19,
+          "status": "valid_but_ineligible",
+          "reward": null,
+          "started_elapsed_seconds": 67502.295,
+          "outcome_elapsed_seconds": 79792.178,
+          "failed_gates": {
+            "qwen06": [],
+            "qwen06_stream": [
+              "wer_corpus"
+            ]
+          }
+        },
+        {
+          "round": 20,
+          "status": "saved_after_last_scoring_slot",
+          "reward": null,
+          "started_elapsed_seconds": 79801.472,
+          "outcome_elapsed_seconds": 79958.954
+        }
+      ]
+    },
+    {
+      "task": "qwen3-tts-1.7b-dual-mode",
+      "adapter": "kimi-code",
+      "model": "kimi-k3.1-pro-m17",
+      "gpu": "NVIDIA H100 80GB HBM3",
+      "platform": "Modal",
+      "source_commit": "1523543056bf334bc2f4d69db23aad0a002cedf2",
+      "task_instruction_sha256": "062658540b50e89f88c9d227f23ca51496e3928cc795fa3fd4e83edeb3dd3f50",
+      "started_at_utc": "2026-11-24T00:32:49+00:00",
+      "deadline_utc": "2026-11-25T00:32:49+00:00",
+      "duration_seconds": 86400,
+      "outcome": "completed_without_eligible_score",
+      "round_count": 116,
+      "best": null,
+      "trajectory": [
+        {
+          "round": 1,
+          "status": "valid_but_ineligible",
+          "reward": null,
+          "started_elapsed_seconds": 0.15,
+          "outcome_elapsed_seconds": 13834.021,
+          "failed_gates": {
+            "qwen17": [
+              "latency_p99_s",
+              "rtf_p99"
+            ],
+            "qwen17_stream": [
+              "rtf_p99"
+            ]
+          }
+        },
+        {
+          "round": 2,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 13844.47,
+          "outcome_elapsed_seconds": 16193.127
+        },
+        {
+          "round": 3,
+          "status": "valid_but_ineligible",
+          "reward": null,
+          "started_elapsed_seconds": 16193.132,
+          "outcome_elapsed_seconds": 27026.988,
+          "failed_gates": {
+            "qwen17": [
+              "rtf_p99",
+              "throughput_qps"
+            ],
+            "qwen17_stream": [
+              "audio_ttfp_mean_s",
+              "audio_ttfp_p95_s",
+              "audio_ttfp_p99_s",
+              "latency_p95_s",
+              "latency_p99_s",
+              "rtf_p99",
+              "throughput_qps"
+            ]
+          }
+        },
+        {
+          "round": 4,
+          "status": "valid_but_ineligible",
+          "reward": null,
+          "started_elapsed_seconds": 27038.048,
+          "outcome_elapsed_seconds": 38350.554,
+          "failed_gates": {
+            "qwen17": [
+              "latency_p99_s",
+              "rtf_p99"
+            ],
+            "qwen17_stream": []
+          }
+        },
+        {
+          "round": 5,
+          "status": "valid_but_ineligible",
+          "reward": null,
+          "started_elapsed_seconds": 38359.369,
+          "outcome_elapsed_seconds": 48472.315,
+          "failed_gates": {
+            "qwen17": [],
+            "qwen17_stream": [
+              "rtf_p99"
+            ]
+          }
+        },
+        {
+          "round": 6,
+          "status": "valid_but_ineligible",
+          "reward": null,
+          "started_elapsed_seconds": 48485.463,
+          "outcome_elapsed_seconds": 62575.552,
+          "failed_gates": {
+            "qwen17": [
+              "latency_p99_s",
+              "rtf_p99",
+              "throughput_qps"
+            ],
+            "qwen17_stream": [
+              "audio_ttfp_p99_s",
+              "latency_p99_s",
+              "rtf_p99"
+            ]
+          }
+        },
+        {
+          "round": 7,
+          "status": "work_error",
+          "reward": null,
+          "started_elapsed_seconds": 62588.656,
+          "outcome_elapsed_seconds": 62763.239
+        },
+        {
+          "round": 8,
+          "status": "valid_but_ineligible",
+          "reward": null,
+          "started_elapsed_seconds": 62943.247,
+          "outcome_elapsed_seconds": 74563.534,
+          "failed_gates": {
+            "qwen17": [],
+            "qwen17_stream": [
+              "latency_p99_s"
+            ]
+          }
+        },
+        {
+          "round": 9,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 74572.916,
+          "outcome_elapsed_seconds": 74723.024
+        },
+        {
+          "round": 10,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 74723.031,
+          "outcome_elapsed_seconds": 74797.3
+        },
+        {
+          "round": 11,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 74797.307,
+          "outcome_elapsed_seconds": 74858.061
+        },
+        {
+          "round": 12,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 74858.069,
+          "outcome_elapsed_seconds": 74910.808
+        },
+        {
+          "round": 13,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 74910.816,
+          "outcome_elapsed_seconds": 74954.797
+        },
+        {
+          "round": 14,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 74954.805,
+          "outcome_elapsed_seconds": 75022.011
+        },
+        {
+          "round": 15,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 75022.019,
+          "outcome_elapsed_seconds": 75127.175
+        },
+        {
+          "round": 16,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 75127.182,
+          "outcome_elapsed_seconds": 75276.689
+        },
+        {
+          "round": 17,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 75276.697,
+          "outcome_elapsed_seconds": 75428.61
+        },
+        {
+          "round": 18,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 75428.616,
+          "outcome_elapsed_seconds": 75495.628
+        },
+        {
+          "round": 19,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 75495.636,
+          "outcome_elapsed_seconds": 75625.172
+        },
+        {
+          "round": 20,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 75625.18,
+          "outcome_elapsed_seconds": 75776.942
+        },
+        {
+          "round": 21,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 75776.95,
+          "outcome_elapsed_seconds": 75860.225
+        },
+        {
+          "round": 22,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 75860.233,
+          "outcome_elapsed_seconds": 75965.885
+        },
+        {
+          "round": 23,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 75965.894,
+          "outcome_elapsed_seconds": 76070.355
+        },
+        {
+          "round": 24,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 76070.363,
+          "outcome_elapsed_seconds": 76220.17
+        },
+        {
+          "round": 25,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 76220.177,
+          "outcome_elapsed_seconds": 76348.664
+        },
+        {
+          "round": 26,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 76348.672,
+          "outcome_elapsed_seconds": 76441.66
+        },
+        {
+          "round": 27,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 76441.667,
+          "outcome_elapsed_seconds": 76535.913
+        },
+        {
+          "round": 28,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 76535.921,
+          "outcome_elapsed_seconds": 76694.342
+        },
+        {
+          "round": 29,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 76694.35,
+          "outcome_elapsed_seconds": 76793.999
+        },
+        {
+          "round": 30,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 76794.007,
+          "outcome_elapsed_seconds": 76887.958
+        },
+        {
+          "round": 31,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 76887.968,
+          "outcome_elapsed_seconds": 77035.7
+        },
+        {
+          "round": 32,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 77035.71,
+          "outcome_elapsed_seconds": 77190.343
+        },
+        {
+          "round": 33,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 77190.351,
+          "outcome_elapsed_seconds": 77284.212
+        },
+        {
+          "round": 34,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 77284.225,
+          "outcome_elapsed_seconds": 77436.097
+        },
+        {
+          "round": 35,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 77436.109,
+          "outcome_elapsed_seconds": 77553.756
+        },
+        {
+          "round": 36,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 77553.764,
+          "outcome_elapsed_seconds": 77656.047
+        },
+        {
+          "round": 37,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 77656.056,
+          "outcome_elapsed_seconds": 77757.84
+        },
+        {
+          "round": 38,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 77757.853,
+          "outcome_elapsed_seconds": 77906.819
+        },
+        {
+          "round": 39,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 77906.827,
+          "outcome_elapsed_seconds": 78056.043
+        },
+        {
+          "round": 40,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 78056.052,
+          "outcome_elapsed_seconds": 78175.524
+        },
+        {
+          "round": 41,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 78175.534,
+          "outcome_elapsed_seconds": 78271.124
+        },
+        {
+          "round": 42,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 78271.133,
+          "outcome_elapsed_seconds": 78427.653
+        },
+        {
+          "round": 43,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 78427.661,
+          "outcome_elapsed_seconds": 78568.213
+        },
+        {
+          "round": 44,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 78568.222,
+          "outcome_elapsed_seconds": 78655.704
+        },
+        {
+          "round": 45,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 78655.712,
+          "outcome_elapsed_seconds": 78738.086
+        },
+        {
+          "round": 46,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 78738.096,
+          "outcome_elapsed_seconds": 78825.083
+        },
+        {
+          "round": 47,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 78825.093,
+          "outcome_elapsed_seconds": 78974.872
+        },
+        {
+          "round": 48,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 78974.88,
+          "outcome_elapsed_seconds": 79054.713
+        },
+        {
+          "round": 49,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 79054.721,
+          "outcome_elapsed_seconds": 79133.892
+        },
+        {
+          "round": 50,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 79133.9,
+          "outcome_elapsed_seconds": 79208.864
+        },
+        {
+          "round": 51,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 79208.873,
+          "outcome_elapsed_seconds": 79286.982
+        },
+        {
+          "round": 52,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 79286.992,
+          "outcome_elapsed_seconds": 79368.214
+        },
+        {
+          "round": 53,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 79368.222,
+          "outcome_elapsed_seconds": 79517.684
+        },
+        {
+          "round": 54,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 79517.693,
+          "outcome_elapsed_seconds": 79628.255
+        },
+        {
+          "round": 55,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 79628.265,
+          "outcome_elapsed_seconds": 79713.742
+        },
+        {
+          "round": 56,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 79713.751,
+          "outcome_elapsed_seconds": 79814.206
+        },
+        {
+          "round": 57,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 79814.215,
+          "outcome_elapsed_seconds": 79910.758
+        },
+        {
+          "round": 58,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 79910.768,
+          "outcome_elapsed_seconds": 80059.778
+        },
+        {
+          "round": 59,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 80059.787,
+          "outcome_elapsed_seconds": 80197.537
+        },
+        {
+          "round": 60,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 80197.546,
+          "outcome_elapsed_seconds": 80307.763
+        },
+        {
+          "round": 61,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 80307.774,
+          "outcome_elapsed_seconds": 80457.387
+        },
+        {
+          "round": 62,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 80457.397,
+          "outcome_elapsed_seconds": 80574.323
+        },
+        {
+          "round": 63,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 80574.331,
+          "outcome_elapsed_seconds": 80658.309
+        },
+        {
+          "round": 64,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 80658.319,
+          "outcome_elapsed_seconds": 80746.456
+        },
+        {
+          "round": 65,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 80746.465,
+          "outcome_elapsed_seconds": 80896.724
+        },
+        {
+          "round": 66,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 80896.735,
+          "outcome_elapsed_seconds": 81004.946
+        },
+        {
+          "round": 67,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 81004.989,
+          "outcome_elapsed_seconds": 81083.294
+        },
+        {
+          "round": 68,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 81083.38,
+          "outcome_elapsed_seconds": 81165.524
+        },
+        {
+          "round": 69,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 81165.533,
+          "outcome_elapsed_seconds": 81240.457
+        },
+        {
+          "round": 70,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 81240.466,
+          "outcome_elapsed_seconds": 81315.292
+        },
+        {
+          "round": 71,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 81315.303,
+          "outcome_elapsed_seconds": 81464.32
+        },
+        {
+          "round": 72,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 81464.352,
+          "outcome_elapsed_seconds": 81546.112
+        },
+        {
+          "round": 73,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 81546.119,
+          "outcome_elapsed_seconds": 81626.763
+        },
+        {
+          "round": 74,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 81626.772,
+          "outcome_elapsed_seconds": 81704.997
+        },
+        {
+          "round": 75,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 81705.004,
+          "outcome_elapsed_seconds": 81854.424
+        },
+        {
+          "round": 76,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 81854.431,
+          "outcome_elapsed_seconds": 81953.832
+        },
+        {
+          "round": 77,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 81953.843,
+          "outcome_elapsed_seconds": 82029.319
+        },
+        {
+          "round": 78,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 82029.327,
+          "outcome_elapsed_seconds": 82106.453
+        },
+        {
+          "round": 79,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 82106.462,
+          "outcome_elapsed_seconds": 82180.327
+        },
+        {
+          "round": 80,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 82180.336,
+          "outcome_elapsed_seconds": 82309.172
+        },
+        {
+          "round": 81,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 82309.179,
+          "outcome_elapsed_seconds": 82404.176
+        },
+        {
+          "round": 82,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 82404.183,
+          "outcome_elapsed_seconds": 82492.223
+        },
+        {
+          "round": 83,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 82492.231,
+          "outcome_elapsed_seconds": 82575.061
+        },
+        {
+          "round": 84,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 82575.068,
+          "outcome_elapsed_seconds": 82655.294
+        },
+        {
+          "round": 85,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 82655.302,
+          "outcome_elapsed_seconds": 82731.775
+        },
+        {
+          "round": 86,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 82731.783,
+          "outcome_elapsed_seconds": 82885.252
+        },
+        {
+          "round": 87,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 82885.26,
+          "outcome_elapsed_seconds": 82977.807
+        },
+        {
+          "round": 88,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 82977.814,
+          "outcome_elapsed_seconds": 83061.896
+        },
+        {
+          "round": 89,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 83061.903,
+          "outcome_elapsed_seconds": 83137.572
+        },
+        {
+          "round": 90,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 83137.58,
+          "outcome_elapsed_seconds": 83288.15
+        },
+        {
+          "round": 91,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 83288.159,
+          "outcome_elapsed_seconds": 83400.723
+        },
+        {
+          "round": 92,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 83400.731,
+          "outcome_elapsed_seconds": 83535.022
+        },
+        {
+          "round": 93,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 83535.03,
+          "outcome_elapsed_seconds": 83620.011
+        },
+        {
+          "round": 94,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 83620.019,
+          "outcome_elapsed_seconds": 83715.411
+        },
+        {
+          "round": 95,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 83715.419,
+          "outcome_elapsed_seconds": 83860.322
+        },
+        {
+          "round": 96,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 83860.33,
+          "outcome_elapsed_seconds": 83946.015
+        },
+        {
+          "round": 97,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 83946.024,
+          "outcome_elapsed_seconds": 84044.224
+        },
+        {
+          "round": 98,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 84044.232,
+          "outcome_elapsed_seconds": 84133.272
+        },
+        {
+          "round": 99,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 84133.279,
+          "outcome_elapsed_seconds": 84208.451
+        },
+        {
+          "round": 100,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 84208.459,
+          "outcome_elapsed_seconds": 84357.872
+        },
+        {
+          "round": 101,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 84357.881,
+          "outcome_elapsed_seconds": 84461.685
+        },
+        {
+          "round": 102,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 84461.695,
+          "outcome_elapsed_seconds": 84536.118
+        },
+        {
+          "round": 103,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 84536.127,
+          "outcome_elapsed_seconds": 84663.917
+        },
+        {
+          "round": 104,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 84663.926,
+          "outcome_elapsed_seconds": 84793.21
+        },
+        {
+          "round": 105,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 84793.218,
+          "outcome_elapsed_seconds": 84942.162
+        },
+        {
+          "round": 106,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 84942.17,
+          "outcome_elapsed_seconds": 85020.144
+        },
+        {
+          "round": 107,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 85020.154,
+          "outcome_elapsed_seconds": 85099.529
+        },
+        {
+          "round": 108,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 85099.538,
+          "outcome_elapsed_seconds": 85177.861
+        },
+        {
+          "round": 109,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 85177.87,
+          "outcome_elapsed_seconds": 85302.449
+        },
+        {
+          "round": 110,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 85302.457,
+          "outcome_elapsed_seconds": 85451.563
+        },
+        {
+          "round": 111,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 85451.573,
+          "outcome_elapsed_seconds": 85595.898
+        },
+        {
+          "round": 112,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 85595.909,
+          "outcome_elapsed_seconds": 85679.694
+        },
+        {
+          "round": 113,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 85679.702,
+          "outcome_elapsed_seconds": 85822.004
+        },
+        {
+          "round": 114,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 85822.012,
+          "outcome_elapsed_seconds": 85954.402
+        },
+        {
+          "round": 115,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 85954.411,
+          "outcome_elapsed_seconds": 86033.883
+        },
+        {
+          "round": 116,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 86033.891,
+          "outcome_elapsed_seconds": 86183.45
+        }
+      ]
+    },
+    {
+      "task": "qwen3-tts-0.6b-dual-mode",
+      "adapter": "dsh",
+      "model": "deepseek-v4.1-flash-m17",
+      "gpu": "NVIDIA H100 80GB HBM3",
+      "platform": "Modal",
+      "source_commit": "1523543056bf334bc2f4d69db23aad0a002cedf2",
+      "task_instruction_sha256": "4e6fd772efb0d3ec8b2a63df213e17fc206682069d69a2becad08d9c288ea6b8",
+      "started_at_utc": "2026-11-23T22:36:16+00:00",
+      "deadline_utc": "2026-11-24T22:36:16+00:00",
+      "duration_seconds": 86400,
+      "outcome": "completed_without_eligible_score",
+      "round_count": 7,
+      "best": null,
+      "trajectory": [
+        {
+          "round": 1,
+          "status": "valid_but_ineligible",
+          "reward": null,
+          "started_elapsed_seconds": 0.38,
+          "outcome_elapsed_seconds": 14120.346,
+          "failed_gates": {
+            "qwen06": [],
+            "qwen06_stream": [
+              "latency_p95_s",
+              "rtf_p95"
+            ]
+          }
+        },
+        {
+          "round": 2,
+          "status": "valid_but_ineligible",
+          "reward": null,
+          "started_elapsed_seconds": 14133.744,
+          "outcome_elapsed_seconds": 28711.371,
+          "failed_gates": {
+            "qwen06": [],
+            "qwen06_stream": [
+              "audio_ttfp_p99_s",
+              "latency_p99_s",
+              "rtf_p99"
+            ]
+          }
+        },
+        {
+          "round": 3,
+          "status": "valid_but_ineligible",
+          "reward": null,
+          "started_elapsed_seconds": 28727.712,
+          "outcome_elapsed_seconds": 42666.62,
+          "failed_gates": {
+            "qwen06": [
+              "latency_mean_s",
+              "latency_median_s",
+              "latency_p95_s",
+              "rtf_median",
+              "rtf_p95",
+              "throughput_qps"
+            ],
+            "qwen06_stream": [
+              "audio_ttfp_mean_s",
+              "audio_ttfp_p95_s",
+              "audio_ttfp_p99_s",
+              "latency_p99_s",
+              "rtf_p99"
+            ]
+          }
+        },
+        {
+          "round": 4,
+          "status": "valid_but_ineligible",
+          "reward": null,
+          "started_elapsed_seconds": 42681.151,
+          "outcome_elapsed_seconds": 52944.913,
+          "failed_gates": {
+            "qwen06": [],
+            "qwen06_stream": [
+              "audio_ttfp_p99_s",
+              "latency_p99_s",
+              "rtf_p99"
+            ]
+          }
+        },
+        {
+          "round": 5,
+          "status": "valid_but_ineligible",
+          "reward": null,
+          "started_elapsed_seconds": 52958.778,
+          "outcome_elapsed_seconds": 67480.104,
+          "failed_gates": {
+            "qwen06": [
+              "audio_throughput_s_per_s",
+              "latency_mean_s",
+              "latency_median_s",
+              "latency_p95_s",
+              "rtf_mean",
+              "rtf_median",
+              "throughput_qps"
+            ],
+            "qwen06_stream": [
+              "audio_ttfp_median_s",
+              "audio_ttfp_p95_s",
+              "latency_mean_s",
+              "latency_p95_s",
+              "rtf_median",
+              "rtf_p95",
+              "throughput_qps"
+            ]
+          }
+        },
+        {
+          "round": 6,
+          "status": "valid_but_ineligible",
+          "reward": null,
+          "started_elapsed_seconds": 67493.243,
+          "outcome_elapsed_seconds": 77845.389,
+          "failed_gates": {
+            "qwen06": [],
+            "qwen06_stream": [
+              "audio_ttfp_p95_s",
+              "latency_mean_s",
+              "latency_p95_s",
+              "rtf_p95",
+              "throughput_qps"
+            ]
+          }
+        },
+        {
+          "round": 7,
+          "status": "saved_after_last_scoring_slot",
+          "reward": null,
+          "started_elapsed_seconds": 77854.212,
+          "outcome_elapsed_seconds": 77984.064
+        }
+      ]
+    },
+    {
+      "task": "qwen3-tts-1.7b-dual-mode",
+      "adapter": "dsh",
+      "model": "deepseek-v4.1-flash-m17",
+      "gpu": "NVIDIA H100 80GB HBM3",
+      "platform": "Modal",
+      "source_commit": "1523543056bf334bc2f4d69db23aad0a002cedf2",
+      "task_instruction_sha256": "062658540b50e89f88c9d227f23ca51496e3928cc795fa3fd4e83edeb3dd3f50",
+      "started_at_utc": "2026-11-22T15:40:06+00:00",
+      "deadline_utc": "2026-11-23T15:40:06+00:00",
+      "duration_seconds": 86400,
+      "outcome": "eligible_score",
+      "round_count": 18,
+      "best": {
+        "round": 16,
+        "reward": 1.0625527533398988,
+        "elapsed_seconds": 71265.891,
+        "baseline_ratios": {
+          "qwen17": 1.0497866287339972,
+          "qwen17_stream": 1.0689939149929086
+        },
+        "same_gpu_and_evaluator": true,
+        "source_files": [
+          "sglang_omni/models/qwen3_tts/streaming_vocoder.py"
+        ]
+      },
+      "trajectory": [
+        {
+          "round": 1,
+          "status": "eligible",
+          "reward": 1.0448273960455086,
+          "started_elapsed_seconds": 0.307,
+          "outcome_elapsed_seconds": 11372.504,
+          "failed_gates": {
+            "qwen17": [],
+            "qwen17_stream": []
+          }
+        },
+        {
+          "round": 2,
+          "status": "work_error",
+          "reward": null,
+          "started_elapsed_seconds": 11381.992,
+          "outcome_elapsed_seconds": 11430.202
+        },
+        {
+          "round": 3,
+          "status": "work_error",
+          "reward": null,
+          "started_elapsed_seconds": 11610.224,
+          "outcome_elapsed_seconds": 11657.591
+        },
+        {
+          "round": 4,
+          "status": "work_error",
+          "reward": null,
+          "started_elapsed_seconds": 11837.672,
+          "outcome_elapsed_seconds": 11886.561
+        },
+        {
+          "round": 5,
+          "status": "work_error",
+          "reward": null,
+          "started_elapsed_seconds": 12066.608,
+          "outcome_elapsed_seconds": 12120.862
+        },
+        {
+          "round": 6,
+          "status": "work_error",
+          "reward": null,
+          "started_elapsed_seconds": 12300.871,
+          "outcome_elapsed_seconds": 12356.3
+        },
+        {
+          "round": 7,
+          "status": "work_error",
+          "reward": null,
+          "started_elapsed_seconds": 12536.308,
+          "outcome_elapsed_seconds": 12586.765
+        },
+        {
+          "round": 8,
+          "status": "work_error",
+          "reward": null,
+          "started_elapsed_seconds": 12766.774,
+          "outcome_elapsed_seconds": 12826.053
+        },
+        {
+          "round": 9,
+          "status": "work_error",
+          "reward": null,
+          "started_elapsed_seconds": 13006.061,
+          "outcome_elapsed_seconds": 13054.105
+        },
+        {
+          "round": 10,
+          "status": "work_error",
+          "reward": null,
+          "started_elapsed_seconds": 13234.125,
+          "outcome_elapsed_seconds": 13285.871
+        },
+        {
+          "round": 11,
+          "status": "judge_error",
+          "reward": null,
+          "started_elapsed_seconds": 13465.879,
+          "outcome_elapsed_seconds": 21953.365
+        },
+        {
+          "round": 12,
+          "status": "valid_but_ineligible",
+          "reward": null,
+          "started_elapsed_seconds": 22133.373,
+          "outcome_elapsed_seconds": 31916.48,
+          "failed_gates": {
+            "qwen17": [],
+            "qwen17_stream": [
+              "audio_ttfp_mean_s",
+              "audio_ttfp_median_s",
+              "audio_ttfp_p95_s",
+              "audio_ttfp_p99_s",
+              "latency_p99_s",
+              "rtf_p99",
+              "throughput_qps"
+            ]
+          }
+        },
+        {
+          "round": 13,
+          "status": "valid_but_ineligible",
+          "reward": null,
+          "started_elapsed_seconds": 35267.843,
+          "outcome_elapsed_seconds": 42924.736,
+          "failed_gates": {
+            "qwen17": [
+              "latency_p99_s",
+              "rtf_p99",
+              "throughput_qps"
+            ],
+            "qwen17_stream": [
+              "rtf_p99"
+            ]
+          }
+        },
+        {
+          "round": 14,
+          "status": "judge_error",
+          "reward": null,
+          "started_elapsed_seconds": 42933.695,
+          "outcome_elapsed_seconds": 53933.574
+        },
+        {
+          "round": 15,
+          "status": "no_change",
+          "reward": null,
+          "started_elapsed_seconds": 54113.583,
+          "outcome_elapsed_seconds": 57046.949
+        },
+        {
+          "round": 16,
+          "status": "eligible",
+          "reward": 1.0625527533398988,
+          "started_elapsed_seconds": 57046.958,
+          "outcome_elapsed_seconds": 71265.891,
+          "failed_gates": {
+            "qwen17": [],
+            "qwen17_stream": []
+          }
+        },
+        {
+          "round": 17,
+          "status": "valid_but_ineligible",
+          "reward": null,
+          "started_elapsed_seconds": 71280.091,
+          "outcome_elapsed_seconds": 84400.88,
+          "failed_gates": {
+            "qwen17": [
+              "latency_p99_s",
+              "rtf_p99",
+              "throughput_qps"
+            ],
+            "qwen17_stream": [
+              "audio_ttfp_p99_s"
+            ]
+          }
+        },
+        {
+          "round": 18,
+          "status": "saved_after_last_scoring_slot",
+          "reward": null,
+          "started_elapsed_seconds": 84412.734,
+          "outcome_elapsed_seconds": 84563.353
+        }
+      ]
+    }
+  ]
+}

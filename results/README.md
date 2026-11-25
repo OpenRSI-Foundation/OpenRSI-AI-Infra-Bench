@@ -4,6 +4,8 @@
 
 **16 runs across 8 tasks**, with Codex and Claude Code evaluated over the same first **24 hours**. [Structured JSON](main.json) · [CSV](runs.csv) · [Cutoff audit](24h-audit.json) · [Full trajectories for these 16 runs](archive.md)
 
+[Additional Kimi Code and DeepSeek Harness runs](additional-agents/README.md) includes a side-by-side comparison and round trajectories.
+
 ## Selection and cutoff
 
 - Start the clock at the Unix timestamp in each trajectory's `started_at` file. Include completed, finite scores whose `evolve_state.json` record satisfies `0 <= at - started_at <= 86400`; take the maximum without rounding.

@@ -143,6 +143,7 @@ Replace `cosyvoice3-dual-mode` with any [task slug](#tasks) to run a different b
     <td align="center" width="16.67%"><a href="https://yichenfeng.me/"><strong>Yichen Feng</strong></a></td>
     <td align="center" width="16.67%"><a href="https://weikangda.github.io/kangda.github.io/"><strong>Kangda Wei</strong></a></td>
     <td align="center" width="16.67%"><a href=""><strong>Simon Yu</strong></a></td>
+    <td align="center" width="16.67%"><a href="https://aclanthology.org/people/tianfu-fu/"><strong>Tianfu Fu</strong></a></td>
   </tr>
   <tr>
     <td align="center" width="16.67%"><a href="https://wenhaochai.com/"><strong>Wenhao Chai</strong></a></td>
